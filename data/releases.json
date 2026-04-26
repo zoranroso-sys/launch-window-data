@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-04-26T07:29:31.311729Z",
+    "generated_at": "2026-04-26T08:06:23.946857Z",
     "upcoming_count": 16,
     "next_update": "2026-05-03",
     "sources": [
@@ -15,69 +15,151 @@
       "label": "CES",
       "severity": "low",
       "category": "trade_show",
-      "notes": "Consumer Electronics Show — gaming-adjacent, rarely affects game launch coverage but can steal tech headlines"
+      "approx_date": "2026-01-06",
+      "notes": "Consumer Electronics Show, Las Vegas — gaming-adjacent, can steal tech headlines"
+    },
+    {
+      "month": 1,
+      "label": "Xbox Developer Direct",
+      "severity": "medium",
+      "category": "showcase",
+      "approx_date": "2026-01-23",
+      "notes": "Microsoft's focused deep-dive showcase — smaller than E3-season but pulls press for 24–48 hours"
     },
     {
       "month": 1,
       "label": "Steam Winter Sale ends",
       "severity": "low",
       "category": "sale",
-      "notes": "Winter Sale typically ends first week of January — post-sale browsing traffic is high"
+      "approx_date": "2026-01-06",
+      "notes": "Post-sale browsing traffic is high — good discovery window"
+    },
+    {
+      "month": 1,
+      "label": "Taipei Game Show",
+      "severity": "low",
+      "category": "trade_show",
+      "approx_date": "2026-01-22",
+      "notes": "Taiwan's largest game expo — relevant for APAC-facing titles and Japanese publishers"
+    },
+    {
+      "month": 2,
+      "label": "D.I.C.E. Summit",
+      "severity": "low",
+      "category": "trade_show",
+      "approx_date": "2026-02-10",
+      "notes": "AIAS industry summit, Las Vegas — senior industry networking, minimal consumer impact"
     },
     {
       "month": 2,
       "label": "DICE Awards",
       "severity": "low",
       "category": "award",
-      "notes": "Academy of Interactive Arts & Sciences awards — industry recognition, minimal consumer impact"
+      "approx_date": "2026-02-12",
+      "notes": "Academy of Interactive Arts & Sciences awards — industry recognition, low consumer impact"
     },
     {
       "month": 2,
       "label": "Nintendo Direct",
       "severity": "medium",
       "category": "showcase",
+      "approx_date": "2026-02-18",
       "notes": "Nintendo typically runs a Feb Direct — pulls press attention for 48–72 hours"
+    },
+    {
+      "month": 2,
+      "label": "Taipei Game Show (alt)",
+      "severity": "low",
+      "category": "trade_show",
+      "approx_date": "2026-02-05",
+      "notes": "Some years TGS shifts to early February — check confirmed dates"
     },
     {
       "month": 3,
       "label": "GDC",
       "severity": "high",
       "category": "trade_show",
-      "notes": "Game Developers Conference — press concentrated in SF for a full week, launch coverage squeezed"
+      "approx_date": "2026-03-16",
+      "notes": "Game Developers Conference, San Francisco — press concentrated for a full week, launch coverage squeezed"
     },
     {
       "month": 3,
       "label": "IGF Awards",
       "severity": "low",
       "category": "award",
-      "notes": "Independent Games Festival awards at GDC — indie credibility moment, good for narrative"
+      "approx_date": "2026-03-18",
+      "notes": "Independent Games Festival awards at GDC — indie credibility moment"
+    },
+    {
+      "month": 3,
+      "label": "GDC Awards",
+      "severity": "low",
+      "category": "award",
+      "approx_date": "2026-03-18",
+      "notes": "Game Developers Choice Awards at GDC — industry peer recognition"
     },
     {
       "month": 3,
       "label": "BAFTA Games Awards",
       "severity": "low",
       "category": "award",
-      "notes": "British Academy awards for games — strong UK/EU press coverage for 24-48 hours"
+      "approx_date": "2026-03-26",
+      "notes": "British Academy awards — strong UK/EU press coverage for 24–48 hours"
     },
     {
       "month": 3,
       "label": "PAX East",
       "severity": "medium",
       "category": "trade_show",
+      "approx_date": "2026-03-05",
       "notes": "Major consumer expo in Boston — demos, influencer coverage, press splits attention"
+    },
+    {
+      "month": 3,
+      "label": "SXSW Gaming",
+      "severity": "low",
+      "category": "festival",
+      "approx_date": "2026-03-13",
+      "notes": "South by Southwest gaming track in Austin — cultural crossover press, indie visibility"
     },
     {
       "month": 4,
       "label": "Steam Spring Sale",
       "severity": "medium",
       "category": "sale",
-      "notes": "Typically runs late March/early April — price anchor effect on new releases"
+      "approx_date": "2026-03-30",
+      "notes": "Typically late March/early April — price anchor effect on new releases"
+    },
+    {
+      "month": 4,
+      "label": "DCP — Deutscher Computerspielpreis",
+      "severity": "medium",
+      "category": "award",
+      "approx_date": "2026-04-23",
+      "notes": "German Computer Game Award, Berlin — major DACH industry event, strong regional press coverage, networking"
+    },
+    {
+      "month": 4,
+      "label": "Guerrilla Collective",
+      "severity": "low",
+      "category": "showcase",
+      "approx_date": "2026-04-15",
+      "notes": "Indie showcase — sometimes runs in April, sometimes June. Moderate indie press coverage"
+    },
+    {
+      "month": 4,
+      "label": "EGX Berlin",
+      "severity": "low",
+      "category": "trade_show",
+      "approx_date": "2026-04-17",
+      "notes": "Consumer expo in Berlin — DACH-focused, good for German market visibility"
     },
     {
       "month": 5,
       "label": "Steam Next Fest",
       "severity": "high",
       "category": "festival",
+      "approx_date": "2026-05-04",
       "notes": "Week-long demo festival — hundreds of demos flood discovery, launch signal diluted"
     },
     {
@@ -85,34 +167,63 @@
       "label": "PlayStation State of Play",
       "severity": "medium",
       "category": "showcase",
+      "approx_date": "2026-05-14",
       "notes": "Sony showcase — pulls press attention and dominates news cycle for 2–3 days"
+    },
+    {
+      "month": 5,
+      "label": "Nordic Game Conference",
+      "severity": "low",
+      "category": "trade_show",
+      "approx_date": "2026-05-20",
+      "notes": "Malmö, Sweden — key Nordic/European indie and AA industry event, strong Nordic press"
+    },
+    {
+      "month": 5,
+      "label": "Wholesome Direct",
+      "severity": "low",
+      "category": "showcase",
+      "approx_date": "2026-05-28",
+      "notes": "Cozy/wholesome games showcase — niche but passionate audience, strong social media reach"
     },
     {
       "month": 6,
       "label": "Summer Game Fest",
       "severity": "high",
       "category": "showcase",
-      "notes": "Geoff Keighley's showcase event — announcement coverage dominates all gaming media for days"
+      "approx_date": "2026-06-07",
+      "notes": "Geoff Keighley's showcase — announcement coverage dominates all gaming media for days"
     },
     {
       "month": 6,
       "label": "Xbox Games Showcase",
       "severity": "high",
       "category": "showcase",
+      "approx_date": "2026-06-08",
       "notes": "Microsoft's annual showcase — major reveals, press fully focused on announcements"
+    },
+    {
+      "month": 6,
+      "label": "Nintendo Direct",
+      "severity": "high",
+      "category": "showcase",
+      "approx_date": "2026-06-10",
+      "notes": "E3-season Nintendo Direct — typically their biggest of the year, massive press impact"
     },
     {
       "month": 6,
       "label": "PC Gaming Show",
       "severity": "medium",
       "category": "showcase",
-      "notes": "PC-focused showcase during E3 season — PC press diverted to coverage for 2–3 days"
+      "approx_date": "2026-06-08",
+      "notes": "PC-focused showcase — PC press diverted to coverage for 2–3 days"
     },
     {
       "month": 6,
       "label": "Ubisoft Forward",
       "severity": "medium",
       "category": "showcase",
+      "approx_date": "2026-06-09",
       "notes": "Ubisoft's showcase — AAA reveals pull media attention in the E3 window"
     },
     {
@@ -120,34 +231,95 @@
       "label": "Future Games Show",
       "severity": "medium",
       "category": "showcase",
+      "approx_date": "2026-06-08",
       "notes": "Future Publishing's showcase — broad coverage, indie and AA visibility affected"
+    },
+    {
+      "month": 6,
+      "label": "Capcom Showcase",
+      "severity": "medium",
+      "category": "showcase",
+      "approx_date": "2026-06-09",
+      "notes": "Capcom's dedicated showcase — Monster Hunter, Resident Evil, Street Fighter news dominates"
+    },
+    {
+      "month": 6,
+      "label": "Square Enix Presents",
+      "severity": "medium",
+      "category": "showcase",
+      "approx_date": "2026-06-10",
+      "notes": "Square Enix showcase — Final Fantasy, Dragon Quest news pulls JRPG audience attention"
+    },
+    {
+      "month": 6,
+      "label": "Bandai Namco Next",
+      "severity": "low",
+      "category": "showcase",
+      "approx_date": "2026-06-10",
+      "notes": "Bandai Namco showcase — anime games, Tekken, Elden Ring news when relevant"
     },
     {
       "month": 6,
       "label": "Devolver Digital Showcase",
       "severity": "low",
       "category": "showcase",
-      "notes": "Devolver's showcase — indie-focused, high social media engagement, 24-hour news cycle"
+      "approx_date": "2026-06-08",
+      "notes": "Devolver's showcase — indie-focused, high social media engagement, 24-hour cycle"
     },
     {
       "month": 6,
-      "label": "Nintendo Direct",
-      "severity": "high",
+      "label": "Day of the Devs",
+      "severity": "low",
       "category": "showcase",
-      "notes": "E3-season Nintendo Direct — typically their biggest of the year, massive press impact"
+      "approx_date": "2026-06-09",
+      "notes": "iam8bit's indie showcase — curated indie selection, press-friendly, good discovery moment"
+    },
+    {
+      "month": 6,
+      "label": "Tribeca Games Spotlight",
+      "severity": "low",
+      "category": "festival",
+      "approx_date": "2026-06-12",
+      "notes": "Tribeca Festival's gaming track — narrative/art games get cultural press crossover"
+    },
+    {
+      "month": 6,
+      "label": "Annapurna Interactive Showcase",
+      "severity": "low",
+      "category": "showcase",
+      "approx_date": "2026-06-11",
+      "notes": "Annapurna's showcase — prestigious indie publisher, strong critical press attention"
+    },
+    {
+      "month": 6,
+      "label": "Latin American Games Showcase",
+      "severity": "low",
+      "category": "showcase",
+      "approx_date": "2026-06-09",
+      "notes": "LATAM-focused showcase — growing market, relevant for Spanish/Portuguese localisation"
     },
     {
       "month": 7,
       "label": "Steam Summer Sale",
       "severity": "medium",
       "category": "sale",
+      "approx_date": "2026-06-25",
       "notes": "Price anchor effect — players wait for discounts, full-price launches face resistance"
+    },
+    {
+      "month": 7,
+      "label": "Develop:Brighton",
+      "severity": "low",
+      "category": "trade_show",
+      "approx_date": "2026-07-14",
+      "notes": "UK developer conference, Brighton — key UK industry networking, talks, and recruitment"
     },
     {
       "month": 7,
       "label": "BitSummit",
       "severity": "low",
       "category": "trade_show",
+      "approx_date": "2026-07-18",
       "notes": "Japanese indie game expo in Kyoto — relevant for Japan-facing indie titles"
     },
     {
@@ -155,13 +327,23 @@
       "label": "ChinaJoy",
       "severity": "low",
       "category": "trade_show",
-      "notes": "China's largest gaming expo — relevant if targeting Chinese market, minimal Western press impact"
+      "approx_date": "2026-07-24",
+      "notes": "China's largest gaming expo, Shanghai — relevant if targeting Chinese market"
+    },
+    {
+      "month": 7,
+      "label": "EA Spotlight",
+      "severity": "medium",
+      "category": "showcase",
+      "approx_date": "2026-07-15",
+      "notes": "EA's showcase event — sports titles, Battlefield, and major EA IPs pull audience attention"
     },
     {
       "month": 8,
       "label": "Gamescom",
       "severity": "high",
       "category": "trade_show",
+      "approx_date": "2026-08-19",
       "notes": "Europe's biggest games show in Cologne — avoid launch week, post-show slot is valuable"
     },
     {
@@ -169,6 +351,7 @@
       "label": "Opening Night Live",
       "severity": "high",
       "category": "showcase",
+      "approx_date": "2026-08-18",
       "notes": "Keighley's Gamescom kick-off — major reveals, dominates the full week's coverage"
     },
     {
@@ -176,27 +359,87 @@
       "label": "Future Games Show at Gamescom",
       "severity": "medium",
       "category": "showcase",
+      "approx_date": "2026-08-20",
       "notes": "Future's Gamescom showcase — additional coverage saturation during show week"
+    },
+    {
+      "month": 8,
+      "label": "THQ Nordic Showcase",
+      "severity": "low",
+      "category": "showcase",
+      "approx_date": "2026-08-20",
+      "notes": "THQ Nordic's Gamescom showcase — AA titles, smaller but pulls genre-specific audiences"
+    },
+    {
+      "month": 8,
+      "label": "Nacon Connect",
+      "severity": "low",
+      "category": "showcase",
+      "approx_date": "2026-08-19",
+      "notes": "Nacon's showcase — AA titles, racing, horror, and licensed games"
+    },
+    {
+      "month": 8,
+      "label": "Focus Entertainment What's Next",
+      "severity": "low",
+      "category": "showcase",
+      "approx_date": "2026-08-20",
+      "notes": "Focus' Gamescom showcase — relevant for Soulslike and AA action fans"
+    },
+    {
+      "month": 8,
+      "label": "Awesome Indies Showcase",
+      "severity": "low",
+      "category": "showcase",
+      "approx_date": "2026-08-20",
+      "notes": "Indie showcase at Gamescom — curated indie selection, moderate press coverage"
+    },
+    {
+      "month": 8,
+      "label": "Gamescom Asia (Singapore)",
+      "severity": "low",
+      "category": "trade_show",
+      "approx_date": "2026-08-27",
+      "notes": "Gamescom's Asian edition in Singapore — growing SEA market presence"
     },
     {
       "month": 9,
       "label": "Tokyo Game Show",
       "severity": "medium",
       "category": "trade_show",
-      "notes": "Japan's largest game show — critical for JRPG/Japanese titles, moderate Western press impact"
+      "approx_date": "2026-09-24",
+      "notes": "Japan's largest game show, Makuhari Messe — critical for JRPG/Japanese titles"
     },
     {
       "month": 9,
       "label": "PlayStation State of Play",
       "severity": "medium",
       "category": "showcase",
-      "notes": "Sony's September showcase — typically focuses on holiday lineup, pulls press for 2–3 days"
+      "approx_date": "2026-09-10",
+      "notes": "Sony's September showcase — typically focuses on holiday lineup"
+    },
+    {
+      "month": 9,
+      "label": "PlayStation Showcase",
+      "severity": "high",
+      "category": "showcase",
+      "approx_date": "2026-09-15",
+      "notes": "Sony's major showcase (when it runs) — bigger than State of Play, huge reveals, rare but impactful"
+    },
+    {
+      "month": 9,
+      "label": "Sega Showcase",
+      "severity": "low",
+      "category": "showcase",
+      "approx_date": "2026-09-20",
+      "notes": "Sega's showcase — Yakuza, Sonic, Persona, and strategy franchises pull specific audiences"
     },
     {
       "month": 10,
       "label": "Steam Next Fest",
       "severity": "medium",
       "category": "festival",
+      "approx_date": "2026-10-05",
       "notes": "Autumn demo festival — second occurrence, demo noise competes with launches"
     },
     {
@@ -204,20 +447,55 @@
       "label": "Steam Autumn Sale",
       "severity": "medium",
       "category": "sale",
-      "notes": "Typically late October — price expectations drop as sale approaches"
+      "approx_date": "2026-10-27",
+      "notes": "Late October sale — price expectations drop as sale approaches"
     },
     {
       "month": 10,
       "label": "Twitch Galaxies",
       "severity": "low",
       "category": "showcase",
-      "notes": "Twitch's own showcase event — streaming-focused reveals, moderate impact on launch coverage"
+      "approx_date": "2026-10-15",
+      "notes": "Twitch's own showcase event — streaming-focused reveals, moderate impact"
+    },
+    {
+      "month": 10,
+      "label": "Brasil Game Show",
+      "severity": "low",
+      "category": "trade_show",
+      "approx_date": "2026-10-08",
+      "notes": "Latin America's largest game show, São Paulo — key for LATAM market visibility"
+    },
+    {
+      "month": 10,
+      "label": "EGX London",
+      "severity": "low",
+      "category": "trade_show",
+      "approx_date": "2026-10-22",
+      "notes": "UK's largest consumer gaming expo — strong UK press coverage and influencer presence"
+    },
+    {
+      "month": 10,
+      "label": "Paris Games Week",
+      "severity": "low",
+      "category": "trade_show",
+      "approx_date": "2026-10-29",
+      "notes": "France's consumer gaming expo — relevant for French market, occasionally hosts Sony reveals"
+    },
+    {
+      "month": 10,
+      "label": "Milan Games Week",
+      "severity": "low",
+      "category": "trade_show",
+      "approx_date": "2026-10-23",
+      "notes": "Italy's largest gaming event — strong Southern European market visibility"
     },
     {
       "month": 11,
       "label": "The Game Awards",
       "severity": "high",
       "category": "award",
+      "approx_date": "2026-12-10",
       "notes": "TGA dominates media for 3 weeks — GOTY discourse plus major world premiere reveals"
     },
     {
@@ -225,42 +503,112 @@
       "label": "Black Friday",
       "severity": "medium",
       "category": "sale",
-      "notes": "Consumer attention on deals, not new releases — gifting spike possible though"
+      "approx_date": "2026-11-27",
+      "notes": "Consumer attention on deals, not new releases — gifting spike possible"
     },
     {
       "month": 11,
-      "label": "XO / Xbox Fan Fest",
+      "label": "G-Star Korea",
+      "severity": "low",
+      "category": "trade_show",
+      "approx_date": "2026-11-12",
+      "notes": "South Korea's major gaming expo, Busan — critical for Korean MMO/F2P market"
+    },
+    {
+      "month": 11,
+      "label": "Golden Joystick Awards",
+      "severity": "low",
+      "category": "award",
+      "approx_date": "2026-11-20",
+      "notes": "GamesRadar/Future's public-voted awards — consumer engagement, moderate press"
+    },
+    {
+      "month": 11,
+      "label": "Day of the Devs: Fall Edition",
       "severity": "low",
       "category": "showcase",
-      "notes": "Xbox community event — minor press impact but can pull Xbox-specific audience attention"
+      "approx_date": "2026-11-05",
+      "notes": "iam8bit's autumn indie showcase — curated, press-friendly"
     },
     {
       "month": 11,
       "label": "BlizzCon / Xbox equivalent",
       "severity": "medium",
       "category": "showcase",
-      "notes": "Major publisher event (when it runs) — dominates news cycle for the weekend"
+      "approx_date": "2026-11-07",
+      "notes": "Major publisher community event (when it runs) — dominates news for the weekend"
+    },
+    {
+      "month": 11,
+      "label": "XO / Xbox Fan Fest",
+      "severity": "low",
+      "category": "showcase",
+      "approx_date": "2026-11-15",
+      "notes": "Xbox community event — minor press impact, pulls Xbox-specific audience"
+    },
+    {
+      "month": 11,
+      "label": "Women in Games Awards",
+      "severity": "low",
+      "category": "award",
+      "approx_date": "2026-11-18",
+      "notes": "Industry diversity awards — networking, visibility for inclusive studios"
+    },
+    {
+      "month": 11,
+      "label": "Dreamhack (multiple)",
+      "severity": "low",
+      "category": "festival",
+      "approx_date": "2026-11-20",
+      "notes": "LAN/esports festival — multiple dates globally, strong community engagement"
+    },
+    {
+      "month": 12,
+      "label": "The Game Awards",
+      "severity": "high",
+      "category": "award",
+      "approx_date": "2026-12-10",
+      "notes": "TGA show night — world premieres, massive live audience, dominates entire month's coverage"
     },
     {
       "month": 12,
       "label": "Steam Winter Sale",
       "severity": "medium",
       "category": "sale",
-      "notes": "Year-end sale — launch by Dec 15 or hold until January, gifting window is active"
+      "approx_date": "2026-12-18",
+      "notes": "Year-end sale — launch by Dec 15 or hold until January"
     },
     {
       "month": 12,
       "label": "PlayStation Wrap-Up",
       "severity": "low",
       "category": "showcase",
-      "notes": "Sony's year-in-review — social media noise but minimal impact on launch coverage"
+      "approx_date": "2026-12-15",
+      "notes": "Sony's year-in-review — social media noise, minimal launch impact"
     },
     {
       "month": 12,
       "label": "Indie World / Nintendo",
       "severity": "low",
       "category": "showcase",
-      "notes": "Nintendo sometimes runs a Dec showcase — minor distraction from launch coverage"
+      "approx_date": "2026-12-08",
+      "notes": "Nintendo sometimes runs a Dec showcase — minor distraction"
+    },
+    {
+      "month": 12,
+      "label": "Epic Games Store Free Games",
+      "severity": "low",
+      "category": "sale",
+      "approx_date": "2026-12-20",
+      "notes": "Epic's annual free games giveaway — player attention on free titles, not purchases"
+    },
+    {
+      "month": 12,
+      "label": "GOG Winter Sale",
+      "severity": "low",
+      "category": "sale",
+      "approx_date": "2026-12-15",
+      "notes": "GOG's year-end sale — niche but loyal DRM-free audience"
     }
   ],
   "month_index": {
