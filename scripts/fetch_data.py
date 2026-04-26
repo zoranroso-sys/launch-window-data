@@ -249,7 +249,7 @@ def get_industry_events():
          "notes": "Consumer Electronics Show, Las Vegas — gaming-adjacent, can steal tech headlines"},
         {"month": 1,  "label": "Xbox Developer Direct",    "severity": "medium", "category": "showcase",    "approx_date": "2026-01-23",
          "notes": "Microsoft's focused deep-dive showcase — pulls press for 24-48 hours"},
-        {"month": 1,  "label": "Taipei Game Show",         "severity": "low",    "category": "trade_show",  "approx_date": "2026-01-22", "end_date": "2026-01-25",
+        {"month": 1,  "label": "Taipei Game Show",         "severity": "low",    "category": "trade_show",  "approx_date": "2026-01-29", "end_date": "2026-02-01",
          "notes": "Taiwan's largest game expo — relevant for APAC-facing titles"},
         # ══════════════ FEBRUARY ══════════════
         {"month": 2,  "label": "D.I.C.E. Summit",          "severity": "low",    "category": "trade_show",  "approx_date": "2026-02-10", "end_date": "2026-02-12",
@@ -349,6 +349,8 @@ def get_industry_events():
         {"month": 8,  "label": "Awesome Indies Showcase",  "severity": "low",    "category": "showcase",    "approx_date": "2026-08-27",
          "notes": "Indie showcase at Gamescom — curated indie selection"},
         # ══════════════ SEPTEMBER ══════════════
+        {"month": 9,  "label": "D.I.C.E. Athens",             "severity": "low",    "category": "trade_show",  "approx_date": "2026-09-21", "end_date": "2026-09-23",
+         "notes": "AIAS European networking event, Athens — intimate industry gathering for senior professionals"},
         {"month": 9,  "label": "PAX West",                 "severity": "medium", "category": "trade_show",  "approx_date": "2026-09-04", "end_date": "2026-09-07",
          "notes": "Fan-focused expo in Seattle — demos, community events, indie presence"},
         {"month": 9,  "label": "PlayStation State of Play", "severity": "medium","category": "showcase",    "approx_date": "2026-09-10",
