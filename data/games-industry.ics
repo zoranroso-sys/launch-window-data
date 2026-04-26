@@ -9,9 +9,9 @@ REFRESH-INTERVAL;VALUE=DURATION:P1D
 X-PUBLISHED-TTL:P1D
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260106
-DTEND;VALUE=DATE:20260106
+DTEND;VALUE=DATE:20260110
 SUMMARY:CES
-DESCRIPTION:Consumer Electronics Show\, Las Vegas — gaming-adjacent\, can steal tech headlines\\n\\nCategory: Trade Show / Expo\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+DESCRIPTION:Consumer Electronics Show\, Las Vegas — gaming-adjacent\, can steal tech headlines\\n\\nDates: 2026-01-06 to 2026-01-09\\n\\nCategory: Trade Show / Expo\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Trade Show / Expo
 UID:20260106-evt-0@zrconsulting.de
 STATUS:CONFIRMED
@@ -19,269 +19,269 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260123
-DTEND;VALUE=DATE:20260123
+DTEND;VALUE=DATE:20260124
 SUMMARY:Xbox Developer Direct
-DESCRIPTION:Microsoft's focused deep-dive showcase — smaller than E3-season but pulls press for 24–48 hours\\n\\nCategory: Showcase / Direct\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+DESCRIPTION:Microsoft's focused deep-dive showcase — pulls press for 24-48 hours\\n\\nCategory: Showcase / Direct\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Showcase / Direct
 UID:20260123-evt-1@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260106
-DTEND;VALUE=DATE:20260106
-SUMMARY:Steam Winter Sale ends
-DESCRIPTION:Post-sale browsing traffic is high — good discovery window\\n\\nCategory: Sale / Promotion\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Sale / Promotion
-UID:20260106-evt-2@zrconsulting.de
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260122
-DTEND;VALUE=DATE:20260122
+DTEND;VALUE=DATE:20260126
 SUMMARY:Taipei Game Show
-DESCRIPTION:Taiwan's largest game expo — relevant for APAC-facing titles and Japanese publishers\\n\\nCategory: Trade Show / Expo\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+DESCRIPTION:Taiwan's largest game expo — relevant for APAC-facing titles\\n\\nDates: 2026-01-22 to 2026-01-25\\n\\nCategory: Trade Show / Expo\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Trade Show / Expo
-UID:20260122-evt-3@zrconsulting.de
+UID:20260122-evt-2@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260210
-DTEND;VALUE=DATE:20260210
+DTEND;VALUE=DATE:20260213
 SUMMARY:D.I.C.E. Summit
-DESCRIPTION:AIAS industry summit\, Las Vegas — senior industry networking\, minimal consumer impact\\n\\nCategory: Trade Show / Expo\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+DESCRIPTION:AIAS industry summit\, Las Vegas — senior networking\, minimal consumer impact\\n\\nDates: 2026-02-10 to 2026-02-12\\n\\nCategory: Trade Show / Expo\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Trade Show / Expo
-UID:20260210-evt-4@zrconsulting.de
+UID:20260210-evt-3@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260212
-DTEND;VALUE=DATE:20260212
+DTEND;VALUE=DATE:20260213
 SUMMARY:DICE Awards
-DESCRIPTION:Academy of Interactive Arts & Sciences awards — industry recognition\, low consumer impact\\n\\nCategory: Awards Ceremony\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+DESCRIPTION:Academy of Interactive Arts and Sciences awards — industry recognition\\n\\nCategory: Awards Ceremony\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Awards Ceremony
-UID:20260212-evt-5@zrconsulting.de
+UID:20260212-evt-4@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260218
-DTEND;VALUE=DATE:20260218
+DTEND;VALUE=DATE:20260219
 SUMMARY:Nintendo Direct
-DESCRIPTION:Nintendo typically runs a Feb Direct — pulls press attention for 48–72 hours\\n\\nCategory: Showcase / Direct\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+DESCRIPTION:Nintendo typically runs a Feb Direct — pulls press for 48-72 hours\\n\\nCategory: Showcase / Direct\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Showcase / Direct
-UID:20260218-evt-6@zrconsulting.de
+UID:20260218-evt-5@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260205
-DTEND;VALUE=DATE:20260205
-SUMMARY:Taipei Game Show (alt)
-DESCRIPTION:Some years TGS shifts to early February — check confirmed dates\\n\\nCategory: Trade Show / Expo\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Trade Show / Expo
-UID:20260205-evt-7@zrconsulting.de
+DTSTART;VALUE=DATE:20260223
+DTEND;VALUE=DATE:20260303
+SUMMARY:Steam Next Fest
+DESCRIPTION:Week-long demo festival — hundreds of demos flood discovery\, launch signal diluted\\n\\nDates: 2026-02-23 to 2026-03-02\\n\\nCategory: Festival / Event\\nImpact: HIGH\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Festival / Event
+UID:20260223-evt-6@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260316
-DTEND;VALUE=DATE:20260316
+DTSTART;VALUE=DATE:20260309
+DTEND;VALUE=DATE:20260314
 SUMMARY:GDC
-DESCRIPTION:Game Developers Conference\, San Francisco — press concentrated for a full week\, launch coverage squeezed\\n\\nCategory: Trade Show / Expo\\nImpact: HIGH\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+DESCRIPTION:Game Developers Conference\, San Francisco — press concentrated for a full week\\n\\nDates: 2026-03-09 to 2026-03-13\\n\\nCategory: Trade Show / Expo\\nImpact: HIGH\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Trade Show / Expo
-UID:20260316-evt-8@zrconsulting.de
+UID:20260309-evt-7@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260318
-DTEND;VALUE=DATE:20260318
+DTSTART;VALUE=DATE:20260311
+DTEND;VALUE=DATE:20260312
 SUMMARY:IGF Awards
 DESCRIPTION:Independent Games Festival awards at GDC — indie credibility moment\\n\\nCategory: Awards Ceremony\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Awards Ceremony
-UID:20260318-evt-9@zrconsulting.de
+UID:20260311-evt-8@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260318
-DTEND;VALUE=DATE:20260318
+DTSTART;VALUE=DATE:20260311
+DTEND;VALUE=DATE:20260312
 SUMMARY:GDC Awards
 DESCRIPTION:Game Developers Choice Awards at GDC — industry peer recognition\\n\\nCategory: Awards Ceremony\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Awards Ceremony
-UID:20260318-evt-10@zrconsulting.de
+UID:20260311-evt-9@zrconsulting.de
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260312
+DTEND;VALUE=DATE:20260319
+SUMMARY:SXSW Gaming
+DESCRIPTION:South by Southwest gaming track\, Austin — cultural crossover\, indie visibility\\n\\nDates: 2026-03-12 to 2026-03-18\\n\\nCategory: Festival / Event\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Festival / Event
+UID:20260312-evt-10@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260326
-DTEND;VALUE=DATE:20260326
-SUMMARY:BAFTA Games Awards
-DESCRIPTION:British Academy awards — strong UK/EU press coverage for 24–48 hours\\n\\nCategory: Awards Ceremony\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Awards Ceremony
+DTEND;VALUE=DATE:20260330
+SUMMARY:PAX East
+DESCRIPTION:Major consumer expo in Boston — demos\, influencer coverage\, press splits attention\\n\\nDates: 2026-03-26 to 2026-03-29\\n\\nCategory: Trade Show / Expo\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Trade Show / Expo
 UID:20260326-evt-11@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260305
-DTEND;VALUE=DATE:20260305
-SUMMARY:PAX East
-DESCRIPTION:Major consumer expo in Boston — demos\, influencer coverage\, press splits attention\\n\\nCategory: Trade Show / Expo\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Trade Show / Expo
-UID:20260305-evt-12@zrconsulting.de
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260313
-DTEND;VALUE=DATE:20260313
-SUMMARY:SXSW Gaming
-DESCRIPTION:South by Southwest gaming track in Austin — cultural crossover press\, indie visibility\\n\\nCategory: Festival / Event\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Festival / Event
-UID:20260313-evt-13@zrconsulting.de
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260330
-DTEND;VALUE=DATE:20260330
-SUMMARY:Steam Spring Sale
-DESCRIPTION:Typically late March/early April — price anchor effect on new releases\\n\\nCategory: Sale / Promotion\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Sale / Promotion
-UID:20260330-evt-14@zrconsulting.de
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260423
-DTEND;VALUE=DATE:20260423
-SUMMARY:DCP — Deutscher Computerspielpreis
-DESCRIPTION:German Computer Game Award\, Berlin — major DACH industry event\, strong regional press coverage\, networking\\n\\nCategory: Awards Ceremony\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Awards Ceremony
-UID:20260423-evt-15@zrconsulting.de
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260415
-DTEND;VALUE=DATE:20260415
-SUMMARY:Guerrilla Collective
-DESCRIPTION:Indie showcase — sometimes runs in April\, sometimes June. Moderate indie press coverage\\n\\nCategory: Showcase / Direct\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Showcase / Direct
-UID:20260415-evt-16@zrconsulting.de
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260417
-DTEND;VALUE=DATE:20260417
-SUMMARY:EGX Berlin
-DESCRIPTION:Consumer expo in Berlin — DACH-focused\, good for German market visibility\\n\\nCategory: Trade Show / Expo\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Trade Show / Expo
-UID:20260417-evt-17@zrconsulting.de
+DTEND;VALUE=DATE:20260418
+SUMMARY:BAFTA Games Awards
+DESCRIPTION:British Academy Games Awards — strong UK/EU press coverage for 24-48 hours\\n\\nCategory: Awards Ceremony\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Awards Ceremony
+UID:20260417-evt-12@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260504
+DTSTART;VALUE=DATE:20260429
+DTEND;VALUE=DATE:20260430
+SUMMARY:DCP — Deutscher Computerspielpreis
+DESCRIPTION:German Computer Game Award\, Munich — major DACH event\, strong regional press and networking\\n\\nCategory: Awards Ceremony\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Awards Ceremony
+UID:20260429-evt-13@zrconsulting.de
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260429
 DTEND;VALUE=DATE:20260504
-SUMMARY:Steam Next Fest
-DESCRIPTION:Week-long demo festival — hundreds of demos flood discovery\, launch signal diluted\\n\\nCategory: Festival / Event\\nImpact: HIGH\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Festival / Event
-UID:20260504-evt-18@zrconsulting.de
+SUMMARY:gamescom LatAm
+DESCRIPTION:Gamescom's Latin American edition — growing LATAM market visibility\\n\\nDates: 2026-04-29 to 2026-05-03\\n\\nCategory: Trade Show / Expo\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Trade Show / Expo
+UID:20260429-evt-14@zrconsulting.de
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260522
+DTEND;VALUE=DATE:20260525
+SUMMARY:EGX at MCM London
+DESCRIPTION:UK's biggest gaming expo\, now co-located with MCM Comic Con at ExCeL London\\n\\nDates: 2026-05-22 to 2026-05-24\\n\\nCategory: Trade Show / Expo\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Trade Show / Expo
+UID:20260522-evt-15@zrconsulting.de
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260506
+DTEND;VALUE=DATE:20260509
+SUMMARY:Unreal Fest
+DESCRIPTION:Epic Games' Unreal Engine developer conference\\n\\nDates: 2026-05-06 to 2026-05-08\\n\\nCategory: Trade Show / Expo\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Trade Show / Expo
+UID:20260506-evt-16@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260514
-DTEND;VALUE=DATE:20260514
+DTEND;VALUE=DATE:20260515
 SUMMARY:PlayStation State of Play
-DESCRIPTION:Sony showcase — pulls press attention and dominates news cycle for 2–3 days\\n\\nCategory: Showcase / Direct\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+DESCRIPTION:Sony showcase — pulls press attention and dominates news cycle for 2-3 days\\n\\nCategory: Showcase / Direct\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Showcase / Direct
-UID:20260514-evt-19@zrconsulting.de
+UID:20260514-evt-17@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260520
+DTSTART;VALUE=DATE:20260517
 DTEND;VALUE=DATE:20260520
-SUMMARY:Nordic Game Conference
-DESCRIPTION:Malmö\, Sweden — key Nordic/European indie and AA industry event\, strong Nordic press\\n\\nCategory: Trade Show / Expo\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+SUMMARY:Digital Dragons
+DESCRIPTION:Central European game dev conference\, Krakow — strong Polish/CEE industry presence\\n\\nDates: 2026-05-17 to 2026-05-19\\n\\nCategory: Trade Show / Expo\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Trade Show / Expo
-UID:20260520-evt-20@zrconsulting.de
+UID:20260517-evt-18@zrconsulting.de
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260522
+DTEND;VALUE=DATE:20260525
+SUMMARY:BitSummit
+DESCRIPTION:Japanese indie game expo\, Kyoto — relevant for Japan-facing indie titles\\n\\nDates: 2026-05-22 to 2026-05-24\\n\\nCategory: Trade Show / Expo\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Trade Show / Expo
+UID:20260522-evt-19@zrconsulting.de
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260525
+DTEND;VALUE=DATE:20260530
+SUMMARY:Nordic Game Conference
+DESCRIPTION:Malmo\, Sweden — key Nordic/European indie and AA industry event\\n\\nDates: 2026-05-25 to 2026-05-29\\n\\nCategory: Trade Show / Expo\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Trade Show / Expo
+UID:20260525-evt-20@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260528
-DTEND;VALUE=DATE:20260528
+DTEND;VALUE=DATE:20260529
 SUMMARY:Wholesome Direct
-DESCRIPTION:Cozy/wholesome games showcase — niche but passionate audience\, strong social media reach\\n\\nCategory: Showcase / Direct\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+DESCRIPTION:Cozy/wholesome games showcase — niche but passionate audience\\n\\nCategory: Showcase / Direct\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Showcase / Direct
 UID:20260528-evt-21@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260607
-DTEND;VALUE=DATE:20260607
+DTSTART;VALUE=DATE:20260530
+DTEND;VALUE=DATE:20260601
+SUMMARY:TwitchCon Europe
+DESCRIPTION:Twitch's European convention — streaming and content creator community\\n\\nDates: 2026-05-30 to 2026-05-31\\n\\nCategory: Festival / Event\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Festival / Event
+UID:20260530-evt-22@zrconsulting.de
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260605
+DTEND;VALUE=DATE:20260606
 SUMMARY:Summer Game Fest
-DESCRIPTION:Geoff Keighley's showcase — announcement coverage dominates all gaming media for days\\n\\nCategory: Showcase / Direct\\nImpact: HIGH\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+DESCRIPTION:Geoff Keighley's showcase\, Los Angeles — announcement coverage dominates all gaming media\\n\\nCategory: Showcase / Direct\\nImpact: HIGH\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Showcase / Direct
-UID:20260607-evt-22@zrconsulting.de
+UID:20260605-evt-23@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260608
-DTEND;VALUE=DATE:20260608
+DTEND;VALUE=DATE:20260609
 SUMMARY:Xbox Games Showcase
 DESCRIPTION:Microsoft's annual showcase — major reveals\, press fully focused on announcements\\n\\nCategory: Showcase / Direct\\nImpact: HIGH\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Showcase / Direct
-UID:20260608-evt-23@zrconsulting.de
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260610
-DTEND;VALUE=DATE:20260610
-SUMMARY:Nintendo Direct
-DESCRIPTION:E3-season Nintendo Direct — typically their biggest of the year\, massive press impact\\n\\nCategory: Showcase / Direct\\nImpact: HIGH\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Showcase / Direct
-UID:20260610-evt-24@zrconsulting.de
+UID:20260608-evt-24@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260608
-DTEND;VALUE=DATE:20260608
+DTEND;VALUE=DATE:20260609
 SUMMARY:PC Gaming Show
-DESCRIPTION:PC-focused showcase — PC press diverted to coverage for 2–3 days\\n\\nCategory: Showcase / Direct\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+DESCRIPTION:PC-focused showcase — PC press diverted to coverage for 2-3 days\\n\\nCategory: Showcase / Direct\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Showcase / Direct
 UID:20260608-evt-25@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260609
+DTSTART;VALUE=DATE:20260608
 DTEND;VALUE=DATE:20260609
-SUMMARY:Ubisoft Forward
-DESCRIPTION:Ubisoft's showcase — AAA reveals pull media attention in the E3 window\\n\\nCategory: Showcase / Direct\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+SUMMARY:Future Games Show
+DESCRIPTION:Future Publishing's showcase — broad coverage\, indie and AA visibility affected\\n\\nCategory: Showcase / Direct\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Showcase / Direct
-UID:20260609-evt-26@zrconsulting.de
+UID:20260608-evt-26@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260608
-DTEND;VALUE=DATE:20260608
-SUMMARY:Future Games Show
-DESCRIPTION:Future Publishing's showcase — broad coverage\, indie and AA visibility affected\\n\\nCategory: Showcase / Direct\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+DTEND;VALUE=DATE:20260609
+SUMMARY:Devolver Digital Showcase
+DESCRIPTION:Devolver's showcase — indie-focused\, high social media engagement\\n\\nCategory: Showcase / Direct\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Showcase / Direct
 UID:20260608-evt-27@zrconsulting.de
 STATUS:CONFIRMED
@@ -289,471 +289,421 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260609
-DTEND;VALUE=DATE:20260609
-SUMMARY:Capcom Showcase
-DESCRIPTION:Capcom's dedicated showcase — Monster Hunter\, Resident Evil\, Street Fighter news dominates\\n\\nCategory: Showcase / Direct\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+DTEND;VALUE=DATE:20260610
+SUMMARY:Ubisoft Forward
+DESCRIPTION:Ubisoft's showcase — AAA reveals pull media attention\\n\\nCategory: Showcase / Direct\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Showcase / Direct
 UID:20260609-evt-28@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260610
+DTSTART;VALUE=DATE:20260609
 DTEND;VALUE=DATE:20260610
-SUMMARY:Square Enix Presents
-DESCRIPTION:Square Enix showcase — Final Fantasy\, Dragon Quest news pulls JRPG audience attention\\n\\nCategory: Showcase / Direct\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+SUMMARY:Capcom Showcase
+DESCRIPTION:Capcom's dedicated showcase — Monster Hunter\, Resident Evil\, Street Fighter news\\n\\nCategory: Showcase / Direct\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Showcase / Direct
-UID:20260610-evt-29@zrconsulting.de
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260610
-DTEND;VALUE=DATE:20260610
-SUMMARY:Bandai Namco Next
-DESCRIPTION:Bandai Namco showcase — anime games\, Tekken\, Elden Ring news when relevant\\n\\nCategory: Showcase / Direct\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Showcase / Direct
-UID:20260610-evt-30@zrconsulting.de
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260608
-DTEND;VALUE=DATE:20260608
-SUMMARY:Devolver Digital Showcase
-DESCRIPTION:Devolver's showcase — indie-focused\, high social media engagement\, 24-hour cycle\\n\\nCategory: Showcase / Direct\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Showcase / Direct
-UID:20260608-evt-31@zrconsulting.de
+UID:20260609-evt-29@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260609
-DTEND;VALUE=DATE:20260609
+DTEND;VALUE=DATE:20260610
 SUMMARY:Day of the Devs
-DESCRIPTION:iam8bit's indie showcase — curated indie selection\, press-friendly\, good discovery moment\\n\\nCategory: Showcase / Direct\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+DESCRIPTION:iam8bit's indie showcase — curated indie selection\, press-friendly\\n\\nCategory: Showcase / Direct\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Showcase / Direct
-UID:20260609-evt-32@zrconsulting.de
+UID:20260609-evt-30@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260612
-DTEND;VALUE=DATE:20260612
-SUMMARY:Tribeca Games Spotlight
-DESCRIPTION:Tribeca Festival's gaming track — narrative/art games get cultural press crossover\\n\\nCategory: Festival / Event\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Festival / Event
-UID:20260612-evt-33@zrconsulting.de
+DTSTART;VALUE=DATE:20260609
+DTEND;VALUE=DATE:20260610
+SUMMARY:Latin American Games Showcase
+DESCRIPTION:LATAM-focused showcase — growing market\, Spanish/Portuguese localisation relevant\\n\\nCategory: Showcase / Direct\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Showcase / Direct
+UID:20260609-evt-31@zrconsulting.de
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260610
+DTEND;VALUE=DATE:20260611
+SUMMARY:Nintendo Direct
+DESCRIPTION:E3-season Nintendo Direct — typically their biggest of the year\\n\\nCategory: Showcase / Direct\\nImpact: HIGH\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Showcase / Direct
+UID:20260610-evt-32@zrconsulting.de
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260610
+DTEND;VALUE=DATE:20260611
+SUMMARY:Square Enix Presents
+DESCRIPTION:Square Enix showcase — Final Fantasy\, Dragon Quest audience pull\\n\\nCategory: Showcase / Direct\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Showcase / Direct
+UID:20260610-evt-33@zrconsulting.de
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260610
+DTEND;VALUE=DATE:20260611
+SUMMARY:Bandai Namco Next
+DESCRIPTION:Bandai Namco showcase — anime games\, Tekken\, Elden Ring news\\n\\nCategory: Showcase / Direct\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Showcase / Direct
+UID:20260610-evt-34@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260611
-DTEND;VALUE=DATE:20260611
+DTEND;VALUE=DATE:20260612
 SUMMARY:Annapurna Interactive Showcase
-DESCRIPTION:Annapurna's showcase — prestigious indie publisher\, strong critical press attention\\n\\nCategory: Showcase / Direct\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+DESCRIPTION:Annapurna's showcase — prestigious indie publisher\, strong critical press\\n\\nCategory: Showcase / Direct\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Showcase / Direct
-UID:20260611-evt-34@zrconsulting.de
+UID:20260611-evt-35@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260609
-DTEND;VALUE=DATE:20260609
-SUMMARY:Latin American Games Showcase
-DESCRIPTION:LATAM-focused showcase — growing market\, relevant for Spanish/Portuguese localisation\\n\\nCategory: Showcase / Direct\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Showcase / Direct
-UID:20260609-evt-35@zrconsulting.de
+DTSTART;VALUE=DATE:20260612
+DTEND;VALUE=DATE:20260615
+SUMMARY:Tribeca Games Spotlight
+DESCRIPTION:Tribeca Festival's gaming track — narrative/art games get cultural press crossover\\n\\nDates: 2026-06-12 to 2026-06-14\\n\\nCategory: Festival / Event\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Festival / Event
+UID:20260612-evt-36@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260625
-DTEND;VALUE=DATE:20260625
+DTEND;VALUE=DATE:20260710
 SUMMARY:Steam Summer Sale
-DESCRIPTION:Price anchor effect — players wait for discounts\, full-price launches face resistance\\n\\nCategory: Sale / Promotion\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+DESCRIPTION:Price anchor effect — players wait for discounts\, full-price launches face resistance\\n\\nDates: 2026-06-25 to 2026-07-09\\n\\nCategory: Sale / Promotion\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Sale / Promotion
-UID:20260625-evt-36@zrconsulting.de
+UID:20260625-evt-37@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260714
-DTEND;VALUE=DATE:20260714
+DTSTART;VALUE=DATE:20260708
+DTEND;VALUE=DATE:20260711
 SUMMARY:Develop:Brighton
-DESCRIPTION:UK developer conference\, Brighton — key UK industry networking\, talks\, and recruitment\\n\\nCategory: Trade Show / Expo\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+DESCRIPTION:UK developer conference\, Brighton — key UK industry networking and talks\\n\\nDates: 2026-07-08 to 2026-07-10\\n\\nCategory: Trade Show / Expo\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Trade Show / Expo
-UID:20260714-evt-37@zrconsulting.de
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260718
-DTEND;VALUE=DATE:20260718
-SUMMARY:BitSummit
-DESCRIPTION:Japanese indie game expo in Kyoto — relevant for Japan-facing indie titles\\n\\nCategory: Trade Show / Expo\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Trade Show / Expo
-UID:20260718-evt-38@zrconsulting.de
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260724
-DTEND;VALUE=DATE:20260724
-SUMMARY:ChinaJoy
-DESCRIPTION:China's largest gaming expo\, Shanghai — relevant if targeting Chinese market\\n\\nCategory: Trade Show / Expo\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Trade Show / Expo
-UID:20260724-evt-39@zrconsulting.de
+UID:20260708-evt-38@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260715
-DTEND;VALUE=DATE:20260715
+DTEND;VALUE=DATE:20260716
 SUMMARY:EA Spotlight
-DESCRIPTION:EA's showcase event — sports titles\, Battlefield\, and major EA IPs pull audience attention\\n\\nCategory: Showcase / Direct\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+DESCRIPTION:EA's showcase event — sports titles\, Battlefield\, major EA IPs pull attention\\n\\nCategory: Showcase / Direct\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Showcase / Direct
-UID:20260715-evt-40@zrconsulting.de
+UID:20260715-evt-39@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260819
-DTEND;VALUE=DATE:20260819
-SUMMARY:Gamescom
-DESCRIPTION:Europe's biggest games show in Cologne — avoid launch week\, post-show slot is valuable\\n\\nCategory: Trade Show / Expo\\nImpact: HIGH\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+DTSTART;VALUE=DATE:20260724
+DTEND;VALUE=DATE:20260728
+SUMMARY:ChinaJoy
+DESCRIPTION:China's largest gaming expo\, Shanghai — relevant if targeting Chinese market\\n\\nDates: 2026-07-24 to 2026-07-27\\n\\nCategory: Trade Show / Expo\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Trade Show / Expo
-UID:20260819-evt-41@zrconsulting.de
+UID:20260724-evt-40@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260818
-DTEND;VALUE=DATE:20260818
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
 SUMMARY:Opening Night Live
 DESCRIPTION:Keighley's Gamescom kick-off — major reveals\, dominates the full week's coverage\\n\\nCategory: Showcase / Direct\\nImpact: HIGH\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Showcase / Direct
-UID:20260818-evt-42@zrconsulting.de
+UID:20260825-evt-41@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260820
-DTEND;VALUE=DATE:20260820
-SUMMARY:Future Games Show at Gamescom
-DESCRIPTION:Future's Gamescom showcase — additional coverage saturation during show week\\n\\nCategory: Showcase / Direct\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Showcase / Direct
-UID:20260820-evt-43@zrconsulting.de
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260820
-DTEND;VALUE=DATE:20260820
-SUMMARY:THQ Nordic Showcase
-DESCRIPTION:THQ Nordic's Gamescom showcase — AA titles\, smaller but pulls genre-specific audiences\\n\\nCategory: Showcase / Direct\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Showcase / Direct
-UID:20260820-evt-44@zrconsulting.de
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260819
-DTEND;VALUE=DATE:20260819
-SUMMARY:Nacon Connect
-DESCRIPTION:Nacon's showcase — AA titles\, racing\, horror\, and licensed games\\n\\nCategory: Showcase / Direct\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Showcase / Direct
-UID:20260819-evt-45@zrconsulting.de
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260820
-DTEND;VALUE=DATE:20260820
-SUMMARY:Focus Entertainment What's Next
-DESCRIPTION:Focus' Gamescom showcase — relevant for Soulslike and AA action fans\\n\\nCategory: Showcase / Direct\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Showcase / Direct
-UID:20260820-evt-46@zrconsulting.de
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260820
-DTEND;VALUE=DATE:20260820
-SUMMARY:Awesome Indies Showcase
-DESCRIPTION:Indie showcase at Gamescom — curated indie selection\, moderate press coverage\\n\\nCategory: Showcase / Direct\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Showcase / Direct
-UID:20260820-evt-47@zrconsulting.de
+DTSTART;VALUE=DATE:20260826
+DTEND;VALUE=DATE:20260831
+SUMMARY:Gamescom
+DESCRIPTION:Europe's biggest games show\, Cologne — avoid launch week\, post-show slot is valuable\\n\\nDates: 2026-08-26 to 2026-08-30\\n\\nCategory: Trade Show / Expo\\nImpact: HIGH\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Trade Show / Expo
+UID:20260826-evt-42@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260827
-DTEND;VALUE=DATE:20260827
-SUMMARY:Gamescom Asia (Singapore)
-DESCRIPTION:Gamescom's Asian edition in Singapore — growing SEA market presence\\n\\nCategory: Trade Show / Expo\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Trade Show / Expo
-UID:20260827-evt-48@zrconsulting.de
+DTEND;VALUE=DATE:20260828
+SUMMARY:Future Games Show at Gamescom
+DESCRIPTION:Future's Gamescom showcase — additional coverage saturation during show week\\n\\nCategory: Showcase / Direct\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Showcase / Direct
+UID:20260827-evt-43@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260924
-DTEND;VALUE=DATE:20260924
-SUMMARY:Tokyo Game Show
-DESCRIPTION:Japan's largest game show\, Makuhari Messe — critical for JRPG/Japanese titles\\n\\nCategory: Trade Show / Expo\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+DTSTART;VALUE=DATE:20260827
+DTEND;VALUE=DATE:20260828
+SUMMARY:THQ Nordic Showcase
+DESCRIPTION:THQ Nordic's Gamescom showcase — AA titles\, genre-specific audiences\\n\\nCategory: Showcase / Direct\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Showcase / Direct
+UID:20260827-evt-44@zrconsulting.de
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260826
+DTEND;VALUE=DATE:20260827
+SUMMARY:Nacon Connect
+DESCRIPTION:Nacon's showcase — AA titles\, racing\, horror\, and licensed games\\n\\nCategory: Showcase / Direct\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Showcase / Direct
+UID:20260826-evt-45@zrconsulting.de
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260827
+DTEND;VALUE=DATE:20260828
+SUMMARY:Focus Entertainment What's Next
+DESCRIPTION:Focus' Gamescom showcase — relevant for Soulslike and AA action fans\\n\\nCategory: Showcase / Direct\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Showcase / Direct
+UID:20260827-evt-46@zrconsulting.de
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260827
+DTEND;VALUE=DATE:20260828
+SUMMARY:Awesome Indies Showcase
+DESCRIPTION:Indie showcase at Gamescom — curated indie selection\\n\\nCategory: Showcase / Direct\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Showcase / Direct
+UID:20260827-evt-47@zrconsulting.de
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260908
+SUMMARY:PAX West
+DESCRIPTION:Fan-focused expo in Seattle — demos\, community events\, indie presence\\n\\nDates: 2026-09-04 to 2026-09-07\\n\\nCategory: Trade Show / Expo\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Trade Show / Expo
-UID:20260924-evt-49@zrconsulting.de
+UID:20260904-evt-48@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260910
-DTEND;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260911
 SUMMARY:PlayStation State of Play
 DESCRIPTION:Sony's September showcase — typically focuses on holiday lineup\\n\\nCategory: Showcase / Direct\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Showcase / Direct
-UID:20260910-evt-50@zrconsulting.de
+UID:20260910-evt-49@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260915
-DTEND;VALUE=DATE:20260915
-SUMMARY:PlayStation Showcase
-DESCRIPTION:Sony's major showcase (when it runs) — bigger than State of Play\, huge reveals\, rare but impactful\\n\\nCategory: Showcase / Direct\\nImpact: HIGH\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Showcase / Direct
-UID:20260915-evt-51@zrconsulting.de
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260922
+SUMMARY:Tokyo Game Show
+DESCRIPTION:Japan's largest game show\, Makuhari Messe — 5 days for the first time\, 300K expected\\n\\nDates: 2026-09-17 to 2026-09-21\\n\\nCategory: Trade Show / Expo\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Trade Show / Expo
+UID:20260917-evt-50@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260920
-DTEND;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260921
 SUMMARY:Sega Showcase
-DESCRIPTION:Sega's showcase — Yakuza\, Sonic\, Persona\, and strategy franchises pull specific audiences\\n\\nCategory: Showcase / Direct\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+DESCRIPTION:Sega's showcase — Yakuza\, Sonic\, Persona franchises\\n\\nCategory: Showcase / Direct\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Showcase / Direct
-UID:20260920-evt-52@zrconsulting.de
+UID:20260920-evt-51@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261005
-DTEND;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261013
 SUMMARY:Steam Next Fest
-DESCRIPTION:Autumn demo festival — second occurrence\, demo noise competes with launches\\n\\nCategory: Festival / Event\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+DESCRIPTION:Autumn demo festival — second occurrence\, demo noise competes with launches\\n\\nDates: 2026-10-05 to 2026-10-12\\n\\nCategory: Festival / Event\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Festival / Event
-UID:20261005-evt-53@zrconsulting.de
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261027
-DTEND;VALUE=DATE:20261027
-SUMMARY:Steam Autumn Sale
-DESCRIPTION:Late October sale — price expectations drop as sale approaches\\n\\nCategory: Sale / Promotion\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Sale / Promotion
-UID:20261027-evt-54@zrconsulting.de
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261015
-DTEND;VALUE=DATE:20261015
-SUMMARY:Twitch Galaxies
-DESCRIPTION:Twitch's own showcase event — streaming-focused reveals\, moderate impact\\n\\nCategory: Showcase / Direct\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Showcase / Direct
-UID:20261015-evt-55@zrconsulting.de
+UID:20261005-evt-52@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261008
-DTEND;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20261013
 SUMMARY:Brasil Game Show
-DESCRIPTION:Latin America's largest game show\, São Paulo — key for LATAM market visibility\\n\\nCategory: Trade Show / Expo\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+DESCRIPTION:Latin America's largest game show\, Sao Paulo — key for LATAM visibility\\n\\nDates: 2026-10-08 to 2026-10-12\\n\\nCategory: Trade Show / Expo\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Trade Show / Expo
-UID:20261008-evt-56@zrconsulting.de
+UID:20261008-evt-53@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261022
-DTEND;VALUE=DATE:20261022
-SUMMARY:EGX London
-DESCRIPTION:UK's largest consumer gaming expo — strong UK press coverage and influencer presence\\n\\nCategory: Trade Show / Expo\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Trade Show / Expo
-UID:20261022-evt-57@zrconsulting.de
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261029
-DTEND;VALUE=DATE:20261029
-SUMMARY:Paris Games Week
-DESCRIPTION:France's consumer gaming expo — relevant for French market\, occasionally hosts Sony reveals\\n\\nCategory: Trade Show / Expo\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Trade Show / Expo
-UID:20261029-evt-58@zrconsulting.de
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:Twitch Galaxies
+DESCRIPTION:Twitch's showcase event — streaming-focused reveals\\n\\nCategory: Showcase / Direct\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Showcase / Direct
+UID:20261015-evt-54@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261023
-DTEND;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261026
 SUMMARY:Milan Games Week
-DESCRIPTION:Italy's largest gaming event — strong Southern European market visibility\\n\\nCategory: Trade Show / Expo\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+DESCRIPTION:Italy's largest gaming event — Southern European market visibility\\n\\nDates: 2026-10-23 to 2026-10-25\\n\\nCategory: Trade Show / Expo\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Trade Show / Expo
-UID:20261023-evt-59@zrconsulting.de
+UID:20261023-evt-55@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261210
-DTEND;VALUE=DATE:20261210
-SUMMARY:The Game Awards
-DESCRIPTION:TGA dominates media for 3 weeks — GOTY discourse plus major world premiere reveals\\n\\nCategory: Awards Ceremony\\nImpact: HIGH\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Awards Ceremony
-UID:20261210-evt-60@zrconsulting.de
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261127
-DTEND;VALUE=DATE:20261127
-SUMMARY:Black Friday
-DESCRIPTION:Consumer attention on deals\, not new releases — gifting spike possible\\n\\nCategory: Sale / Promotion\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261104
+SUMMARY:Steam Autumn Sale
+DESCRIPTION:Late October sale — price expectations drop as sale approaches\\n\\nDates: 2026-10-27 to 2026-11-03\\n\\nCategory: Sale / Promotion\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Sale / Promotion
-UID:20261127-evt-61@zrconsulting.de
+UID:20261027-evt-56@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261112
-DTEND;VALUE=DATE:20261112
-SUMMARY:G-Star Korea
-DESCRIPTION:South Korea's major gaming expo\, Busan — critical for Korean MMO/F2P market\\n\\nCategory: Trade Show / Expo\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261102
+SUMMARY:Paris Games Week
+DESCRIPTION:France's consumer gaming expo — relevant for French market\\n\\nDates: 2026-10-29 to 2026-11-01\\n\\nCategory: Trade Show / Expo\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Trade Show / Expo
-UID:20261112-evt-62@zrconsulting.de
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261120
-DTEND;VALUE=DATE:20261120
-SUMMARY:Golden Joystick Awards
-DESCRIPTION:GamesRadar/Future's public-voted awards — consumer engagement\, moderate press\\n\\nCategory: Awards Ceremony\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Awards Ceremony
-UID:20261120-evt-63@zrconsulting.de
+UID:20261029-evt-57@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261105
-DTEND;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
 SUMMARY:Day of the Devs: Fall Edition
 DESCRIPTION:iam8bit's autumn indie showcase — curated\, press-friendly\\n\\nCategory: Showcase / Direct\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Showcase / Direct
-UID:20261105-evt-64@zrconsulting.de
+UID:20261105-evt-58@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261107
-DTEND;VALUE=DATE:20261107
-SUMMARY:BlizzCon / Xbox equivalent
-DESCRIPTION:Major publisher community event (when it runs) — dominates news for the weekend\\n\\nCategory: Showcase / Direct\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Showcase / Direct
-UID:20261107-evt-65@zrconsulting.de
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261115
-DTEND;VALUE=DATE:20261115
-SUMMARY:XO / Xbox Fan Fest
-DESCRIPTION:Xbox community event — minor press impact\, pulls Xbox-specific audience\\n\\nCategory: Showcase / Direct\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Showcase / Direct
-UID:20261115-evt-66@zrconsulting.de
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261116
+SUMMARY:G-Star Korea
+DESCRIPTION:South Korea's major gaming expo\, Busan — critical for Korean MMO/F2P market\\n\\nDates: 2026-11-12 to 2026-11-15\\n\\nCategory: Trade Show / Expo\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Trade Show / Expo
+UID:20261112-evt-59@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261118
-DTEND;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
 SUMMARY:Women in Games Awards
 DESCRIPTION:Industry diversity awards — networking\, visibility for inclusive studios\\n\\nCategory: Awards Ceremony\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Awards Ceremony
-UID:20261118-evt-67@zrconsulting.de
+UID:20261118-evt-60@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261120
-DTEND;VALUE=DATE:20261120
-SUMMARY:Dreamhack (multiple)
-DESCRIPTION:LAN/esports festival — multiple dates globally\, strong community engagement\\n\\nCategory: Festival / Event\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Festival / Event
-UID:20261120-evt-68@zrconsulting.de
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261210
-DTEND;VALUE=DATE:20261210
-SUMMARY:The Game Awards
-DESCRIPTION:TGA show night — world premieres\, massive live audience\, dominates entire month's coverage\\n\\nCategory: Awards Ceremony\\nImpact: HIGH\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+DTEND;VALUE=DATE:20261121
+SUMMARY:Golden Joystick Awards
+DESCRIPTION:GamesRadar/Future's public-voted awards — consumer engagement\\n\\nCategory: Awards Ceremony\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Awards Ceremony
-UID:20261210-evt-69@zrconsulting.de
+UID:20261120-evt-61@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261218
-DTEND;VALUE=DATE:20261218
-SUMMARY:Steam Winter Sale
-DESCRIPTION:Year-end sale — launch by Dec 15 or hold until January\\n\\nCategory: Sale / Promotion\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261123
+SUMMARY:Dreamhack
+DESCRIPTION:LAN/esports festival — strong community engagement\\n\\nDates: 2026-11-20 to 2026-11-22\\n\\nCategory: Festival / Event\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Festival / Event
+UID:20261120-evt-62@zrconsulting.de
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261201
+SUMMARY:Black Friday
+DESCRIPTION:Consumer attention on deals\, not new releases — gifting spike possible\\n\\nDates: 2026-11-27 to 2026-11-30\\n\\nCategory: Sale / Promotion\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Sale / Promotion
-UID:20261218-evt-70@zrconsulting.de
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261215
-DTEND;VALUE=DATE:20261215
-SUMMARY:PlayStation Wrap-Up
-DESCRIPTION:Sony's year-in-review — social media noise\, minimal launch impact\\n\\nCategory: Showcase / Direct\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Showcase / Direct
-UID:20261215-evt-71@zrconsulting.de
+UID:20261127-evt-63@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261208
-DTEND;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
 SUMMARY:Indie World / Nintendo
 DESCRIPTION:Nintendo sometimes runs a Dec showcase — minor distraction\\n\\nCategory: Showcase / Direct\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Showcase / Direct
-UID:20261208-evt-72@zrconsulting.de
+UID:20261208-evt-64@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20261220
-DTEND;VALUE=DATE:20261220
-SUMMARY:Epic Games Store Free Games
-DESCRIPTION:Epic's annual free games giveaway — player attention on free titles\, not purchases\\n\\nCategory: Sale / Promotion\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Sale / Promotion
-UID:20261220-evt-73@zrconsulting.de
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:The Game Awards
+DESCRIPTION:TGA show night — world premieres\, massive live audience\, dominates entire month\\n\\nCategory: Awards Ceremony\\nImpact: HIGH\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Awards Ceremony
+UID:20261210-evt-65@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261215
-DTEND;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261230
 SUMMARY:GOG Winter Sale
-DESCRIPTION:GOG's year-end sale — niche but loyal DRM-free audience\\n\\nCategory: Sale / Promotion\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+DESCRIPTION:GOG's year-end sale — niche but loyal DRM-free audience\\n\\nDates: 2026-12-15 to 2026-12-29\\n\\nCategory: Sale / Promotion\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Sale / Promotion
-UID:20261215-evt-74@zrconsulting.de
+UID:20261215-evt-66@zrconsulting.de
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:PlayStation Wrap-Up
+DESCRIPTION:Sony's year-in-review — social media noise\, minimal launch impact\\n\\nCategory: Showcase / Direct\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Showcase / Direct
+UID:20261215-evt-67@zrconsulting.de
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20270106
+SUMMARY:Steam Winter Sale
+DESCRIPTION:Year-end sale — launch by Dec 15 or hold until January\\n\\nDates: 2026-12-18 to 2027-01-05\\n\\nCategory: Sale / Promotion\\nImpact: MEDIUM\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Sale / Promotion
+UID:20261218-evt-68@zrconsulting.de
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20270101
+SUMMARY:Epic Games Store Free Games
+DESCRIPTION:Epic's annual free games giveaway — player attention on free titles\\n\\nDates: 2026-12-20 to 2026-12-31\\n\\nCategory: Sale / Promotion\\nImpact: LOW\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Sale / Promotion
+UID:20261220-evt-69@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -763,7 +713,7 @@ DTEND;VALUE=DATE:20260430
 SUMMARY:🎮 Saros
 DESCRIPTION:Game Release: Saros\\nGenre: Action\\nPlatforms: PlayStation 5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260430-rel-75@zrconsulting.de
+UID:20260430-rel-70@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -773,7 +723,7 @@ DTEND;VALUE=DATE:20260430
 SUMMARY:🎮 Heroes of Might & Magic: Olden Era
 DESCRIPTION:Game Release: Heroes of Might & Magic: Olden Era\\nGenre: Strategy\\nPlatforms: PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260430-rel-76@zrconsulting.de
+UID:20260430-rel-71@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -783,7 +733,7 @@ DTEND;VALUE=DATE:20260426
 SUMMARY:🎮 Aphelion (2025)
 DESCRIPTION:Game Release: Aphelion (2025)\\nGenre: Adventure\\nPlatforms: PC\, PlayStation 5\, Xbox One\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260426-rel-77@zrconsulting.de
+UID:20260426-rel-72@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -793,7 +743,7 @@ DTEND;VALUE=DATE:20260429
 SUMMARY:🎮 Industria 2
 DESCRIPTION:Game Release: Industria 2\\nGenre: Action\\nPlatforms: PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260429-rel-78@zrconsulting.de
+UID:20260429-rel-73@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -803,7 +753,7 @@ DTEND;VALUE=DATE:20260527
 SUMMARY:🎮 007 First Light
 DESCRIPTION:Game Release: 007 First Light\\nGenre: Action\\nPlatforms: PC\, PlayStation 5\, Xbox Series S/X\, Nintendo Switch\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260527-rel-79@zrconsulting.de
+UID:20260527-rel-74@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -813,7 +763,7 @@ DTEND;VALUE=DATE:20260512
 SUMMARY:🎮 Directive 8020
 DESCRIPTION:Game Release: Directive 8020\\nGenre: Adventure\, Action\\nPlatforms: PC\, PlayStation 5\, Xbox Series S/X\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260512-rel-80@zrconsulting.de
+UID:20260512-rel-75@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -823,7 +773,7 @@ DTEND;VALUE=DATE:20260519
 SUMMARY:🎮 Forza Horizon 6
 DESCRIPTION:Game Release: Forza Horizon 6\\nGenre: Racing\\nPlatforms: PC\, Xbox Series S/X\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260519-rel-81@zrconsulting.de
+UID:20260519-rel-76@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -833,7 +783,7 @@ DTEND;VALUE=DATE:20260522
 SUMMARY:🎮 Lego Batman: Legacy of the Dark Knight
 DESCRIPTION:Game Release: Lego Batman: Legacy of the Dark Knight\\nGenre: Adventure\, Action\\nPlatforms: PC\, PlayStation 5\, Xbox Series S/X\, Nintendo Switch\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260522-rel-82@zrconsulting.de
+UID:20260522-rel-77@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -843,7 +793,7 @@ DTEND;VALUE=DATE:20260507
 SUMMARY:🎮 Mixtape (2025)
 DESCRIPTION:Game Release: Mixtape (2025)\\nGenre: Indie\, Adventure\\nPlatforms: PC\, PlayStation 5\, Xbox Series S/X\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260507-rel-83@zrconsulting.de
+UID:20260507-rel-78@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -853,7 +803,7 @@ DTEND;VALUE=DATE:20260605
 SUMMARY:🎮 Gothic 1 Remake
 DESCRIPTION:Game Release: Gothic 1 Remake\\nGenre: Action\, RPG\\nPlatforms: PC\, PlayStation 5\, Xbox One\, PlayStation 4\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260605-rel-84@zrconsulting.de
+UID:20260605-rel-79@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -863,7 +813,7 @@ DTEND;VALUE=DATE:20260618
 SUMMARY:🎮 The Adventures of Elliot: The Millennium Tales
 DESCRIPTION:Game Release: The Adventures of Elliot: The Millennium Tales\\nGenre: Adventure\, RPG\\nPlatforms: PC\, PlayStation 5\, Xbox Series S/X\, Nintendo Switch\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260618-rel-85@zrconsulting.de
+UID:20260618-rel-80@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -873,7 +823,7 @@ DTEND;VALUE=DATE:20260709
 SUMMARY:🎮 Assassin's Creed Back Flag Resynced
 DESCRIPTION:Game Release: Assassin's Creed Back Flag Resynced\\nGenre: Adventure\, Action\\nPlatforms: PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260709-rel-86@zrconsulting.de
+UID:20260709-rel-81@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -883,7 +833,7 @@ DTEND;VALUE=DATE:20260804
 SUMMARY:🎮 Beast of Reincarnation
 DESCRIPTION:Game Release: Beast of Reincarnation\\nGenre: Action\, RPG\\nPlatforms: PC\, PlayStation 5\, Xbox Series S/X\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260804-rel-87@zrconsulting.de
+UID:20260804-rel-82@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -893,7 +843,7 @@ DTEND;VALUE=DATE:20260831
 SUMMARY:🎮 Lords of the Fallen 2
 DESCRIPTION:Game Release: Lords of the Fallen 2\\nGenre: Action\, RPG\\nPlatforms: PC\, PlayStation 5\, Xbox Series S/X\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260831-rel-88@zrconsulting.de
+UID:20260831-rel-83@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -903,7 +853,7 @@ DTEND;VALUE=DATE:20260915
 SUMMARY:🎮 Marvel's Wolverine
 DESCRIPTION:Game Release: Marvel's Wolverine\\nGenre: Action\\nPlatforms: PlayStation 5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260915-rel-89@zrconsulting.de
+UID:20260915-rel-84@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -913,7 +863,7 @@ DTEND;VALUE=DATE:20260909
 SUMMARY:🎮 Phantom Blade Zero
 DESCRIPTION:Game Release: Phantom Blade Zero\\nGenre: Adventure\, Action\\nPlatforms: PC\, PlayStation 5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260909-rel-90@zrconsulting.de
+UID:20260909-rel-85@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
