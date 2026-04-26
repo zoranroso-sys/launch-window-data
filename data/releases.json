@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-04-26T09:21:52.399404Z",
+    "generated_at": "2026-04-26T14:20:30.280465Z",
     "upcoming_count": 16,
     "next_update": "2026-05-03",
     "sources": [
@@ -355,6 +355,15 @@
       "approx_date": "2026-07-24",
       "end_date": "2026-07-27",
       "notes": "China's largest gaming expo, Shanghai — relevant if targeting Chinese market"
+    },
+    {
+      "month": 8,
+      "label": "gamescom dev",
+      "severity": "high",
+      "category": "trade_show",
+      "approx_date": "2026-08-23",
+      "end_date": "2026-08-25",
+      "notes": "Europe's largest developer conference (formerly devcom), Cologne — 2 days of talks, B2B matchmaking, indie expo, networking"
     },
     {
       "month": 8,
