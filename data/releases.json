@@ -1,10 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-04-26T06:59:25.488732Z",
-    "upcoming_count": 0,
-    "historical_count": 67,
-    "recent_count": 0,
-    "next_update": "2026-05-03"
+    "generated_at": "2026-04-26T07:16:58.664146Z",
+    "upcoming_count": 16,
+    "next_update": "2026-05-03",
+    "sources": [
+      "rawg",
+      "igdb",
+      "steamspy"
+    ]
   },
   "industry_events": [
     {
@@ -65,870 +68,682 @@
   "month_index": {
     "1": {
       "upcoming_releases": [],
-      "top_performers": [],
-      "recent_top_sellers": []
+      "top_performers": [
+        {
+          "title": "Palworld",
+          "tags": [
+            "Survival",
+            "Open World",
+            "Co-op",
+            "Crafting"
+          ],
+          "peak_ccu": 18028,
+          "owners": 75000000
+        },
+        {
+          "title": "The Finals",
+          "tags": [
+            "FPS",
+            "Multiplayer",
+            "Free to Play"
+          ],
+          "peak_ccu": 0,
+          "owners": 0
+        },
+        {
+          "title": "Enshrouded",
+          "tags": [
+            "Survival",
+            "Open World",
+            "Co-op",
+            "RPG"
+          ],
+          "peak_ccu": 0,
+          "owners": 0
+        },
+        {
+          "title": "Tekken 8",
+          "tags": [
+            "Fighting",
+            "Multiplayer",
+            "Action"
+          ],
+          "peak_ccu": 0,
+          "owners": 0
+        }
+      ]
     },
     "2": {
       "upcoming_releases": [],
-      "top_performers": [],
-      "recent_top_sellers": []
+      "top_performers": [
+        {
+          "title": "Elden Ring",
+          "tags": [
+            "Soulslike",
+            "Action RPG",
+            "Open World"
+          ],
+          "peak_ccu": 29529,
+          "owners": 35000000
+        },
+        {
+          "title": "Hogwarts Legacy",
+          "tags": [
+            "Action RPG",
+            "Open World",
+            "Adventure"
+          ],
+          "peak_ccu": 5716,
+          "owners": 35000000
+        },
+        {
+          "title": "Sons of the Forest",
+          "tags": [
+            "Survival",
+            "Horror",
+            "Open World",
+            "Co-op"
+          ],
+          "peak_ccu": 4450,
+          "owners": 15000000
+        },
+        {
+          "title": "Helldivers 2",
+          "tags": [
+            "Co-op",
+            "Shooter",
+            "Action",
+            "Multiplayer"
+          ],
+          "peak_ccu": 53399,
+          "owners": 35000000
+        }
+      ]
     },
     "3": {
       "upcoming_releases": [],
-      "top_performers": [],
-      "recent_top_sellers": []
+      "top_performers": [
+        {
+          "title": "Wo Long: Fallen Dynasty",
+          "tags": [
+            "Soulslike",
+            "Action",
+            "Co-op"
+          ],
+          "peak_ccu": 0,
+          "owners": 0
+        },
+        {
+          "title": "Resident Evil 4 Remake",
+          "tags": [
+            "Horror",
+            "Action",
+            "Survival Horror"
+          ],
+          "peak_ccu": 0,
+          "owners": 0
+        },
+        {
+          "title": "Hi-Fi Rush",
+          "tags": [
+            "Action",
+            "Rhythm",
+            "Indie"
+          ],
+          "peak_ccu": 0,
+          "owners": 0
+        },
+        {
+          "title": "Returnal",
+          "tags": [
+            "Roguelike",
+            "Action",
+            "Shooter"
+          ],
+          "peak_ccu": 0,
+          "owners": 0
+        }
+      ]
     },
     "4": {
-      "upcoming_releases": [],
-      "top_performers": [],
-      "recent_top_sellers": []
+      "upcoming_releases": [
+        {
+          "title": "Saros",
+          "date": "2026-04-30",
+          "genres": [
+            "Action"
+          ],
+          "hype": 56,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "rawg"
+        },
+        {
+          "title": "Heroes of Might & Magic: Olden Era",
+          "date": "2026-04-30",
+          "genres": [
+            "Strategy"
+          ],
+          "hype": 29,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "rawg"
+        },
+        {
+          "title": "Aphelion (2025)",
+          "date": "2026-04-26",
+          "genres": [
+            "Adventure"
+          ],
+          "hype": 16,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "rawg"
+        },
+        {
+          "title": "Industria 2",
+          "date": "2026-04-29",
+          "genres": [
+            "Action"
+          ],
+          "hype": 7,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "rawg"
+        }
+      ],
+      "top_performers": [
+        {
+          "title": "Dead Island 2",
+          "tags": [
+            "Action",
+            "Co-op",
+            "Zombie",
+            "FPS"
+          ],
+          "peak_ccu": 0,
+          "owners": 0
+        },
+        {
+          "title": "Star Wars Jedi: Survivor",
+          "tags": [
+            "Action",
+            "Adventure",
+            "Soulslike"
+          ],
+          "peak_ccu": 0,
+          "owners": 0
+        },
+        {
+          "title": "Minecraft Legends",
+          "tags": [
+            "Strategy",
+            "Action",
+            "Co-op"
+          ],
+          "peak_ccu": 4701,
+          "owners": 15000000
+        }
+      ]
     },
     "5": {
-      "upcoming_releases": [],
-      "top_performers": [],
-      "recent_top_sellers": []
+      "upcoming_releases": [
+        {
+          "title": "007 First Light",
+          "date": "2026-05-27",
+          "genres": [
+            "Action"
+          ],
+          "hype": 170,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "rawg"
+        },
+        {
+          "title": "Directive 8020",
+          "date": "2026-05-12",
+          "genres": [
+            "Adventure",
+            "Action"
+          ],
+          "hype": 141,
+          "metacritic": 0,
+          "rating": 2.3,
+          "source": "rawg"
+        },
+        {
+          "title": "Forza Horizon 6",
+          "date": "2026-05-19",
+          "genres": [
+            "Racing"
+          ],
+          "hype": 56,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "rawg"
+        },
+        {
+          "title": "Lego Batman: Legacy of the Dark Knight",
+          "date": "2026-05-22",
+          "genres": [
+            "Adventure",
+            "Action"
+          ],
+          "hype": 41,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "rawg"
+        },
+        {
+          "title": "Mixtape (2025)",
+          "date": "2026-05-07",
+          "genres": [
+            "Indie",
+            "Adventure"
+          ],
+          "hype": 33,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "rawg"
+        }
+      ],
+      "top_performers": [
+        {
+          "title": "System Shock Remake",
+          "tags": [
+            "FPS",
+            "Horror",
+            "Sci-Fi",
+            "Immersive Sim"
+          ],
+          "peak_ccu": 0,
+          "owners": 0
+        },
+        {
+          "title": "Redfall",
+          "tags": [
+            "Co-op",
+            "FPS",
+            "Open World"
+          ],
+          "peak_ccu": 0,
+          "owners": 0
+        },
+        {
+          "title": "Dead by Daylight",
+          "tags": [
+            "Horror",
+            "Survival",
+            "Multiplayer",
+            "Asymmetric"
+          ],
+          "peak_ccu": 44886,
+          "owners": 35000000
+        }
+      ]
     },
     "6": {
-      "upcoming_releases": [],
-      "top_performers": [],
-      "recent_top_sellers": []
+      "upcoming_releases": [
+        {
+          "title": "Gothic 1 Remake",
+          "date": "2026-06-05",
+          "genres": [
+            "Action",
+            "RPG"
+          ],
+          "hype": 146,
+          "metacritic": 0,
+          "rating": 3.4,
+          "source": "rawg"
+        },
+        {
+          "title": "The Adventures of Elliot: The Millennium Tales",
+          "date": "2026-06-18",
+          "genres": [
+            "Adventure",
+            "RPG"
+          ],
+          "hype": 6,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "rawg"
+        }
+      ],
+      "top_performers": [
+        {
+          "title": "Diablo IV",
+          "tags": [
+            "Action RPG",
+            "Co-op",
+            "Dark Fantasy",
+            "Loot"
+          ],
+          "peak_ccu": 0,
+          "owners": 0
+        },
+        {
+          "title": "Street Fighter 6",
+          "tags": [
+            "Fighting",
+            "Multiplayer",
+            "Esports"
+          ],
+          "peak_ccu": 0,
+          "owners": 0
+        },
+        {
+          "title": "Final Fantasy XVI",
+          "tags": [
+            "Action RPG",
+            "Story Rich",
+            "Fantasy"
+          ],
+          "peak_ccu": 0,
+          "owners": 0
+        }
+      ]
     },
     "7": {
-      "upcoming_releases": [],
-      "top_performers": [],
-      "recent_top_sellers": []
+      "upcoming_releases": [
+        {
+          "title": "Assassin's Creed Back Flag Resynced",
+          "date": "2026-07-09",
+          "genres": [
+            "Adventure",
+            "Action"
+          ],
+          "hype": 6,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "rawg"
+        }
+      ],
+      "top_performers": [
+        {
+          "title": "Remnant II",
+          "tags": [
+            "Soulslike",
+            "Shooter",
+            "Co-op",
+            "Action"
+          ],
+          "peak_ccu": 0,
+          "owners": 0
+        },
+        {
+          "title": "Exoprimal",
+          "tags": [
+            "Action",
+            "Co-op",
+            "Multiplayer"
+          ],
+          "peak_ccu": 0,
+          "owners": 0
+        },
+        {
+          "title": "Pikmin 4",
+          "tags": [
+            "Strategy",
+            "Puzzle",
+            "Adventure"
+          ],
+          "peak_ccu": 0,
+          "owners": 0
+        }
+      ]
     },
     "8": {
-      "upcoming_releases": [],
-      "top_performers": [],
-      "recent_top_sellers": []
+      "upcoming_releases": [
+        {
+          "title": "Beast of Reincarnation",
+          "date": "2026-08-04",
+          "genres": [
+            "Action",
+            "RPG"
+          ],
+          "hype": 41,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "rawg"
+        },
+        {
+          "title": "Lords of the Fallen 2",
+          "date": "2026-08-31",
+          "genres": [
+            "Action",
+            "RPG"
+          ],
+          "hype": 9,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "rawg"
+        }
+      ],
+      "top_performers": [
+        {
+          "title": "Baldur's Gate 3",
+          "tags": [
+            "RPG",
+            "Turn-Based",
+            "Co-op",
+            "Fantasy",
+            "Story Rich"
+          ],
+          "peak_ccu": 54771,
+          "owners": 35000000
+        },
+        {
+          "title": "Armored Core VI",
+          "tags": [
+            "Action",
+            "Mecha",
+            "Soulslike"
+          ],
+          "peak_ccu": 0,
+          "owners": 0
+        },
+        {
+          "title": "Sea of Stars",
+          "tags": [
+            "RPG",
+            "Turn-Based",
+            "Indie",
+            "Pixel Art"
+          ],
+          "peak_ccu": 0,
+          "owners": 0
+        }
+      ]
     },
     "9": {
-      "upcoming_releases": [],
-      "top_performers": [],
-      "recent_top_sellers": []
+      "upcoming_releases": [
+        {
+          "title": "Marvel's Wolverine",
+          "date": "2026-09-15",
+          "genres": [
+            "Action"
+          ],
+          "hype": 178,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "rawg"
+        },
+        {
+          "title": "Phantom Blade Zero",
+          "date": "2026-09-09",
+          "genres": [
+            "Adventure",
+            "Action"
+          ],
+          "hype": 145,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "rawg"
+        }
+      ],
+      "top_performers": [
+        {
+          "title": "Starfield",
+          "tags": [
+            "Open World",
+            "RPG",
+            "Sci-Fi",
+            "Space"
+          ],
+          "peak_ccu": 0,
+          "owners": 0
+        },
+        {
+          "title": "Lies of P",
+          "tags": [
+            "Soulslike",
+            "Action RPG",
+            "Steampunk"
+          ],
+          "peak_ccu": 0,
+          "owners": 0
+        },
+        {
+          "title": "Mortal Kombat 1",
+          "tags": [
+            "Fighting",
+            "Multiplayer",
+            "Action"
+          ],
+          "peak_ccu": 0,
+          "owners": 0
+        },
+        {
+          "title": "Payday 3",
+          "tags": [
+            "Co-op",
+            "FPS",
+            "Heist",
+            "Multiplayer"
+          ],
+          "peak_ccu": 0,
+          "owners": 0
+        }
+      ]
     },
     "10": {
       "upcoming_releases": [],
-      "top_performers": [],
-      "recent_top_sellers": []
+      "top_performers": [
+        {
+          "title": "Alan Wake 2",
+          "tags": [
+            "Horror",
+            "Action",
+            "Thriller",
+            "Story Rich"
+          ],
+          "peak_ccu": 0,
+          "owners": 0
+        },
+        {
+          "title": "Cities: Skylines II",
+          "tags": [
+            "City Builder",
+            "Strategy",
+            "Simulation"
+          ],
+          "peak_ccu": 8842,
+          "owners": 15000000
+        },
+        {
+          "title": "Assassin's Creed Mirage",
+          "tags": [
+            "Action",
+            "Adventure",
+            "Stealth",
+            "Open World"
+          ],
+          "peak_ccu": 0,
+          "owners": 0
+        },
+        {
+          "title": "Super Mario Bros. Wonder",
+          "tags": [
+            "Platformer",
+            "Co-op",
+            "Action"
+          ],
+          "peak_ccu": 0,
+          "owners": 0
+        }
+      ]
     },
     "11": {
       "upcoming_releases": [],
-      "top_performers": [],
-      "recent_top_sellers": []
+      "top_performers": [
+        {
+          "title": "Call of Duty: Modern Warfare III",
+          "tags": [
+            "FPS",
+            "Multiplayer",
+            "Shooter"
+          ],
+          "peak_ccu": 67419,
+          "owners": 75000000
+        },
+        {
+          "title": "Lethal Company",
+          "tags": [
+            "Co-op",
+            "Horror",
+            "Indie",
+            "Survival"
+          ],
+          "peak_ccu": 6199,
+          "owners": 15000000
+        },
+        {
+          "title": "Like a Dragon: Ishin!",
+          "tags": [
+            "RPG",
+            "Action",
+            "JRPG",
+            "Brawler"
+          ],
+          "peak_ccu": 0,
+          "owners": 0
+        }
+      ]
     },
     "12": {
       "upcoming_releases": [],
-      "top_performers": [],
-      "recent_top_sellers": []
+      "top_performers": [
+        {
+          "title": "Avatar: Frontiers of Pandora",
+          "tags": [
+            "Open World",
+            "Action",
+            "Adventure"
+          ],
+          "peak_ccu": 0,
+          "owners": 0
+        },
+        {
+          "title": "The Game Awards Reveals",
+          "tags": [
+            "Industry Event"
+          ],
+          "peak_ccu": 0,
+          "owners": 0,
+          "note": "TGA dominates December media cycle — launch before Dec 15"
+        },
+        {
+          "title": "It Takes Two",
+          "tags": [
+            "Co-op",
+            "Platformer",
+            "Adventure",
+            "Puzzle"
+          ],
+          "peak_ccu": 0,
+          "owners": 0
+        }
+      ]
     }
-  },
-  "upcoming_releases": [],
-  "historical_games": [
-    {
-      "appid": "730",
-      "title": "Counter-Strike: Global Offensive",
-      "peak_ccu": 1013936,
-      "owners_estimate": 150000000,
-      "positive_reviews": 7642084,
-      "negative_reviews": 1173003,
-      "tags": [],
-      "price_usd": 0.0,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "1172470",
-      "title": "Apex Legends",
-      "peak_ccu": 124262,
-      "owners_estimate": 150000000,
-      "positive_reviews": 668053,
-      "negative_reviews": 326926,
-      "tags": [],
-      "price_usd": 0.0,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "578080",
-      "title": "PUBG: BATTLEGROUNDS",
-      "peak_ccu": 314682,
-      "owners_estimate": 150000000,
-      "positive_reviews": 1520457,
-      "negative_reviews": 1037487,
-      "tags": [],
-      "price_usd": 0.0,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "1623730",
-      "title": "Palworld",
-      "peak_ccu": 18028,
-      "owners_estimate": 75000000,
-      "positive_reviews": 358266,
-      "negative_reviews": 22443,
-      "tags": [],
-      "price_usd": 29.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "440",
-      "title": "Team Fortress 2",
-      "peak_ccu": 43819,
-      "owners_estimate": 75000000,
-      "positive_reviews": 1044264,
-      "negative_reviews": 117208,
-      "tags": [],
-      "price_usd": 0.0,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "1938090",
-      "title": "Call of Duty: Modern Warfare II",
-      "peak_ccu": 67419,
-      "owners_estimate": 75000000,
-      "positive_reviews": 419594,
-      "negative_reviews": 294520,
-      "tags": [],
-      "price_usd": 69.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "1063730",
-      "title": "New World: Aeternum",
-      "peak_ccu": 5583,
-      "owners_estimate": 75000000,
-      "positive_reviews": 196798,
-      "negative_reviews": 90080,
-      "tags": [],
-      "price_usd": 59.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "2358720",
-      "title": "Black Myth: Wukong",
-      "peak_ccu": 15004,
-      "owners_estimate": 75000000,
-      "positive_reviews": 1111720,
-      "negative_reviews": 38378,
-      "tags": [],
-      "price_usd": 59.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "271590",
-      "title": "Grand Theft Auto V Legacy",
-      "peak_ccu": 67851,
-      "owners_estimate": 75000000,
-      "positive_reviews": 1739980,
-      "negative_reviews": 250576,
-      "tags": [],
-      "price_usd": 0.0,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "550",
-      "title": "Left 4 Dead 2",
-      "peak_ccu": 25122,
-      "owners_estimate": 75000000,
-      "positive_reviews": 940221,
-      "negative_reviews": 23762,
-      "tags": [],
-      "price_usd": 9.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "304930",
-      "title": "Unturned",
-      "peak_ccu": 10408,
-      "owners_estimate": 75000000,
-      "positive_reviews": 506516,
-      "negative_reviews": 48852,
-      "tags": [],
-      "price_usd": 0.0,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "1599340",
-      "title": "Lost Ark",
-      "peak_ccu": 17355,
-      "owners_estimate": 75000000,
-      "positive_reviews": 143481,
-      "negative_reviews": 58540,
-      "tags": [],
-      "price_usd": 0.0,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "236390",
-      "title": "War Thunder",
-      "peak_ccu": 50478,
-      "owners_estimate": 35000000,
-      "positive_reviews": 484469,
-      "negative_reviews": 272617,
-      "tags": [],
-      "price_usd": 0.0,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "2246340",
-      "title": "Monster Hunter Wilds",
-      "peak_ccu": 12494,
-      "owners_estimate": 35000000,
-      "positive_reviews": 127273,
-      "negative_reviews": 91142,
-      "tags": [],
-      "price_usd": 69.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "553850",
-      "title": "HELLDIVERS 2",
-      "peak_ccu": 53399,
-      "owners_estimate": 35000000,
-      "positive_reviews": 775883,
-      "negative_reviews": 241752,
-      "tags": [],
-      "price_usd": 39.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "230410",
-      "title": "Warframe",
-      "peak_ccu": 36195,
-      "owners_estimate": 35000000,
-      "positive_reviews": 545393,
-      "negative_reviews": 81110,
-      "tags": [],
-      "price_usd": 0.0,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "1245620",
-      "title": "ELDEN RING",
-      "peak_ccu": 29529,
-      "owners_estimate": 35000000,
-      "positive_reviews": 981540,
-      "negative_reviews": 75137,
-      "tags": [],
-      "price_usd": 59.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "105600",
-      "title": "Terraria",
-      "peak_ccu": 24580,
-      "owners_estimate": 35000000,
-      "positive_reviews": 1373979,
-      "negative_reviews": 35494,
-      "tags": [],
-      "price_usd": 9.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "2694490",
-      "title": "Path of Exile 2",
-      "peak_ccu": 16727,
-      "owners_estimate": 35000000,
-      "positive_reviews": 118511,
-      "negative_reviews": 50510,
-      "tags": [],
-      "price_usd": 29.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "431960",
-      "title": "Wallpaper Engine",
-      "peak_ccu": 91184,
-      "owners_estimate": 35000000,
-      "positive_reviews": 876898,
-      "negative_reviews": 17560,
-      "tags": [],
-      "price_usd": 4.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "1086940",
-      "title": "Baldur's Gate 3",
-      "peak_ccu": 54771,
-      "owners_estimate": 35000000,
-      "positive_reviews": 736688,
-      "negative_reviews": 23974,
-      "tags": [],
-      "price_usd": 59.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "346110",
-      "title": "ARK: Survival Evolved",
-      "peak_ccu": 22170,
-      "owners_estimate": 35000000,
-      "positive_reviews": 612177,
-      "negative_reviews": 117993,
-      "tags": [],
-      "price_usd": 14.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "413150",
-      "title": "Stardew Valley",
-      "peak_ccu": 50662,
-      "owners_estimate": 35000000,
-      "positive_reviews": 872384,
-      "negative_reviews": 13811,
-      "tags": [],
-      "price_usd": 14.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "242760",
-      "title": "The Forest",
-      "peak_ccu": 2892,
-      "owners_estimate": 35000000,
-      "positive_reviews": 599805,
-      "negative_reviews": 27986,
-      "tags": [],
-      "price_usd": 19.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "238960",
-      "title": "Path of Exile",
-      "peak_ccu": 4694,
-      "owners_estimate": 35000000,
-      "positive_reviews": 209822,
-      "negative_reviews": 25269,
-      "tags": [],
-      "price_usd": 0.0,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "291480",
-      "title": "Warface: Clutch",
-      "peak_ccu": 270,
-      "owners_estimate": 35000000,
-      "positive_reviews": 54554,
-      "negative_reviews": 27643,
-      "tags": [],
-      "price_usd": 0.0,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "899770",
-      "title": "Last Epoch",
-      "peak_ccu": 5831,
-      "owners_estimate": 35000000,
-      "positive_reviews": 88027,
-      "negative_reviews": 22596,
-      "tags": [],
-      "price_usd": 34.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "1091500",
-      "title": "Cyberpunk 2077",
-      "peak_ccu": 22265,
-      "owners_estimate": 35000000,
-      "positive_reviews": 713071,
-      "negative_reviews": 131850,
-      "tags": [],
-      "price_usd": 59.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "990080",
-      "title": "Hogwarts Legacy",
-      "peak_ccu": 5716,
-      "owners_estimate": 35000000,
-      "positive_reviews": 289966,
-      "negative_reviews": 31429,
-      "tags": [],
-      "price_usd": 59.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "292030",
-      "title": "The Witcher 3: Wild Hunt",
-      "peak_ccu": 15893,
-      "owners_estimate": 35000000,
-      "positive_reviews": 802993,
-      "negative_reviews": 32356,
-      "tags": [],
-      "price_usd": 39.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "359550",
-      "title": "Tom Clancy's Rainbow Six Siege",
-      "peak_ccu": 51847,
-      "owners_estimate": 35000000,
-      "positive_reviews": 1172854,
-      "negative_reviews": 225730,
-      "tags": [],
-      "price_usd": 19.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "552990",
-      "title": "World of Warships",
-      "peak_ccu": 8518,
-      "owners_estimate": 35000000,
-      "positive_reviews": 112887,
-      "negative_reviews": 33665,
-      "tags": [],
-      "price_usd": 0.0,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "218620",
-      "title": "PAYDAY 2",
-      "peak_ccu": 27254,
-      "owners_estimate": 35000000,
-      "positive_reviews": 594327,
-      "negative_reviews": 68755,
-      "tags": [],
-      "price_usd": 9.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "381210",
-      "title": "Dead by Daylight",
-      "peak_ccu": 44886,
-      "owners_estimate": 35000000,
-      "positive_reviews": 630223,
-      "negative_reviews": 166993,
-      "tags": [],
-      "price_usd": 19.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "444090",
-      "title": "Paladins",
-      "peak_ccu": 1028,
-      "owners_estimate": 15000000,
-      "positive_reviews": 294373,
-      "negative_reviews": 52031,
-      "tags": [],
-      "price_usd": 0.0,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "227940",
-      "title": "Heroes & Generals",
-      "peak_ccu": 0,
-      "owners_estimate": 15000000,
-      "positive_reviews": 96499,
-      "negative_reviews": 46264,
-      "tags": [],
-      "price_usd": 0.0,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "648800",
-      "title": "Raft",
-      "peak_ccu": 4701,
-      "owners_estimate": 15000000,
-      "positive_reviews": 323198,
-      "negative_reviews": 23161,
-      "tags": [],
-      "price_usd": 19.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "386360",
-      "title": "SMITE",
-      "peak_ccu": 1853,
-      "owners_estimate": 15000000,
-      "positive_reviews": 94368,
-      "negative_reviews": 25428,
-      "tags": [],
-      "price_usd": 0.0,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "444200",
-      "title": "World of Tanks Blitz",
-      "peak_ccu": 5707,
-      "owners_estimate": 15000000,
-      "positive_reviews": 116407,
-      "negative_reviews": 31754,
-      "tags": [],
-      "price_usd": 0.0,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "10",
-      "title": "Counter-Strike",
-      "peak_ccu": 7323,
-      "owners_estimate": 15000000,
-      "positive_reviews": 243818,
-      "negative_reviews": 6427,
-      "tags": [],
-      "price_usd": 9.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "240",
-      "title": "Counter-Strike: Source",
-      "peak_ccu": 6187,
-      "owners_estimate": 15000000,
-      "positive_reviews": 175426,
-      "negative_reviews": 6808,
-      "tags": [],
-      "price_usd": 9.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "3164500",
-      "title": "Schedule I",
-      "peak_ccu": 22757,
-      "owners_estimate": 15000000,
-      "positive_reviews": 200803,
-      "negative_reviews": 3238,
-      "tags": [],
-      "price_usd": 19.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "400",
-      "title": "Portal",
-      "peak_ccu": 638,
-      "owners_estimate": 15000000,
-      "positive_reviews": 175024,
-      "negative_reviews": 2717,
-      "tags": [],
-      "price_usd": 9.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "550650",
-      "title": "Black Squad",
-      "peak_ccu": 212,
-      "owners_estimate": 15000000,
-      "positive_reviews": 62042,
-      "negative_reviews": 19672,
-      "tags": [],
-      "price_usd": 0.0,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "438100",
-      "title": "VRChat",
-      "peak_ccu": 34699,
-      "owners_estimate": 35000000,
-      "positive_reviews": 181623,
-      "negative_reviews": 58732,
-      "tags": [],
-      "price_usd": 0.0,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "1097150",
-      "title": "Fall Guys: Ultimate Knockout",
-      "peak_ccu": 664,
-      "owners_estimate": 35000000,
-      "positive_reviews": 385154,
-      "negative_reviews": 88589,
-      "tags": [],
-      "price_usd": 0.0,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "739630",
-      "title": "Phasmophobia",
-      "peak_ccu": 9978,
-      "owners_estimate": 15000000,
-      "positive_reviews": 736611,
-      "negative_reviews": 32168,
-      "tags": [],
-      "price_usd": 19.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "1966720",
-      "title": "Lethal Company",
-      "peak_ccu": 6199,
-      "owners_estimate": 15000000,
-      "positive_reviews": 473422,
-      "negative_reviews": 13738,
-      "tags": [],
-      "price_usd": 9.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "322330",
-      "title": "Don't Starve Together",
-      "peak_ccu": 30542,
-      "owners_estimate": 15000000,
-      "positive_reviews": 475393,
-      "negative_reviews": 23668,
-      "tags": [],
-      "price_usd": 14.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "239140",
-      "title": "Dying Light",
-      "peak_ccu": 4953,
-      "owners_estimate": 15000000,
-      "positive_reviews": 435687,
-      "negative_reviews": 21945,
-      "tags": [],
-      "price_usd": 24.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "477160",
-      "title": "Human Fall Flat",
-      "peak_ccu": 950,
-      "owners_estimate": 15000000,
-      "positive_reviews": 202253,
-      "negative_reviews": 11387,
-      "tags": [],
-      "price_usd": 19.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "251570",
-      "title": "7 Days to Die",
-      "peak_ccu": 17045,
-      "owners_estimate": 15000000,
-      "positive_reviews": 327889,
-      "negative_reviews": 42157,
-      "tags": [],
-      "price_usd": 44.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "291550",
-      "title": "Brawlhalla",
-      "peak_ccu": 14169,
-      "owners_estimate": 35000000,
-      "positive_reviews": 314809,
-      "negative_reviews": 71647,
-      "tags": [],
-      "price_usd": 0.0,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "252490",
-      "title": "Rust",
-      "peak_ccu": 143870,
-      "owners_estimate": 35000000,
-      "positive_reviews": 1071135,
-      "negative_reviews": 156649,
-      "tags": [],
-      "price_usd": 39.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "945360",
-      "title": "Among Us",
-      "peak_ccu": 3832,
-      "owners_estimate": 35000000,
-      "positive_reviews": 643681,
-      "negative_reviews": 57104,
-      "tags": [],
-      "price_usd": 4.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "892970",
-      "title": "Valheim",
-      "peak_ccu": 14439,
-      "owners_estimate": 15000000,
-      "positive_reviews": 471451,
-      "negative_reviews": 28377,
-      "tags": [],
-      "price_usd": 19.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "1203220",
-      "title": "NARAKA: BLADEPOINT",
-      "peak_ccu": 66954,
-      "owners_estimate": 15000000,
-      "positive_reviews": 225960,
-      "negative_reviews": 98967,
-      "tags": [],
-      "price_usd": 0.0,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "108600",
-      "title": "Project Zomboid",
-      "peak_ccu": 22864,
-      "owners_estimate": 15000000,
-      "positive_reviews": 355171,
-      "negative_reviews": 21892,
-      "tags": [],
-      "price_usd": 19.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "4000",
-      "title": "Garry's Mod",
-      "peak_ccu": 18400,
-      "owners_estimate": 35000000,
-      "positive_reviews": 1122546,
-      "negative_reviews": 37161,
-      "tags": [],
-      "price_usd": 9.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "1085660",
-      "title": "Destiny 2",
-      "peak_ccu": 24619,
-      "owners_estimate": 35000000,
-      "positive_reviews": 497891,
-      "negative_reviews": 127725,
-      "tags": [],
-      "price_usd": 0.0,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "227300",
-      "title": "Euro Truck Simulator 2",
-      "peak_ccu": 17281,
-      "owners_estimate": 15000000,
-      "positive_reviews": 844480,
-      "negative_reviews": 22924,
-      "tags": [],
-      "price_usd": 19.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "252950",
-      "title": "Rocket League",
-      "peak_ccu": 21106,
-      "owners_estimate": 15000000,
-      "positive_reviews": 509445,
-      "negative_reviews": 73775,
-      "tags": [],
-      "price_usd": 0.0,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "1517290",
-      "title": "Battlefield 2042",
-      "peak_ccu": 2774,
-      "owners_estimate": 15000000,
-      "positive_reviews": 139186,
-      "negative_reviews": 158588,
-      "tags": [],
-      "price_usd": 59.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "1222670",
-      "title": "The Sims 4",
-      "peak_ccu": 25276,
-      "owners_estimate": 15000000,
-      "positive_reviews": 149064,
-      "negative_reviews": 21663,
-      "tags": [],
-      "price_usd": 0.0,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "255710",
-      "title": "Cities: Skylines",
-      "peak_ccu": 8842,
-      "owners_estimate": 15000000,
-      "positive_reviews": 256362,
-      "negative_reviews": 19408,
-      "tags": [],
-      "price_usd": 29.99,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "304050",
-      "title": "Trove",
-      "peak_ccu": 758,
-      "owners_estimate": 15000000,
-      "positive_reviews": 74103,
-      "negative_reviews": 18267,
-      "tags": [],
-      "price_usd": 0.0,
-      "release_date": "",
-      "source": "steamspy"
-    },
-    {
-      "appid": "289070",
-      "title": "Sid Meier’s Civilization VI",
-      "peak_ccu": 25420,
-      "owners_estimate": 15000000,
-      "positive_reviews": 304053,
-      "negative_reviews": 45867,
-      "tags": [],
-      "price_usd": 59.99,
-      "release_date": "",
-      "source": "steamspy"
-    }
-  ]
+  }
 }
