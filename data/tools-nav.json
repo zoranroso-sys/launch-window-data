@@ -1,0 +1,31 @@
+{
+  "brand": {
+    "name": "ZR Consulting",
+    "logo": "https://u.cubeupload.com/Zroso/ZRlogowhite.png",
+    "url": "https://zrconsulting.de",
+    "tagline": "Games Publishing & Brand Strategy"
+  },
+  "tools": [
+    {
+      "id": "home",
+      "label": "Home",
+      "url": "https://zrconsulting.de",
+      "icon": "🏠",
+      "description": "ZR Consulting main page"
+    },
+    {
+      "id": "launch-window",
+      "label": "Launch Window Checker",
+      "url": "https://zrconsulting.de/launchwindowchecker/",
+      "icon": "📊",
+      "description": "Analyze release timing risk against industry events and competitor launches"
+    },
+    {
+      "id": "calendar",
+      "label": "Industry Calendar",
+      "url": "https://zrconsulting.de/calendar/",
+      "icon": "📅",
+      "description": "Filterable timeline of game releases, showcases, trade shows and events"
+    }
+  ]
+}
