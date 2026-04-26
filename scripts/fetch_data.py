@@ -93,7 +93,7 @@ def fetch_upcoming_releases(token):
         where first_release_date >= {now}
           & first_release_date <= {future}
           & category = 0
-          & platforms = (6, 48, 49, 167, 169)  -- PC, PS4, PS5, Xbox Series X/S, Xbox One
+          & platforms = (6, 48, 49, 167, 169)
           & version_parent = null;
         sort hypes desc;
         limit 100;
@@ -179,7 +179,7 @@ def parse_steamspy_entry(appid, data):
         "positive_reviews": data.get("positive", 0),
         "negative_reviews": data.get("negative", 0),
         "tags": list((data.get("tags") or {}).keys())[:8],
-        "price_usd": data.get("initialprice", 0) / 100,
+        "price_usd": int(data.get("initialprice") or 0) / 100,
         "release_date": data.get("release_date", ""),
         "source": "steamspy",
     }
