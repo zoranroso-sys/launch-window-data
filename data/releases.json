@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "generated_at": "2026-04-26T06:00:00Z",
+    "upcoming_count": 0,
+    "historical_count": 0,
+    "recent_count": 0,
+    "next_update": "2026-05-04",
+    "note": "Seed file — will be replaced automatically by GitHub Actions every Monday"
+  },
+  "industry_events": [
+    { "month": 3,  "label": "GDC",               "severity": "high",   "notes": "Game Developers Conference — press unavailable, media cycle disrupted" },
+    { "month": 5,  "label": "Steam Next Fest",   "severity": "high",   "notes": "Demo festival — launch signal diluted, wishlists spike instead" },
+    { "month": 6,  "label": "Summer Game Fest",  "severity": "high",   "notes": "E3-replacement showcase — announcement coverage dominates all media" },
+    { "month": 8,  "label": "Gamescom",          "severity": "high",   "notes": "Europe's biggest show — avoid launch week, post-show slot is valuable" },
+    { "month": 10, "label": "Steam Next Fest",   "severity": "medium", "notes": "Autumn Next Fest — demo event, second occurrence of the year" },
+    { "month": 11, "label": "The Game Awards",   "severity": "high",   "notes": "TGA dominates media for 3 weeks — black hole for new release coverage" },
+    { "month": 11, "label": "Black Friday",      "severity": "medium", "notes": "Consumer attention on sales, not new releases — gifting spike possible" },
+    { "month": 7,  "label": "Steam Summer Sale", "severity": "medium", "notes": "Price anchor effect — players wait for discounts on full-price new releases" },
+    { "month": 12, "label": "Steam Winter Sale", "severity": "medium", "notes": "Year-end sale — launch by Dec 15 or hold until January" }
+  ],
+  "month_index": {
+    "1":  { "upcoming_releases": [], "top_performers": [
+      { "title": "Palworld",           "peak_ccu": 2101867, "owners": 25000000, "tags": ["Survival", "Open World", "Co-op", "Crafting"] },
+      { "title": "The Finals",         "peak_ccu": 247640,  "owners": 8000000,  "tags": ["FPS", "Multiplayer", "Free to Play"] },
+      { "title": "Enshrouded",         "peak_ccu": 160000,  "owners": 3000000,  "tags": ["Survival", "Open World", "Co-op", "RPG"] }
+    ], "recent_top_sellers": [] },
+    "2":  { "upcoming_releases": [], "top_performers": [
+      { "title": "Elden Ring",         "peak_ccu": 952523,  "owners": 20000000, "tags": ["Soulslike", "Action RPG", "Open World", "Dark Fantasy"] },
+      { "title": "Sons of the Forest", "peak_ccu": 524000,  "owners": 8000000,  "tags": ["Survival", "Horror", "Open World", "Co-op"] },
+      { "title": "Hogwarts Legacy",    "peak_ccu": 879308,  "owners": 15000000, "tags": ["Action RPG", "Open World", "Adventure", "Magic"] }
+    ], "recent_top_sellers": [] },
+    "3":  { "upcoming_releases": [], "top_performers": [
+      { "title": "Wo Long: Fallen Dynasty", "peak_ccu": 91000,  "owners": 1500000, "tags": ["Soulslike", "Action", "Co-op"] },
+      { "title": "Resident Evil 4 Remake",  "peak_ccu": 157000, "owners": 5000000, "tags": ["Horror", "Action", "Third-Person Shooter"] }
+    ], "recent_top_sellers": [] },
+    "4":  { "upcoming_releases": [], "top_performers": [
+      { "title": "Dead Island 2",      "peak_ccu": 45000,   "owners": 2000000,  "tags": ["Action", "Co-op", "Zombie", "Open World"] },
+      { "title": "Star Wars Jedi: Survivor", "peak_ccu": 28000, "owners": 3000000, "tags": ["Action", "Adventure", "Metroidvania"] }
+    ], "recent_top_sellers": [] },
+    "5":  { "upcoming_releases": [], "top_performers": [
+      { "title": "The Legend of Zelda: Tears of the Kingdom", "peak_ccu": 0, "owners": 19000000, "tags": ["Action", "Adventure", "Open World"] },
+      { "title": "System Shock Remake", "peak_ccu": 8000, "owners": 500000, "tags": ["FPS", "Horror", "Sci-Fi", "Immersive Sim"] }
+    ], "recent_top_sellers": [] },
+    "6":  { "upcoming_releases": [], "top_performers": [
+      { "title": "Diablo IV",          "peak_ccu": 906000,  "owners": 12000000, "tags": ["Action RPG", "Co-op", "Dark Fantasy", "Loot"] },
+      { "title": "Street Fighter 6",   "peak_ccu": 66000,   "owners": 3000000,  "tags": ["Fighting", "Multiplayer", "Esports"] }
+    ], "recent_top_sellers": [] },
+    "7":  { "upcoming_releases": [], "top_performers": [
+      { "title": "Remnant II",         "peak_ccu": 73000,   "owners": 2000000,  "tags": ["Soulslike", "Shooter", "Co-op", "Action"] },
+      { "title": "Exoprimal",          "peak_ccu": 12000,   "owners": 600000,   "tags": ["Action", "Co-op", "Multiplayer"] }
+    ], "recent_top_sellers": [] },
+    "8":  { "upcoming_releases": [], "top_performers": [
+      { "title": "Baldur's Gate 3",    "peak_ccu": 875343,  "owners": 10000000, "tags": ["RPG", "Turn-Based", "Co-op", "Fantasy", "Story Rich"] },
+      { "title": "Armored Core VI",    "peak_ccu": 124000,  "owners": 2500000,  "tags": ["Action", "Mecha", "Soulslike"] }
+    ], "recent_top_sellers": [] },
+    "9":  { "upcoming_releases": [], "top_performers": [
+      { "title": "Starfield",          "peak_ccu": 330723,  "owners": 12000000, "tags": ["Open World", "RPG", "Sci-Fi", "Space"] },
+      { "title": "Lies of P",          "peak_ccu": 32000,   "owners": 1500000,  "tags": ["Soulslike", "Action RPG", "Steampunk"] },
+      { "title": "Payday 3",           "peak_ccu": 58679,   "owners": 2000000,  "tags": ["Co-op", "FPS", "Heist", "Multiplayer"] }
+    ], "recent_top_sellers": [] },
+    "10": { "upcoming_releases": [], "top_performers": [
+      { "title": "Alan Wake 2",        "peak_ccu": 34000,   "owners": 2000000,  "tags": ["Horror", "Action", "Thriller", "Story Rich"] },
+      { "title": "Cities: Skylines II","peak_ccu": 65000,   "owners": 1500000,  "tags": ["City Builder", "Strategy", "Simulation"] },
+      { "title": "Assassin's Creed Mirage", "peak_ccu": 30000, "owners": 4000000, "tags": ["Action", "Adventure", "Stealth", "Open World"] }
+    ], "recent_top_sellers": [] },
+    "11": { "upcoming_releases": [], "top_performers": [
+      { "title": "Call of Duty: Modern Warfare III", "peak_ccu": 250000, "owners": 10000000, "tags": ["FPS", "Multiplayer", "Shooter"] },
+      { "title": "Like a Dragon: Ishin!", "peak_ccu": 25000, "owners": 1000000, "tags": ["RPG", "Action", "JRPG", "Brawler"] }
+    ], "recent_top_sellers": [] },
+    "12": { "upcoming_releases": [], "top_performers": [
+      { "title": "The Game Awards Reveals", "peak_ccu": 0, "owners": 0, "tags": [], "note": "TGA dominates Dec media cycle — launch before Dec 15" }
+    ], "recent_top_sellers": [] }
+  },
+  "upcoming_releases": [],
+  "historical_games": []
+}
