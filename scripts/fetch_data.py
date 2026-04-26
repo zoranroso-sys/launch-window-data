@@ -237,18 +237,108 @@ def enrich_historical(enrichment):
 
 
 # ── Industry events ───────────────────────────────────────────────────────────
+# Comprehensive calendar of events that affect launch timing.
+# Categories: trade_show, showcase, sale, award, festival
+# Update dates annually when confirmed. Months are approximate — some events
+# shift by a week or two year to year.
 
 def get_industry_events():
     return [
-        {"month": 3,  "label": "GDC",              "severity": "high",   "notes": "Game Developers Conference — press unavailable, media cycle disrupted"},
-        {"month": 5,  "label": "Steam Next Fest",  "severity": "high",   "notes": "Demo festival — launch signal diluted, wishlists spike instead"},
-        {"month": 6,  "label": "Summer Game Fest", "severity": "high",   "notes": "E3-replacement showcase — announcement coverage dominates all media"},
-        {"month": 8,  "label": "Gamescom",         "severity": "high",   "notes": "Europe's biggest show — avoid launch week, post-show slot is valuable"},
-        {"month": 10, "label": "Steam Next Fest",  "severity": "medium", "notes": "Autumn Next Fest — demo event, second occurrence of the year"},
-        {"month": 11, "label": "The Game Awards",  "severity": "high",   "notes": "TGA dominates media for 3 weeks — black hole for new release coverage"},
-        {"month": 11, "label": "Black Friday",     "severity": "medium", "notes": "Consumer attention on sales, not new releases — gifting spike possible"},
-        {"month": 7,  "label": "Steam Summer Sale","severity": "medium", "notes": "Price anchor effect — players wait for discounts on full-price new releases"},
-        {"month": 12, "label": "Steam Winter Sale","severity": "medium", "notes": "Year-end sale — launch by Dec 15 or hold until January"},
+        # ── JANUARY ──
+        {"month": 1,  "label": "CES",                 "severity": "low",    "category": "trade_show",
+         "notes": "Consumer Electronics Show — gaming-adjacent, rarely affects game launch coverage but can steal tech headlines"},
+        {"month": 1,  "label": "Steam Winter Sale ends","severity": "low",   "category": "sale",
+         "notes": "Winter Sale typically ends first week of January — post-sale browsing traffic is high"},
+
+        # ── FEBRUARY ──
+        {"month": 2,  "label": "DICE Awards",         "severity": "low",    "category": "award",
+         "notes": "Academy of Interactive Arts & Sciences awards — industry recognition, minimal consumer impact"},
+        {"month": 2,  "label": "Nintendo Direct",     "severity": "medium", "category": "showcase",
+         "notes": "Nintendo typically runs a Feb Direct — pulls press attention for 48–72 hours"},
+
+        # ── MARCH ──
+        {"month": 3,  "label": "GDC",                 "severity": "high",   "category": "trade_show",
+         "notes": "Game Developers Conference — press concentrated in SF for a full week, launch coverage squeezed"},
+        {"month": 3,  "label": "IGF Awards",          "severity": "low",    "category": "award",
+         "notes": "Independent Games Festival awards at GDC — indie credibility moment, good for narrative"},
+        {"month": 3,  "label": "BAFTA Games Awards",  "severity": "low",    "category": "award",
+         "notes": "British Academy awards for games — strong UK/EU press coverage for 24-48 hours"},
+        {"month": 3,  "label": "PAX East",            "severity": "medium", "category": "trade_show",
+         "notes": "Major consumer expo in Boston — demos, influencer coverage, press splits attention"},
+
+        # ── APRIL ──
+        {"month": 4,  "label": "Steam Spring Sale",   "severity": "medium", "category": "sale",
+         "notes": "Typically runs late March/early April — price anchor effect on new releases"},
+
+        # ── MAY ──
+        {"month": 5,  "label": "Steam Next Fest",     "severity": "high",   "category": "festival",
+         "notes": "Week-long demo festival — hundreds of demos flood discovery, launch signal diluted"},
+        {"month": 5,  "label": "PlayStation State of Play", "severity": "medium", "category": "showcase",
+         "notes": "Sony showcase — pulls press attention and dominates news cycle for 2–3 days"},
+
+        # ── JUNE ──
+        {"month": 6,  "label": "Summer Game Fest",    "severity": "high",   "category": "showcase",
+         "notes": "Geoff Keighley's showcase event — announcement coverage dominates all gaming media for days"},
+        {"month": 6,  "label": "Xbox Games Showcase",  "severity": "high",  "category": "showcase",
+         "notes": "Microsoft's annual showcase — major reveals, press fully focused on announcements"},
+        {"month": 6,  "label": "PC Gaming Show",      "severity": "medium", "category": "showcase",
+         "notes": "PC-focused showcase during E3 season — PC press diverted to coverage for 2–3 days"},
+        {"month": 6,  "label": "Ubisoft Forward",     "severity": "medium", "category": "showcase",
+         "notes": "Ubisoft's showcase — AAA reveals pull media attention in the E3 window"},
+        {"month": 6,  "label": "Future Games Show",   "severity": "medium", "category": "showcase",
+         "notes": "Future Publishing's showcase — broad coverage, indie and AA visibility affected"},
+        {"month": 6,  "label": "Devolver Digital Showcase","severity": "low","category": "showcase",
+         "notes": "Devolver's showcase — indie-focused, high social media engagement, 24-hour news cycle"},
+        {"month": 6,  "label": "Nintendo Direct",     "severity": "high",   "category": "showcase",
+         "notes": "E3-season Nintendo Direct — typically their biggest of the year, massive press impact"},
+
+        # ── JULY ──
+        {"month": 7,  "label": "Steam Summer Sale",   "severity": "medium", "category": "sale",
+         "notes": "Price anchor effect — players wait for discounts, full-price launches face resistance"},
+        {"month": 7,  "label": "BitSummit",           "severity": "low",    "category": "trade_show",
+         "notes": "Japanese indie game expo in Kyoto — relevant for Japan-facing indie titles"},
+        {"month": 7,  "label": "ChinaJoy",            "severity": "low",    "category": "trade_show",
+         "notes": "China's largest gaming expo — relevant if targeting Chinese market, minimal Western press impact"},
+
+        # ── AUGUST ──
+        {"month": 8,  "label": "Gamescom",            "severity": "high",   "category": "trade_show",
+         "notes": "Europe's biggest games show in Cologne — avoid launch week, post-show slot is valuable"},
+        {"month": 8,  "label": "Opening Night Live",  "severity": "high",   "category": "showcase",
+         "notes": "Keighley's Gamescom kick-off — major reveals, dominates the full week's coverage"},
+        {"month": 8,  "label": "Future Games Show at Gamescom","severity":"medium","category":"showcase",
+         "notes": "Future's Gamescom showcase — additional coverage saturation during show week"},
+
+        # ── SEPTEMBER ──
+        {"month": 9,  "label": "Tokyo Game Show",     "severity": "medium", "category": "trade_show",
+         "notes": "Japan's largest game show — critical for JRPG/Japanese titles, moderate Western press impact"},
+        {"month": 9,  "label": "PlayStation State of Play","severity":"medium","category":"showcase",
+         "notes": "Sony's September showcase — typically focuses on holiday lineup, pulls press for 2–3 days"},
+
+        # ── OCTOBER ──
+        {"month": 10, "label": "Steam Next Fest",     "severity": "medium", "category": "festival",
+         "notes": "Autumn demo festival — second occurrence, demo noise competes with launches"},
+        {"month": 10, "label": "Steam Autumn Sale",   "severity": "medium", "category": "sale",
+         "notes": "Typically late October — price expectations drop as sale approaches"},
+        {"month": 10, "label": "Twitch Galaxies",     "severity": "low",    "category": "showcase",
+         "notes": "Twitch's own showcase event — streaming-focused reveals, moderate impact on launch coverage"},
+
+        # ── NOVEMBER ──
+        {"month": 11, "label": "The Game Awards",     "severity": "high",   "category": "award",
+         "notes": "TGA dominates media for 3 weeks — GOTY discourse plus major world premiere reveals"},
+        {"month": 11, "label": "Black Friday",        "severity": "medium", "category": "sale",
+         "notes": "Consumer attention on deals, not new releases — gifting spike possible though"},
+        {"month": 11, "label": "XO / Xbox Fan Fest",  "severity": "low",    "category": "showcase",
+         "notes": "Xbox community event — minor press impact but can pull Xbox-specific audience attention"},
+        {"month": 11, "label": "BlizzCon / Xbox equivalent","severity":"medium","category":"showcase",
+         "notes": "Major publisher event (when it runs) — dominates news cycle for the weekend"},
+
+        # ── DECEMBER ──
+        {"month": 12, "label": "Steam Winter Sale",   "severity": "medium", "category": "sale",
+         "notes": "Year-end sale — launch by Dec 15 or hold until January, gifting window is active"},
+        {"month": 12, "label": "PlayStation Wrap-Up",  "severity": "low",   "category": "showcase",
+         "notes": "Sony's year-in-review — social media noise but minimal impact on launch coverage"},
+        {"month": 12, "label": "Indie World / Nintendo","severity":"low",   "category": "showcase",
+         "notes": "Nintendo sometimes runs a Dec showcase — minor distraction from launch coverage"},
     ]
 
 
