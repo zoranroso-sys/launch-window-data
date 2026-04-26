@@ -481,6 +481,11 @@ def main():
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
 
+    # 8. Generate ICS calendar file
+    print("📅 Generating ICS calendar file…")
+    ics_path = os.path.join(os.path.dirname(OUTPUT_PATH), "games-industry.ics")
+    generate_ics(all_upcoming, get_industry_events(), ics_path)
+
     kb = os.path.getsize(OUTPUT_PATH) / 1024
     print(f"\n✅ Done → {OUTPUT_PATH} ({kb:.1f} KB)")
     print(f"   Upcoming: {len(all_upcoming)} releases")
@@ -488,6 +493,110 @@ def main():
         u = len(month_index[str(m)]["upcoming_releases"])
         h = len(month_index[str(m)]["top_performers"])
         if u or h: print(f"   Month {m:2d}: {u} upcoming · {h} historical comps")
+
+
+# ── ICS Calendar Generation ──────────────────────────────────────────────────
+
+def ics_escape(text):
+    """Escape text for ICS format."""
+    return (text or "").replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,").replace("\n", "\\n")
+
+
+def generate_ics(upcoming_releases, events, output_path):
+    """
+    Generate a subscribable .ics calendar file containing all events
+    and upcoming game releases.
+    """
+    branding = "Powered by ZR Consulting — www.zrconsulting.de"
+
+    lines = [
+        "BEGIN:VCALENDAR",
+        "VERSION:2.0",
+        "PRODID:-//ZR Consulting//Games Industry Calendar//EN",
+        "CALSCALE:GREGORIAN",
+        "METHOD:PUBLISH",
+        "X-WR-CALNAME:Games Industry Calendar — ZR Consulting",
+        "X-WR-TIMEZONE:Europe/Berlin",
+        "REFRESH-INTERVAL;VALUE=DURATION:P1D",
+        "X-PUBLISHED-TTL:P1D",
+    ]
+
+    uid_counter = 0
+
+    # Industry events
+    CAT_LABELS = {
+        "trade_show": "Trade Show / Expo",
+        "showcase":   "Showcase / Direct",
+        "sale":       "Sale / Promotion",
+        "award":      "Awards Ceremony",
+        "festival":   "Festival / Event",
+    }
+
+    for e in events:
+        date_str = e.get("approx_date", "")
+        if not date_str:
+            continue
+        clean_date = date_str.replace("-", "")
+        cat_label = CAT_LABELS.get(e.get("category", ""), "Industry Event")
+        uid = f"{clean_date}-evt-{uid_counter}@zrconsulting.de"
+        uid_counter += 1
+
+        sev = e.get("severity", "medium").upper()
+        title = e["label"]
+        desc = ics_escape(
+            f"{e.get('notes', '')}\\n\\n"
+            f"Category: {cat_label}\\n"
+            f"Impact: {sev}\\n\\n"
+            f"{branding}"
+        )
+
+        lines.append("BEGIN:VEVENT")
+        lines.append(f"DTSTART;VALUE=DATE:{clean_date}")
+        lines.append(f"DTEND;VALUE=DATE:{clean_date}")
+        lines.append(f"SUMMARY:{ics_escape(title)}")
+        lines.append(f"DESCRIPTION:{desc}")
+        lines.append(f"CATEGORIES:{cat_label}")
+        lines.append(f"UID:{uid}")
+        lines.append("STATUS:CONFIRMED")
+        lines.append("TRANSP:TRANSPARENT")
+        lines.append("END:VEVENT")
+
+    # Upcoming releases
+    for r in upcoming_releases:
+        date_str = r.get("date_iso", "")
+        if not date_str:
+            continue
+        clean_date = date_str.replace("-", "")
+        uid = f"{clean_date}-rel-{uid_counter}@zrconsulting.de"
+        uid_counter += 1
+
+        genres = ", ".join(r.get("genres", [])[:4]) or "Game"
+        title = r["title"]
+        desc = ics_escape(
+            f"Game Release: {title}\\n"
+            f"Genre: {genres}\\n"
+            f"Platforms: {', '.join(r.get('platforms', [])[:4])}\\n\\n"
+            f"{branding}"
+        )
+
+        lines.append("BEGIN:VEVENT")
+        lines.append(f"DTSTART;VALUE=DATE:{clean_date}")
+        lines.append(f"DTEND;VALUE=DATE:{clean_date}")
+        lines.append(f"SUMMARY:🎮 {ics_escape(title)}")
+        lines.append(f"DESCRIPTION:{desc}")
+        lines.append("CATEGORIES:Game Release")
+        lines.append(f"UID:{uid}")
+        lines.append("STATUS:CONFIRMED")
+        lines.append("TRANSP:TRANSPARENT")
+        lines.append("END:VEVENT")
+
+    lines.append("END:VCALENDAR")
+
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write("\r\n".join(lines))
+
+    count = lines.count("BEGIN:VEVENT")
+    print(f"  ✓ ICS: {count} events written to {output_path}")
 
 
 if __name__ == "__main__":
