@@ -334,6 +334,8 @@ def get_industry_events():
         {"month": 7,  "label": "ChinaJoy",                 "severity": "low",    "category": "trade_show",  "approx_date": "2026-07-24", "end_date": "2026-07-27",
          "notes": "China's largest gaming expo, Shanghai — relevant if targeting Chinese market"},
         # ══════════════ AUGUST ══════════════
+        {"month": 8,  "label": "gamescom dev",              "severity": "high",   "category": "trade_show",  "approx_date": "2026-08-23", "end_date": "2026-08-25",
+         "notes": "Europe's largest developer conference (formerly devcom), Cologne — 2 days of talks, B2B matchmaking, indie expo, networking"},
         {"month": 8,  "label": "Opening Night Live",       "severity": "high",   "category": "showcase",    "approx_date": "2026-08-25",
          "notes": "Keighley's Gamescom kick-off — major reveals, dominates the full week's coverage"},
         {"month": 8,  "label": "Gamescom",                 "severity": "high",   "category": "trade_show",  "approx_date": "2026-08-26", "end_date": "2026-08-30",
