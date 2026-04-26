@@ -276,6 +276,8 @@ def get_industry_events():
          "notes": "British Academy Games Awards — strong UK/EU press coverage for 24-48 hours"},
         {"month": 4,  "label": "DCP — Deutscher Computerspielpreis", "severity": "medium", "category": "award", "approx_date": "2026-04-29",
          "notes": "German Computer Game Award, Munich — major DACH event, strong regional press and networking"},
+        {"month": 4,  "label": "iicon (ESA)",                "severity": "high",   "category": "trade_show",  "approx_date": "2026-04-27", "end_date": "2026-04-30",
+         "notes": "Interactive Innovation Conference (E3 successor), Fontainebleau Las Vegas — invite-only, ESA-hosted, all major publishers present"},
         {"month": 4,  "label": "gamescom LatAm",           "severity": "low",    "category": "trade_show",  "approx_date": "2026-04-29", "end_date": "2026-05-03",
          "notes": "Gamescom's Latin American edition — growing LATAM market visibility"},
         # ══════════════ MAY ══════════════
@@ -400,6 +402,32 @@ def get_industry_events():
          "notes": "Year-end sale — launch by Dec 15 or hold until January"},
         {"month": 12, "label": "Epic Games Store Free Games","severity":"low",   "category": "sale",        "approx_date": "2026-12-20", "end_date": "2026-12-31",
          "notes": "Epic's annual free games giveaway — player attention on free titles"},
+
+        # ══════════════ 2027 — CONFIRMED & TBC ══════════════
+        {"month": 1,  "label": "CES 2027",                 "severity": "low",    "category": "trade_show",  "approx_date": "2027-01-06", "end_date": "2027-01-09",
+         "notes": "Consumer Electronics Show, Las Vegas — gaming-adjacent, confirmed dates"},
+        {"month": 1,  "label": "Taipei Game Show 2027 [TBC]","severity": "low",  "category": "trade_show",  "approx_date": "2027-01-28", "end_date": "2027-01-31",
+         "notes": "Taiwan's largest game expo — approximate dates based on 2026 pattern"},
+        {"month": 2,  "label": "D.I.C.E. Summit 2027",     "severity": "low",    "category": "trade_show",  "approx_date": "2027-02-16", "end_date": "2027-02-18",
+         "notes": "AIAS industry summit, ARIA Las Vegas — confirmed dates"},
+        {"month": 2,  "label": "DICE Awards 2027",         "severity": "low",    "category": "award",       "approx_date": "2027-02-18",
+         "notes": "30th Annual DICE Awards — closes the D.I.C.E. Summit"},
+        {"month": 2,  "label": "Nintendo Direct 2027 [TBC]","severity":"medium", "category": "showcase",    "approx_date": "2027-02-17",
+         "notes": "Nintendo typically runs a Feb Direct — approximate date"},
+        {"month": 2,  "label": "Steam Next Fest 2027 [TBC]","severity":"high",   "category": "festival",    "approx_date": "2027-02-22", "end_date": "2027-03-01",
+         "notes": "Demo festival — approximate dates based on 2026 pattern"},
+        {"month": 3,  "label": "GDC 2027",                 "severity": "high",   "category": "trade_show",  "approx_date": "2027-03-01", "end_date": "2027-03-05",
+         "notes": "GDC Festival of Gaming, Moscone Center SF — confirmed dates, now rebranded"},
+        {"month": 3,  "label": "IGF Awards 2027 [TBC]",    "severity": "low",    "category": "award",       "approx_date": "2027-03-03",
+         "notes": "Independent Games Festival awards at GDC — approximate date"},
+        {"month": 3,  "label": "GDC Awards 2027 [TBC]",    "severity": "low",    "category": "award",       "approx_date": "2027-03-03",
+         "notes": "Game Developers Choice Awards at GDC — approximate date"},
+        {"month": 3,  "label": "PAX East 2027 [TBC]",      "severity": "medium", "category": "trade_show",  "approx_date": "2027-03-25", "end_date": "2027-03-28",
+         "notes": "Major consumer expo, Boston — approximate dates based on 2026 pattern"},
+        {"month": 4,  "label": "BAFTA Games Awards 2027 [TBC]","severity":"low", "category": "award",       "approx_date": "2027-04-15",
+         "notes": "British Academy Games Awards — approximate date"},
+        {"month": 4,  "label": "DCP 2027 [TBC]",           "severity": "medium", "category": "award",       "approx_date": "2027-04-29",
+         "notes": "Deutscher Computerspielpreis — approximate date based on 2026 pattern"},
     ]
 
 
