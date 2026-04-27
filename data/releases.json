@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-04-27T08:38:46.783237Z",
+    "generated_at": "2026-04-27T16:21:24.382613Z",
     "upcoming_count": 15,
     "next_update": "2026-05-04",
     "sources": [
@@ -880,7 +880,7 @@
           "genres": [
             "Action"
           ],
-          "hype": 56,
+          "hype": 57,
           "metacritic": 0,
           "rating": 0,
           "source": "rawg"
@@ -950,7 +950,7 @@
           "genres": [
             "Action"
           ],
-          "hype": 170,
+          "hype": 171,
           "metacritic": 0,
           "rating": 0,
           "source": "rawg"
@@ -962,7 +962,7 @@
             "Adventure",
             "Action"
           ],
-          "hype": 141,
+          "hype": 142,
           "metacritic": 0,
           "rating": 2.3,
           "source": "rawg"
@@ -973,7 +973,7 @@
           "genres": [
             "Racing"
           ],
-          "hype": 56,
+          "hype": 57,
           "metacritic": 0,
           "rating": 0,
           "source": "rawg"
@@ -985,7 +985,7 @@
             "Adventure",
             "Action"
           ],
-          "hype": 41,
+          "hype": 42,
           "metacritic": 0,
           "rating": 0,
           "source": "rawg"
@@ -1047,7 +1047,7 @@
             "Action",
             "RPG"
           ],
-          "hype": 146,
+          "hype": 147,
           "metacritic": 0,
           "rating": 3.4,
           "source": "rawg"
@@ -1219,7 +1219,7 @@
           "genres": [
             "Action"
           ],
-          "hype": 178,
+          "hype": 179,
           "metacritic": 0,
           "rating": 0,
           "source": "rawg"
@@ -1231,7 +1231,7 @@
             "Adventure",
             "Action"
           ],
-          "hype": 145,
+          "hype": 146,
           "metacritic": 0,
           "rating": 0,
           "source": "rawg"
