@@ -249,7 +249,7 @@ def get_industry_events():
          "notes": "Consumer Electronics Show, Las Vegas — gaming-adjacent, can steal tech headlines"},
         {"month": 1,  "label": "Xbox Developer Direct",    "severity": "medium", "category": "showcase",    "approx_date": "2026-01-23",
          "notes": "Microsoft's focused deep-dive showcase — pulls press for 24-48 hours"},
-        {"month": 1,  "label": "Taipei Game Show",         "severity": "low",    "category": "trade_show",  "approx_date": "2026-01-22", "end_date": "2026-01-25",
+        {"month": 1,  "label": "Taipei Game Show",         "severity": "low",    "category": "trade_show",  "approx_date": "2026-01-29", "end_date": "2026-02-01",
          "notes": "Taiwan's largest game expo — relevant for APAC-facing titles"},
         # ══════════════ FEBRUARY ══════════════
         {"month": 2,  "label": "D.I.C.E. Summit",          "severity": "low",    "category": "trade_show",  "approx_date": "2026-02-10", "end_date": "2026-02-12",
@@ -274,11 +274,15 @@ def get_industry_events():
         # ══════════════ APRIL ══════════════
         {"month": 4,  "label": "BAFTA Games Awards",       "severity": "low",    "category": "award",       "approx_date": "2026-04-17",
          "notes": "British Academy Games Awards — strong UK/EU press coverage for 24-48 hours"},
-        {"month": 4,  "label": "DCP — Deutscher Computerspielpreis", "severity": "medium", "category": "award", "approx_date": "2026-04-23",
-         "notes": "German Computer Game Award, Berlin — major DACH event, strong regional press and networking"},
+        {"month": 4,  "label": "DCP — Deutscher Computerspielpreis", "severity": "medium", "category": "award", "approx_date": "2026-04-29",
+         "notes": "German Computer Game Award, Munich — major DACH event, strong regional press and networking"},
+        {"month": 4,  "label": "iicon (ESA)",                "severity": "high",   "category": "trade_show",  "approx_date": "2026-04-27", "end_date": "2026-04-30",
+         "notes": "Interactive Innovation Conference (E3 successor), Fontainebleau Las Vegas — invite-only, ESA-hosted, all major publishers present"},
         {"month": 4,  "label": "gamescom LatAm",           "severity": "low",    "category": "trade_show",  "approx_date": "2026-04-29", "end_date": "2026-05-03",
          "notes": "Gamescom's Latin American edition — growing LATAM market visibility"},
         # ══════════════ MAY ══════════════
+        {"month": 5,  "label": "EGX at MCM London",        "severity": "low",    "category": "trade_show",  "approx_date": "2026-05-22", "end_date": "2026-05-24",
+         "notes": "UK's biggest gaming expo, now co-located with MCM Comic Con at ExCeL London"},
         {"month": 5,  "label": "Unreal Fest",              "severity": "low",    "category": "trade_show",  "approx_date": "2026-05-06", "end_date": "2026-05-08",
          "notes": "Epic Games' Unreal Engine developer conference"},
         {"month": 5,  "label": "PlayStation State of Play", "severity": "medium","category": "showcase",    "approx_date": "2026-05-14",
@@ -332,6 +336,8 @@ def get_industry_events():
         {"month": 7,  "label": "ChinaJoy",                 "severity": "low",    "category": "trade_show",  "approx_date": "2026-07-24", "end_date": "2026-07-27",
          "notes": "China's largest gaming expo, Shanghai — relevant if targeting Chinese market"},
         # ══════════════ AUGUST ══════════════
+        {"month": 8,  "label": "gamescom dev",              "severity": "high",   "category": "trade_show",  "approx_date": "2026-08-23", "end_date": "2026-08-25",
+         "notes": "Europe's largest developer conference (formerly devcom), Cologne — 2 days of talks, B2B matchmaking, indie expo, networking"},
         {"month": 8,  "label": "Opening Night Live",       "severity": "high",   "category": "showcase",    "approx_date": "2026-08-25",
          "notes": "Keighley's Gamescom kick-off — major reveals, dominates the full week's coverage"},
         {"month": 8,  "label": "Gamescom",                 "severity": "high",   "category": "trade_show",  "approx_date": "2026-08-26", "end_date": "2026-08-30",
@@ -347,6 +353,8 @@ def get_industry_events():
         {"month": 8,  "label": "Awesome Indies Showcase",  "severity": "low",    "category": "showcase",    "approx_date": "2026-08-27",
          "notes": "Indie showcase at Gamescom — curated indie selection"},
         # ══════════════ SEPTEMBER ══════════════
+        {"month": 9,  "label": "D.I.C.E. Athens",             "severity": "low",    "category": "trade_show",  "approx_date": "2026-09-21", "end_date": "2026-09-23",
+         "notes": "AIAS European networking event, Athens — intimate industry gathering for senior professionals"},
         {"month": 9,  "label": "PAX West",                 "severity": "medium", "category": "trade_show",  "approx_date": "2026-09-04", "end_date": "2026-09-07",
          "notes": "Fan-focused expo in Seattle — demos, community events, indie presence"},
         {"month": 9,  "label": "PlayStation State of Play", "severity": "medium","category": "showcase",    "approx_date": "2026-09-10",
@@ -362,8 +370,6 @@ def get_industry_events():
          "notes": "Latin America's largest game show, Sao Paulo — key for LATAM visibility"},
         {"month": 10, "label": "Twitch Galaxies",          "severity": "low",    "category": "showcase",    "approx_date": "2026-10-15",
          "notes": "Twitch's showcase event — streaming-focused reveals"},
-        {"month": 10, "label": "EGX London",               "severity": "low",    "category": "trade_show",  "approx_date": "2026-10-22", "end_date": "2026-10-25",
-         "notes": "UK's largest consumer gaming expo — strong UK press and influencer presence"},
         {"month": 10, "label": "Milan Games Week",         "severity": "low",    "category": "trade_show",  "approx_date": "2026-10-23", "end_date": "2026-10-25",
          "notes": "Italy's largest gaming event — Southern European market visibility"},
         {"month": 10, "label": "Steam Autumn Sale",        "severity": "medium", "category": "sale",        "approx_date": "2026-10-27", "end_date": "2026-11-03",
@@ -396,8 +402,72 @@ def get_industry_events():
          "notes": "Year-end sale — launch by Dec 15 or hold until January"},
         {"month": 12, "label": "Epic Games Store Free Games","severity":"low",   "category": "sale",        "approx_date": "2026-12-20", "end_date": "2026-12-31",
          "notes": "Epic's annual free games giveaway — player attention on free titles"},
+
+        # ══════════════ 2027 — CONFIRMED & TBC ══════════════
+        {"month": 1,  "label": "CES 2027",                 "severity": "low",    "category": "trade_show",  "approx_date": "2027-01-06", "end_date": "2027-01-09",
+         "notes": "Consumer Electronics Show, Las Vegas — gaming-adjacent, confirmed dates"},
+        {"month": 1,  "label": "Taipei Game Show 2027 [TBC]","severity": "low",  "category": "trade_show",  "approx_date": "2027-01-28", "end_date": "2027-01-31",
+         "notes": "Taiwan's largest game expo — approximate dates based on 2026 pattern"},
+        {"month": 2,  "label": "D.I.C.E. Summit 2027",     "severity": "low",    "category": "trade_show",  "approx_date": "2027-02-16", "end_date": "2027-02-18",
+         "notes": "AIAS industry summit, ARIA Las Vegas — confirmed dates"},
+        {"month": 2,  "label": "DICE Awards 2027",         "severity": "low",    "category": "award",       "approx_date": "2027-02-18",
+         "notes": "30th Annual DICE Awards — closes the D.I.C.E. Summit"},
+        {"month": 2,  "label": "Nintendo Direct 2027 [TBC]","severity":"medium", "category": "showcase",    "approx_date": "2027-02-17",
+         "notes": "Nintendo typically runs a Feb Direct — approximate date"},
+        {"month": 2,  "label": "Steam Next Fest 2027 [TBC]","severity":"high",   "category": "festival",    "approx_date": "2027-02-22", "end_date": "2027-03-01",
+         "notes": "Demo festival — approximate dates based on 2026 pattern"},
+        {"month": 3,  "label": "GDC 2027",                 "severity": "high",   "category": "trade_show",  "approx_date": "2027-03-01", "end_date": "2027-03-05",
+         "notes": "GDC Festival of Gaming, Moscone Center SF — confirmed dates, now rebranded"},
+        {"month": 3,  "label": "IGF Awards 2027 [TBC]",    "severity": "low",    "category": "award",       "approx_date": "2027-03-03",
+         "notes": "Independent Games Festival awards at GDC — approximate date"},
+        {"month": 3,  "label": "GDC Awards 2027 [TBC]",    "severity": "low",    "category": "award",       "approx_date": "2027-03-03",
+         "notes": "Game Developers Choice Awards at GDC — approximate date"},
+        {"month": 3,  "label": "PAX East 2027 [TBC]",      "severity": "medium", "category": "trade_show",  "approx_date": "2027-03-25", "end_date": "2027-03-28",
+         "notes": "Major consumer expo, Boston — approximate dates based on 2026 pattern"},
+        {"month": 4,  "label": "BAFTA Games Awards 2027 [TBC]","severity":"low", "category": "award",       "approx_date": "2027-04-15",
+         "notes": "British Academy Games Awards — approximate date"},
+        {"month": 4,  "label": "DCP 2027 [TBC]",           "severity": "medium", "category": "award",       "approx_date": "2027-04-29",
+         "notes": "Deutscher Computerspielpreis — approximate date based on 2026 pattern"},
     ]
 
+
+
+
+# ── Notable Major Releases (curated) ────────────────────────────────────────
+# Big titles that dominate the release window. Updated manually.
+# These get merged into the month_index alongside RAWG data.
+# Add [TBC] suffix to title if date is unconfirmed.
+
+def get_notable_releases():
+    return [
+        # ══════════════ 2026 — CONFIRMED ══════════════
+        {"title": "Marvel's Wolverine",          "date": "2026-09-15", "genres": ["Action", "Adventure", "Superhero"],       "platforms": ["PS5"],
+         "notes": "Insomniac Games — PS5 exclusive, confirmed Sept 15"},
+        {"title": "007: First Light",            "date": "2026-10-13", "genres": ["Action", "Stealth", "FPS"],              "platforms": ["PS5", "Xbox", "PC"],
+         "notes": "IO Interactive — James Bond origin story"},
+        {"title": "Grand Theft Auto VI",         "date": "2026-11-19", "genres": ["Action", "Open World", "Crime"],         "platforms": ["PS5", "Xbox"],
+         "notes": "Rockstar Games — confirmed Nov 19, console only at launch. THE event of the year. Every publisher is clearing the runway."},
+        {"title": "Forza Horizon 6",             "date": "2026-10-01", "genres": ["Racing", "Open World"],                  "platforms": ["Xbox", "PC"],
+         "notes": "Playground Games — expected Q4, date approximate",         "tbc": True},
+        {"title": "Metal Gear Solid Collection Vol. 2","date":"2026-09-01","genres":["Action","Stealth","Remaster"],         "platforms": ["PS5", "Xbox", "PC"],
+         "notes": "Konami — confirmed 2026, date approximate",               "tbc": True},
+        {"title": "Ace Combat 8",                "date": "2026-10-01", "genres": ["Flight", "Action", "Simulation"],        "platforms": ["PS5", "Xbox", "PC"],
+         "notes": "Bandai Namco — confirmed 2026, date approximate",         "tbc": True},
+        {"title": "Control: Resonant",           "date": "2026-08-01", "genres": ["Action", "Shooter", "Supernatural"],     "platforms": ["PS5", "Xbox", "PC"],
+         "notes": "Remedy Entertainment — confirmed 2026",                   "tbc": True},
+        {"title": "Metro 2039",                  "date": "2026-10-01", "genres": ["FPS", "Horror", "Post-Apocalyptic"],     "platforms": ["PS5", "Xbox", "PC"],
+         "notes": "4A Games — announced April 2026, date approximate",       "tbc": True},
+        {"title": "Assassin's Creed Black Flag Remake","date":"2026-11-01","genres":["Action","Adventure","Open World"],     "platforms": ["PS5", "Xbox", "PC"],
+         "notes": "Ubisoft — announced April 2026, date approximate",        "tbc": True},
+        {"title": "Halo: Campaign Evolved",      "date": "2026-11-01", "genres": ["FPS", "Sci-Fi", "Remaster"],            "platforms": ["Xbox", "PC"],
+         "notes": "343 Industries — confirmed 2026, date approximate",       "tbc": True},
+
+        # ══════════════ 2027 — TBC ══════════════
+        {"title": "GTA VI (PC) [TBC]",           "date": "2027-02-01", "genres": ["Action", "Open World", "Crime"],         "platforms": ["PC"],
+         "notes": "Rockstar Games — PC release widely expected early 2027 based on GTA V pattern, NOT confirmed", "tbc": True},
+        {"title": "Gears of War: E-Day [TBC]",   "date": "2027-06-01", "genres": ["Shooter", "Action", "Co-op"],           "platforms": ["Xbox", "PC"],
+         "notes": "The Coalition — confirmed in development, 2027 release widely expected",                       "tbc": True},
+    ]
 
 # ── Month index ───────────────────────────────────────────────────────────────
 
@@ -441,6 +511,33 @@ def main():
 
     print("\n🗂  Enriching historical data…")
     historical = enrich_historical(enrichment)
+
+    # 5. Notable curated releases
+    print("🎮 Adding notable curated releases…")
+    notable = get_notable_releases()
+    # Merge into upcoming, avoiding duplicates
+    existing_titles_lower = {r["title"].lower() for r in all_upcoming}
+    for nr in notable:
+        if nr["title"].lower().replace(" [tbc]", "") not in existing_titles_lower:
+            try:
+                dt = __import__("datetime").date.fromisoformat(nr["date"])
+            except Exception:
+                continue
+            item = {
+                "title": nr["title"] if not nr.get("tbc") else (nr["title"] if "[TBC]" in nr["title"] else nr["title"] + " [TBC]"),
+                "date_iso": nr["date"],
+                "month": dt.month,
+                "year": dt.year,
+                "genres": nr.get("genres", []),
+                "platforms": nr.get("platforms", []),
+                "hype_score": 99999 if "Grand Theft Auto" in nr["title"] else 9999,
+                "metacritic": 0,
+                "rating": 0,
+                "source": "curated",
+            }
+            all_upcoming.append(item)
+    all_upcoming.sort(key=lambda x: (x.get("date_iso", ""), -x.get("hype_score", 0)))
+    print(f"  ✓ {len(notable)} notable releases merged")
 
     print("🗂  Building month index…")
     month_index = build_month_index(all_upcoming, historical)
