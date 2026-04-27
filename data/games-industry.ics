@@ -878,22 +878,12 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260426
-DTEND;VALUE=DATE:20260426
-SUMMARY:🎮 Aphelion (2025)
-DESCRIPTION:Game Release: Aphelion (2025)\\nGenre: Adventure\\nPlatforms: PC\, PlayStation 5\, Xbox One\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Game Release
-UID:20260426-rel-87@zrconsulting.de
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260429
 DTEND;VALUE=DATE:20260429
 SUMMARY:🎮 Industria 2
 DESCRIPTION:Game Release: Industria 2\\nGenre: Action\\nPlatforms: PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260429-rel-88@zrconsulting.de
+UID:20260429-rel-87@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -903,7 +893,7 @@ DTEND;VALUE=DATE:20260527
 SUMMARY:🎮 007 First Light
 DESCRIPTION:Game Release: 007 First Light\\nGenre: Action\\nPlatforms: PC\, PlayStation 5\, Xbox Series S/X\, Nintendo Switch\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260527-rel-89@zrconsulting.de
+UID:20260527-rel-88@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -913,7 +903,7 @@ DTEND;VALUE=DATE:20260512
 SUMMARY:🎮 Directive 8020
 DESCRIPTION:Game Release: Directive 8020\\nGenre: Adventure\, Action\\nPlatforms: PC\, PlayStation 5\, Xbox Series S/X\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260512-rel-90@zrconsulting.de
+UID:20260512-rel-89@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -923,7 +913,7 @@ DTEND;VALUE=DATE:20260519
 SUMMARY:🎮 Forza Horizon 6
 DESCRIPTION:Game Release: Forza Horizon 6\\nGenre: Racing\\nPlatforms: PC\, Xbox Series S/X\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260519-rel-91@zrconsulting.de
+UID:20260519-rel-90@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -933,7 +923,7 @@ DTEND;VALUE=DATE:20260522
 SUMMARY:🎮 Lego Batman: Legacy of the Dark Knight
 DESCRIPTION:Game Release: Lego Batman: Legacy of the Dark Knight\\nGenre: Adventure\, Action\\nPlatforms: PC\, PlayStation 5\, Xbox Series S/X\, Nintendo Switch\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260522-rel-92@zrconsulting.de
+UID:20260522-rel-91@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -943,7 +933,7 @@ DTEND;VALUE=DATE:20260507
 SUMMARY:🎮 Mixtape (2025)
 DESCRIPTION:Game Release: Mixtape (2025)\\nGenre: Indie\, Adventure\\nPlatforms: PC\, PlayStation 5\, Xbox Series S/X\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260507-rel-93@zrconsulting.de
+UID:20260507-rel-92@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -953,7 +943,7 @@ DTEND;VALUE=DATE:20260605
 SUMMARY:🎮 Gothic 1 Remake
 DESCRIPTION:Game Release: Gothic 1 Remake\\nGenre: Action\, RPG\\nPlatforms: PC\, PlayStation 5\, Xbox One\, PlayStation 4\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260605-rel-94@zrconsulting.de
+UID:20260605-rel-93@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -963,7 +953,7 @@ DTEND;VALUE=DATE:20260618
 SUMMARY:🎮 The Adventures of Elliot: The Millennium Tales
 DESCRIPTION:Game Release: The Adventures of Elliot: The Millennium Tales\\nGenre: Adventure\, RPG\\nPlatforms: PC\, PlayStation 5\, Xbox Series S/X\, Nintendo Switch\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260618-rel-95@zrconsulting.de
+UID:20260618-rel-94@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -973,7 +963,7 @@ DTEND;VALUE=DATE:20260709
 SUMMARY:🎮 Assassin's Creed Back Flag Resynced
 DESCRIPTION:Game Release: Assassin's Creed Back Flag Resynced\\nGenre: Adventure\, Action\\nPlatforms: PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260709-rel-96@zrconsulting.de
+UID:20260709-rel-95@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -983,7 +973,7 @@ DTEND;VALUE=DATE:20260804
 SUMMARY:🎮 Beast of Reincarnation
 DESCRIPTION:Game Release: Beast of Reincarnation\\nGenre: Action\, RPG\\nPlatforms: PC\, PlayStation 5\, Xbox Series S/X\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260804-rel-97@zrconsulting.de
+UID:20260804-rel-96@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -993,7 +983,7 @@ DTEND;VALUE=DATE:20260831
 SUMMARY:🎮 Lords of the Fallen 2
 DESCRIPTION:Game Release: Lords of the Fallen 2\\nGenre: Action\, RPG\\nPlatforms: PC\, PlayStation 5\, Xbox Series S/X\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260831-rel-98@zrconsulting.de
+UID:20260831-rel-97@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1003,7 +993,7 @@ DTEND;VALUE=DATE:20260915
 SUMMARY:🎮 Marvel's Wolverine
 DESCRIPTION:Game Release: Marvel's Wolverine\\nGenre: Action\\nPlatforms: PlayStation 5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260915-rel-99@zrconsulting.de
+UID:20260915-rel-98@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1013,7 +1003,7 @@ DTEND;VALUE=DATE:20260909
 SUMMARY:🎮 Phantom Blade Zero
 DESCRIPTION:Game Release: Phantom Blade Zero\\nGenre: Adventure\, Action\\nPlatforms: PC\, PlayStation 5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260909-rel-100@zrconsulting.de
+UID:20260909-rel-99@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
