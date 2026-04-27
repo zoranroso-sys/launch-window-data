@@ -21,6 +21,8 @@ Run manually:  python scripts/fetch_data.py
 import os, json, time, datetime, requests
 
 RAWG_API_KEY         = os.environ.get("RAWG_API_KEY", "")
+SUPABASE_URL         = os.environ.get("SUPABASE_URL", "https://qrqikdqroupwselefmyu.supabase.co")
+SUPABASE_ANON_KEY    = os.environ.get("SUPABASE_ANON_KEY", "")
 TWITCH_CLIENT_ID     = os.environ.get("TWITCH_CLIENT_ID", "")
 TWITCH_CLIENT_SECRET = os.environ.get("TWITCH_CLIENT_SECRET", "")
 OUTPUT_PATH          = os.path.join(os.path.dirname(__file__), "..", "data", "releases.json")
@@ -469,6 +471,50 @@ def get_notable_releases():
          "notes": "The Coalition — confirmed in development, 2027 release widely expected",                       "tbc": True},
     ]
 
+
+
+# ── Supabase approved events ─────────────────────────────────────────────────
+
+def fetch_supabase_approved():
+    """Fetch community-approved events from Supabase."""
+    if not SUPABASE_ANON_KEY:
+        print("  ⚠️  No SUPABASE_ANON_KEY — skipping Supabase approved events.")
+        return []
+
+    try:
+        r = requests.get(
+            f"{SUPABASE_URL}/rest/v1/approved_events",
+            params={"published": "eq.true", "select": "*"},
+            headers={
+                "apikey": SUPABASE_ANON_KEY,
+                "Authorization": f"Bearer {SUPABASE_ANON_KEY}",
+            },
+            timeout=10,
+        )
+        r.raise_for_status()
+        rows = r.json()
+    except Exception as e:
+        print(f"  Supabase error: {e}")
+        return []
+
+    results = []
+    for row in rows:
+        entry = {
+            "month": int(row["approx_date"].split("-")[1]),
+            "label": row["label"] + (" [TBC]" if row.get("tbc") else ""),
+            "severity": row.get("severity", "medium"),
+            "category": row.get("category", "showcase"),
+            "approx_date": row["approx_date"],
+            "notes": row.get("notes", ""),
+            "source": "community",
+        }
+        if row.get("end_date"):
+            entry["end_date"] = row["end_date"]
+        results.append(entry)
+
+    print(f"  ✓ Supabase: {len(results)} community-approved events")
+    return results
+
 # ── Month index ───────────────────────────────────────────────────────────────
 
 def build_month_index(upcoming, historical_by_month):
@@ -563,6 +609,11 @@ def main():
     all_upcoming.sort(key=lambda x: (x.get("date_iso", ""), -x.get("hype_score", 0)))
     print(f"  ✓ {len(notable)} notable releases merged")
 
+    # 6. Community-approved events from Supabase
+    print("🌐 Fetching community-approved events from Supabase…")
+    community_events = fetch_supabase_approved()
+    all_events = get_industry_events() + community_events
+
     print("🗂  Building month index…")
     month_index = build_month_index(all_upcoming, historical)
 
@@ -573,7 +624,7 @@ def main():
             "next_update":       (datetime.datetime.utcnow() + datetime.timedelta(days=7)).strftime("%Y-%m-%d"),
             "sources":           ["rawg", "igdb", "steamspy"],
         },
-        "industry_events": get_industry_events(),
+        "industry_events": all_events,
         "month_index":     month_index,
     }
 
@@ -584,7 +635,7 @@ def main():
     # 8. Generate ICS calendar file
     print("📅 Generating ICS calendar file…")
     ics_path = os.path.join(os.path.dirname(OUTPUT_PATH), "games-industry.ics")
-    generate_ics(all_upcoming, get_industry_events(), ics_path)
+    generate_ics(all_upcoming, all_events, ics_path)
 
     kb = os.path.getsize(OUTPUT_PATH) / 1024
     print(f"\n✅ Done → {OUTPUT_PATH} ({kb:.1f} KB)")
