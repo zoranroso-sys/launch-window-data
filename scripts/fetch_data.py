@@ -431,24 +431,86 @@ def get_industry_events():
     ]
 
 
+
+
+# ── Notable Major Releases (curated) ────────────────────────────────────────
+# Big titles that dominate the release window. Updated manually.
+# These get merged into the month_index alongside RAWG data.
+# Add [TBC] suffix to title if date is unconfirmed.
+
+def get_notable_releases():
+    return [
+        # ══════════════ 2026 — CONFIRMED ══════════════
+        {"title": "Marvel's Wolverine",          "date": "2026-09-15", "genres": ["Action", "Adventure", "Superhero"],       "platforms": ["PS5"],
+         "notes": "Insomniac Games — PS5 exclusive, confirmed Sept 15"},
+        {"title": "007: First Light",            "date": "2026-10-13", "genres": ["Action", "Stealth", "FPS"],              "platforms": ["PS5", "Xbox", "PC"],
+         "notes": "IO Interactive — James Bond origin story"},
+        {"title": "Grand Theft Auto VI",         "date": "2026-11-19", "genres": ["Action", "Open World", "Crime"],         "platforms": ["PS5", "Xbox"],
+         "notes": "Rockstar Games — confirmed Nov 19, console only at launch. THE event of the year. Every publisher is clearing the runway."},
+        {"title": "Forza Horizon 6",             "date": "2026-10-01", "genres": ["Racing", "Open World"],                  "platforms": ["Xbox", "PC"],
+         "notes": "Playground Games — expected Q4, date approximate",         "tbc": True},
+        {"title": "Metal Gear Solid Collection Vol. 2","date":"2026-09-01","genres":["Action","Stealth","Remaster"],         "platforms": ["PS5", "Xbox", "PC"],
+         "notes": "Konami — confirmed 2026, date approximate",               "tbc": True},
+        {"title": "Ace Combat 8",                "date": "2026-10-01", "genres": ["Flight", "Action", "Simulation"],        "platforms": ["PS5", "Xbox", "PC"],
+         "notes": "Bandai Namco — confirmed 2026, date approximate",         "tbc": True},
+        {"title": "Control: Resonant",           "date": "2026-08-01", "genres": ["Action", "Shooter", "Supernatural"],     "platforms": ["PS5", "Xbox", "PC"],
+         "notes": "Remedy Entertainment — confirmed 2026",                   "tbc": True},
+        {"title": "Metro 2039",                  "date": "2026-10-01", "genres": ["FPS", "Horror", "Post-Apocalyptic"],     "platforms": ["PS5", "Xbox", "PC"],
+         "notes": "4A Games — announced April 2026, date approximate",       "tbc": True},
+        {"title": "Assassin's Creed Black Flag Remake","date":"2026-11-01","genres":["Action","Adventure","Open World"],     "platforms": ["PS5", "Xbox", "PC"],
+         "notes": "Ubisoft — announced April 2026, date approximate",        "tbc": True},
+        {"title": "Halo: Campaign Evolved",      "date": "2026-11-01", "genres": ["FPS", "Sci-Fi", "Remaster"],            "platforms": ["Xbox", "PC"],
+         "notes": "343 Industries — confirmed 2026, date approximate",       "tbc": True},
+
+        # ══════════════ 2027 — TBC ══════════════
+        {"title": "GTA VI (PC) [TBC]",           "date": "2027-02-01", "genres": ["Action", "Open World", "Crime"],         "platforms": ["PC"],
+         "notes": "Rockstar Games — PC release widely expected early 2027 based on GTA V pattern, NOT confirmed", "tbc": True},
+        {"title": "Gears of War: E-Day [TBC]",   "date": "2027-06-01", "genres": ["Shooter", "Action", "Co-op"],           "platforms": ["Xbox", "PC"],
+         "notes": "The Coalition — confirmed in development, 2027 release widely expected",                       "tbc": True},
+    ]
+
 # ── Month index ───────────────────────────────────────────────────────────────
 
 def build_month_index(upcoming, historical_by_month):
+    """Build per-month lookup combining upcoming releases + historical comps.
+    Uses year-month keys (e.g. '2026-05') for multi-year support."""
     index = {}
+
+    # Standard 2026 months 1-12 (always present for the checker tool)
     for m in range(1, 13):
-        month_upcoming = sorted(
-            [r for r in upcoming if r["month"] == m],
-            key=lambda x: x.get("hype_score", 0), reverse=True
-        )
         index[str(m)] = {
-            "upcoming_releases": [
-                {"title": r["title"], "date": r["date_iso"], "genres": r["genres"][:3],
-                 "hype": r["hype_score"], "metacritic": r.get("metacritic", 0),
-                 "rating": r.get("rating", 0), "source": r.get("source", "")}
-                for r in month_upcoming[:12]
-            ],
+            "upcoming_releases": [],
             "top_performers": historical_by_month.get(str(m), []),
         }
+
+    # Populate from upcoming releases using year-aware keys
+    for r in upcoming:
+        year = r.get("year", 2026)
+        m = r["month"]
+
+        # Year-month key for calendar (e.g. "2026-05", "2027-01")
+        ym_key = f"{year}-{m:02d}"
+        if ym_key not in index:
+            index[ym_key] = {"upcoming_releases": [], "top_performers": []}
+
+        entry = {
+            "title": r["title"], "date": r["date_iso"], "genres": r.get("genres", [])[:3],
+            "hype": r.get("hype_score", 0), "metacritic": r.get("metacritic", 0),
+            "rating": r.get("rating", 0), "source": r.get("source", ""),
+        }
+
+        index[ym_key]["upcoming_releases"].append(entry)
+
+        # Also add to simple month key (1-12) for the checker tool (2026 only)
+        if year == 2026:
+            index[str(m)]["upcoming_releases"].append(entry)
+
+    # Sort each month's releases by hype descending, cap at 15
+    for key in index:
+        releases = index[key]["upcoming_releases"]
+        releases.sort(key=lambda x: x.get("hype", 0), reverse=True)
+        index[key]["upcoming_releases"] = releases[:15]
+
     return index
 
 
@@ -473,6 +535,33 @@ def main():
 
     print("\n🗂  Enriching historical data…")
     historical = enrich_historical(enrichment)
+
+    # 5. Notable curated releases
+    print("🎮 Adding notable curated releases…")
+    notable = get_notable_releases()
+    # Merge into upcoming, avoiding duplicates
+    existing_titles_lower = {r["title"].lower() for r in all_upcoming}
+    for nr in notable:
+        if nr["title"].lower().replace(" [tbc]", "") not in existing_titles_lower:
+            try:
+                dt = __import__("datetime").date.fromisoformat(nr["date"])
+            except Exception:
+                continue
+            item = {
+                "title": nr["title"] if not nr.get("tbc") else (nr["title"] if "[TBC]" in nr["title"] else nr["title"] + " [TBC]"),
+                "date_iso": nr["date"],
+                "month": dt.month,
+                "year": dt.year,
+                "genres": nr.get("genres", []),
+                "platforms": nr.get("platforms", []),
+                "hype_score": 99999 if "Grand Theft Auto" in nr["title"] else 9999,
+                "metacritic": 0,
+                "rating": 0,
+                "source": "curated",
+            }
+            all_upcoming.append(item)
+    all_upcoming.sort(key=lambda x: (x.get("date_iso", ""), -x.get("hype_score", 0)))
+    print(f"  ✓ {len(notable)} notable releases merged")
 
     print("🗂  Building month index…")
     month_index = build_month_index(all_upcoming, historical)
