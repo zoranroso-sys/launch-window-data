@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-04-26T15:25:21.837516Z",
-    "upcoming_count": 16,
-    "next_update": "2026-05-03",
+    "generated_at": "2026-04-27T08:21:53.695715Z",
+    "upcoming_count": 0,
+    "next_update": "2026-05-04",
     "sources": [
       "rawg",
       "igdb",
@@ -873,52 +873,7 @@
       ]
     },
     "4": {
-      "upcoming_releases": [
-        {
-          "title": "Saros",
-          "date": "2026-04-30",
-          "genres": [
-            "Action"
-          ],
-          "hype": 56,
-          "metacritic": 0,
-          "rating": 0,
-          "source": "rawg"
-        },
-        {
-          "title": "Heroes of Might & Magic: Olden Era",
-          "date": "2026-04-30",
-          "genres": [
-            "Strategy"
-          ],
-          "hype": 29,
-          "metacritic": 0,
-          "rating": 0,
-          "source": "rawg"
-        },
-        {
-          "title": "Aphelion (2025)",
-          "date": "2026-04-26",
-          "genres": [
-            "Adventure"
-          ],
-          "hype": 16,
-          "metacritic": 0,
-          "rating": 0,
-          "source": "rawg"
-        },
-        {
-          "title": "Industria 2",
-          "date": "2026-04-29",
-          "genres": [
-            "Action"
-          ],
-          "hype": 7,
-          "metacritic": 0,
-          "rating": 0,
-          "source": "rawg"
-        }
-      ],
+      "upcoming_releases": [],
       "top_performers": [
         {
           "title": "Dead Island 2",
@@ -954,66 +909,7 @@
       ]
     },
     "5": {
-      "upcoming_releases": [
-        {
-          "title": "007 First Light",
-          "date": "2026-05-27",
-          "genres": [
-            "Action"
-          ],
-          "hype": 170,
-          "metacritic": 0,
-          "rating": 0,
-          "source": "rawg"
-        },
-        {
-          "title": "Directive 8020",
-          "date": "2026-05-12",
-          "genres": [
-            "Adventure",
-            "Action"
-          ],
-          "hype": 141,
-          "metacritic": 0,
-          "rating": 2.3,
-          "source": "rawg"
-        },
-        {
-          "title": "Forza Horizon 6",
-          "date": "2026-05-19",
-          "genres": [
-            "Racing"
-          ],
-          "hype": 56,
-          "metacritic": 0,
-          "rating": 0,
-          "source": "rawg"
-        },
-        {
-          "title": "Lego Batman: Legacy of the Dark Knight",
-          "date": "2026-05-22",
-          "genres": [
-            "Adventure",
-            "Action"
-          ],
-          "hype": 41,
-          "metacritic": 0,
-          "rating": 0,
-          "source": "rawg"
-        },
-        {
-          "title": "Mixtape (2025)",
-          "date": "2026-05-07",
-          "genres": [
-            "Indie",
-            "Adventure"
-          ],
-          "hype": 33,
-          "metacritic": 0,
-          "rating": 0,
-          "source": "rawg"
-        }
-      ],
+      "upcoming_releases": [],
       "top_performers": [
         {
           "title": "System Shock Remake",
@@ -1050,32 +946,7 @@
       ]
     },
     "6": {
-      "upcoming_releases": [
-        {
-          "title": "Gothic 1 Remake",
-          "date": "2026-06-05",
-          "genres": [
-            "Action",
-            "RPG"
-          ],
-          "hype": 146,
-          "metacritic": 0,
-          "rating": 3.4,
-          "source": "rawg"
-        },
-        {
-          "title": "The Adventures of Elliot: The Millennium Tales",
-          "date": "2026-06-18",
-          "genres": [
-            "Adventure",
-            "RPG"
-          ],
-          "hype": 6,
-          "metacritic": 0,
-          "rating": 0,
-          "source": "rawg"
-        }
-      ],
+      "upcoming_releases": [],
       "top_performers": [
         {
           "title": "Diablo IV",
@@ -1111,20 +982,7 @@
       ]
     },
     "7": {
-      "upcoming_releases": [
-        {
-          "title": "Assassin's Creed Back Flag Resynced",
-          "date": "2026-07-09",
-          "genres": [
-            "Adventure",
-            "Action"
-          ],
-          "hype": 6,
-          "metacritic": 0,
-          "rating": 0,
-          "source": "rawg"
-        }
-      ],
+      "upcoming_releases": [],
       "top_performers": [
         {
           "title": "Remnant II",
@@ -1160,32 +1018,7 @@
       ]
     },
     "8": {
-      "upcoming_releases": [
-        {
-          "title": "Beast of Reincarnation",
-          "date": "2026-08-04",
-          "genres": [
-            "Action",
-            "RPG"
-          ],
-          "hype": 41,
-          "metacritic": 0,
-          "rating": 0,
-          "source": "rawg"
-        },
-        {
-          "title": "Lords of the Fallen 2",
-          "date": "2026-08-31",
-          "genres": [
-            "Action",
-            "RPG"
-          ],
-          "hype": 9,
-          "metacritic": 0,
-          "rating": 0,
-          "source": "rawg"
-        }
-      ],
+      "upcoming_releases": [],
       "top_performers": [
         {
           "title": "Baldur's Gate 3",
@@ -1223,31 +1056,7 @@
       ]
     },
     "9": {
-      "upcoming_releases": [
-        {
-          "title": "Marvel's Wolverine",
-          "date": "2026-09-15",
-          "genres": [
-            "Action"
-          ],
-          "hype": 178,
-          "metacritic": 0,
-          "rating": 0,
-          "source": "rawg"
-        },
-        {
-          "title": "Phantom Blade Zero",
-          "date": "2026-09-09",
-          "genres": [
-            "Adventure",
-            "Action"
-          ],
-          "hype": 145,
-          "metacritic": 0,
-          "rating": 0,
-          "source": "rawg"
-        }
-      ],
+      "upcoming_releases": [],
       "top_performers": [
         {
           "title": "Starfield",
