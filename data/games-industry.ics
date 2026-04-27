@@ -858,12 +858,22 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260429
+DTEND;VALUE=DATE:20260429
+SUMMARY:🎮 Industria 2
+DESCRIPTION:Game Release: Industria 2\\nGenre: Action\\nPlatforms: PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Game Release
+UID:20260429-rel-85@zrconsulting.de
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260430
 DTEND;VALUE=DATE:20260430
 SUMMARY:🎮 Saros
 DESCRIPTION:Game Release: Saros\\nGenre: Action\\nPlatforms: PlayStation 5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260430-rel-85@zrconsulting.de
+UID:20260430-rel-86@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -873,27 +883,17 @@ DTEND;VALUE=DATE:20260430
 SUMMARY:🎮 Heroes of Might & Magic: Olden Era
 DESCRIPTION:Game Release: Heroes of Might & Magic: Olden Era\\nGenre: Strategy\\nPlatforms: PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260430-rel-86@zrconsulting.de
+UID:20260430-rel-87@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260429
-DTEND;VALUE=DATE:20260429
-SUMMARY:🎮 Industria 2
-DESCRIPTION:Game Release: Industria 2\\nGenre: Action\\nPlatforms: PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+DTSTART;VALUE=DATE:20260507
+DTEND;VALUE=DATE:20260507
+SUMMARY:🎮 Mixtape (2025)
+DESCRIPTION:Game Release: Mixtape (2025)\\nGenre: Indie\, Adventure\\nPlatforms: PC\, PlayStation 5\, Xbox Series S/X\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260429-rel-87@zrconsulting.de
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260527
-DTEND;VALUE=DATE:20260527
-SUMMARY:🎮 007 First Light
-DESCRIPTION:Game Release: 007 First Light\\nGenre: Action\\nPlatforms: PC\, PlayStation 5\, Xbox Series S/X\, Nintendo Switch\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Game Release
-UID:20260527-rel-88@zrconsulting.de
+UID:20260507-rel-88@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -928,12 +928,12 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260507
-DTEND;VALUE=DATE:20260507
-SUMMARY:🎮 Mixtape (2025)
-DESCRIPTION:Game Release: Mixtape (2025)\\nGenre: Indie\, Adventure\\nPlatforms: PC\, PlayStation 5\, Xbox Series S/X\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+DTSTART;VALUE=DATE:20260527
+DTEND;VALUE=DATE:20260527
+SUMMARY:🎮 007 First Light
+DESCRIPTION:Game Release: 007 First Light\\nGenre: Action\\nPlatforms: PC\, PlayStation 5\, Xbox Series S/X\, Nintendo Switch\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260507-rel-92@zrconsulting.de
+UID:20260527-rel-92@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -968,12 +968,22 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20260801
+SUMMARY:🎮 Control: Resonant [TBC]
+DESCRIPTION:Game Release: Control: Resonant [TBC]\\nGenre: Action\, Shooter\, Supernatural\\nPlatforms: PS5\, Xbox\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Game Release
+UID:20260801-rel-96@zrconsulting.de
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260804
 DTEND;VALUE=DATE:20260804
 SUMMARY:🎮 Beast of Reincarnation
 DESCRIPTION:Game Release: Beast of Reincarnation\\nGenre: Action\, RPG\\nPlatforms: PC\, PlayStation 5\, Xbox Series S/X\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260804-rel-96@zrconsulting.de
+UID:20260804-rel-97@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -983,17 +993,17 @@ DTEND;VALUE=DATE:20260831
 SUMMARY:🎮 Lords of the Fallen 2
 DESCRIPTION:Game Release: Lords of the Fallen 2\\nGenre: Action\, RPG\\nPlatforms: PC\, PlayStation 5\, Xbox Series S/X\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260831-rel-97@zrconsulting.de
+UID:20260831-rel-98@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260915
-DTEND;VALUE=DATE:20260915
-SUMMARY:🎮 Marvel's Wolverine
-DESCRIPTION:Game Release: Marvel's Wolverine\\nGenre: Action\\nPlatforms: PlayStation 5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260901
+SUMMARY:🎮 Metal Gear Solid Collection Vol. 2 [TBC]
+DESCRIPTION:Game Release: Metal Gear Solid Collection Vol. 2 [TBC]\\nGenre: Action\, Stealth\, Remaster\\nPlatforms: PS5\, Xbox\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260915-rel-98@zrconsulting.de
+UID:20260901-rel-99@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -1003,7 +1013,97 @@ DTEND;VALUE=DATE:20260909
 SUMMARY:🎮 Phantom Blade Zero
 DESCRIPTION:Game Release: Phantom Blade Zero\\nGenre: Adventure\, Action\\nPlatforms: PC\, PlayStation 5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260909-rel-99@zrconsulting.de
+UID:20260909-rel-100@zrconsulting.de
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260915
+DTEND;VALUE=DATE:20260915
+SUMMARY:🎮 Marvel's Wolverine
+DESCRIPTION:Game Release: Marvel's Wolverine\\nGenre: Action\\nPlatforms: PlayStation 5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Game Release
+UID:20260915-rel-101@zrconsulting.de
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261001
+SUMMARY:🎮 Ace Combat 8 [TBC]
+DESCRIPTION:Game Release: Ace Combat 8 [TBC]\\nGenre: Flight\, Action\, Simulation\\nPlatforms: PS5\, Xbox\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Game Release
+UID:20261001-rel-102@zrconsulting.de
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261001
+SUMMARY:🎮 Metro 2039 [TBC]
+DESCRIPTION:Game Release: Metro 2039 [TBC]\\nGenre: FPS\, Horror\, Post-Apocalyptic\\nPlatforms: PS5\, Xbox\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Game Release
+UID:20261001-rel-103@zrconsulting.de
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261013
+SUMMARY:🎮 007: First Light
+DESCRIPTION:Game Release: 007: First Light\\nGenre: Action\, Stealth\, FPS\\nPlatforms: PS5\, Xbox\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Game Release
+UID:20261013-rel-104@zrconsulting.de
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261101
+SUMMARY:🎮 Assassin's Creed Black Flag Remake [TBC]
+DESCRIPTION:Game Release: Assassin's Creed Black Flag Remake [TBC]\\nGenre: Action\, Adventure\, Open World\\nPlatforms: PS5\, Xbox\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Game Release
+UID:20261101-rel-105@zrconsulting.de
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261101
+SUMMARY:🎮 Halo: Campaign Evolved [TBC]
+DESCRIPTION:Game Release: Halo: Campaign Evolved [TBC]\\nGenre: FPS\, Sci-Fi\, Remaster\\nPlatforms: Xbox\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Game Release
+UID:20261101-rel-106@zrconsulting.de
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261119
+SUMMARY:🎮 Grand Theft Auto VI
+DESCRIPTION:Game Release: Grand Theft Auto VI\\nGenre: Action\, Open World\, Crime\\nPlatforms: PS5\, Xbox\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Game Release
+UID:20261119-rel-107@zrconsulting.de
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270201
+SUMMARY:🎮 GTA VI (PC) [TBC]
+DESCRIPTION:Game Release: GTA VI (PC) [TBC]\\nGenre: Action\, Open World\, Crime\\nPlatforms: PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Game Release
+UID:20270201-rel-108@zrconsulting.de
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20270601
+DTEND;VALUE=DATE:20270601
+SUMMARY:🎮 Gears of War: E-Day [TBC]
+DESCRIPTION:Game Release: Gears of War: E-Day [TBC]\\nGenre: Shooter\, Action\, Co-op\\nPlatforms: Xbox\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Game Release
+UID:20270601-rel-109@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT

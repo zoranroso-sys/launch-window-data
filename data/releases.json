@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2026-04-27T16:21:24.382613Z",
-    "upcoming_count": 15,
+    "generated_at": "2026-04-27T16:33:14.114678Z",
+    "upcoming_count": 25,
     "next_update": "2026-05-04",
     "sources": [
       "rawg",
@@ -1151,6 +1151,19 @@
     "8": {
       "upcoming_releases": [
         {
+          "title": "Control: Resonant [TBC]",
+          "date": "2026-08-01",
+          "genres": [
+            "Action",
+            "Shooter",
+            "Supernatural"
+          ],
+          "hype": 9999,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "curated"
+        },
+        {
           "title": "Beast of Reincarnation",
           "date": "2026-08-04",
           "genres": [
@@ -1213,6 +1226,19 @@
     },
     "9": {
       "upcoming_releases": [
+        {
+          "title": "Metal Gear Solid Collection Vol. 2 [TBC]",
+          "date": "2026-09-01",
+          "genres": [
+            "Action",
+            "Stealth",
+            "Remaster"
+          ],
+          "hype": 9999,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "curated"
+        },
         {
           "title": "Marvel's Wolverine",
           "date": "2026-09-15",
@@ -1283,7 +1309,47 @@
       ]
     },
     "10": {
-      "upcoming_releases": [],
+      "upcoming_releases": [
+        {
+          "title": "Ace Combat 8 [TBC]",
+          "date": "2026-10-01",
+          "genres": [
+            "Flight",
+            "Action",
+            "Simulation"
+          ],
+          "hype": 9999,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "curated"
+        },
+        {
+          "title": "Metro 2039 [TBC]",
+          "date": "2026-10-01",
+          "genres": [
+            "FPS",
+            "Horror",
+            "Post-Apocalyptic"
+          ],
+          "hype": 9999,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "curated"
+        },
+        {
+          "title": "007: First Light",
+          "date": "2026-10-13",
+          "genres": [
+            "Action",
+            "Stealth",
+            "FPS"
+          ],
+          "hype": 9999,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "curated"
+        }
+      ],
       "top_performers": [
         {
           "title": "Alan Wake 2",
@@ -1330,7 +1396,47 @@
       ]
     },
     "11": {
-      "upcoming_releases": [],
+      "upcoming_releases": [
+        {
+          "title": "Grand Theft Auto VI",
+          "date": "2026-11-19",
+          "genres": [
+            "Action",
+            "Open World",
+            "Crime"
+          ],
+          "hype": 99999,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "curated"
+        },
+        {
+          "title": "Assassin's Creed Black Flag Remake [TBC]",
+          "date": "2026-11-01",
+          "genres": [
+            "Action",
+            "Adventure",
+            "Open World"
+          ],
+          "hype": 9999,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "curated"
+        },
+        {
+          "title": "Halo: Campaign Evolved [TBC]",
+          "date": "2026-11-01",
+          "genres": [
+            "FPS",
+            "Sci-Fi",
+            "Remaster"
+          ],
+          "hype": 9999,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "curated"
+        }
+      ],
       "top_performers": [
         {
           "title": "Call of Duty: Modern Warfare III",
@@ -1400,6 +1506,360 @@
           "owners": 0
         }
       ]
+    },
+    "2026-04": {
+      "upcoming_releases": [
+        {
+          "title": "Saros",
+          "date": "2026-04-30",
+          "genres": [
+            "Action"
+          ],
+          "hype": 57,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "rawg"
+        },
+        {
+          "title": "Heroes of Might & Magic: Olden Era",
+          "date": "2026-04-30",
+          "genres": [
+            "Strategy"
+          ],
+          "hype": 29,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "rawg"
+        },
+        {
+          "title": "Industria 2",
+          "date": "2026-04-29",
+          "genres": [
+            "Action"
+          ],
+          "hype": 6,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "rawg"
+        }
+      ],
+      "top_performers": []
+    },
+    "2026-05": {
+      "upcoming_releases": [
+        {
+          "title": "007 First Light",
+          "date": "2026-05-27",
+          "genres": [
+            "Action"
+          ],
+          "hype": 171,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "rawg"
+        },
+        {
+          "title": "Directive 8020",
+          "date": "2026-05-12",
+          "genres": [
+            "Adventure",
+            "Action"
+          ],
+          "hype": 142,
+          "metacritic": 0,
+          "rating": 2.3,
+          "source": "rawg"
+        },
+        {
+          "title": "Forza Horizon 6",
+          "date": "2026-05-19",
+          "genres": [
+            "Racing"
+          ],
+          "hype": 57,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "rawg"
+        },
+        {
+          "title": "Lego Batman: Legacy of the Dark Knight",
+          "date": "2026-05-22",
+          "genres": [
+            "Adventure",
+            "Action"
+          ],
+          "hype": 42,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "rawg"
+        },
+        {
+          "title": "Mixtape (2025)",
+          "date": "2026-05-07",
+          "genres": [
+            "Indie",
+            "Adventure"
+          ],
+          "hype": 33,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "rawg"
+        }
+      ],
+      "top_performers": []
+    },
+    "2026-06": {
+      "upcoming_releases": [
+        {
+          "title": "Gothic 1 Remake",
+          "date": "2026-06-05",
+          "genres": [
+            "Action",
+            "RPG"
+          ],
+          "hype": 147,
+          "metacritic": 0,
+          "rating": 3.4,
+          "source": "rawg"
+        },
+        {
+          "title": "The Adventures of Elliot: The Millennium Tales",
+          "date": "2026-06-18",
+          "genres": [
+            "Adventure",
+            "RPG"
+          ],
+          "hype": 6,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "rawg"
+        }
+      ],
+      "top_performers": []
+    },
+    "2026-07": {
+      "upcoming_releases": [
+        {
+          "title": "Assassin's Creed Back Flag Resynced",
+          "date": "2026-07-09",
+          "genres": [
+            "Adventure",
+            "Action"
+          ],
+          "hype": 6,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "rawg"
+        }
+      ],
+      "top_performers": []
+    },
+    "2026-08": {
+      "upcoming_releases": [
+        {
+          "title": "Control: Resonant [TBC]",
+          "date": "2026-08-01",
+          "genres": [
+            "Action",
+            "Shooter",
+            "Supernatural"
+          ],
+          "hype": 9999,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "curated"
+        },
+        {
+          "title": "Beast of Reincarnation",
+          "date": "2026-08-04",
+          "genres": [
+            "Action",
+            "RPG"
+          ],
+          "hype": 41,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "rawg"
+        },
+        {
+          "title": "Lords of the Fallen 2",
+          "date": "2026-08-31",
+          "genres": [
+            "Action",
+            "RPG"
+          ],
+          "hype": 9,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "rawg"
+        }
+      ],
+      "top_performers": []
+    },
+    "2026-09": {
+      "upcoming_releases": [
+        {
+          "title": "Metal Gear Solid Collection Vol. 2 [TBC]",
+          "date": "2026-09-01",
+          "genres": [
+            "Action",
+            "Stealth",
+            "Remaster"
+          ],
+          "hype": 9999,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "curated"
+        },
+        {
+          "title": "Marvel's Wolverine",
+          "date": "2026-09-15",
+          "genres": [
+            "Action"
+          ],
+          "hype": 179,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "rawg"
+        },
+        {
+          "title": "Phantom Blade Zero",
+          "date": "2026-09-09",
+          "genres": [
+            "Adventure",
+            "Action"
+          ],
+          "hype": 146,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "rawg"
+        }
+      ],
+      "top_performers": []
+    },
+    "2026-10": {
+      "upcoming_releases": [
+        {
+          "title": "Ace Combat 8 [TBC]",
+          "date": "2026-10-01",
+          "genres": [
+            "Flight",
+            "Action",
+            "Simulation"
+          ],
+          "hype": 9999,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "curated"
+        },
+        {
+          "title": "Metro 2039 [TBC]",
+          "date": "2026-10-01",
+          "genres": [
+            "FPS",
+            "Horror",
+            "Post-Apocalyptic"
+          ],
+          "hype": 9999,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "curated"
+        },
+        {
+          "title": "007: First Light",
+          "date": "2026-10-13",
+          "genres": [
+            "Action",
+            "Stealth",
+            "FPS"
+          ],
+          "hype": 9999,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "curated"
+        }
+      ],
+      "top_performers": []
+    },
+    "2026-11": {
+      "upcoming_releases": [
+        {
+          "title": "Grand Theft Auto VI",
+          "date": "2026-11-19",
+          "genres": [
+            "Action",
+            "Open World",
+            "Crime"
+          ],
+          "hype": 99999,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "curated"
+        },
+        {
+          "title": "Assassin's Creed Black Flag Remake [TBC]",
+          "date": "2026-11-01",
+          "genres": [
+            "Action",
+            "Adventure",
+            "Open World"
+          ],
+          "hype": 9999,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "curated"
+        },
+        {
+          "title": "Halo: Campaign Evolved [TBC]",
+          "date": "2026-11-01",
+          "genres": [
+            "FPS",
+            "Sci-Fi",
+            "Remaster"
+          ],
+          "hype": 9999,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "curated"
+        }
+      ],
+      "top_performers": []
+    },
+    "2027-02": {
+      "upcoming_releases": [
+        {
+          "title": "GTA VI (PC) [TBC]",
+          "date": "2027-02-01",
+          "genres": [
+            "Action",
+            "Open World",
+            "Crime"
+          ],
+          "hype": 9999,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "curated"
+        }
+      ],
+      "top_performers": []
+    },
+    "2027-06": {
+      "upcoming_releases": [
+        {
+          "title": "Gears of War: E-Day [TBC]",
+          "date": "2027-06-01",
+          "genres": [
+            "Shooter",
+            "Action",
+            "Co-op"
+          ],
+          "hype": 9999,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "curated"
+        }
+      ],
+      "top_performers": []
     }
   }
 }
