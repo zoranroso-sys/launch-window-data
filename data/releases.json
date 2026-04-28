@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-04-27T17:41:25.254720Z",
-    "upcoming_count": 25,
-    "next_update": "2026-05-04",
+    "generated_at": "2026-04-28T11:22:00.403148Z",
+    "upcoming_count": 26,
+    "next_update": "2026-05-05",
     "sources": [
       "rawg",
       "igdb",
@@ -733,411 +733,6 @@
     },
     {
       "month": 4,
-      "label": "Shapez 2",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-04-23",
-      "notes": "Source: https://www.releases.com/p/shapez-2",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "Repterra",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-04-28",
-      "notes": "Source: https://www.releases.com/p/repterra",
-      "source": "community"
-    },
-    {
-      "month": 5,
-      "label": "Dread Neighbor",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-05-07",
-      "notes": "Source: https://www.releases.com/p/dread-neighbor",
-      "source": "community"
-    },
-    {
-      "month": 5,
-      "label": "Europa Universalis V: Fate of the Phoenix",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-05-06",
-      "notes": "Source: https://www.releases.com/p/europa-universalis-v-fate-of-the-phoenix",
-      "source": "community"
-    },
-    {
-      "month": 5,
-      "label": "Wardrum",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-05-07",
-      "notes": "Source: https://www.releases.com/p/wardrum",
-      "source": "community"
-    },
-    {
-      "month": 5,
-      "label": "Greenhearth Necromancer",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-05-11",
-      "notes": "Source: https://www.releases.com/p/greenhearth-necromancer",
-      "source": "community"
-    },
-    {
-      "month": 5,
-      "label": "Sunset Motel",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-05-07",
-      "notes": "Source: https://www.releases.com/p/sunset-motel",
-      "source": "community"
-    },
-    {
-      "month": 5,
-      "label": "Hydroneer: Journey to Volcalidus",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-05-08",
-      "notes": "Source: https://www.releases.com/p/hydroneer-journey-to-volcalidus",
-      "source": "community"
-    },
-    {
-      "month": 5,
-      "label": "Alien Strike: Blasting the Intruders",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-05-07",
-      "notes": "Source: https://www.releases.com/p/alien-strike-blasting-the-intruders",
-      "source": "community"
-    },
-    {
-      "month": 5,
-      "label": "Bright Lights of Svetlov",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-05-01",
-      "notes": "Source: https://www.releases.com/p/bright-lights-of-svetlov",
-      "source": "community"
-    },
-    {
-      "month": 5,
-      "label": "Gangs of Asia",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-05-05",
-      "notes": "Source: https://www.releases.com/p/gangs-of-asia",
-      "source": "community"
-    },
-    {
-      "month": 5,
-      "label": "Haneda Girl",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-05-07",
-      "notes": "Source: https://www.releases.com/p/haneda-girl",
-      "source": "community"
-    },
-    {
-      "month": 5,
-      "label": "Kill It With Fire 2",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-05-07",
-      "notes": "Source: https://www.releases.com/p/kill-it-with-fire-2",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "Korea. IL-2 Series [TBC] [TBC]",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-04-01",
-      "notes": "Source: https://www.releases.com/p/korea-il-2-series",
-      "source": "community"
-    },
-    {
-      "month": 7,
-      "label": "High on Life 2",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-07-01",
-      "notes": "Source: https://www.releases.com/p/high-on-life-2",
-      "source": "community"
-    },
-    {
-      "month": 7,
-      "label": "HellSlave II: Judgment of the Archon [TBC] [TBC]",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-07-01",
-      "notes": "Source: https://www.releases.com/p/hellslave-ii-judgment-of-the-archon",
-      "source": "community"
-    },
-    {
-      "month": 2,
-      "label": "Tomb Raider: Legacy of Atlantis",
-      "severity": "medium",
-      "category": "release",
-      "approx_date": "2027-02-12",
-      "notes": "Anticipated — Source: https://www.releases.com/p/tomb-raider-legacy-of-atlantis",
-      "source": "community"
-    },
-    {
-      "month": 7,
-      "label": "Deltarune: Chapter 5 [TBC] [TBC]",
-      "severity": "medium",
-      "category": "release",
-      "approx_date": "2026-07-01",
-      "notes": "Anticipated — Source: https://www.releases.com/p/deltarune-chapter-5",
-      "source": "community"
-    },
-    {
-      "month": 7,
-      "label": "Breathedge 2 [TBC] [TBC]",
-      "severity": "medium",
-      "category": "release",
-      "approx_date": "2026-07-01",
-      "notes": "Anticipated — Source: https://www.releases.com/p/breathedge-2",
-      "source": "community"
-    },
-    {
-      "month": 7,
-      "label": "007 First Light [TBC] [TBC]",
-      "severity": "medium",
-      "category": "release",
-      "approx_date": "2026-07-01",
-      "notes": "Anticipated — Source: https://www.releases.com/p/007-first-light",
-      "source": "community"
-    },
-    {
-      "month": 7,
-      "label": "TOEM 2 [TBC] [TBC]",
-      "severity": "medium",
-      "category": "release",
-      "approx_date": "2026-07-01",
-      "notes": "Anticipated — Source: https://www.releases.com/p/toem-2",
-      "source": "community"
-    },
-    {
-      "month": 7,
-      "label": "Kyoto Xanadu [TBC] [TBC]",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-07-01",
-      "notes": "Source: https://www.releases.com/p/kyoto-xanadu",
-      "source": "community"
-    },
-    {
-      "month": 7,
-      "label": "Dispatch [TBC] [TBC]",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-07-01",
-      "notes": "Source: https://www.releases.com/p/dispatch",
-      "source": "community"
-    },
-    {
-      "month": 7,
-      "label": "Woodo [TBC] [TBC]",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-07-01",
-      "notes": "Source: https://www.releases.com/p/woodo",
-      "source": "community"
-    },
-    {
-      "month": 7,
-      "label": "The Mermaid Mask [TBC] [TBC]",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-07-01",
-      "notes": "Source: https://www.releases.com/p/the-mermaid-mask",
-      "source": "community"
-    },
-    {
-      "month": 7,
-      "label": "Solo Leveling: ARISE OVERDRIVE [TBC] [TBC]",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-07-01",
-      "notes": "Source: https://www.releases.com/p/solo-leveling-arise-overdrive",
-      "source": "community"
-    },
-    {
-      "month": 7,
-      "label": "RuneScape: Dragonwilds [TBC] [TBC]",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-07-01",
-      "notes": "Source: https://www.releases.com/p/runescape-dragonwilds",
-      "source": "community"
-    },
-    {
-      "month": 7,
-      "label": "BLACKWOOD [TBC] [TBC]",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-07-01",
-      "notes": "Source: https://www.releases.com/p/blackwood",
-      "source": "community"
-    },
-    {
-      "month": 7,
-      "label": "Agefield High: Rock the School [TBC] [TBC]",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-07-01",
-      "notes": "Source: https://www.releases.com/p/agefield-high-rock-the-school",
-      "source": "community"
-    },
-    {
-      "month": 7,
-      "label": "Ari Buktu and the Anytime Elevator [TBC] [TBC]",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-07-01",
-      "notes": "Source: https://www.releases.com/p/ari-buktu-and-the-anytime-elevator",
-      "source": "community"
-    },
-    {
-      "month": 7,
-      "label": "Tyr [TBC] [TBC]",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-07-01",
-      "notes": "Source: https://www.releases.com/p/tyr",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "Project Vesperi",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-04-24",
-      "notes": "Source: https://www.releases.com/p/project-vesperi",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "Saros",
-      "severity": "high",
-      "category": "release",
-      "approx_date": "2026-04-30",
-      "notes": "Very anticipated — Source: https://www.releases.com/p/saros",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "Aphelion",
-      "severity": "high",
-      "category": "release",
-      "approx_date": "2026-04-28",
-      "notes": "Very anticipated — Source: https://www.releases.com/p/aphelion",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "Diablo 4: Lord of Hatred",
-      "severity": "medium",
-      "category": "release",
-      "approx_date": "2026-04-28",
-      "notes": "Anticipated — Source: https://www.releases.com/p/diablo-4-lord-of-hatred",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "Neverness to Everness",
-      "severity": "medium",
-      "category": "release",
-      "approx_date": "2026-04-29",
-      "notes": "Anticipated — Source: https://www.releases.com/p/neverness-to-everness",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "inKONBINI: One Store. Many Stories",
-      "severity": "medium",
-      "category": "release",
-      "approx_date": "2026-04-30",
-      "notes": "Anticipated — Source: https://www.releases.com/p/inkonbini-one-store-many-stories",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "Invincible VS",
-      "severity": "medium",
-      "category": "release",
-      "approx_date": "2026-04-30",
-      "notes": "Anticipated — Source: https://www.releases.com/p/invincible-vs",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "INDUSTRIA 2",
-      "severity": "medium",
-      "category": "release",
-      "approx_date": "2026-04-29",
-      "notes": "Anticipated — Source: https://www.releases.com/p/industria-2",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "Kingdom's Return: Time-Eating Fruit and the Ancient Monster",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-04-23",
-      "notes": "Source: https://www.releases.com/p/kingdoms-return-time-eating-fruit-and-the-ancient-monster",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "Ys Memoire: Revelations in Celceta",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-04-28",
-      "notes": "Source: https://www.releases.com/p/ys-memoire-revelations-in-celceta",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "Yunyun Syndrome!? Rhythm Psychosis",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-04-24",
-      "notes": "Source: https://www.releases.com/p/yunyun-syndrome-rhythm-psychosis",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "Little Nightmares VR: Altered Echoes",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-04-24",
-      "notes": "Source: https://www.releases.com/p/little-nightmares-vr-altered-echoes",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "Kiln",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-04-23",
-      "notes": "Source: https://www.releases.com/p/kiln",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "Adorable Adventures",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-04-30",
-      "notes": "Source: https://www.releases.com/p/adorable-adventures",
-      "source": "community"
-    },
-    {
-      "month": 4,
       "label": "Moomintroll: Winter's Warmth",
       "severity": "low",
       "category": "release",
@@ -1264,6 +859,15 @@
     },
     {
       "month": 4,
+      "label": "Shapez 2",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-04-23",
+      "notes": "Source: https://www.releases.com/p/shapez-2",
+      "source": "community"
+    },
+    {
+      "month": 4,
       "label": "The Spell Brigade",
       "severity": "low",
       "category": "release",
@@ -1287,15 +891,6 @@
       "category": "release",
       "approx_date": "2026-04-30",
       "notes": "Source: https://www.releases.com/p/deep-rock-galactic-survivor-heavy-duty-expansion",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "Snap & Grab",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-04-24",
-      "notes": "Source: https://www.releases.com/p/snap-grab",
       "source": "community"
     },
     {
@@ -1462,6 +1057,15 @@
     },
     {
       "month": 4,
+      "label": "Repterra",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-04-28",
+      "notes": "Source: https://www.releases.com/p/repterra",
+      "source": "community"
+    },
+    {
+      "month": 4,
       "label": "Strange Antiquities",
       "severity": "low",
       "category": "release",
@@ -1597,15 +1201,6 @@
     },
     {
       "month": 4,
-      "label": "Until Then",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-04-23",
-      "notes": "Source: https://www.releases.com/p/until-then",
-      "source": "community"
-    },
-    {
-      "month": 4,
       "label": "Mullet Madjack",
       "severity": "low",
       "category": "release",
@@ -1670,7 +1265,7 @@
     {
       "month": 4,
       "label": "Console Archives NINJA GAIDEN III: The Ancient Ship of Doom",
-      "severity": "low",
+      "severity": "high",
       "category": "release",
       "approx_date": "2026-04-23",
       "notes": "Source: https://www.releases.com/p/console-archives-ninja-gaiden-iii-the-ancient-ship-of-doom",
@@ -1697,7 +1292,7 @@
     {
       "month": 5,
       "label": "Mixtape",
-      "severity": "high",
+      "severity": "medium",
       "category": "release",
       "approx_date": "2026-05-07",
       "notes": "Very anticipated — Source: https://www.releases.com/p/mixtape-game",
@@ -1742,7 +1337,7 @@
     {
       "month": 5,
       "label": "MOTORSLICE",
-      "severity": "low",
+      "severity": "medium",
       "category": "release",
       "approx_date": "2026-05-05",
       "notes": "Source: https://www.releases.com/p/motorslice",
@@ -1751,7 +1346,7 @@
     {
       "month": 5,
       "label": "Indiana Jones and the Great Circle",
-      "severity": "low",
+      "severity": "high",
       "category": "release",
       "approx_date": "2026-05-12",
       "notes": "Source: https://www.releases.com/p/indiana-jones-and-the-great-circle",
@@ -1894,11 +1489,101 @@
     },
     {
       "month": 5,
-      "label": "Better Than Dead",
+      "label": "Dread Neighbor",
       "severity": "low",
       "category": "release",
-      "approx_date": "2026-05-12",
-      "notes": "Source: https://www.releases.com/p/better-than-dead",
+      "approx_date": "2026-05-07",
+      "notes": "Source: https://www.releases.com/p/dread-neighbor",
+      "source": "community"
+    },
+    {
+      "month": 5,
+      "label": "Europa Universalis V: Fate of the Phoenix",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-05-06",
+      "notes": "Source: https://www.releases.com/p/europa-universalis-v-fate-of-the-phoenix",
+      "source": "community"
+    },
+    {
+      "month": 5,
+      "label": "Wardrum",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-05-07",
+      "notes": "Source: https://www.releases.com/p/wardrum",
+      "source": "community"
+    },
+    {
+      "month": 5,
+      "label": "Greenhearth Necromancer",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-05-11",
+      "notes": "Source: https://www.releases.com/p/greenhearth-necromancer",
+      "source": "community"
+    },
+    {
+      "month": 5,
+      "label": "Sunset Motel",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-05-07",
+      "notes": "Source: https://www.releases.com/p/sunset-motel",
+      "source": "community"
+    },
+    {
+      "month": 5,
+      "label": "Hydroneer: Journey to Volcalidus",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-05-08",
+      "notes": "Source: https://www.releases.com/p/hydroneer-journey-to-volcalidus",
+      "source": "community"
+    },
+    {
+      "month": 5,
+      "label": "Alien Strike: Blasting the Intruders",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-05-07",
+      "notes": "Source: https://www.releases.com/p/alien-strike-blasting-the-intruders",
+      "source": "community"
+    },
+    {
+      "month": 5,
+      "label": "Bright Lights of Svetlov",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-05-01",
+      "notes": "Source: https://www.releases.com/p/bright-lights-of-svetlov",
+      "source": "community"
+    },
+    {
+      "month": 5,
+      "label": "Gangs of Asia",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-05-05",
+      "notes": "Source: https://www.releases.com/p/gangs-of-asia",
+      "source": "community"
+    },
+    {
+      "month": 5,
+      "label": "Haneda Girl",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-05-07",
+      "notes": "Source: https://www.releases.com/p/haneda-girl",
+      "source": "community"
+    },
+    {
+      "month": 5,
+      "label": "Kill It With Fire 2",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-05-07",
+      "notes": "Source: https://www.releases.com/p/kill-it-with-fire-2",
       "source": "community"
     },
     {
@@ -1931,7 +1616,7 @@
     {
       "month": 6,
       "label": "Final Fantasy VII Rebirth",
-      "severity": "medium",
+      "severity": "high",
       "category": "release",
       "approx_date": "2026-06-03",
       "notes": "Anticipated — Source: https://www.releases.com/p/final-fantasy-vii-rebirth",
@@ -1958,7 +1643,7 @@
     {
       "month": 6,
       "label": "Destiny 2 - Shadow & Order",
-      "severity": "low",
+      "severity": "medium",
       "category": "release",
       "approx_date": "2026-06-09",
       "notes": "Source: https://www.releases.com/p/destiny-2-shadow-order",
@@ -1967,19 +1652,10 @@
     {
       "month": 6,
       "label": "House Flipper Remastered Collection",
-      "severity": "low",
+      "severity": "medium",
       "category": "release",
       "approx_date": "2026-06-04",
       "notes": "Source: https://www.releases.com/p/house-flipper-remastered-collection",
-      "source": "community"
-    },
-    {
-      "month": 6,
-      "label": "Witchspire",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-06-10",
-      "notes": "Source: https://www.releases.com/p/witchspire",
       "source": "community"
     },
     {
@@ -2012,7 +1688,7 @@
     {
       "month": 6,
       "label": "Monopoly: Star Wars Heroes vs. Villains",
-      "severity": "low",
+      "severity": "high",
       "category": "release",
       "approx_date": "2026-06-11",
       "notes": "Source: https://www.releases.com/p/monopoly-star-wars-heroes-vs-villains",
@@ -2147,7 +1823,7 @@
     {
       "month": 7,
       "label": "Assassin's Creed Black Flag Resynced",
-      "severity": "medium",
+      "severity": "high",
       "category": "release",
       "approx_date": "2026-07-09",
       "notes": "Anticipated — Source: https://www.releases.com/p/assassins-creed-black-flag-resynced",
@@ -2165,7 +1841,7 @@
     {
       "month": 7,
       "label": "Splatoon Raiders",
-      "severity": "medium",
+      "severity": "low",
       "category": "release",
       "approx_date": "2026-07-23",
       "notes": "Anticipated — Source: https://www.releases.com/p/splatoon-raiders",
@@ -2183,7 +1859,7 @@
     {
       "month": 7,
       "label": "Digimon Story: Time Stranger",
-      "severity": "medium",
+      "severity": "low",
       "category": "release",
       "approx_date": "2026-07-10",
       "notes": "Anticipated — Source: https://www.releases.com/p/digimon-story-time-stranger",
@@ -2192,7 +1868,7 @@
     {
       "month": 7,
       "label": "The Mound: Omen of Cthulhu",
-      "severity": "low",
+      "severity": "medium",
       "category": "release",
       "approx_date": "2026-07-15",
       "notes": "Source: https://www.releases.com/p/the-mound-omen-of-cthulhu",
@@ -2201,7 +1877,7 @@
     {
       "month": 7,
       "label": "Echoes of Aincrad",
-      "severity": "low",
+      "severity": "medium",
       "category": "release",
       "approx_date": "2026-07-09",
       "notes": "Source: https://www.releases.com/p/echoes-of-aincrad",
@@ -2219,7 +1895,7 @@
     {
       "month": 7,
       "label": "Granblue Fantasy: Relink - Endless Ragnarok",
-      "severity": "low",
+      "severity": "medium",
       "category": "release",
       "approx_date": "2026-07-09",
       "notes": "Source: https://www.releases.com/p/granblue-fantasy-relink-endless-ragnarok",
@@ -2299,6 +1975,15 @@
     },
     {
       "month": 7,
+      "label": "High on Life 2",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-07-01",
+      "notes": "Source: https://www.releases.com/p/high-on-life-2",
+      "source": "community"
+    },
+    {
+      "month": 7,
       "label": "Ascend to ZERO",
       "severity": "low",
       "category": "release",
@@ -2345,7 +2030,7 @@
     {
       "month": 8,
       "label": "Marvel Tokon: Fighting Souls",
-      "severity": "medium",
+      "severity": "high",
       "category": "release",
       "approx_date": "2026-08-06",
       "notes": "Anticipated — Source: https://www.releases.com/p/marvel-tokon-fighting-souls",
@@ -2354,7 +2039,7 @@
     {
       "month": 8,
       "label": "Metal Gear Solid: Master Collection Vol. 2",
-      "severity": "medium",
+      "severity": "high",
       "category": "release",
       "approx_date": "2026-08-27",
       "notes": "Anticipated — Source: https://www.releases.com/p/metal-gear-solid-master-collection-vol-2",
@@ -2363,7 +2048,7 @@
     {
       "month": 8,
       "label": "Grave Seasons",
-      "severity": "low",
+      "severity": "medium",
       "category": "release",
       "approx_date": "2026-08-14",
       "notes": "Source: https://www.releases.com/p/grave-seasons",
@@ -2408,7 +2093,7 @@
     {
       "month": 8,
       "label": "Final Fantasy XIV: A Realm Reborn [TBC] [TBC]",
-      "severity": "low",
+      "severity": "high",
       "category": "release",
       "approx_date": "2026-08-01",
       "notes": "Source: https://www.releases.com/p/final-fantasy-xiv-a-realm-reborn",
@@ -2523,18 +2208,9 @@
       "source": "community"
     },
     {
-      "month": 4,
-      "label": "Ghost Sector [TBC] [TBC]",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-04-01",
-      "notes": "Source: https://www.releases.com/p/ghost-sector",
-      "source": "community"
-    },
-    {
       "month": 10,
       "label": "Star Wars: Galactic Racer",
-      "severity": "medium",
+      "severity": "high",
       "category": "release",
       "approx_date": "2026-10-06",
       "notes": "Anticipated — Source: https://www.releases.com/p/star-wars-galactic-racer",
@@ -2660,7 +2336,7 @@
     {
       "month": 4,
       "label": "Tears of Metal [TBC] [TBC]",
-      "severity": "medium",
+      "severity": "low",
       "category": "release",
       "approx_date": "2026-04-01",
       "notes": "Anticipated — Source: https://www.releases.com/p/tears-of-metal",
@@ -2669,7 +2345,7 @@
     {
       "month": 4,
       "label": "Acts of Blood [TBC] [TBC]",
-      "severity": "medium",
+      "severity": "low",
       "category": "release",
       "approx_date": "2026-04-01",
       "notes": "Anticipated — Source: https://www.releases.com/p/acts-of-blood",
@@ -2691,186 +2367,6 @@
       "category": "release",
       "approx_date": "2026-04-01",
       "notes": "Source: https://www.releases.com/p/norse-oath-of-blood",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "Tankrat [TBC] [TBC]",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-04-01",
-      "notes": "Source: https://www.releases.com/p/tankrat",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "God Save Birmingham [TBC] [TBC]",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-04-01",
-      "notes": "Source: https://www.releases.com/p/god-save-birmingham",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "Silent Planet [TBC] [TBC]",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-04-01",
-      "notes": "Source: https://www.releases.com/p/silent-planet-game",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "Redemption of the Damned [TBC] [TBC]",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-04-01",
-      "notes": "Source: https://www.releases.com/p/redemption-of-the-damned",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "Emberville [TBC] [TBC]",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-04-01",
-      "notes": "Source: https://www.releases.com/p/emberville",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "Glaciered [TBC] [TBC]",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-04-01",
-      "notes": "Source: https://www.releases.com/p/glaciered",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "Fantastic Haven [TBC] [TBC]",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-04-01",
-      "notes": "Source: https://www.releases.com/p/fantastic-haven",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "Clawed [TBC] [TBC]",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-04-01",
-      "notes": "Source: https://www.releases.com/p/clawed",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "Infinity Knights: Xross [TBC] [TBC]",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-04-01",
-      "notes": "Source: https://www.releases.com/p/infinity-knights-xross",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "Townseek [TBC] [TBC]",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-04-01",
-      "notes": "Source: https://www.releases.com/p/townseek",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "Citystate Metropolis [TBC] [TBC]",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-04-01",
-      "notes": "Source: https://www.releases.com/p/citystate-metropolis",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "Neo Junk City [TBC] [TBC]",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-04-01",
-      "notes": "Source: https://www.releases.com/p/neo-junk-city",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "Castle Come [TBC] [TBC]",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-04-01",
-      "notes": "Source: https://www.releases.com/p/castle-come",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "Terrinoth: Heroes of Descent [TBC] [TBC]",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-04-01",
-      "notes": "Source: https://www.releases.com/p/terrinoth-heroes-of-descent",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "The Witch's Bakery [TBC] [TBC]",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-04-01",
-      "notes": "Source: https://www.releases.com/p/the-witchs-bakery",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "Burlesque [TBC] [TBC]",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-04-01",
-      "notes": "Source: https://www.releases.com/p/burlesque",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "Withering Realms [TBC] [TBC]",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-04-01",
-      "notes": "Source: https://www.releases.com/p/withering-realms",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "Eternity's Echo: Patient Zero [TBC] [TBC]",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-04-01",
-      "notes": "Source: https://www.releases.com/p/eternitys-echo-patient-zero",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "Garbage Country [TBC] [TBC]",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-04-01",
-      "notes": "Source: https://www.releases.com/p/garbage-country",
-      "source": "community"
-    },
-    {
-      "month": 4,
-      "label": "Erosion [TBC] [TBC]",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-04-01",
-      "notes": "Source: https://www.releases.com/p/erosion",
       "source": "community"
     },
     {
@@ -3135,6 +2631,15 @@
       "source": "community"
     },
     {
+      "month": 2,
+      "label": "Tomb Raider: Legacy of Atlantis",
+      "severity": "high",
+      "category": "release",
+      "approx_date": "2027-02-12",
+      "notes": "Anticipated — Source: https://www.releases.com/p/tomb-raider-legacy-of-atlantis",
+      "source": "community"
+    },
+    {
       "month": 4,
       "label": "Hearts of Iron IV: Thunder at our Gates [TBC] [TBC]",
       "severity": "low",
@@ -3308,7 +2813,7 @@
     {
       "month": 4,
       "label": "LlamaRPG: Farm to Fable [TBC] [TBC]",
-      "severity": "low",
+      "severity": "high",
       "category": "release",
       "approx_date": "2026-04-01",
       "notes": "Source: https://www.releases.com/p/llamarpg-farm-to-fable",
@@ -3375,6 +2880,15 @@
       "category": "release",
       "approx_date": "2026-04-01",
       "notes": "Source: https://www.releases.com/p/world-of-warcraft-midnight-patch-121",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "Korea. IL-2 Series [TBC] [TBC]",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-04-01",
+      "notes": "Source: https://www.releases.com/p/korea-il-2-series",
       "source": "community"
     },
     {
@@ -3506,7 +3020,7 @@
     {
       "month": 7,
       "label": "The Relic: First Guardian [TBC] [TBC]",
-      "severity": "high",
+      "severity": "medium",
       "category": "release",
       "approx_date": "2026-07-01",
       "notes": "Very anticipated — Source: https://www.releases.com/p/the-relic-first-guardian",
@@ -3542,7 +3056,7 @@
     {
       "month": 7,
       "label": "PVKK: Planetenverteidigungskanonenkommandant [TBC] [TBC]",
-      "severity": "medium",
+      "severity": "low",
       "category": "release",
       "approx_date": "2026-07-01",
       "notes": "Anticipated — Source: https://www.releases.com/p/pvkk-planetenverteidigungskanonenkommandant",
@@ -3560,7 +3074,7 @@
     {
       "month": 7,
       "label": "Forever Skies [TBC] [TBC]",
-      "severity": "medium",
+      "severity": "low",
       "category": "release",
       "approx_date": "2026-07-01",
       "notes": "Anticipated — Source: https://www.releases.com/p/forever-skies",
@@ -3569,10 +3083,127 @@
     {
       "month": 7,
       "label": "Orbitals [TBC] [TBC]",
-      "severity": "medium",
+      "severity": "low",
       "category": "release",
       "approx_date": "2026-07-01",
       "notes": "Anticipated — Source: https://www.releases.com/p/orbitals",
+      "source": "community"
+    },
+    {
+      "month": 7,
+      "label": "Deltarune: Chapter 5 [TBC] [TBC]",
+      "severity": "medium",
+      "category": "release",
+      "approx_date": "2026-07-01",
+      "notes": "Anticipated — Source: https://www.releases.com/p/deltarune-chapter-5",
+      "source": "community"
+    },
+    {
+      "month": 7,
+      "label": "Breathedge 2 [TBC] [TBC]",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-07-01",
+      "notes": "Anticipated — Source: https://www.releases.com/p/breathedge-2",
+      "source": "community"
+    },
+    {
+      "month": 7,
+      "label": "007 First Light [TBC] [TBC]",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-07-01",
+      "notes": "Anticipated — Source: https://www.releases.com/p/007-first-light",
+      "source": "community"
+    },
+    {
+      "month": 7,
+      "label": "TOEM 2 [TBC] [TBC]",
+      "severity": "medium",
+      "category": "release",
+      "approx_date": "2026-07-01",
+      "notes": "Anticipated — Source: https://www.releases.com/p/toem-2",
+      "source": "community"
+    },
+    {
+      "month": 7,
+      "label": "Kyoto Xanadu [TBC] [TBC]",
+      "severity": "medium",
+      "category": "release",
+      "approx_date": "2026-07-01",
+      "notes": "Source: https://www.releases.com/p/kyoto-xanadu",
+      "source": "community"
+    },
+    {
+      "month": 7,
+      "label": "Dispatch [TBC] [TBC]",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-07-01",
+      "notes": "Source: https://www.releases.com/p/dispatch",
+      "source": "community"
+    },
+    {
+      "month": 7,
+      "label": "Woodo [TBC] [TBC]",
+      "severity": "medium",
+      "category": "release",
+      "approx_date": "2026-07-01",
+      "notes": "Source: https://www.releases.com/p/woodo",
+      "source": "community"
+    },
+    {
+      "month": 7,
+      "label": "The Mermaid Mask [TBC] [TBC]",
+      "severity": "medium",
+      "category": "release",
+      "approx_date": "2026-07-01",
+      "notes": "Source: https://www.releases.com/p/the-mermaid-mask",
+      "source": "community"
+    },
+    {
+      "month": 7,
+      "label": "Solo Leveling: ARISE OVERDRIVE [TBC] [TBC]",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-07-01",
+      "notes": "Source: https://www.releases.com/p/solo-leveling-arise-overdrive",
+      "source": "community"
+    },
+    {
+      "month": 7,
+      "label": "RuneScape: Dragonwilds [TBC] [TBC]",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-07-01",
+      "notes": "Source: https://www.releases.com/p/runescape-dragonwilds",
+      "source": "community"
+    },
+    {
+      "month": 7,
+      "label": "BLACKWOOD [TBC] [TBC]",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-07-01",
+      "notes": "Source: https://www.releases.com/p/blackwood",
+      "source": "community"
+    },
+    {
+      "month": 7,
+      "label": "Agefield High: Rock the School [TBC] [TBC]",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-07-01",
+      "notes": "Source: https://www.releases.com/p/agefield-high-rock-the-school",
+      "source": "community"
+    },
+    {
+      "month": 7,
+      "label": "Ari Buktu and the Anytime Elevator [TBC] [TBC]",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-07-01",
+      "notes": "Source: https://www.releases.com/p/ari-buktu-and-the-anytime-elevator",
       "source": "community"
     },
     {
@@ -3910,6 +3541,24 @@
     },
     {
       "month": 7,
+      "label": "HellSlave II: Judgment of the Archon [TBC] [TBC]",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-07-01",
+      "notes": "Source: https://www.releases.com/p/hellslave-ii-judgment-of-the-archon",
+      "source": "community"
+    },
+    {
+      "month": 7,
+      "label": "Tyr [TBC] [TBC]",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-07-01",
+      "notes": "Source: https://www.releases.com/p/tyr",
+      "source": "community"
+    },
+    {
+      "month": 7,
       "label": "Scourge of the Reptiles [TBC] [TBC]",
       "severity": "low",
       "category": "release",
@@ -3956,7 +3605,7 @@
     {
       "month": 10,
       "label": "Turok: Origins [TBC] [TBC]",
-      "severity": "high",
+      "severity": "medium",
       "category": "release",
       "approx_date": "2026-10-01",
       "notes": "Very anticipated — Source: https://www.releases.com/p/turok-origins",
@@ -4001,7 +3650,7 @@
     {
       "month": 10,
       "label": "Blighted [TBC] [TBC]",
-      "severity": "low",
+      "severity": "medium",
       "category": "release",
       "approx_date": "2026-10-01",
       "notes": "Source: https://www.releases.com/p/blighted",
@@ -4010,7 +3659,7 @@
     {
       "month": 10,
       "label": "Tenet of the Spark [TBC] [TBC]",
-      "severity": "low",
+      "severity": "medium",
       "category": "release",
       "approx_date": "2026-10-01",
       "notes": "Source: https://www.releases.com/p/tenet-of-the-spark",
@@ -4019,7 +3668,7 @@
     {
       "month": 10,
       "label": "Hytale [TBC] [TBC]",
-      "severity": "low",
+      "severity": "medium",
       "category": "release",
       "approx_date": "2026-10-01",
       "notes": "Source: https://www.releases.com/p/hytale",
@@ -4028,7 +3677,7 @@
     {
       "month": 10,
       "label": "Bestiario [TBC] [TBC]",
-      "severity": "low",
+      "severity": "medium",
       "category": "release",
       "approx_date": "2026-10-01",
       "notes": "Source: https://www.releases.com/p/bestiario",
@@ -4046,7 +3695,7 @@
     {
       "month": 10,
       "label": "Forever Ago [TBC] [TBC]",
-      "severity": "low",
+      "severity": "medium",
       "category": "release",
       "approx_date": "2026-10-01",
       "notes": "Source: https://www.releases.com/p/forever-ago",
@@ -4206,6 +3855,15 @@
       "source": "community"
     },
     {
+      "month": 4,
+      "label": "Project Vesperi",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-04-24",
+      "notes": "Source: https://www.releases.com/p/project-vesperi",
+      "source": "community"
+    },
+    {
       "month": 10,
       "label": "Star Shift Legacy [TBC] [TBC]",
       "severity": "low",
@@ -4221,15 +3879,6 @@
       "category": "release",
       "approx_date": "2026-10-01",
       "notes": "Source: https://www.releases.com/p/castle-of-alchemists",
-      "source": "community"
-    },
-    {
-      "month": 10,
-      "label": "The Six Dragons [TBC] [TBC]",
-      "severity": "low",
-      "category": "release",
-      "approx_date": "2026-10-01",
-      "notes": "Source: https://www.releases.com/p/the-six-dragons",
       "source": "community"
     },
     {
@@ -4342,114 +3991,6 @@
     },
     {
       "month": 1,
-      "label": "Chrono Odyssey [TBC] [TBC]",
-      "severity": "high",
-      "category": "release",
-      "approx_date": "2026-01-01",
-      "notes": "Extremely anticipated — Source: https://www.releases.com/p/chrono-odyssey",
-      "source": "community"
-    },
-    {
-      "month": 1,
-      "label": "Marvel 1943: Rise of Hydra [TBC] [TBC]",
-      "severity": "high",
-      "category": "release",
-      "approx_date": "2026-01-01",
-      "notes": "Extremely anticipated — Source: https://www.releases.com/p/marvel-1943-rise-of-hydra",
-      "source": "community"
-    },
-    {
-      "month": 1,
-      "label": "Onimusha: Way of the Sword [TBC] [TBC]",
-      "severity": "high",
-      "category": "release",
-      "approx_date": "2026-01-01",
-      "notes": "Extremely anticipated — Source: https://www.releases.com/p/onimusha-way-of-the-sword",
-      "source": "community"
-    },
-    {
-      "month": 1,
-      "label": "State of Decay 3 [TBC] [TBC]",
-      "severity": "high",
-      "category": "release",
-      "approx_date": "2026-01-01",
-      "notes": "Extremely anticipated — Source: https://www.releases.com/p/state-of-decay-3",
-      "source": "community"
-    },
-    {
-      "month": 1,
-      "label": "Tides of Annihilation [TBC] [TBC]",
-      "severity": "high",
-      "category": "release",
-      "approx_date": "2026-01-01",
-      "notes": "Extremely anticipated — Source: https://www.releases.com/p/tides-of-annihilation",
-      "source": "community"
-    },
-    {
-      "month": 1,
-      "label": "Ace Combat 8: Wings of Theve [TBC] [TBC]",
-      "severity": "high",
-      "category": "release",
-      "approx_date": "2026-01-01",
-      "notes": "Extremely anticipated — Source: https://www.releases.com/p/ace-combat-8-wings-of-theve",
-      "source": "community"
-    },
-    {
-      "month": 1,
-      "label": "Kingdom Hearts IV [TBC] [TBC]",
-      "severity": "high",
-      "category": "release",
-      "approx_date": "2026-01-01",
-      "notes": "Extremely anticipated — Source: https://www.releases.com/p/kingdom-hearts-iv",
-      "source": "community"
-    },
-    {
-      "month": 1,
-      "label": "The Blood of Dawnwalker [TBC] [TBC]",
-      "severity": "high",
-      "category": "release",
-      "approx_date": "2026-01-01",
-      "notes": "Very anticipated — Source: https://www.releases.com/p/the-blood-of-dawnwalker",
-      "source": "community"
-    },
-    {
-      "month": 1,
-      "label": "Spine [TBC] [TBC]",
-      "severity": "high",
-      "category": "release",
-      "approx_date": "2026-01-01",
-      "notes": "Very anticipated — Source: https://www.releases.com/p/spine",
-      "source": "community"
-    },
-    {
-      "month": 1,
-      "label": "Jurassic Park: Survival [TBC] [TBC]",
-      "severity": "high",
-      "category": "release",
-      "approx_date": "2026-01-01",
-      "notes": "Very anticipated — Source: https://www.releases.com/p/jurassic-park-survival",
-      "source": "community"
-    },
-    {
-      "month": 1,
-      "label": "WitchBrook [TBC] [TBC]",
-      "severity": "high",
-      "category": "release",
-      "approx_date": "2026-01-01",
-      "notes": "Very anticipated — Source: https://www.releases.com/p/witchbrook",
-      "source": "community"
-    },
-    {
-      "month": 1,
-      "label": "Six Days in Fallujah [TBC] [TBC]",
-      "severity": "high",
-      "category": "release",
-      "approx_date": "2026-01-01",
-      "notes": "Very anticipated — Source: https://www.releases.com/p/six-days-in-fallujah",
-      "source": "community"
-    },
-    {
-      "month": 1,
       "label": "Gears of War: E-Day [TBC] [TBC]",
       "severity": "high",
       "category": "release",
@@ -4460,7 +4001,7 @@
     {
       "month": 1,
       "label": "Clockwork Revolution [TBC] [TBC]",
-      "severity": "high",
+      "severity": "medium",
       "category": "release",
       "approx_date": "2026-01-01",
       "notes": "Very anticipated — Source: https://www.releases.com/p/clockwork-revolution",
@@ -4469,7 +4010,7 @@
     {
       "month": 1,
       "label": "Resonance: A Plague Tale Legacy [TBC] [TBC]",
-      "severity": "high",
+      "severity": "medium",
       "category": "release",
       "approx_date": "2026-01-01",
       "notes": "Very anticipated — Source: https://www.releases.com/p/resonance-a-plague-tale-legacy",
@@ -4478,7 +4019,7 @@
     {
       "month": 1,
       "label": "Project Awakening [TBC] [TBC]",
-      "severity": "high",
+      "severity": "medium",
       "category": "release",
       "approx_date": "2026-01-01",
       "notes": "Very anticipated — Source: https://www.releases.com/p/project-awakening",
@@ -4487,7 +4028,7 @@
     {
       "month": 1,
       "label": "The Sims 5 [TBC] [TBC]",
-      "severity": "high",
+      "severity": "medium",
       "category": "release",
       "approx_date": "2026-01-01",
       "notes": "Very anticipated — Source: https://www.releases.com/p/the-sims-5",
@@ -4496,7 +4037,7 @@
     {
       "month": 1,
       "label": "Human Fall Flat 2 [TBC] [TBC]",
-      "severity": "high",
+      "severity": "medium",
       "category": "release",
       "approx_date": "2026-01-01",
       "notes": "Very anticipated — Source: https://www.releases.com/p/human-fall-flat-2",
@@ -4505,7 +4046,7 @@
     {
       "month": 1,
       "label": "Neo Berlin 2087 [TBC] [TBC]",
-      "severity": "high",
+      "severity": "medium",
       "category": "release",
       "approx_date": "2026-01-01",
       "notes": "Very anticipated — Source: https://www.releases.com/p/neo-berlin-2087",
@@ -4514,7 +4055,7 @@
     {
       "month": 1,
       "label": "Fields of Mistria [TBC] [TBC]",
-      "severity": "high",
+      "severity": "medium",
       "category": "release",
       "approx_date": "2026-01-01",
       "notes": "Very anticipated — Source: https://www.releases.com/p/fields-of-mistria",
@@ -4523,7 +4064,7 @@
     {
       "month": 1,
       "label": "Persona 4 Revival [TBC] [TBC]",
-      "severity": "high",
+      "severity": "medium",
       "category": "release",
       "approx_date": "2026-01-01",
       "notes": "Very anticipated — Source: https://www.releases.com/p/persona-4-revival",
@@ -4532,7 +4073,7 @@
     {
       "month": 1,
       "label": "ArcheAge Chronicles [TBC] [TBC]",
-      "severity": "high",
+      "severity": "medium",
       "category": "release",
       "approx_date": "2026-01-01",
       "notes": "Very anticipated — Source: https://www.releases.com/p/archeage-chronicles",
@@ -4541,7 +4082,7 @@
     {
       "month": 1,
       "label": "Mina the Hollower [TBC] [TBC]",
-      "severity": "high",
+      "severity": "medium",
       "category": "release",
       "approx_date": "2026-01-01",
       "notes": "Very anticipated — Source: https://www.releases.com/p/mina-the-hollower",
@@ -4550,7 +4091,7 @@
     {
       "month": 1,
       "label": "Squadron 42 [TBC] [TBC]",
-      "severity": "high",
+      "severity": "medium",
       "category": "release",
       "approx_date": "2026-01-01",
       "notes": "Very anticipated — Source: https://www.releases.com/p/squadron-42",
@@ -4577,7 +4118,7 @@
     {
       "month": 1,
       "label": "Silent Hill: Townfall [TBC] [TBC]",
-      "severity": "medium",
+      "severity": "high",
       "category": "release",
       "approx_date": "2026-01-01",
       "notes": "Anticipated — Source: https://www.releases.com/p/silent-hill-townfall",
@@ -4604,7 +4145,7 @@
     {
       "month": 1,
       "label": "Star Wars Zero Company [TBC] [TBC]",
-      "severity": "medium",
+      "severity": "high",
       "category": "release",
       "approx_date": "2026-01-01",
       "notes": "Anticipated — Source: https://www.releases.com/p/star-wars-zero-company",
@@ -4748,7 +4289,7 @@
     {
       "month": 1,
       "label": "The Elder Scrolls VI [TBC] [TBC]",
-      "severity": "medium",
+      "severity": "high",
       "category": "release",
       "approx_date": "2026-01-01",
       "notes": "Anticipated — Source: https://www.releases.com/p/the-elder-scrolls-vi",
@@ -4766,7 +4307,7 @@
     {
       "month": 1,
       "label": "Silent Hill [TBC] [TBC]",
-      "severity": "medium",
+      "severity": "high",
       "category": "release",
       "approx_date": "2026-01-01",
       "notes": "Anticipated — Source: https://www.releases.com/p/silent-hill",
@@ -4964,7 +4505,7 @@
     {
       "month": 1,
       "label": "Halo: Campaign Evolved [TBC] [TBC]",
-      "severity": "medium",
+      "severity": "high",
       "category": "release",
       "approx_date": "2026-01-01",
       "notes": "Anticipated — Source: https://www.releases.com/p/halo-campaign-evolved",
@@ -5090,10 +4631,469 @@
     {
       "month": 1,
       "label": "Ferocious [TBC] [TBC]",
-      "severity": "medium",
+      "severity": "low",
       "category": "release",
       "approx_date": "2026-01-01",
       "notes": "Anticipated — Source: https://www.releases.com/p/ferocious",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "Saros",
+      "severity": "high",
+      "category": "release",
+      "approx_date": "2026-04-30",
+      "notes": "Very anticipated — Source: https://www.releases.com/p/saros",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "Aphelion",
+      "severity": "medium",
+      "category": "release",
+      "approx_date": "2026-04-28",
+      "notes": "Very anticipated — Source: https://www.releases.com/p/aphelion",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "Diablo 4: Lord of Hatred",
+      "severity": "medium",
+      "category": "release",
+      "approx_date": "2026-04-28",
+      "notes": "Anticipated — Source: https://www.releases.com/p/diablo-4-lord-of-hatred",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "Neverness to Everness",
+      "severity": "medium",
+      "category": "release",
+      "approx_date": "2026-04-29",
+      "notes": "Anticipated — Source: https://www.releases.com/p/neverness-to-everness",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "inKONBINI: One Store. Many Stories",
+      "severity": "medium",
+      "category": "release",
+      "approx_date": "2026-04-30",
+      "notes": "Anticipated — Source: https://www.releases.com/p/inkonbini-one-store-many-stories",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "Invincible VS",
+      "severity": "medium",
+      "category": "release",
+      "approx_date": "2026-04-30",
+      "notes": "Anticipated — Source: https://www.releases.com/p/invincible-vs",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "INDUSTRIA 2",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-04-29",
+      "notes": "Anticipated — Source: https://www.releases.com/p/industria-2",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "Kingdom's Return: Time-Eating Fruit and the Ancient Monster",
+      "severity": "medium",
+      "category": "release",
+      "approx_date": "2026-04-23",
+      "notes": "Source: https://www.releases.com/p/kingdoms-return-time-eating-fruit-and-the-ancient-monster",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "Ys Memoire: Revelations in Celceta",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-04-28",
+      "notes": "Source: https://www.releases.com/p/ys-memoire-revelations-in-celceta",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "Yunyun Syndrome!? Rhythm Psychosis",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-04-24",
+      "notes": "Source: https://www.releases.com/p/yunyun-syndrome-rhythm-psychosis",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "Little Nightmares VR: Altered Echoes",
+      "severity": "medium",
+      "category": "release",
+      "approx_date": "2026-04-24",
+      "notes": "Source: https://www.releases.com/p/little-nightmares-vr-altered-echoes",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "Kiln",
+      "severity": "medium",
+      "category": "release",
+      "approx_date": "2026-04-23",
+      "notes": "Source: https://www.releases.com/p/kiln",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "Adorable Adventures",
+      "severity": "medium",
+      "category": "release",
+      "approx_date": "2026-04-30",
+      "notes": "Source: https://www.releases.com/p/adorable-adventures",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "Snap & Grab",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-04-24",
+      "notes": "Source: https://www.releases.com/p/snap-grab",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "Until Then",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-04-23",
+      "notes": "Source: https://www.releases.com/p/until-then",
+      "source": "community"
+    },
+    {
+      "month": 5,
+      "label": "Better Than Dead",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-05-12",
+      "notes": "Source: https://www.releases.com/p/better-than-dead",
+      "source": "community"
+    },
+    {
+      "month": 6,
+      "label": "Witchspire",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-06-10",
+      "notes": "Source: https://www.releases.com/p/witchspire",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "Ghost Sector [TBC] [TBC]",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-04-01",
+      "notes": "Source: https://www.releases.com/p/ghost-sector",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "Tankrat [TBC] [TBC]",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-04-01",
+      "notes": "Source: https://www.releases.com/p/tankrat",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "God Save Birmingham [TBC] [TBC]",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-04-01",
+      "notes": "Source: https://www.releases.com/p/god-save-birmingham",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "Silent Planet [TBC] [TBC]",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-04-01",
+      "notes": "Source: https://www.releases.com/p/silent-planet-game",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "Redemption of the Damned [TBC] [TBC]",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-04-01",
+      "notes": "Source: https://www.releases.com/p/redemption-of-the-damned",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "Emberville [TBC] [TBC]",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-04-01",
+      "notes": "Source: https://www.releases.com/p/emberville",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "Glaciered [TBC] [TBC]",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-04-01",
+      "notes": "Source: https://www.releases.com/p/glaciered",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "Fantastic Haven [TBC] [TBC]",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-04-01",
+      "notes": "Source: https://www.releases.com/p/fantastic-haven",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "Clawed [TBC] [TBC]",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-04-01",
+      "notes": "Source: https://www.releases.com/p/clawed",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "Infinity Knights: Xross [TBC] [TBC]",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-04-01",
+      "notes": "Source: https://www.releases.com/p/infinity-knights-xross",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "Townseek [TBC] [TBC]",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-04-01",
+      "notes": "Source: https://www.releases.com/p/townseek",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "Citystate Metropolis [TBC] [TBC]",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-04-01",
+      "notes": "Source: https://www.releases.com/p/citystate-metropolis",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "Neo Junk City [TBC] [TBC]",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-04-01",
+      "notes": "Source: https://www.releases.com/p/neo-junk-city",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "Castle Come [TBC] [TBC]",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-04-01",
+      "notes": "Source: https://www.releases.com/p/castle-come",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "Terrinoth: Heroes of Descent [TBC] [TBC]",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-04-01",
+      "notes": "Source: https://www.releases.com/p/terrinoth-heroes-of-descent",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "The Witch's Bakery [TBC] [TBC]",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-04-01",
+      "notes": "Source: https://www.releases.com/p/the-witchs-bakery",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "Burlesque [TBC] [TBC]",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-04-01",
+      "notes": "Source: https://www.releases.com/p/burlesque",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "Withering Realms [TBC] [TBC]",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-04-01",
+      "notes": "Source: https://www.releases.com/p/withering-realms",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "Eternity's Echo: Patient Zero [TBC] [TBC]",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-04-01",
+      "notes": "Source: https://www.releases.com/p/eternitys-echo-patient-zero",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "Garbage Country [TBC] [TBC]",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-04-01",
+      "notes": "Source: https://www.releases.com/p/garbage-country",
+      "source": "community"
+    },
+    {
+      "month": 4,
+      "label": "Erosion [TBC] [TBC]",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-04-01",
+      "notes": "Source: https://www.releases.com/p/erosion",
+      "source": "community"
+    },
+    {
+      "month": 10,
+      "label": "The Six Dragons [TBC] [TBC]",
+      "severity": "low",
+      "category": "release",
+      "approx_date": "2026-10-01",
+      "notes": "Source: https://www.releases.com/p/the-six-dragons",
+      "source": "community"
+    },
+    {
+      "month": 1,
+      "label": "Chrono Odyssey [TBC] [TBC]",
+      "severity": "high",
+      "category": "release",
+      "approx_date": "2026-01-01",
+      "notes": "Extremely anticipated — Source: https://www.releases.com/p/chrono-odyssey",
+      "source": "community"
+    },
+    {
+      "month": 1,
+      "label": "Marvel 1943: Rise of Hydra [TBC] [TBC]",
+      "severity": "high",
+      "category": "release",
+      "approx_date": "2026-01-01",
+      "notes": "Extremely anticipated — Source: https://www.releases.com/p/marvel-1943-rise-of-hydra",
+      "source": "community"
+    },
+    {
+      "month": 1,
+      "label": "Onimusha: Way of the Sword [TBC] [TBC]",
+      "severity": "high",
+      "category": "release",
+      "approx_date": "2026-01-01",
+      "notes": "Extremely anticipated — Source: https://www.releases.com/p/onimusha-way-of-the-sword",
+      "source": "community"
+    },
+    {
+      "month": 1,
+      "label": "State of Decay 3 [TBC] [TBC]",
+      "severity": "high",
+      "category": "release",
+      "approx_date": "2026-01-01",
+      "notes": "Extremely anticipated — Source: https://www.releases.com/p/state-of-decay-3",
+      "source": "community"
+    },
+    {
+      "month": 1,
+      "label": "Tides of Annihilation [TBC] [TBC]",
+      "severity": "high",
+      "category": "release",
+      "approx_date": "2026-01-01",
+      "notes": "Extremely anticipated — Source: https://www.releases.com/p/tides-of-annihilation",
+      "source": "community"
+    },
+    {
+      "month": 1,
+      "label": "Ace Combat 8: Wings of Theve [TBC] [TBC]",
+      "severity": "high",
+      "category": "release",
+      "approx_date": "2026-01-01",
+      "notes": "Extremely anticipated — Source: https://www.releases.com/p/ace-combat-8-wings-of-theve",
+      "source": "community"
+    },
+    {
+      "month": 1,
+      "label": "Kingdom Hearts IV [TBC] [TBC]",
+      "severity": "high",
+      "category": "release",
+      "approx_date": "2026-01-01",
+      "notes": "Extremely anticipated — Source: https://www.releases.com/p/kingdom-hearts-iv",
+      "source": "community"
+    },
+    {
+      "month": 1,
+      "label": "The Blood of Dawnwalker [TBC] [TBC]",
+      "severity": "high",
+      "category": "release",
+      "approx_date": "2026-01-01",
+      "notes": "Very anticipated — Source: https://www.releases.com/p/the-blood-of-dawnwalker",
+      "source": "community"
+    },
+    {
+      "month": 1,
+      "label": "Spine [TBC] [TBC]",
+      "severity": "high",
+      "category": "release",
+      "approx_date": "2026-01-01",
+      "notes": "Very anticipated — Source: https://www.releases.com/p/spine",
+      "source": "community"
+    },
+    {
+      "month": 1,
+      "label": "Jurassic Park: Survival [TBC] [TBC]",
+      "severity": "medium",
+      "category": "release",
+      "approx_date": "2026-01-01",
+      "notes": "Very anticipated — Source: https://www.releases.com/p/jurassic-park-survival",
+      "source": "community"
+    },
+    {
+      "month": 1,
+      "label": "WitchBrook [TBC] [TBC]",
+      "severity": "medium",
+      "category": "release",
+      "approx_date": "2026-01-01",
+      "notes": "Very anticipated — Source: https://www.releases.com/p/witchbrook",
+      "source": "community"
+    },
+    {
+      "month": 1,
+      "label": "Six Days in Fallujah [TBC] [TBC]",
+      "severity": "medium",
+      "category": "release",
+      "approx_date": "2026-01-01",
+      "notes": "Very anticipated — Source: https://www.releases.com/p/six-days-in-fallujah",
       "source": "community"
     },
     {
@@ -5108,7 +5108,7 @@
     {
       "month": 1,
       "label": "Fire Emblem: Fortune's Weave [TBC] [TBC]",
-      "severity": "medium",
+      "severity": "low",
       "category": "release",
       "approx_date": "2026-01-01",
       "notes": "Anticipated — Source: https://www.releases.com/p/fire-emblem-fortunes-weave",
@@ -5117,7 +5117,7 @@
     {
       "month": 1,
       "label": "Forza Horizon 6 [TBC] [TBC]",
-      "severity": "medium",
+      "severity": "high",
       "category": "release",
       "approx_date": "2026-01-01",
       "notes": "Anticipated — Source: https://www.releases.com/p/forza-horizon-6",
@@ -5126,7 +5126,7 @@
     {
       "month": 1,
       "label": "Underground Garage [TBC] [TBC]",
-      "severity": "medium",
+      "severity": "low",
       "category": "release",
       "approx_date": "2026-01-01",
       "notes": "Anticipated — Source: https://www.releases.com/p/underground-garage",
@@ -5153,7 +5153,7 @@
     {
       "month": 1,
       "label": "Fatekeeper [TBC] [TBC]",
-      "severity": "medium",
+      "severity": "low",
       "category": "release",
       "approx_date": "2026-01-01",
       "notes": "Anticipated — Source: https://www.releases.com/p/fatekeeper",
@@ -5162,7 +5162,7 @@
     {
       "month": 1,
       "label": "Game of Thrones: War For Westeros [TBC] [TBC]",
-      "severity": "medium",
+      "severity": "low",
       "category": "release",
       "approx_date": "2026-01-01",
       "notes": "Anticipated — Source: https://www.releases.com/p/game-of-thrones-war-for-westeros",
@@ -5207,7 +5207,7 @@
     {
       "month": 1,
       "label": "EXODUS [TBC] [TBC]",
-      "severity": "high",
+      "severity": "medium",
       "category": "release",
       "approx_date": "2027-01-01",
       "notes": "Very anticipated — Source: https://www.releases.com/p/exodus",
@@ -5380,10 +5380,11 @@
           "genres": [
             "Action"
           ],
-          "hype": 57,
+          "hype": 59,
           "metacritic": 0,
           "rating": 0,
-          "source": "rawg"
+          "source": "rawg",
+          "tier": "indie"
         },
         {
           "title": "Heroes of Might & Magic: Olden Era",
@@ -5394,7 +5395,21 @@
           "hype": 29,
           "metacritic": 0,
           "rating": 0,
-          "source": "rawg"
+          "source": "rawg",
+          "tier": "indie"
+        },
+        {
+          "title": "Aphelion",
+          "date": "2026-04-28",
+          "genres": [
+            "Indie",
+            "Adventure"
+          ],
+          "hype": 6,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "rawg",
+          "tier": "indie"
         },
         {
           "title": "Industria 2",
@@ -5405,7 +5420,8 @@
           "hype": 6,
           "metacritic": 0,
           "rating": 0,
-          "source": "rawg"
+          "source": "rawg",
+          "tier": "indie"
         }
       ],
       "top_performers": [
@@ -5453,7 +5469,8 @@
           "hype": 171,
           "metacritic": 0,
           "rating": 0,
-          "source": "rawg"
+          "source": "rawg",
+          "tier": "indie"
         },
         {
           "title": "Directive 8020",
@@ -5465,7 +5482,8 @@
           "hype": 142,
           "metacritic": 0,
           "rating": 2.3,
-          "source": "rawg"
+          "source": "rawg",
+          "tier": "indie"
         },
         {
           "title": "Forza Horizon 6",
@@ -5476,7 +5494,8 @@
           "hype": 57,
           "metacritic": 0,
           "rating": 0,
-          "source": "rawg"
+          "source": "rawg",
+          "tier": "indie"
         },
         {
           "title": "Lego Batman: Legacy of the Dark Knight",
@@ -5488,7 +5507,8 @@
           "hype": 42,
           "metacritic": 0,
           "rating": 0,
-          "source": "rawg"
+          "source": "rawg",
+          "tier": "indie"
         },
         {
           "title": "Mixtape (2025)",
@@ -5497,10 +5517,11 @@
             "Indie",
             "Adventure"
           ],
-          "hype": 33,
+          "hype": 34,
           "metacritic": 0,
           "rating": 0,
-          "source": "rawg"
+          "source": "rawg",
+          "tier": "indie"
         }
       ],
       "top_performers": [
@@ -5547,10 +5568,11 @@
             "Action",
             "RPG"
           ],
-          "hype": 147,
+          "hype": 148,
           "metacritic": 0,
           "rating": 3.4,
-          "source": "rawg"
+          "source": "rawg",
+          "tier": "indie"
         },
         {
           "title": "The Adventures of Elliot: The Millennium Tales",
@@ -5559,10 +5581,11 @@
             "Adventure",
             "RPG"
           ],
-          "hype": 6,
+          "hype": 7,
           "metacritic": 0,
           "rating": 0,
-          "source": "rawg"
+          "source": "rawg",
+          "tier": "indie"
         }
       ],
       "top_performers": [
@@ -5611,7 +5634,8 @@
           "hype": 6,
           "metacritic": 0,
           "rating": 0,
-          "source": "rawg"
+          "source": "rawg",
+          "tier": "indie"
         }
       ],
       "top_performers": [
@@ -5661,7 +5685,8 @@
           "hype": 9999,
           "metacritic": 0,
           "rating": 0,
-          "source": "curated"
+          "source": "curated",
+          "tier": "aaa"
         },
         {
           "title": "Beast of Reincarnation",
@@ -5673,7 +5698,8 @@
           "hype": 41,
           "metacritic": 0,
           "rating": 0,
-          "source": "rawg"
+          "source": "rawg",
+          "tier": "indie"
         },
         {
           "title": "Lords of the Fallen 2",
@@ -5685,7 +5711,8 @@
           "hype": 9,
           "metacritic": 0,
           "rating": 0,
-          "source": "rawg"
+          "source": "rawg",
+          "tier": "indie"
         }
       ],
       "top_performers": [
@@ -5737,7 +5764,8 @@
           "hype": 9999,
           "metacritic": 0,
           "rating": 0,
-          "source": "curated"
+          "source": "curated",
+          "tier": "aaa"
         },
         {
           "title": "Marvel's Wolverine",
@@ -5748,7 +5776,8 @@
           "hype": 179,
           "metacritic": 0,
           "rating": 0,
-          "source": "rawg"
+          "source": "rawg",
+          "tier": "indie"
         },
         {
           "title": "Phantom Blade Zero",
@@ -5760,7 +5789,8 @@
           "hype": 146,
           "metacritic": 0,
           "rating": 0,
-          "source": "rawg"
+          "source": "rawg",
+          "tier": "indie"
         }
       ],
       "top_performers": [
@@ -5821,7 +5851,8 @@
           "hype": 9999,
           "metacritic": 0,
           "rating": 0,
-          "source": "curated"
+          "source": "curated",
+          "tier": "aaa"
         },
         {
           "title": "Metro 2039 [TBC]",
@@ -5834,7 +5865,8 @@
           "hype": 9999,
           "metacritic": 0,
           "rating": 0,
-          "source": "curated"
+          "source": "curated",
+          "tier": "aaa"
         },
         {
           "title": "007: First Light",
@@ -5847,7 +5879,8 @@
           "hype": 9999,
           "metacritic": 0,
           "rating": 0,
-          "source": "curated"
+          "source": "curated",
+          "tier": "aaa"
         }
       ],
       "top_performers": [
@@ -5908,7 +5941,8 @@
           "hype": 99999,
           "metacritic": 0,
           "rating": 0,
-          "source": "curated"
+          "source": "curated",
+          "tier": "aaa"
         },
         {
           "title": "Assassin's Creed Black Flag Remake [TBC]",
@@ -5921,7 +5955,8 @@
           "hype": 9999,
           "metacritic": 0,
           "rating": 0,
-          "source": "curated"
+          "source": "curated",
+          "tier": "aaa"
         },
         {
           "title": "Halo: Campaign Evolved [TBC]",
@@ -5934,7 +5969,8 @@
           "hype": 9999,
           "metacritic": 0,
           "rating": 0,
-          "source": "curated"
+          "source": "curated",
+          "tier": "aaa"
         }
       ],
       "top_performers": [
@@ -6015,10 +6051,11 @@
           "genres": [
             "Action"
           ],
-          "hype": 57,
+          "hype": 59,
           "metacritic": 0,
           "rating": 0,
-          "source": "rawg"
+          "source": "rawg",
+          "tier": "indie"
         },
         {
           "title": "Heroes of Might & Magic: Olden Era",
@@ -6029,7 +6066,21 @@
           "hype": 29,
           "metacritic": 0,
           "rating": 0,
-          "source": "rawg"
+          "source": "rawg",
+          "tier": "indie"
+        },
+        {
+          "title": "Aphelion",
+          "date": "2026-04-28",
+          "genres": [
+            "Indie",
+            "Adventure"
+          ],
+          "hype": 6,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "rawg",
+          "tier": "indie"
         },
         {
           "title": "Industria 2",
@@ -6040,7 +6091,8 @@
           "hype": 6,
           "metacritic": 0,
           "rating": 0,
-          "source": "rawg"
+          "source": "rawg",
+          "tier": "indie"
         }
       ],
       "top_performers": []
@@ -6056,7 +6108,8 @@
           "hype": 171,
           "metacritic": 0,
           "rating": 0,
-          "source": "rawg"
+          "source": "rawg",
+          "tier": "indie"
         },
         {
           "title": "Directive 8020",
@@ -6068,7 +6121,8 @@
           "hype": 142,
           "metacritic": 0,
           "rating": 2.3,
-          "source": "rawg"
+          "source": "rawg",
+          "tier": "indie"
         },
         {
           "title": "Forza Horizon 6",
@@ -6079,7 +6133,8 @@
           "hype": 57,
           "metacritic": 0,
           "rating": 0,
-          "source": "rawg"
+          "source": "rawg",
+          "tier": "indie"
         },
         {
           "title": "Lego Batman: Legacy of the Dark Knight",
@@ -6091,7 +6146,8 @@
           "hype": 42,
           "metacritic": 0,
           "rating": 0,
-          "source": "rawg"
+          "source": "rawg",
+          "tier": "indie"
         },
         {
           "title": "Mixtape (2025)",
@@ -6100,10 +6156,11 @@
             "Indie",
             "Adventure"
           ],
-          "hype": 33,
+          "hype": 34,
           "metacritic": 0,
           "rating": 0,
-          "source": "rawg"
+          "source": "rawg",
+          "tier": "indie"
         }
       ],
       "top_performers": []
@@ -6117,10 +6174,11 @@
             "Action",
             "RPG"
           ],
-          "hype": 147,
+          "hype": 148,
           "metacritic": 0,
           "rating": 3.4,
-          "source": "rawg"
+          "source": "rawg",
+          "tier": "indie"
         },
         {
           "title": "The Adventures of Elliot: The Millennium Tales",
@@ -6129,10 +6187,11 @@
             "Adventure",
             "RPG"
           ],
-          "hype": 6,
+          "hype": 7,
           "metacritic": 0,
           "rating": 0,
-          "source": "rawg"
+          "source": "rawg",
+          "tier": "indie"
         }
       ],
       "top_performers": []
@@ -6149,7 +6208,8 @@
           "hype": 6,
           "metacritic": 0,
           "rating": 0,
-          "source": "rawg"
+          "source": "rawg",
+          "tier": "indie"
         }
       ],
       "top_performers": []
@@ -6167,7 +6227,8 @@
           "hype": 9999,
           "metacritic": 0,
           "rating": 0,
-          "source": "curated"
+          "source": "curated",
+          "tier": "aaa"
         },
         {
           "title": "Beast of Reincarnation",
@@ -6179,7 +6240,8 @@
           "hype": 41,
           "metacritic": 0,
           "rating": 0,
-          "source": "rawg"
+          "source": "rawg",
+          "tier": "indie"
         },
         {
           "title": "Lords of the Fallen 2",
@@ -6191,7 +6253,8 @@
           "hype": 9,
           "metacritic": 0,
           "rating": 0,
-          "source": "rawg"
+          "source": "rawg",
+          "tier": "indie"
         }
       ],
       "top_performers": []
@@ -6209,7 +6272,8 @@
           "hype": 9999,
           "metacritic": 0,
           "rating": 0,
-          "source": "curated"
+          "source": "curated",
+          "tier": "aaa"
         },
         {
           "title": "Marvel's Wolverine",
@@ -6220,7 +6284,8 @@
           "hype": 179,
           "metacritic": 0,
           "rating": 0,
-          "source": "rawg"
+          "source": "rawg",
+          "tier": "indie"
         },
         {
           "title": "Phantom Blade Zero",
@@ -6232,7 +6297,8 @@
           "hype": 146,
           "metacritic": 0,
           "rating": 0,
-          "source": "rawg"
+          "source": "rawg",
+          "tier": "indie"
         }
       ],
       "top_performers": []
@@ -6250,7 +6316,8 @@
           "hype": 9999,
           "metacritic": 0,
           "rating": 0,
-          "source": "curated"
+          "source": "curated",
+          "tier": "aaa"
         },
         {
           "title": "Metro 2039 [TBC]",
@@ -6263,7 +6330,8 @@
           "hype": 9999,
           "metacritic": 0,
           "rating": 0,
-          "source": "curated"
+          "source": "curated",
+          "tier": "aaa"
         },
         {
           "title": "007: First Light",
@@ -6276,7 +6344,8 @@
           "hype": 9999,
           "metacritic": 0,
           "rating": 0,
-          "source": "curated"
+          "source": "curated",
+          "tier": "aaa"
         }
       ],
       "top_performers": []
@@ -6294,7 +6363,8 @@
           "hype": 99999,
           "metacritic": 0,
           "rating": 0,
-          "source": "curated"
+          "source": "curated",
+          "tier": "aaa"
         },
         {
           "title": "Assassin's Creed Black Flag Remake [TBC]",
@@ -6307,7 +6377,8 @@
           "hype": 9999,
           "metacritic": 0,
           "rating": 0,
-          "source": "curated"
+          "source": "curated",
+          "tier": "aaa"
         },
         {
           "title": "Halo: Campaign Evolved [TBC]",
@@ -6320,7 +6391,8 @@
           "hype": 9999,
           "metacritic": 0,
           "rating": 0,
-          "source": "curated"
+          "source": "curated",
+          "tier": "aaa"
         }
       ],
       "top_performers": []
@@ -6338,7 +6410,8 @@
           "hype": 9999,
           "metacritic": 0,
           "rating": 0,
-          "source": "curated"
+          "source": "curated",
+          "tier": "aaa"
         }
       ],
       "top_performers": []
@@ -6356,7 +6429,8 @@
           "hype": 9999,
           "metacritic": 0,
           "rating": 0,
-          "source": "curated"
+          "source": "curated",
+          "tier": "aaa"
         }
       ],
       "top_performers": []
