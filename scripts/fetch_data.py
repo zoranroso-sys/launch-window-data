@@ -476,10 +476,12 @@ def get_notable_releases():
 # ── Supabase approved events ─────────────────────────────────────────────────
 
 def fetch_supabase_approved():
-    """Fetch community-approved events from Supabase."""
+    """Fetch community-approved items from Supabase.
+    Returns (events_list, releases_list) — releases go into the release pipeline,
+    events go into the events pipeline."""
     if not SUPABASE_ANON_KEY:
         print("  ⚠️  No SUPABASE_ANON_KEY — skipping Supabase approved events.")
-        return []
+        return [], []
 
     try:
         r = requests.get(
@@ -495,25 +497,47 @@ def fetch_supabase_approved():
         rows = r.json()
     except Exception as e:
         print(f"  Supabase error: {e}")
-        return []
+        return [], []
 
-    results = []
+    events = []
+    releases = []
     for row in rows:
-        entry = {
-            "month": int(row["approx_date"].split("-")[1]),
-            "label": row["label"] + (" [TBC]" if row.get("tbc") else ""),
-            "severity": row.get("severity", "medium"),
-            "category": row.get("category", "showcase"),
-            "approx_date": row["approx_date"],
-            "notes": row.get("notes", ""),
-            "source": "community",
-        }
-        if row.get("end_date"):
-            entry["end_date"] = row["end_date"]
-        results.append(entry)
+        if row.get("is_release"):
+            # Game release — goes into the release pipeline
+            try:
+                dt = datetime.date.fromisoformat(row["approx_date"])
+            except Exception:
+                continue
+            releases.append({
+                "title": row["label"] + (" [TBC]" if row.get("tbc") else ""),
+                "date_iso": row["approx_date"],
+                "month": dt.month,
+                "year": dt.year,
+                "genres": row.get("genres") or [],
+                "platforms": row.get("platforms") or [],
+                "hype_score": {"aaa": 99999, "aa": 5000, "indie": 100}.get(row.get("tier", "indie"), 100),
+                "metacritic": 0,
+                "rating": 0,
+                "source": "community",
+                "tier_override": row.get("tier", "indie"),
+            })
+        else:
+            # Industry event
+            entry = {
+                "month": int(row["approx_date"].split("-")[1]),
+                "label": row["label"] + (" [TBC]" if row.get("tbc") else ""),
+                "severity": row.get("severity", "medium"),
+                "category": row.get("category", "showcase"),
+                "approx_date": row["approx_date"],
+                "notes": row.get("notes", ""),
+                "source": "community",
+            }
+            if row.get("end_date"):
+                entry["end_date"] = row["end_date"]
+            events.append(entry)
 
-    print(f"  ✓ Supabase: {len(results)} community-approved events")
-    return results
+    print(f"  ✓ Supabase: {len(events)} community events, {len(releases)} community releases")
+    return events, releases
 
 # ── Month index ───────────────────────────────────────────────────────────────
 
@@ -539,9 +563,11 @@ def build_month_index(upcoming, historical_by_month):
         if ym_key not in index:
             index[ym_key] = {"upcoming_releases": [], "top_performers": []}
 
-        # Classify tier based on hype/tracking score
+        # Classify tier — use override from Supabase if present, otherwise hype-based
         hype = r.get("hype_score", 0)
-        if hype >= 9000 or r.get("source") == "curated":
+        if r.get("tier_override"):
+            tier = r["tier_override"]
+        elif hype >= 9000 or r.get("source") == "curated":
             tier = "aaa"
         elif hype >= 500:
             tier = "aa"
@@ -619,10 +645,19 @@ def main():
     all_upcoming.sort(key=lambda x: (x.get("date_iso", ""), -x.get("hype_score", 0)))
     print(f"  ✓ {len(notable)} notable releases merged")
 
-    # 6. Community-approved events from Supabase
-    print("🌐 Fetching community-approved events from Supabase…")
-    community_events = fetch_supabase_approved()
+    # 6. Community-approved items from Supabase
+    print("🌐 Fetching community-approved items from Supabase…")
+    community_events, community_releases = fetch_supabase_approved()
     all_events = get_industry_events() + community_events
+
+    # Merge community releases into the release pipeline (deduplicated)
+    existing_titles_lower = {r["title"].lower().replace(" [tbc]", "") for r in all_upcoming}
+    for cr in community_releases:
+        if cr["title"].lower().replace(" [tbc]", "") not in existing_titles_lower:
+            all_upcoming.append(cr)
+            existing_titles_lower.add(cr["title"].lower().replace(" [tbc]", ""))
+    all_upcoming.sort(key=lambda x: (x.get("date_iso", ""), -x.get("hype_score", 0)))
+    print(f"  ✓ {len(community_releases)} community releases merged into pipeline")
 
     print("🗂  Building month index…")
     month_index = build_month_index(all_upcoming, historical)
