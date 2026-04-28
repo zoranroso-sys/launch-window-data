@@ -539,10 +539,20 @@ def build_month_index(upcoming, historical_by_month):
         if ym_key not in index:
             index[ym_key] = {"upcoming_releases": [], "top_performers": []}
 
+        # Classify tier based on hype/tracking score
+        hype = r.get("hype_score", 0)
+        if hype >= 9000 or r.get("source") == "curated":
+            tier = "aaa"
+        elif hype >= 500:
+            tier = "aa"
+        else:
+            tier = "indie"
+
         entry = {
             "title": r["title"], "date": r["date_iso"], "genres": r.get("genres", [])[:3],
-            "hype": r.get("hype_score", 0), "metacritic": r.get("metacritic", 0),
+            "hype": hype, "metacritic": r.get("metacritic", 0),
             "rating": r.get("rating", 0), "source": r.get("source", ""),
+            "tier": tier,
         }
 
         index[ym_key]["upcoming_releases"].append(entry)
