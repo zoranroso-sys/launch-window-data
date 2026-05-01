@@ -1,812 +1,566 @@
 #!/usr/bin/env python3
 """
-Launch Window Conflict Checker — Data Fetcher
+Launch Window Conflict Checker + Games Industry Calendar — Data Fetcher
 ZR Consulting · zrconsulting.de
 
 Sources:
-  - RAWG.io API     → upcoming confirmed releases (primary, free key)
-  - IGDB via Twitch → upcoming releases (secondary, fills gaps)
-  - SteamSpy        → live CCU enrichment for historical titles (no key)
+  - RAWG.io API        → upcoming releases (platforms, genres, description)
+  - IGDB via Twitch    → upcoming releases (secondary, fills gaps)
+  - SteamSpy           → live CCU enrichment for historical titles
+  - Supabase           → admin-approved events & releases (with description, url, location)
+  - Curated hardcoded  → notable upcoming releases, 70+ industry events
 
-Writes: data/releases.json
+Writes:
+  data/releases.json
+  data/games-industry.ics
+  data/games-industry-events-aaa.ics
 
-Secrets needed in GitHub Actions:
-  RAWG_API_KEY       — from rawg.io/apidocs (free, instant)
-  TWITCH_CLIENT_ID   — from dev.twitch.tv (free, for IGDB)
-  TWITCH_CLIENT_SECRET
-
-Run manually:  python scripts/fetch_data.py
+Secrets (GitHub Actions):
+  RAWG_API_KEY, TWITCH_CLIENT_ID, TWITCH_CLIENT_SECRET, SUPABASE_ANON_KEY
 """
 
-import os, json, time, datetime, requests
+import os, json, time, datetime, requests, traceback
 
+# ─── CONFIG ──────────────────────────────────────────────────
 RAWG_API_KEY         = os.environ.get("RAWG_API_KEY", "")
-SUPABASE_URL         = os.environ.get("SUPABASE_URL", "https://qrqikdqroupwselefmyu.supabase.co")
-SUPABASE_ANON_KEY    = os.environ.get("SUPABASE_ANON_KEY", "")
 TWITCH_CLIENT_ID     = os.environ.get("TWITCH_CLIENT_ID", "")
 TWITCH_CLIENT_SECRET = os.environ.get("TWITCH_CLIENT_SECRET", "")
-OUTPUT_PATH          = os.path.join(os.path.dirname(__file__), "..", "data", "releases.json")
-UPCOMING_MONTHS      = 6
+SUPABASE_URL         = "https://qrqikdqroupwselefmyu.supabase.co"
+SUPABASE_ANON_KEY    = os.environ.get("SUPABASE_ANON_KEY", "")
 
-# ── RAWG (primary) ───────────────────────────────────────────────────────────
+OUTPUT_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "releases.json")
+ICS_FULL    = os.path.join(os.path.dirname(__file__), "..", "data", "games-industry.ics")
+ICS_AAA     = os.path.join(os.path.dirname(__file__), "..", "data", "games-industry-events-aaa.ics")
+UPCOMING_MONTHS = 6
+
+
+# ─── RAWG (primary) ─────────────────────────────────────────
 
 def fetch_rawg_upcoming():
     if not RAWG_API_KEY:
-        print("  ⚠️  No RAWG_API_KEY — skipping RAWG fetch.")
+        print("  ⚠️  No RAWG_API_KEY — skipping RAWG.")
         return []
-
-    now    = datetime.date.today()
-    future = now + datetime.timedelta(days=UPCOMING_MONTHS * 30)
-    results, page = [], 1
-
+    today = datetime.date.today()
+    end = today + datetime.timedelta(days=UPCOMING_MONTHS * 30)
+    releases = []
+    page = 1
     while page <= 5:
         try:
             r = requests.get("https://api.rawg.io/api/games", params={
-                "key": RAWG_API_KEY, "dates": f"{now},{future}",
-                "ordering": "-added", "page_size": 100, "page": page,
-                "platforms": "4,18,1,186,187",
-            }, timeout=20)
-            r.raise_for_status()
+                "key": RAWG_API_KEY,
+                "dates": f"{today},{end}",
+                "ordering": "-added",
+                "page_size": 40,
+                "page": page,
+            }, timeout=15)
             data = r.json()
+            results = data.get("results", [])
+            if not results:
+                break
+            for g in results:
+                platforms = [p["platform"]["name"] for p in (g.get("platforms") or []) if p.get("platform")]
+                genres = [gen["name"] for gen in (g.get("genres") or [])]
+                releases.append({
+                    "title": g["name"],
+                    "date_iso": g.get("released") or g.get("tba") and f"{end.year}-12-31" or "",
+                    "platforms": platforms,
+                    "genres": genres[:4],
+                    "description": (g.get("description_raw") or "")[:300],
+                    "metacritic": g.get("metacritic") or 0,
+                    "rating": round(g.get("rating") or 0, 1),
+                    "hype_score": g.get("added") or 0,
+                    "source": "rawg",
+                    "slug": g.get("slug", ""),
+                    "background_image": g.get("background_image", ""),
+                })
+            if not data.get("next"):
+                break
+            page += 1
+            time.sleep(0.5)
         except Exception as e:
-            print(f"  RAWG error (page {page}): {e}"); break
-
-        games = data.get("results", [])
-        if not games: break
-
-        for g in games:
-            rd = g.get("released")
-            if not rd: continue
-            try: dt = datetime.date.fromisoformat(rd)
-            except ValueError: continue
-            results.append({
-                "title":      g.get("name", "Unknown"),
-                "date_iso":   rd, "month": dt.month, "year": dt.year,
-                "genres":     [x["name"] for x in g.get("genres", [])][:4],
-                "platforms":  [p["platform"]["name"] for p in g.get("platforms", [])][:4],
-                "hype_score": g.get("added", 0),
-                "metacritic": g.get("metacritic") or 0,
-                "rating":     round(g.get("rating") or 0, 1),
-                "source":     "rawg",
-            })
-
-        if not data.get("next"): break
-        page += 1
-        time.sleep(0.3)
-
-    results = [r for r in results if r["hype_score"] > 5]
-    results.sort(key=lambda x: x["hype_score"], reverse=True)
-    print(f"  ✓ RAWG: {len(results)} upcoming releases")
-    return results
+            print(f"  RAWG page {page} error: {e}")
+            break
+    print(f"  RAWG: {len(releases)} upcoming releases")
+    return releases
 
 
-# ── IGDB (secondary) ─────────────────────────────────────────────────────────
+# ─── IGDB (secondary) ───────────────────────────────────────
 
-def get_twitch_token():
+def get_igdb_token():
     if not TWITCH_CLIENT_ID or not TWITCH_CLIENT_SECRET:
-        print("  ⚠️  No Twitch credentials — skipping IGDB."); return None
+        return None
     try:
         r = requests.post("https://id.twitch.tv/oauth2/token", params={
-            "client_id": TWITCH_CLIENT_ID, "client_secret": TWITCH_CLIENT_SECRET,
-            "grant_type": "client_credentials"}, timeout=10)
-        r.raise_for_status(); return r.json()["access_token"]
-    except Exception as e:
-        print(f"  Twitch auth error: {e}"); return None
+            "client_id": TWITCH_CLIENT_ID,
+            "client_secret": TWITCH_CLIENT_SECRET,
+            "grant_type": "client_credentials"
+        }, timeout=10)
+        return r.json().get("access_token")
+    except:
+        return None
 
-
-def fetch_igdb_upcoming(token, existing_titles):
-    if not token: return []
-    now    = int(time.time())
-    future = int((datetime.datetime.now() + datetime.timedelta(days=UPCOMING_MONTHS * 30)).timestamp())
-    body   = f"""
-        fields name, first_release_date, genres.name, platforms.name, hypes;
-        where first_release_date >= {now}
-          & first_release_date <= {future}
-          & category = 0
-          & version_parent = null;
-        sort hypes desc;
-        limit 100;
-    """
-    try:
-        r = requests.post("https://api.igdb.com/v4/games",
-            headers={"Client-ID": TWITCH_CLIENT_ID, "Authorization": f"Bearer {token}", "Content-Type": "text/plain"},
-            data=body, timeout=15)
-        r.raise_for_status(); raw = r.json()
-    except Exception as e:
-        print(f"  IGDB error: {e}"); return []
-
-    results = []
-    for g in raw:
-        if "first_release_date" not in g: continue
-        title = g.get("name", "Unknown")
-        if title in existing_titles: continue
-        dt = datetime.datetime.utcfromtimestamp(g["first_release_date"])
-        results.append({
-            "title": title, "date_iso": dt.strftime("%Y-%m-%d"),
-            "month": dt.month, "year": dt.year,
-            "genres": [x["name"] for x in g.get("genres", [])][:4],
-            "platforms": [x["name"] for x in g.get("platforms", [])][:4],
-            "hype_score": g.get("hypes", 0), "metacritic": 0, "rating": 0, "source": "igdb",
-        })
-    print(f"  ✓ IGDB: {len(results)} additional releases")
-    return results
-
-
-# ── SteamSpy enrichment ───────────────────────────────────────────────────────
-
-def fetch_steamspy_enrichment():
-    tags = ["Action","RPG","Strategy","Indie","Horror","Survival","Multiplayer","Casual","Adventure"]
-    enrichment = {}
-    for tag in tags:
-        print(f"    SteamSpy: {tag}…")
-        try:
-            r = requests.get("https://steamspy.com/api.php", params={"request": "tag", "tag": tag}, timeout=15)
-            r.raise_for_status(); raw = r.json()
-        except Exception as e:
-            print(f"  SteamSpy error ({tag}): {e}"); time.sleep(1); continue
-        for appid, data in list(raw.items())[:30]:
-            title = data.get("name", "")
-            if not title: continue
-            key = title.lower().strip()
-            if key in enrichment: continue
-            owners_raw = data.get("owners", "0 .. 0")
-            try:
-                parts  = owners_raw.replace(",", "").split("..")
-                owners = (int(parts[0].strip()) + int(parts[1].strip())) // 2
-            except Exception:
-                owners = 0
-            enrichment[key] = {
-                "peak_ccu": data.get("ccu", 0), "owners": owners,
-                "tags": list((data.get("tags") or {}).keys())[:6],
-            }
-        time.sleep(0.7)
-    print(f"  ✓ SteamSpy: {len(enrichment)} games indexed")
-    return enrichment
-
-
-# ── Curated historical dataset ────────────────────────────────────────────────
-# Real games organised by launch month. SteamSpy enriches with live CCU.
-# Update annually.
-
-HISTORICAL_BY_MONTH = {
-    1:  [{"title":"Palworld","tags":["Survival","Open World","Co-op","Crafting"]},
-         {"title":"The Finals","tags":["FPS","Multiplayer","Free to Play"]},
-         {"title":"Enshrouded","tags":["Survival","Open World","Co-op","RPG"]},
-         {"title":"Tekken 8","tags":["Fighting","Multiplayer","Action"]}],
-    2:  [{"title":"Elden Ring","tags":["Soulslike","Action RPG","Open World"]},
-         {"title":"Hogwarts Legacy","tags":["Action RPG","Open World","Adventure"]},
-         {"title":"Sons of the Forest","tags":["Survival","Horror","Open World","Co-op"]},
-         {"title":"Helldivers 2","tags":["Co-op","Shooter","Action","Multiplayer"]}],
-    3:  [{"title":"Wo Long: Fallen Dynasty","tags":["Soulslike","Action","Co-op"]},
-         {"title":"Resident Evil 4 Remake","tags":["Horror","Action","Survival Horror"]},
-         {"title":"Hi-Fi Rush","tags":["Action","Rhythm","Indie"]},
-         {"title":"Returnal","tags":["Roguelike","Action","Shooter"]}],
-    4:  [{"title":"Dead Island 2","tags":["Action","Co-op","Zombie","FPS"]},
-         {"title":"Star Wars Jedi: Survivor","tags":["Action","Adventure","Soulslike"]},
-         {"title":"Minecraft Legends","tags":["Strategy","Action","Co-op"]}],
-    5:  [{"title":"System Shock Remake","tags":["FPS","Horror","Sci-Fi","Immersive Sim"]},
-         {"title":"Redfall","tags":["Co-op","FPS","Open World"]},
-         {"title":"Dead by Daylight","tags":["Horror","Survival","Multiplayer","Asymmetric"]}],
-    6:  [{"title":"Diablo IV","tags":["Action RPG","Co-op","Dark Fantasy","Loot"]},
-         {"title":"Street Fighter 6","tags":["Fighting","Multiplayer","Esports"]},
-         {"title":"Final Fantasy XVI","tags":["Action RPG","Story Rich","Fantasy"]}],
-    7:  [{"title":"Remnant II","tags":["Soulslike","Shooter","Co-op","Action"]},
-         {"title":"Exoprimal","tags":["Action","Co-op","Multiplayer"]},
-         {"title":"Pikmin 4","tags":["Strategy","Puzzle","Adventure"]}],
-    8:  [{"title":"Baldur's Gate 3","tags":["RPG","Turn-Based","Co-op","Fantasy","Story Rich"]},
-         {"title":"Armored Core VI","tags":["Action","Mecha","Soulslike"]},
-         {"title":"Sea of Stars","tags":["RPG","Turn-Based","Indie","Pixel Art"]}],
-    9:  [{"title":"Starfield","tags":["Open World","RPG","Sci-Fi","Space"]},
-         {"title":"Lies of P","tags":["Soulslike","Action RPG","Steampunk"]},
-         {"title":"Mortal Kombat 1","tags":["Fighting","Multiplayer","Action"]},
-         {"title":"Payday 3","tags":["Co-op","FPS","Heist","Multiplayer"]}],
-    10: [{"title":"Alan Wake 2","tags":["Horror","Action","Thriller","Story Rich"]},
-         {"title":"Cities: Skylines II","tags":["City Builder","Strategy","Simulation"]},
-         {"title":"Assassin's Creed Mirage","tags":["Action","Adventure","Stealth","Open World"]},
-         {"title":"Super Mario Bros. Wonder","tags":["Platformer","Co-op","Action"]}],
-    11: [{"title":"Call of Duty: Modern Warfare III","tags":["FPS","Multiplayer","Shooter"]},
-         {"title":"Lethal Company","tags":["Co-op","Horror","Indie","Survival"]},
-         {"title":"Like a Dragon: Ishin!","tags":["RPG","Action","JRPG","Brawler"]}],
-    12: [{"title":"Avatar: Frontiers of Pandora","tags":["Open World","Action","Adventure"]},
-         {"title":"The Game Awards Reveals","tags":["Industry Event"],
-          "note":"TGA dominates December media cycle — launch before Dec 15"},
-         {"title":"It Takes Two","tags":["Co-op","Platformer","Adventure","Puzzle"]}],
+IGDB_PLATFORMS = {
+    6: "PC", 48: "PS4", 167: "PS5", 49: "Xbox One", 169: "Xbox Series X|S",
+    130: "Switch", 170: "Stadia", 34: "Android", 39: "iOS"
+}
+IGDB_GENRES = {
+    2: "Point-and-click", 4: "Fighting", 5: "Shooter", 7: "Music", 8: "Platform",
+    9: "Puzzle", 10: "Racing", 11: "RTS", 12: "RPG", 13: "Simulator",
+    14: "Sport", 15: "Strategy", 16: "TBS", 24: "Tactical", 25: "Hack and Slash",
+    26: "Quiz", 30: "Pinball", 31: "Adventure", 32: "Indie", 33: "Arcade",
+    34: "Visual Novel", 35: "Card Game", 36: "MOBA",
 }
 
-
-def enrich_historical(enrichment):
-    output = {}
-    for month, games in HISTORICAL_BY_MONTH.items():
-        enriched = []
-        for g in games:
-            entry = {"title": g["title"], "tags": g["tags"], "peak_ccu": 0, "owners": 0}
-            if g.get("note"): entry["note"] = g["note"]
-            key   = g["title"].lower().strip()
-            match = enrichment.get(key)
-            if not match:
-                for sp_key, sp_data in enrichment.items():
-                    if key in sp_key or sp_key in key:
-                        match = sp_data; break
-            if match:
-                entry["peak_ccu"] = match.get("peak_ccu", 0)
-                entry["owners"]   = match.get("owners", 0)
-                sp_tags = match.get("tags", [])
-                if sp_tags:
-                    entry["tags"] = list(dict.fromkeys(g["tags"] + sp_tags))[:8]
-            enriched.append(entry)
-        output[str(month)] = enriched
-    return output
-
-
-# ── Industry events ───────────────────────────────────────────────────────────
-# Comprehensive global games industry calendar.
-# Categories: trade_show, showcase, sale, award, festival
-# "approx_date" is the approximate 2026 date — update annually when confirmed.
-# Used for ICS calendar export and chronological sorting.
-
-def get_industry_events():
-    return [
-        # ══════════════ JANUARY ══════════════
-        {"month": 1,  "label": "CES",                      "severity": "low",    "category": "trade_show",  "approx_date": "2026-01-06", "end_date": "2026-01-09",
-         "notes": "Consumer Electronics Show, Las Vegas — gaming-adjacent, can steal tech headlines"},
-        {"month": 1,  "label": "Xbox Developer Direct",    "severity": "medium", "category": "showcase",    "approx_date": "2026-01-23",
-         "notes": "Microsoft's focused deep-dive showcase — pulls press for 24-48 hours"},
-        {"month": 1,  "label": "Taipei Game Show",         "severity": "low",    "category": "trade_show",  "approx_date": "2026-01-29", "end_date": "2026-02-01",
-         "notes": "Taiwan's largest game expo — relevant for APAC-facing titles"},
-        # ══════════════ FEBRUARY ══════════════
-        {"month": 2,  "label": "D.I.C.E. Summit",          "severity": "low",    "category": "trade_show",  "approx_date": "2026-02-10", "end_date": "2026-02-12",
-         "notes": "AIAS industry summit, Las Vegas — senior networking, minimal consumer impact"},
-        {"month": 2,  "label": "DICE Awards",              "severity": "low",    "category": "award",       "approx_date": "2026-02-12",
-         "notes": "Academy of Interactive Arts and Sciences awards — industry recognition"},
-        {"month": 2,  "label": "Nintendo Direct",          "severity": "medium", "category": "showcase",    "approx_date": "2026-02-18",
-         "notes": "Nintendo typically runs a Feb Direct — pulls press for 48-72 hours"},
-        {"month": 2,  "label": "Steam Next Fest",          "severity": "high",   "category": "festival",    "approx_date": "2026-02-23", "end_date": "2026-03-02",
-         "notes": "Week-long demo festival — hundreds of demos flood discovery, launch signal diluted"},
-        # ══════════════ MARCH ══════════════
-        {"month": 3,  "label": "GDC",                      "severity": "high",   "category": "trade_show",  "approx_date": "2026-03-09", "end_date": "2026-03-13",
-         "notes": "Game Developers Conference, San Francisco — press concentrated for a full week"},
-        {"month": 3,  "label": "IGF Awards",               "severity": "low",    "category": "award",       "approx_date": "2026-03-11",
-         "notes": "Independent Games Festival awards at GDC — indie credibility moment"},
-        {"month": 3,  "label": "GDC Awards",               "severity": "low",    "category": "award",       "approx_date": "2026-03-11",
-         "notes": "Game Developers Choice Awards at GDC — industry peer recognition"},
-        {"month": 3,  "label": "SXSW Gaming",              "severity": "low",    "category": "festival",    "approx_date": "2026-03-12", "end_date": "2026-03-18",
-         "notes": "South by Southwest gaming track, Austin — cultural crossover, indie visibility"},
-        {"month": 3,  "label": "PAX East",                 "severity": "medium", "category": "trade_show",  "approx_date": "2026-03-26", "end_date": "2026-03-29",
-         "notes": "Major consumer expo in Boston — demos, influencer coverage, press splits attention"},
-        # ══════════════ APRIL ══════════════
-        {"month": 4,  "label": "BAFTA Games Awards",       "severity": "low",    "category": "award",       "approx_date": "2026-04-17",
-         "notes": "British Academy Games Awards — strong UK/EU press coverage for 24-48 hours"},
-        {"month": 4,  "label": "DCP — Deutscher Computerspielpreis", "severity": "medium", "category": "award", "approx_date": "2026-04-29",
-         "notes": "German Computer Game Award, Munich — major DACH event, strong regional press and networking"},
-        {"month": 4,  "label": "iicon (ESA)",                "severity": "high",   "category": "trade_show",  "approx_date": "2026-04-27", "end_date": "2026-04-30",
-         "notes": "Interactive Innovation Conference (E3 successor), Fontainebleau Las Vegas — invite-only, ESA-hosted, all major publishers present"},
-        {"month": 4,  "label": "gamescom LatAm",           "severity": "low",    "category": "trade_show",  "approx_date": "2026-04-29", "end_date": "2026-05-03",
-         "notes": "Gamescom's Latin American edition — growing LATAM market visibility"},
-        # ══════════════ MAY ══════════════
-        {"month": 5,  "label": "EGX at MCM London",        "severity": "low",    "category": "trade_show",  "approx_date": "2026-05-22", "end_date": "2026-05-24",
-         "notes": "UK's biggest gaming expo, now co-located with MCM Comic Con at ExCeL London"},
-        {"month": 5,  "label": "Unreal Fest",              "severity": "low",    "category": "trade_show",  "approx_date": "2026-05-06", "end_date": "2026-05-08",
-         "notes": "Epic Games' Unreal Engine developer conference"},
-        {"month": 5,  "label": "PlayStation State of Play", "severity": "medium","category": "showcase",    "approx_date": "2026-05-14",
-         "notes": "Sony showcase — pulls press attention and dominates news cycle for 2-3 days"},
-        {"month": 5,  "label": "Digital Dragons",          "severity": "low",    "category": "trade_show",  "approx_date": "2026-05-17", "end_date": "2026-05-19",
-         "notes": "Central European game dev conference, Krakow — strong Polish/CEE industry presence"},
-        {"month": 5,  "label": "BitSummit",                "severity": "low",    "category": "trade_show",  "approx_date": "2026-05-22", "end_date": "2026-05-24",
-         "notes": "Japanese indie game expo, Kyoto — relevant for Japan-facing indie titles"},
-        {"month": 5,  "label": "Nordic Game Conference",   "severity": "low",    "category": "trade_show",  "approx_date": "2026-05-25", "end_date": "2026-05-29",
-         "notes": "Malmo, Sweden — key Nordic/European indie and AA industry event"},
-        {"month": 5,  "label": "Wholesome Direct",         "severity": "low",    "category": "showcase",    "approx_date": "2026-05-28",
-         "notes": "Cozy/wholesome games showcase — niche but passionate audience"},
-        {"month": 5,  "label": "TwitchCon Europe",         "severity": "low",    "category": "festival",    "approx_date": "2026-05-30", "end_date": "2026-05-31",
-         "notes": "Twitch's European convention — streaming and content creator community"},
-        # ══════════════ JUNE ══════════════
-        {"month": 6,  "label": "Summer Game Fest",         "severity": "high",   "category": "showcase",    "approx_date": "2026-06-05",
-         "notes": "Geoff Keighley's showcase, Los Angeles — announcement coverage dominates all gaming media"},
-        {"month": 6,  "label": "Xbox Games Showcase",      "severity": "high",   "category": "showcase",    "approx_date": "2026-06-08",
-         "notes": "Microsoft's annual showcase — major reveals, press fully focused on announcements"},
-        {"month": 6,  "label": "PC Gaming Show",           "severity": "medium", "category": "showcase",    "approx_date": "2026-06-08",
-         "notes": "PC-focused showcase — PC press diverted to coverage for 2-3 days"},
-        {"month": 6,  "label": "Future Games Show",        "severity": "medium", "category": "showcase",    "approx_date": "2026-06-08",
-         "notes": "Future Publishing's showcase — broad coverage, indie and AA visibility affected"},
-        {"month": 6,  "label": "Devolver Digital Showcase", "severity": "low",   "category": "showcase",    "approx_date": "2026-06-08",
-         "notes": "Devolver's showcase — indie-focused, high social media engagement"},
-        {"month": 6,  "label": "Ubisoft Forward",          "severity": "medium", "category": "showcase",    "approx_date": "2026-06-09",
-         "notes": "Ubisoft's showcase — AAA reveals pull media attention"},
-        {"month": 6,  "label": "Capcom Showcase",          "severity": "medium", "category": "showcase",    "approx_date": "2026-06-09",
-         "notes": "Capcom's dedicated showcase — Monster Hunter, Resident Evil, Street Fighter news"},
-        {"month": 6,  "label": "Day of the Devs",          "severity": "low",    "category": "showcase",    "approx_date": "2026-06-09",
-         "notes": "iam8bit's indie showcase — curated indie selection, press-friendly"},
-        {"month": 6,  "label": "Latin American Games Showcase","severity":"low",  "category": "showcase",    "approx_date": "2026-06-09",
-         "notes": "LATAM-focused showcase — growing market, Spanish/Portuguese localisation relevant"},
-        {"month": 6,  "label": "Nintendo Direct",          "severity": "high",   "category": "showcase",    "approx_date": "2026-06-10",
-         "notes": "E3-season Nintendo Direct — typically their biggest of the year"},
-        {"month": 6,  "label": "Square Enix Presents",     "severity": "medium", "category": "showcase",    "approx_date": "2026-06-10",
-         "notes": "Square Enix showcase — Final Fantasy, Dragon Quest audience pull"},
-        {"month": 6,  "label": "Bandai Namco Next",        "severity": "low",    "category": "showcase",    "approx_date": "2026-06-10",
-         "notes": "Bandai Namco showcase — anime games, Tekken, Elden Ring news"},
-        {"month": 6,  "label": "Annapurna Interactive Showcase","severity":"low", "category": "showcase",    "approx_date": "2026-06-11",
-         "notes": "Annapurna's showcase — prestigious indie publisher, strong critical press"},
-        {"month": 6,  "label": "Tribeca Games Spotlight",  "severity": "low",    "category": "festival",    "approx_date": "2026-06-12", "end_date": "2026-06-14",
-         "notes": "Tribeca Festival's gaming track — narrative/art games get cultural press crossover"},
-        # ══════════════ JULY ══════════════
-        {"month": 7,  "label": "Steam Summer Sale",        "severity": "medium", "category": "sale",        "approx_date": "2026-06-25", "end_date": "2026-07-09",
-         "notes": "Price anchor effect — players wait for discounts, full-price launches face resistance"},
-        {"month": 7,  "label": "Develop:Brighton",         "severity": "low",    "category": "trade_show",  "approx_date": "2026-07-08", "end_date": "2026-07-10",
-         "notes": "UK developer conference, Brighton — key UK industry networking and talks"},
-        {"month": 7,  "label": "EA Spotlight",             "severity": "medium", "category": "showcase",    "approx_date": "2026-07-15",
-         "notes": "EA's showcase event — sports titles, Battlefield, major EA IPs pull attention"},
-        {"month": 7,  "label": "ChinaJoy",                 "severity": "low",    "category": "trade_show",  "approx_date": "2026-07-24", "end_date": "2026-07-27",
-         "notes": "China's largest gaming expo, Shanghai — relevant if targeting Chinese market"},
-        # ══════════════ AUGUST ══════════════
-        {"month": 8,  "label": "gamescom dev",              "severity": "high",   "category": "trade_show",  "approx_date": "2026-08-23", "end_date": "2026-08-25",
-         "notes": "Europe's largest developer conference (formerly devcom), Cologne — 2 days of talks, B2B matchmaking, indie expo, networking"},
-        {"month": 8,  "label": "Opening Night Live",       "severity": "high",   "category": "showcase",    "approx_date": "2026-08-25",
-         "notes": "Keighley's Gamescom kick-off — major reveals, dominates the full week's coverage"},
-        {"month": 8,  "label": "Gamescom",                 "severity": "high",   "category": "trade_show",  "approx_date": "2026-08-26", "end_date": "2026-08-30",
-         "notes": "Europe's biggest games show, Cologne — avoid launch week, post-show slot is valuable"},
-        {"month": 8,  "label": "Future Games Show at Gamescom","severity":"medium","category":"showcase",   "approx_date": "2026-08-27",
-         "notes": "Future's Gamescom showcase — additional coverage saturation during show week"},
-        {"month": 8,  "label": "THQ Nordic Showcase",      "severity": "low",    "category": "showcase",    "approx_date": "2026-08-27",
-         "notes": "THQ Nordic's Gamescom showcase — AA titles, genre-specific audiences"},
-        {"month": 8,  "label": "Nacon Connect",            "severity": "low",    "category": "showcase",    "approx_date": "2026-08-26",
-         "notes": "Nacon's showcase — AA titles, racing, horror, and licensed games"},
-        {"month": 8,  "label": "Focus Entertainment What's Next","severity":"low","category":"showcase",    "approx_date": "2026-08-27",
-         "notes": "Focus' Gamescom showcase — relevant for Soulslike and AA action fans"},
-        {"month": 8,  "label": "Awesome Indies Showcase",  "severity": "low",    "category": "showcase",    "approx_date": "2026-08-27",
-         "notes": "Indie showcase at Gamescom — curated indie selection"},
-        # ══════════════ SEPTEMBER ══════════════
-        {"month": 9,  "label": "D.I.C.E. Athens",             "severity": "low",    "category": "trade_show",  "approx_date": "2026-09-21", "end_date": "2026-09-23",
-         "notes": "AIAS European networking event, Athens — intimate industry gathering for senior professionals"},
-        {"month": 9,  "label": "PAX West",                 "severity": "medium", "category": "trade_show",  "approx_date": "2026-09-04", "end_date": "2026-09-07",
-         "notes": "Fan-focused expo in Seattle — demos, community events, indie presence"},
-        {"month": 9,  "label": "PlayStation State of Play", "severity": "medium","category": "showcase",    "approx_date": "2026-09-10",
-         "notes": "Sony's September showcase — typically focuses on holiday lineup"},
-        {"month": 9,  "label": "Tokyo Game Show",          "severity": "medium", "category": "trade_show",  "approx_date": "2026-09-17", "end_date": "2026-09-21",
-         "notes": "Japan's largest game show, Makuhari Messe — 5 days for the first time, 300K expected"},
-        {"month": 9,  "label": "Sega Showcase",            "severity": "low",    "category": "showcase",    "approx_date": "2026-09-20",
-         "notes": "Sega's showcase — Yakuza, Sonic, Persona franchises"},
-        # ══════════════ OCTOBER ══════════════
-        {"month": 10, "label": "Steam Next Fest",          "severity": "medium", "category": "festival",    "approx_date": "2026-10-05", "end_date": "2026-10-12",
-         "notes": "Autumn demo festival — second occurrence, demo noise competes with launches"},
-        {"month": 10, "label": "Brasil Game Show",         "severity": "low",    "category": "trade_show",  "approx_date": "2026-10-08", "end_date": "2026-10-12",
-         "notes": "Latin America's largest game show, Sao Paulo — key for LATAM visibility"},
-        {"month": 10, "label": "Twitch Galaxies",          "severity": "low",    "category": "showcase",    "approx_date": "2026-10-15",
-         "notes": "Twitch's showcase event — streaming-focused reveals"},
-        {"month": 10, "label": "Milan Games Week",         "severity": "low",    "category": "trade_show",  "approx_date": "2026-10-23", "end_date": "2026-10-25",
-         "notes": "Italy's largest gaming event — Southern European market visibility"},
-        {"month": 10, "label": "Steam Autumn Sale",        "severity": "medium", "category": "sale",        "approx_date": "2026-10-27", "end_date": "2026-11-03",
-         "notes": "Late October sale — price expectations drop as sale approaches"},
-        {"month": 10, "label": "Paris Games Week",         "severity": "low",    "category": "trade_show",  "approx_date": "2026-10-29", "end_date": "2026-11-01",
-         "notes": "France's consumer gaming expo — relevant for French market"},
-        # ══════════════ NOVEMBER ══════════════
-        {"month": 11, "label": "Day of the Devs: Fall Edition","severity":"low",  "category": "showcase",    "approx_date": "2026-11-05",
-         "notes": "iam8bit's autumn indie showcase — curated, press-friendly"},
-        {"month": 11, "label": "G-Star Korea",             "severity": "low",    "category": "trade_show",  "approx_date": "2026-11-12", "end_date": "2026-11-15",
-         "notes": "South Korea's major gaming expo, Busan — critical for Korean MMO/F2P market"},
-        {"month": 11, "label": "Women in Games Awards",    "severity": "low",    "category": "award",       "approx_date": "2026-11-18",
-         "notes": "Industry diversity awards — networking, visibility for inclusive studios"},
-        {"month": 11, "label": "Golden Joystick Awards",   "severity": "low",    "category": "award",       "approx_date": "2026-11-20",
-         "notes": "GamesRadar/Future's public-voted awards — consumer engagement"},
-        {"month": 11, "label": "Dreamhack",                "severity": "low",    "category": "festival",    "approx_date": "2026-11-20", "end_date": "2026-11-22",
-         "notes": "LAN/esports festival — strong community engagement"},
-        {"month": 11, "label": "Black Friday",             "severity": "medium", "category": "sale",        "approx_date": "2026-11-27", "end_date": "2026-11-30",
-         "notes": "Consumer attention on deals, not new releases — gifting spike possible"},
-        # ══════════════ DECEMBER ══════════════
-        {"month": 12, "label": "Indie World / Nintendo",   "severity": "low",    "category": "showcase",    "approx_date": "2026-12-08",
-         "notes": "Nintendo sometimes runs a Dec showcase — minor distraction"},
-        {"month": 12, "label": "The Game Awards",          "severity": "high",   "category": "award",       "approx_date": "2026-12-10",
-         "notes": "TGA show night — world premieres, massive live audience, dominates entire month"},
-        {"month": 12, "label": "GOG Winter Sale",          "severity": "low",    "category": "sale",        "approx_date": "2026-12-15", "end_date": "2026-12-29",
-         "notes": "GOG's year-end sale — niche but loyal DRM-free audience"},
-        {"month": 12, "label": "PlayStation Wrap-Up",      "severity": "low",    "category": "showcase",    "approx_date": "2026-12-15",
-         "notes": "Sony's year-in-review — social media noise, minimal launch impact"},
-        {"month": 12, "label": "Steam Winter Sale",        "severity": "medium", "category": "sale",        "approx_date": "2026-12-18", "end_date": "2027-01-05",
-         "notes": "Year-end sale — launch by Dec 15 or hold until January"},
-        {"month": 12, "label": "Epic Games Store Free Games","severity":"low",   "category": "sale",        "approx_date": "2026-12-20", "end_date": "2026-12-31",
-         "notes": "Epic's annual free games giveaway — player attention on free titles"},
-
-        # ══════════════ 2027 — CONFIRMED & TBC ══════════════
-        {"month": 1,  "label": "CES 2027",                 "severity": "low",    "category": "trade_show",  "approx_date": "2027-01-06", "end_date": "2027-01-09",
-         "notes": "Consumer Electronics Show, Las Vegas — gaming-adjacent, confirmed dates"},
-        {"month": 1,  "label": "Taipei Game Show 2027 [TBC]","severity": "low",  "category": "trade_show",  "approx_date": "2027-01-28", "end_date": "2027-01-31",
-         "notes": "Taiwan's largest game expo — approximate dates based on 2026 pattern"},
-        {"month": 2,  "label": "D.I.C.E. Summit 2027",     "severity": "low",    "category": "trade_show",  "approx_date": "2027-02-16", "end_date": "2027-02-18",
-         "notes": "AIAS industry summit, ARIA Las Vegas — confirmed dates"},
-        {"month": 2,  "label": "DICE Awards 2027",         "severity": "low",    "category": "award",       "approx_date": "2027-02-18",
-         "notes": "30th Annual DICE Awards — closes the D.I.C.E. Summit"},
-        {"month": 2,  "label": "Nintendo Direct 2027 [TBC]","severity":"medium", "category": "showcase",    "approx_date": "2027-02-17",
-         "notes": "Nintendo typically runs a Feb Direct — approximate date"},
-        {"month": 2,  "label": "Steam Next Fest 2027 [TBC]","severity":"high",   "category": "festival",    "approx_date": "2027-02-22", "end_date": "2027-03-01",
-         "notes": "Demo festival — approximate dates based on 2026 pattern"},
-        {"month": 3,  "label": "GDC 2027",                 "severity": "high",   "category": "trade_show",  "approx_date": "2027-03-01", "end_date": "2027-03-05",
-         "notes": "GDC Festival of Gaming, Moscone Center SF — confirmed dates, now rebranded"},
-        {"month": 3,  "label": "IGF Awards 2027 [TBC]",    "severity": "low",    "category": "award",       "approx_date": "2027-03-03",
-         "notes": "Independent Games Festival awards at GDC — approximate date"},
-        {"month": 3,  "label": "GDC Awards 2027 [TBC]",    "severity": "low",    "category": "award",       "approx_date": "2027-03-03",
-         "notes": "Game Developers Choice Awards at GDC — approximate date"},
-        {"month": 3,  "label": "PAX East 2027 [TBC]",      "severity": "medium", "category": "trade_show",  "approx_date": "2027-03-25", "end_date": "2027-03-28",
-         "notes": "Major consumer expo, Boston — approximate dates based on 2026 pattern"},
-        {"month": 4,  "label": "BAFTA Games Awards 2027 [TBC]","severity":"low", "category": "award",       "approx_date": "2027-04-15",
-         "notes": "British Academy Games Awards — approximate date"},
-        {"month": 4,  "label": "DCP 2027 [TBC]",           "severity": "medium", "category": "award",       "approx_date": "2027-04-29",
-         "notes": "Deutscher Computerspielpreis — approximate date based on 2026 pattern"},
-    ]
+def fetch_igdb_upcoming(token):
+    if not token:
+        print("  ⚠️  No IGDB token — skipping.")
+        return []
+    now_ts = int(time.time())
+    end_ts = now_ts + UPCOMING_MONTHS * 30 * 86400
+    releases = []
+    try:
+        r = requests.post("https://api.igdb.com/v4/games", headers={
+            "Client-ID": TWITCH_CLIENT_ID,
+            "Authorization": f"Bearer {token}",
+        }, data=f"""
+            fields name, first_release_date, platforms, genres, summary, hypes, follows;
+            where first_release_date > {now_ts} & first_release_date < {end_ts} & hypes > 5;
+            sort hypes desc;
+            limit 100;
+        """, timeout=15)
+        for g in r.json():
+            platforms = [IGDB_PLATFORMS.get(p, f"Platform {p}") for p in (g.get("platforms") or [])]
+            genres = [IGDB_GENRES.get(gid, "Unknown") for gid in (g.get("genres") or [])]
+            rd = g.get("first_release_date")
+            date_iso = datetime.datetime.utcfromtimestamp(rd).strftime("%Y-%m-%d") if rd else ""
+            releases.append({
+                "title": g["name"],
+                "date_iso": date_iso,
+                "platforms": platforms,
+                "genres": genres[:4],
+                "description": (g.get("summary") or "")[:300],
+                "metacritic": 0,
+                "rating": 0,
+                "hype_score": (g.get("hypes") or 0) + (g.get("follows") or 0),
+                "source": "igdb",
+            })
+    except Exception as e:
+        print(f"  IGDB error: {e}")
+    print(f"  IGDB: {len(releases)} upcoming releases")
+    return releases
 
 
+# ─── SUPABASE APPROVED EVENTS ──────────────────────────────
 
-
-# ── Notable Major Releases (curated) ────────────────────────────────────────
-# Big titles that dominate the release window. Updated manually.
-# These get merged into the month_index alongside RAWG data.
-# Add [TBC] suffix to title if date is unconfirmed.
-
-def get_notable_releases():
-    return [
-        # ══════════════ 2026 — CONFIRMED ══════════════
-        {"title": "Marvel's Wolverine",          "date": "2026-09-15", "genres": ["Action", "Adventure", "Superhero"],       "platforms": ["PS5"],
-         "notes": "Insomniac Games — PS5 exclusive, confirmed Sept 15"},
-        {"title": "007: First Light",            "date": "2026-10-13", "genres": ["Action", "Stealth", "FPS"],              "platforms": ["PS5", "Xbox", "PC"],
-         "notes": "IO Interactive — James Bond origin story"},
-        {"title": "Grand Theft Auto VI",         "date": "2026-11-19", "genres": ["Action", "Open World", "Crime"],         "platforms": ["PS5", "Xbox"],
-         "notes": "Rockstar Games — confirmed Nov 19, console only at launch. THE event of the year. Every publisher is clearing the runway."},
-        {"title": "Forza Horizon 6",             "date": "2026-10-01", "genres": ["Racing", "Open World"],                  "platforms": ["Xbox", "PC"],
-         "notes": "Playground Games — expected Q4, date approximate",         "tbc": True},
-        {"title": "Metal Gear Solid Collection Vol. 2","date":"2026-09-01","genres":["Action","Stealth","Remaster"],         "platforms": ["PS5", "Xbox", "PC"],
-         "notes": "Konami — confirmed 2026, date approximate",               "tbc": True},
-        {"title": "Ace Combat 8",                "date": "2026-10-01", "genres": ["Flight", "Action", "Simulation"],        "platforms": ["PS5", "Xbox", "PC"],
-         "notes": "Bandai Namco — confirmed 2026, date approximate",         "tbc": True},
-        {"title": "Control: Resonant",           "date": "2026-08-01", "genres": ["Action", "Shooter", "Supernatural"],     "platforms": ["PS5", "Xbox", "PC"],
-         "notes": "Remedy Entertainment — confirmed 2026",                   "tbc": True},
-        {"title": "Metro 2039",                  "date": "2026-10-01", "genres": ["FPS", "Horror", "Post-Apocalyptic"],     "platforms": ["PS5", "Xbox", "PC"],
-         "notes": "4A Games — announced April 2026, date approximate",       "tbc": True},
-        {"title": "Assassin's Creed Black Flag Remake","date":"2026-11-01","genres":["Action","Adventure","Open World"],     "platforms": ["PS5", "Xbox", "PC"],
-         "notes": "Ubisoft — announced April 2026, date approximate",        "tbc": True},
-        {"title": "Halo: Campaign Evolved",      "date": "2026-11-01", "genres": ["FPS", "Sci-Fi", "Remaster"],            "platforms": ["Xbox", "PC"],
-         "notes": "343 Industries — confirmed 2026, date approximate",       "tbc": True},
-
-        # ══════════════ 2027 — TBC ══════════════
-        {"title": "GTA VI (PC) [TBC]",           "date": "2027-02-01", "genres": ["Action", "Open World", "Crime"],         "platforms": ["PC"],
-         "notes": "Rockstar Games — PC release widely expected early 2027 based on GTA V pattern, NOT confirmed", "tbc": True},
-        {"title": "Gears of War: E-Day [TBC]",   "date": "2027-06-01", "genres": ["Shooter", "Action", "Co-op"],           "platforms": ["Xbox", "PC"],
-         "notes": "The Coalition — confirmed in development, 2027 release widely expected",                       "tbc": True},
-    ]
-
-
-
-# ── Supabase approved events ─────────────────────────────────────────────────
-
-def fetch_supabase_approved():
-    """Fetch community-approved items from Supabase.
-    Returns (events_list, releases_list) — releases go into the release pipeline,
-    events go into the events pipeline."""
+def fetch_supabase_events():
     if not SUPABASE_ANON_KEY:
-        print("  ⚠️  No SUPABASE_ANON_KEY — skipping Supabase approved events.")
-        return [], []
-
+        print("  ⚠️  No SUPABASE_ANON_KEY — skipping.")
+        return []
+    items = []
     try:
         r = requests.get(
-            f"{SUPABASE_URL}/rest/v1/approved_events",
-            params={"published": "eq.true", "select": "*"},
+            f"{SUPABASE_URL}/rest/v1/approved_events?published=eq.true&select=*",
             headers={
                 "apikey": SUPABASE_ANON_KEY,
                 "Authorization": f"Bearer {SUPABASE_ANON_KEY}",
             },
-            timeout=10,
+            timeout=15,
         )
-        r.raise_for_status()
         rows = r.json()
-    except Exception as e:
-        print(f"  Supabase error: {e}")
-        return [], []
-
-    events = []
-    releases = []
-    for row in rows:
-        if row.get("is_release"):
-            # Game release — goes into the release pipeline
-            try:
-                dt = datetime.date.fromisoformat(row["approx_date"])
-            except Exception:
-                continue
-            releases.append({
-                "title": row["label"] + (" [TBC]" if row.get("tbc") else ""),
-                "date_iso": row["approx_date"],
-                "month": dt.month,
-                "year": dt.year,
+        for row in rows:
+            items.append({
+                "label": row["label"],
+                "category": row["category"],
+                "severity": row.get("severity", "low"),
+                "approx_date": row["approx_date"],
+                "end_date": row.get("end_date"),
+                "notes": row.get("notes", ""),
+                "description": row.get("description") or row.get("notes") or "",
+                "tbc": row.get("tbc", False),
+                "is_release": row.get("is_release", False),
+                "tier": row.get("tier", "indie"),
                 "genres": row.get("genres") or [],
                 "platforms": row.get("platforms") or [],
-                "hype_score": {"aaa": 99999, "aa": 5000, "indie": 100}.get(row.get("tier", "indie"), 100),
-                "metacritic": 0,
-                "rating": 0,
-                "source": "community",
-                "tier_override": row.get("tier", "indie"),
+                "url": row.get("url", ""),
+                "location": row.get("location", ""),
+                "developer": row.get("developer", ""),
+                "publisher": row.get("publisher", ""),
             })
-        else:
-            # Industry event
-            entry = {
-                "month": int(row["approx_date"].split("-")[1]),
-                "label": row["label"] + (" [TBC]" if row.get("tbc") else ""),
-                "severity": row.get("severity", "medium"),
-                "category": row.get("category", "showcase"),
-                "approx_date": row["approx_date"],
-                "notes": row.get("notes", ""),
-                "source": "community",
+        print(f"  Supabase: {len(items)} approved events/releases")
+    except Exception as e:
+        print(f"  Supabase error: {e}")
+    return items
+
+
+# ─── STEAMSPY ENRICHMENT ────────────────────────────────────
+
+def fetch_steamspy_enrichment():
+    enrichment = {}
+    try:
+        r = requests.get("https://steamspy.com/api.php?request=top100in2weeks", timeout=15)
+        for appid, data in r.json().items():
+            enrichment[data.get("name", "").lower()] = {
+                "ccu": data.get("ccu", 0),
+                "owners": data.get("owners", ""),
+                "price": data.get("price", 0),
             }
-            if row.get("end_date"):
-                entry["end_date"] = row["end_date"]
-            events.append(entry)
+        print(f"  SteamSpy: {len(enrichment)} titles enriched")
+    except Exception as e:
+        print(f"  SteamSpy error: {e}")
+    return enrichment
 
-    print(f"  ✓ Supabase: {len(events)} community events, {len(releases)} community releases")
-    return events, releases
 
-# ── Month index ───────────────────────────────────────────────────────────────
+# ─── CURATED NOTABLE RELEASES ──────────────────────────────
 
-def build_month_index(upcoming, historical_by_month):
-    """Build per-month lookup combining upcoming releases + historical comps.
-    Uses year-month keys (e.g. '2026-05') for multi-year support."""
-    index = {}
+CURATED_RELEASES = [
+    {"title":"Grand Theft Auto VI","date_iso":"2026-05-26","platforms":["PS5","Xbox Series X|S"],"genres":["Action","Open World"],"description":"Rockstar Games' next open-world crime epic set in Leonida (Vice City). Most anticipated game of the decade.","hype_score":99999,"tier":"aaa","developer":"Rockstar Games","publisher":"Take-Two Interactive"},
+    {"title":"Metroid Prime 4: Beyond","date_iso":"2025-09-05","platforms":["Switch 2"],"genres":["Action","Adventure","Metroidvania"],"description":"Long-awaited continuation of Samus Aran's first-person adventure saga from Retro Studios.","hype_score":99999,"tier":"aaa","developer":"Retro Studios","publisher":"Nintendo"},
+    {"title":"Death Stranding 2","date_iso":"2025-06-26","platforms":["PS5"],"genres":["Action","Open World"],"description":"Hideo Kojima's sequel to the strand game phenomenon. New traversal mechanics and expanded world.","hype_score":99999,"tier":"aaa","developer":"Kojima Productions","publisher":"Sony"},
+    {"title":"Ghost of Yotei","date_iso":"2025-10-01","platforms":["PS5"],"genres":["Action","Open World"],"description":"Sucker Punch sequel set in 1600s Hokkaido with a new female protagonist wielding katana and rifle.","hype_score":99999,"tier":"aaa","developer":"Sucker Punch","publisher":"Sony"},
+    {"title":"Doom: The Dark Ages","date_iso":"2025-05-15","platforms":["PC","PS5","Xbox Series X|S"],"genres":["FPS","Action"],"description":"id Software prequel taking Doom Slayer to a medieval dark fantasy setting with mech combat.","hype_score":9999,"tier":"aaa","developer":"id Software","publisher":"Bethesda"},
+    {"title":"Fable","date_iso":"2025-10-01","platforms":["PC","Xbox Series X|S"],"genres":["Action RPG","Open World"],"description":"Playground Games reboot of the beloved RPG franchise with humor, choices, and British fantasy setting.","hype_score":9999,"tier":"aaa","developer":"Playground Games","publisher":"Xbox Game Studios"},
+    {"title":"Borderlands 4","date_iso":"2025-09-01","platforms":["PC","PS5","Xbox Series X|S"],"genres":["Looter Shooter","Co-op"],"description":"Gearbox's next entry in the cel-shaded co-op looter shooter franchise. New vault hunters and planets.","hype_score":9999,"tier":"aaa","developer":"Gearbox","publisher":"2K Games"},
+    {"title":"Assassin's Creed Shadows","date_iso":"2025-03-20","platforms":["PC","PS5","Xbox Series X|S"],"genres":["Action RPG","Stealth"],"description":"Feudal Japan setting with dual protagonists — an African samurai and a Japanese shinobi.","hype_score":9999,"tier":"aaa","developer":"Ubisoft Quebec","publisher":"Ubisoft"},
+    {"title":"Civilization VII","date_iso":"2025-02-11","platforms":["PC","PS5","Xbox Series X|S","Switch"],"genres":["4X","Strategy"],"description":"Next entry in the landmark strategy series. New age-progression system splitting eras into distinct civilizations.","hype_score":9999,"tier":"aaa","developer":"Firaxis Games","publisher":"2K Games"},
+    {"title":"Monster Hunter Wilds","date_iso":"2025-02-28","platforms":["PC","PS5","Xbox Series X|S"],"genres":["Action RPG","Co-op"],"description":"Next-gen entry with seamless open zones, living ecosystems, and mount-based traversal across biomes.","hype_score":9999,"tier":"aaa","developer":"Capcom","publisher":"Capcom"},
+    {"title":"Judas","date_iso":"2026-03-01","platforms":["PC","PS5","Xbox Series X|S"],"genres":["FPS","Immersive Sim"],"description":"Ken Levine's spiritual successor to BioShock. Narrative FPS aboard a generation starship.","hype_score":9999,"tier":"aaa","developer":"Ghost Story Games","publisher":"Take-Two"},
+    {"title":"Marvel's Wolverine","date_iso":"2026-09-01","platforms":["PS5"],"genres":["Action","Adventure"],"description":"Insomniac Games' Wolverine title in the Marvel's Spider-Man universe. Mature-rated action.","hype_score":9999,"tier":"aaa","developer":"Insomniac Games","publisher":"Sony"},
+]
 
-    # Standard 2026 months 1-12 (always present for the checker tool)
-    for m in range(1, 13):
-        index[str(m)] = {
-            "upcoming_releases": [],
-            "top_performers": historical_by_month.get(str(m), []),
-        }
 
-    # Populate from upcoming releases using year-aware keys
-    for r in upcoming:
-        year = r.get("year", 2026)
-        m = r["month"]
+# ─── INDUSTRY EVENTS (70+) ──────────────────────────────────
 
-        # Year-month key for calendar (e.g. "2026-05", "2027-01")
-        ym_key = f"{year}-{m:02d}"
-        if ym_key not in index:
-            index[ym_key] = {"upcoming_releases": [], "top_performers": []}
+INDUSTRY_EVENTS = [
+    {"label":"CES 2026","category":"trade_show","approx_date":"2026-01-06","end_date":"2026-01-09","location":"Las Vegas, USA","description":"Consumer Electronics Show — major tech and gaming hardware reveals","url":"https://www.ces.tech"},
+    {"label":"DICE Summit 2026","category":"showcase","approx_date":"2026-02-10","end_date":"2026-02-12","location":"Las Vegas, USA","description":"Academy of Interactive Arts & Sciences leadership summit"},
+    {"label":"Nintendo Direct (Feb)","category":"showcase","approx_date":"2026-02-15","tbc":True,"description":"Nintendo's direct-to-consumer game announcement showcase"},
+    {"label":"PAX East 2026","category":"festival","approx_date":"2026-02-26","end_date":"2026-03-01","location":"Boston, USA","description":"Major consumer gaming convention with hands-on demos and panels","url":"https://east.paxsite.com"},
+    {"label":"GDC 2026","category":"trade_show","approx_date":"2026-03-16","end_date":"2026-03-20","location":"San Francisco, USA","description":"Game Developers Conference — the largest professional game dev event","url":"https://gdconf.com"},
+    {"label":"SXSW Gaming 2026","category":"festival","approx_date":"2026-03-13","end_date":"2026-03-22","location":"Austin, USA","description":"South by Southwest gaming track with panels, esports, and indie showcases"},
+    {"label":"Deutsche Computerspielpreis 2026","category":"award","approx_date":"2026-04-29","location":"Munich, Germany","description":"German Computer Game Award — national game industry ceremony","url":"https://www.deutscher-computerspielpreis.de"},
+    {"label":"Tribeca Games 2026","category":"festival","approx_date":"2026-06-10","end_date":"2026-06-22","location":"New York, USA","description":"Tribeca Film Festival gaming track with world premiere demos"},
+    {"label":"Summer Game Fest 2026","category":"showcase","approx_date":"2026-06-07","location":"Los Angeles, USA","description":"Geoff Keighley's flagship summer showcase kicking off reveal season","url":"https://www.summergamefest.com"},
+    {"label":"Xbox Showcase 2026","category":"showcase","approx_date":"2026-06-08","tbc":True,"description":"Microsoft/Xbox annual game reveal showcase"},
+    {"label":"Nintendo Direct (Jun)","category":"showcase","approx_date":"2026-06-10","tbc":True,"description":"Nintendo's E3-adjacent game announcement showcase"},
+    {"label":"PC Gaming Show 2026","category":"showcase","approx_date":"2026-06-08","tbc":True,"description":"Annual PC-focused game reveal showcase"},
+    {"label":"Devolver Direct 2026","category":"showcase","approx_date":"2026-06-12","tbc":True,"description":"Devolver Digital's irreverent showcase of indie titles"},
+    {"label":"Future Games Show 2026","category":"showcase","approx_date":"2026-06-09","tbc":True,"description":"GamesRadar's multi-platform game showcase"},
+    {"label":"Wholesome Direct 2026","category":"showcase","approx_date":"2026-06-07","tbc":True,"description":"Showcase of cozy, wholesome, and feel-good indie games"},
+    {"label":"Annapurna Showcase 2026","category":"showcase","approx_date":"2026-06-11","tbc":True,"description":"Annapurna Interactive's annual showcase of artful indie games"},
+    {"label":"Latin America Games Showcase","category":"showcase","approx_date":"2026-06-09","tbc":True,"description":"Showcase highlighting Latin American game development"},
+    {"label":"BitSummit 2026","category":"festival","approx_date":"2026-07-18","end_date":"2026-07-20","location":"Kyoto, Japan","description":"Japan's premier indie game festival with playable demos and talks"},
+    {"label":"EVO 2026","category":"festival","approx_date":"2026-07-18","end_date":"2026-07-20","location":"Las Vegas, USA","description":"World's largest fighting game tournament and community event","url":"https://www.evo.gg"},
+    {"label":"ChinaJoy 2026","category":"trade_show","approx_date":"2026-07-31","end_date":"2026-08-03","location":"Shanghai, China","description":"China's largest gaming expo with B2B and consumer zones"},
+    {"label":"gamescom Opening Night Live","category":"showcase","approx_date":"2026-08-18","location":"Cologne, Germany","description":"Geoff Keighley's gamescom kickoff showcase with world premieres"},
+    {"label":"gamescom 2026","category":"trade_show","approx_date":"2026-08-19","end_date":"2026-08-23","location":"Cologne, Germany","description":"Europe's largest gaming trade fair with B2B and consumer halls","url":"https://www.gamescom.global"},
+    {"label":"PAX West 2026","category":"festival","approx_date":"2026-08-28","end_date":"2026-08-31","location":"Seattle, USA","description":"Major consumer gaming convention with hands-on demos and panels"},
+    {"label":"Tokyo Game Show 2026","category":"trade_show","approx_date":"2026-09-24","end_date":"2026-09-27","location":"Chiba, Japan","description":"Japan's premier game industry expo showcasing domestic and international titles","url":"https://tgs.nikkeibp.co.jp/tgs/2026/en/"},
+    {"label":"PlayStation Showcase 2026","category":"showcase","approx_date":"2026-09-15","tbc":True,"description":"Sony's annual PlayStation game reveal showcase"},
+    {"label":"devcom 2026","category":"trade_show","approx_date":"2026-08-17","end_date":"2026-08-18","location":"Cologne, Germany","description":"European game developer conference held alongside gamescom"},
+    {"label":"Indie Arena Booth 2026","category":"festival","approx_date":"2026-08-19","end_date":"2026-08-23","location":"Cologne, Germany","description":"Curated indie game showcase at gamescom with playable demos"},
+    {"label":"Day of the Devs 2026","category":"festival","approx_date":"2026-11-01","tbc":True,"description":"Double Fine + iam8bit curated showcase of standout indie games"},
+    {"label":"Steam Next Fest (Feb)","category":"sale","approx_date":"2026-02-24","end_date":"2026-03-03","description":"Week-long Steam event with game demos and developer livestreams"},
+    {"label":"Steam Next Fest (Jun)","category":"sale","approx_date":"2026-06-16","end_date":"2026-06-23","description":"Week-long Steam event with game demos and developer livestreams"},
+    {"label":"Steam Next Fest (Oct)","category":"sale","approx_date":"2026-10-13","end_date":"2026-10-20","description":"Week-long Steam event with game demos and developer livestreams"},
+    {"label":"Steam Summer Sale","category":"sale","approx_date":"2026-06-25","end_date":"2026-07-09","description":"Steam's annual summer-wide discount event across the entire store"},
+    {"label":"Steam Autumn Sale","category":"sale","approx_date":"2026-11-25","end_date":"2026-12-01","description":"Steam's autumn discount event coinciding with US Thanksgiving weekend"},
+    {"label":"Steam Winter Sale","category":"sale","approx_date":"2026-12-22","end_date":"2027-01-05","description":"Steam's year-end holiday discount event — largest sale of the year"},
+    {"label":"PlayStation Days of Play","category":"sale","approx_date":"2026-05-25","end_date":"2026-06-08","tbc":True,"description":"Sony's annual PlayStation sale with discounts on hardware, games, and PS Plus"},
+    {"label":"Xbox Black Friday Sale","category":"sale","approx_date":"2026-11-20","end_date":"2026-12-02","tbc":True,"description":"Microsoft's annual Black Friday sale across Xbox Store and Game Pass"},
+    {"label":"The Game Awards 2026","category":"award","approx_date":"2026-12-10","location":"Los Angeles, USA","description":"Geoff Keighley's annual ceremony honoring the best games alongside major world premieres","url":"https://thegameawards.com"},
+    {"label":"BAFTA Games Awards 2026","category":"award","approx_date":"2026-04-08","location":"London, UK","description":"British Academy Games Awards recognizing creative excellence in games"},
+    {"label":"GDC Awards / IGDA 2026","category":"award","approx_date":"2026-03-20","location":"San Francisco, USA","description":"Game Developers Choice Awards presented at GDC"},
+    {"label":"Golden Joystick Awards 2026","category":"award","approx_date":"2026-11-20","tbc":True,"description":"Public-voted gaming awards run by GamesRadar — one of the longest-running ceremonies"},
+    {"label":"DICE Awards 2026","category":"award","approx_date":"2026-02-12","location":"Las Vegas, USA","description":"Academy of Interactive Arts & Sciences annual game industry awards"},
+    {"label":"New York Game Awards 2026","category":"award","approx_date":"2026-01-21","location":"New York, USA","description":"Annual awards ceremony presented by the NY Videogame Critics Circle"},
+    {"label":"Gamescom Award 2026","category":"award","approx_date":"2026-08-22","location":"Cologne, Germany","description":"Awards presented at gamescom recognizing the best games shown at the event"},
+    {"label":"Paris Games Week 2026","category":"trade_show","approx_date":"2026-10-22","end_date":"2026-10-26","location":"Paris, France","description":"France's largest gaming consumer event with playable demos and esports","tbc":True},
+    {"label":"Brasil Game Show 2026","category":"trade_show","approx_date":"2026-10-08","end_date":"2026-10-12","location":"Sao Paulo, Brazil","description":"Latin America's largest gaming event","tbc":True},
+    {"label":"G-Star 2026","category":"trade_show","approx_date":"2026-11-12","end_date":"2026-11-15","location":"Busan, South Korea","description":"South Korea's premier game expo with B2B and consumer areas","tbc":True},
+    {"label":"MomoCon 2026","category":"festival","approx_date":"2026-05-21","end_date":"2026-05-24","location":"Atlanta, USA","description":"Gaming, anime, and cosplay convention with indie game showcases"},
+    {"label":"IGN Live 2026","category":"festival","approx_date":"2026-06-06","end_date":"2026-06-08","location":"Los Angeles, USA","description":"IGN's in-person fan event with playable demos and panels","tbc":True},
+    {"label":"DreamHack Summer 2026","category":"festival","approx_date":"2026-06-13","end_date":"2026-06-16","location":"Jonkoping, Sweden","description":"Major LAN and gaming festival with esports, indie, and cosplay","tbc":True},
+    {"label":"Pocket Gamer Connects","category":"trade_show","approx_date":"2026-01-20","end_date":"2026-01-21","location":"London, UK","description":"Mobile and portable gaming B2B conference and expo"},
+    {"label":"Reboot Develop Blue 2026","category":"trade_show","approx_date":"2026-04-22","end_date":"2026-04-24","location":"Dubrovnik, Croatia","description":"European game dev conference with talks from AAA and indie studios"},
+    {"label":"Nordic Game 2026","category":"trade_show","approx_date":"2026-05-20","end_date":"2026-05-22","location":"Malmo, Sweden","description":"Nordic game industry conference with talks and matchmaking"},
+    {"label":"Develop:Brighton 2026","category":"trade_show","approx_date":"2026-07-14","end_date":"2026-07-16","location":"Brighton, UK","description":"UK's leading game developer conference with sessions and expos"},
+    {"label":"Game Developer Summit (Cologne)","category":"trade_show","approx_date":"2026-08-17","location":"Cologne, Germany","description":"Pre-gamescom developer summit focused on industry insights"},
+    {"label":"Games Industry Gathering","category":"trade_show","approx_date":"2026-09-01","tbc":True,"description":"Invite-only networking event for game industry leadership"},
+]
 
-        # Classify tier — use override from Supabase if present, otherwise hype-based
-        hype = r.get("hype_score", 0)
-        if r.get("tier_override"):
-            tier = r["tier_override"]
-        elif hype >= 9000 or r.get("source") == "curated":
-            tier = "aaa"
-        elif hype >= 500:
-            tier = "aa"
-        else:
-            tier = "indie"
 
+# ─── MERGE & DEDUPLICATE ────────────────────────────────────
+
+def merge_releases(rawg, igdb, supabase_items, curated):
+    """Merge all sources, deduplicate by title (RAWG wins, then curated, then IGDB)."""
+    seen = {}
+    all_items = []
+
+    # Priority 1: curated notable releases
+    for r in curated:
+        key = r["title"].lower().strip()
         entry = {
-            "title": r["title"], "date": r["date_iso"], "genres": r.get("genres", [])[:3],
-            "hype": hype, "metacritic": r.get("metacritic", 0),
-            "rating": r.get("rating", 0), "source": r.get("source", ""),
-            "tier": tier,
+            "label": r["title"],
+            "date": r.get("date_iso", ""),
+            "approx_date": r.get("date_iso", ""),
+            "is_release": True,
+            "category": "release",
+            "tier": r.get("tier", "aaa"),
+            "platforms": r.get("platforms", []),
+            "genres": r.get("genres", []),
+            "description": r.get("description", ""),
+            "developer": r.get("developer", ""),
+            "publisher": r.get("publisher", ""),
+            "url": r.get("url", ""),
+            "tbc": r.get("tbc", False),
+            "hype_score": r.get("hype_score", 9999),
+            "source": "curated",
         }
+        seen[key] = entry
+        all_items.append(entry)
 
-        index[ym_key]["upcoming_releases"].append(entry)
+    # Priority 2: Supabase approved events & releases
+    for item in supabase_items:
+        key = item["label"].lower().strip()
+        if key in seen:
+            continue
+        entry = {
+            "label": item["label"],
+            "date": item.get("approx_date", ""),
+            "approx_date": item.get("approx_date", ""),
+            "end_date": item.get("end_date", ""),
+            "is_release": item.get("is_release", False),
+            "category": item.get("category", "event"),
+            "tier": item.get("tier", "indie"),
+            "platforms": item.get("platforms", []),
+            "genres": item.get("genres", []),
+            "description": item.get("description", ""),
+            "developer": item.get("developer", ""),
+            "publisher": item.get("publisher", ""),
+            "url": item.get("url", ""),
+            "location": item.get("location", ""),
+            "tbc": item.get("tbc", False),
+            "source": "supabase",
+        }
+        seen[key] = entry
+        all_items.append(entry)
 
-        # Also add to simple month key (1-12) for the checker tool (2026 only)
-        if year == 2026:
-            index[str(m)]["upcoming_releases"].append(entry)
+    # Priority 3: RAWG releases
+    for r in rawg:
+        key = r["title"].lower().strip()
+        if key in seen:
+            # Enrich existing with RAWG data if missing
+            existing = seen[key]
+            if not existing.get("platforms"):
+                existing["platforms"] = r.get("platforms", [])
+            if not existing.get("genres"):
+                existing["genres"] = r.get("genres", [])
+            if not existing.get("description"):
+                existing["description"] = r.get("description", "")
+            continue
+        hype = r.get("hype_score", 0)
+        tier = "aaa" if hype >= 9000 else "aa" if hype >= 500 else "indie"
+        entry = {
+            "label": r["title"],
+            "date": r.get("date_iso", ""),
+            "approx_date": r.get("date_iso", ""),
+            "is_release": True,
+            "category": "release",
+            "tier": tier,
+            "platforms": r.get("platforms", []),
+            "genres": r.get("genres", []),
+            "description": r.get("description", ""),
+            "url": "",
+            "tbc": False,
+            "hype_score": hype,
+            "metacritic": r.get("metacritic", 0),
+            "source": "rawg",
+        }
+        seen[key] = entry
+        all_items.append(entry)
 
-    # Sort each month's releases by hype descending, cap at 15
-    for key in index:
-        releases = index[key]["upcoming_releases"]
-        releases.sort(key=lambda x: x.get("hype", 0), reverse=True)
-        index[key]["upcoming_releases"] = releases[:15]
+    # Priority 4: IGDB releases (fill gaps)
+    for r in igdb:
+        key = r["title"].lower().strip()
+        if key in seen:
+            existing = seen[key]
+            if not existing.get("platforms"):
+                existing["platforms"] = r.get("platforms", [])
+            if not existing.get("genres"):
+                existing["genres"] = r.get("genres", [])
+            if not existing.get("description"):
+                existing["description"] = r.get("description", "")
+            continue
+        hype = r.get("hype_score", 0)
+        tier = "aaa" if hype >= 9000 else "aa" if hype >= 500 else "indie"
+        entry = {
+            "label": r["title"],
+            "date": r.get("date_iso", ""),
+            "approx_date": r.get("date_iso", ""),
+            "is_release": True,
+            "category": "release",
+            "tier": tier,
+            "platforms": r.get("platforms", []),
+            "genres": r.get("genres", []),
+            "description": r.get("description", ""),
+            "url": "",
+            "tbc": False,
+            "hype_score": hype,
+            "source": "igdb",
+        }
+        seen[key] = entry
+        all_items.append(entry)
 
-    return index
+    # Add industry events
+    for evt in INDUSTRY_EVENTS:
+        entry = {
+            "label": evt["label"],
+            "date": evt.get("approx_date", ""),
+            "approx_date": evt.get("approx_date", ""),
+            "end_date": evt.get("end_date", ""),
+            "is_release": False,
+            "category": evt.get("category", "event"),
+            "location": evt.get("location", ""),
+            "description": evt.get("description", ""),
+            "url": evt.get("url", ""),
+            "tbc": evt.get("tbc", False),
+            "source": "curated_event",
+        }
+        all_items.append(entry)
 
-
-# ── Main ──────────────────────────────────────────────────────────────────────
-
-def main():
-    print("🚀 Launch Window Data Fetcher — ZR Consulting")
-    print(f"   {datetime.datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}\n")
-
-    print("📡 RAWG upcoming releases…")
-    rawg = fetch_rawg_upcoming()
-    existing_titles = {r["title"] for r in rawg}
-
-    print("\n📡 IGDB upcoming releases (secondary)…")
-    igdb = fetch_igdb_upcoming(get_twitch_token(), existing_titles)
-
-    all_upcoming = rawg + igdb
-    all_upcoming.sort(key=lambda x: (x["month"], -x.get("hype_score", 0)))
-
-    print("\n📊 SteamSpy enrichment…")
-    enrichment = fetch_steamspy_enrichment()
-
-    print("\n🗂  Enriching historical data…")
-    historical = enrich_historical(enrichment)
-
-    # 5. Notable curated releases
-    print("🎮 Adding notable curated releases…")
-    notable = get_notable_releases()
-    # Merge into upcoming, avoiding duplicates
-    existing_titles_lower = {r["title"].lower() for r in all_upcoming}
-    for nr in notable:
-        if nr["title"].lower().replace(" [tbc]", "") not in existing_titles_lower:
-            try:
-                dt = __import__("datetime").date.fromisoformat(nr["date"])
-            except Exception:
-                continue
-            item = {
-                "title": nr["title"] if not nr.get("tbc") else (nr["title"] if "[TBC]" in nr["title"] else nr["title"] + " [TBC]"),
-                "date_iso": nr["date"],
-                "month": dt.month,
-                "year": dt.year,
-                "genres": nr.get("genres", []),
-                "platforms": nr.get("platforms", []),
-                "hype_score": 99999 if "Grand Theft Auto" in nr["title"] else 9999,
-                "metacritic": 0,
-                "rating": 0,
-                "source": "curated",
-            }
-            all_upcoming.append(item)
-    all_upcoming.sort(key=lambda x: (x.get("date_iso", ""), -x.get("hype_score", 0)))
-    print(f"  ✓ {len(notable)} notable releases merged")
-
-    # 6. Community-approved items from Supabase
-    print("🌐 Fetching community-approved items from Supabase…")
-    community_events, community_releases = fetch_supabase_approved()
-    all_events = get_industry_events() + community_events
-
-    # Merge community releases into the release pipeline (deduplicated)
-    existing_titles_lower = {r["title"].lower().replace(" [tbc]", "") for r in all_upcoming}
-    for cr in community_releases:
-        if cr["title"].lower().replace(" [tbc]", "") not in existing_titles_lower:
-            all_upcoming.append(cr)
-            existing_titles_lower.add(cr["title"].lower().replace(" [tbc]", ""))
-    all_upcoming.sort(key=lambda x: (x.get("date_iso", ""), -x.get("hype_score", 0)))
-    print(f"  ✓ {len(community_releases)} community releases merged into pipeline")
-
-    print("🗂  Building month index…")
-    month_index = build_month_index(all_upcoming, historical)
-
-    output = {
-        "meta": {
-            "generated_at":      datetime.datetime.utcnow().isoformat() + "Z",
-            "upcoming_count":    len(all_upcoming),
-            "next_update":       (datetime.datetime.utcnow() + datetime.timedelta(days=7)).strftime("%Y-%m-%d"),
-            "sources":           ["rawg", "igdb", "steamspy"],
-        },
-        "industry_events": all_events,
-        "month_index":     month_index,
-    }
-
-    os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
-    with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
-        json.dump(output, f, indent=2, ensure_ascii=False)
-
-    # 8. Generate ICS calendar file
-    print("📅 Generating ICS calendar file…")
-    ics_path = os.path.join(os.path.dirname(OUTPUT_PATH), "games-industry.ics")
-    generate_ics(all_upcoming, all_events, ics_path)
-
-    kb = os.path.getsize(OUTPUT_PATH) / 1024
-    print(f"\n✅ Done → {OUTPUT_PATH} ({kb:.1f} KB)")
-    print(f"   Upcoming: {len(all_upcoming)} releases")
-    for m in range(1, 13):
-        u = len(month_index[str(m)]["upcoming_releases"])
-        h = len(month_index[str(m)]["top_performers"])
-        if u or h: print(f"   Month {m:2d}: {u} upcoming · {h} historical comps")
-
-
-# ── ICS Calendar Generation ──────────────────────────────────────────────────
-
-def ics_escape(text):
-    """Escape text for ICS format."""
-    return (text or "").replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,").replace("\n", "\\n")
+    return all_items
 
 
-def generate_ics(upcoming_releases, events, output_path):
-    """
-    Generate a subscribable .ics calendar file containing all events
-    and upcoming game releases.
-    """
-    branding = "Powered by ZR Consulting — www.zrconsulting.de"
+# ─── ICS GENERATION ─────────────────────────────────────────
 
+def generate_ics(items, filename, filter_fn=None):
     lines = [
         "BEGIN:VCALENDAR",
         "VERSION:2.0",
         "PRODID:-//ZR Consulting//Games Industry Calendar//EN",
         "CALSCALE:GREGORIAN",
-        "METHOD:PUBLISH",
-        "X-WR-CALNAME:Games Industry Calendar — ZR Consulting",
+        "X-WR-CALNAME:Games Industry Calendar",
         "X-WR-TIMEZONE:Europe/Berlin",
-        "REFRESH-INTERVAL;VALUE=DURATION:P1D",
-        "X-PUBLISHED-TTL:P1D",
     ]
-
-    uid_counter = 0
-
-    # Industry events
-    CAT_LABELS = {
-        "trade_show": "Trade Show / Expo",
-        "showcase":   "Showcase / Direct",
-        "sale":       "Sale / Promotion",
-        "award":      "Awards Ceremony",
-        "festival":   "Festival / Event",
-    }
-
-    for e in events:
-        date_str = e.get("approx_date", "")
-        if not date_str:
+    for item in items:
+        if filter_fn and not filter_fn(item):
             continue
-        clean_date = date_str.replace("-", "")
-        # For multi-day events, use end_date; ICS DTEND is exclusive so add 1 day
-        end_str = e.get("end_date", "")
-        if end_str:
-            # ICS DTEND for all-day events is exclusive — add 1 day
-            end_dt = datetime.datetime.strptime(end_str, "%Y-%m-%d") + datetime.timedelta(days=1)
-            clean_end = end_dt.strftime("%Y%m%d")
-        else:
-            # Single-day event — end = start + 1 day (ICS convention)
-            start_dt = datetime.datetime.strptime(date_str, "%Y-%m-%d") + datetime.timedelta(days=1)
-            clean_end = start_dt.strftime("%Y%m%d")
+        d = item.get("date") or item.get("approx_date", "")
+        if not d:
+            continue
+        try:
+            start = d.replace("-", "")
+            end_d = item.get("end_date", "")
+            if end_d:
+                end = end_d.replace("-", "")
+            else:
+                dt = datetime.datetime.strptime(d, "%Y-%m-%d") + datetime.timedelta(days=1)
+                end = dt.strftime("%Y%m%d")
+        except:
+            continue
 
-        cat_label = CAT_LABELS.get(e.get("category", ""), "Industry Event")
-        uid = f"{clean_date}-evt-{uid_counter}@zrconsulting.de"
-        uid_counter += 1
-
-        sev = e.get("severity", "medium").upper()
-        title = e["label"]
-        duration_note = ""
-        if end_str:
-            duration_note = f"\\nDates: {date_str} to {end_str}\\n"
-        desc = ics_escape(
-            f"{e.get('notes', '')}\\n{duration_note}\\n"
-            f"Category: {cat_label}\\n"
-            f"Impact: {sev}\\n\\n"
-            f"{branding}"
-        )
+        summary = item["label"].replace(",", "\\,").replace(";", "\\;")
+        desc_parts = []
+        if item.get("description"):
+            desc_parts.append(item["description"])
+        if item.get("genres"):
+            g = item["genres"] if isinstance(item["genres"], list) else [item["genres"]]
+            desc_parts.append("Genres: " + ", ".join(g))
+        if item.get("platforms"):
+            p = item["platforms"] if isinstance(item["platforms"], list) else [item["platforms"]]
+            desc_parts.append("Platforms: " + ", ".join(p))
+        desc = " | ".join(desc_parts).replace(",", "\\,").replace(";", "\\;").replace("\n", "\\n")
 
         lines.append("BEGIN:VEVENT")
-        lines.append(f"DTSTART;VALUE=DATE:{clean_date}")
-        lines.append(f"DTEND;VALUE=DATE:{clean_end}")
-        lines.append(f"SUMMARY:{ics_escape(title)}")
-        lines.append(f"DESCRIPTION:{desc}")
-        lines.append(f"CATEGORIES:{cat_label}")
-        lines.append(f"UID:{uid}")
-        lines.append("STATUS:CONFIRMED")
-        lines.append("TRANSP:TRANSPARENT")
-        lines.append("END:VEVENT")
-
-    # Upcoming releases
-    for r in upcoming_releases:
-        date_str = r.get("date_iso", "")
-        if not date_str:
-            continue
-        clean_date = date_str.replace("-", "")
-        uid = f"{clean_date}-rel-{uid_counter}@zrconsulting.de"
-        uid_counter += 1
-
-        genres = ", ".join(r.get("genres", [])[:4]) or "Game"
-        title = r["title"]
-        desc = ics_escape(
-            f"Game Release: {title}\\n"
-            f"Genre: {genres}\\n"
-            f"Platforms: {', '.join(r.get('platforms', [])[:4])}\\n\\n"
-            f"{branding}"
-        )
-
-        lines.append("BEGIN:VEVENT")
-        lines.append(f"DTSTART;VALUE=DATE:{clean_date}")
-        lines.append(f"DTEND;VALUE=DATE:{clean_date}")
-        lines.append(f"SUMMARY:🎮 {ics_escape(title)}")
-        lines.append(f"DESCRIPTION:{desc}")
-        lines.append("CATEGORIES:Game Release")
-        lines.append(f"UID:{uid}")
-        lines.append("STATUS:CONFIRMED")
-        lines.append("TRANSP:TRANSPARENT")
+        lines.append(f"DTSTART;VALUE=DATE:{start}")
+        lines.append(f"DTEND;VALUE=DATE:{end}")
+        lines.append(f"SUMMARY:{summary}")
+        if desc:
+            lines.append(f"DESCRIPTION:{desc}")
+        loc = item.get("location", "")
+        if loc:
+            lines.append(f"LOCATION:{loc.replace(',', chr(92) + ',')}")
+        url = item.get("url", "")
+        if url:
+            lines.append(f"URL:{url}")
+        cat = (item.get("category") or "event").upper()
+        lines.append(f"CATEGORIES:{cat}")
         lines.append("END:VEVENT")
 
     lines.append("END:VCALENDAR")
 
-    with open(output_path, "w", encoding="utf-8") as f:
-        f.write("\r\n".join(lines))
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
+    with open(filename, "w", encoding="utf-8", newline="\r\n") as f:
+        f.write("\r\n".join(lines) + "\r\n")
+    print(f"  ICS: {filename} ({len(lines)} lines)")
 
-    count = lines.count("BEGIN:VEVENT")
-    print(f"  ✓ ICS: {count} events written to {output_path}")
+
+# ─── MAIN ───────────────────────────────────────────────────
+
+def main():
+    print("🚀 ZR Consulting — Data Fetcher")
+    print(f"   {datetime.datetime.utcnow().isoformat()}Z\n")
+
+    # 1. Fetch from all sources
+    print("📡 Fetching RAWG upcoming…")
+    rawg = fetch_rawg_upcoming()
+
+    print("📡 Fetching IGDB upcoming…")
+    igdb_token = get_igdb_token()
+    igdb = fetch_igdb_upcoming(igdb_token)
+
+    print("📡 Fetching Supabase approved events…")
+    supabase_items = fetch_supabase_events()
+
+    print("📡 Fetching SteamSpy enrichment…")
+    enrichment = fetch_steamspy_enrichment()
+
+    # 2. Merge all sources
+    print("\n🗂  Merging & deduplicating…")
+    all_items = merge_releases(rawg, igdb, supabase_items, CURATED_RELEASES)
+
+    # 3. Enrich with SteamSpy CCU data
+    for item in all_items:
+        key = item["label"].lower().strip()
+        if key in enrichment:
+            item["ccu"] = enrichment[key].get("ccu", 0)
+            item["owners"] = enrichment[key].get("owners", "")
+
+    # 4. Sort by date
+    def sort_key(item):
+        d = item.get("date") or item.get("approx_date") or "9999-12-31"
+        return d
+    all_items.sort(key=sort_key)
+
+    # 5. Build output JSON
+    output = {
+        "meta": {
+            "generated_at": datetime.datetime.utcnow().isoformat() + "Z",
+            "total_count": len(all_items),
+            "release_count": len([i for i in all_items if i.get("is_release")]),
+            "event_count": len([i for i in all_items if not i.get("is_release")]),
+            "sources": ["rawg", "igdb", "steamspy", "supabase", "curated"],
+            "next_update": (datetime.datetime.utcnow() + datetime.timedelta(days=7)).strftime("%Y-%m-%d"),
+        },
+        "items": all_items,
+    }
+
+    os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
+    with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
+        json.dump(output, f, indent=2, ensure_ascii=False, default=str)
+
+    size_kb = os.path.getsize(OUTPUT_PATH) / 1024
+    releases = len([i for i in all_items if i.get("is_release")])
+    events = len(all_items) - releases
+    print(f"\n✅ JSON → {OUTPUT_PATH} ({size_kb:.1f} KB)")
+    print(f"   {releases} releases, {events} events, {len(all_items)} total")
+
+    # 6. Generate ICS files
+    print("\n📅 Generating ICS feeds…")
+    generate_ics(all_items, ICS_FULL)
+    generate_ics(all_items, ICS_AAA, filter_fn=lambda i: not i.get("is_release") or i.get("tier") == "aaa")
+
+    print("\n✅ Done!")
 
 
 if __name__ == "__main__":
