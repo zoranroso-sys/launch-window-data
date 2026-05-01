@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-04-28T11:31:43.810227Z",
-    "upcoming_count": 510,
-    "next_update": "2026-05-05",
+    "generated_at": "2026-05-01T05:37:06.676332Z",
+    "upcoming_count": 511,
+    "next_update": "2026-05-08",
     "sources": [
       "rawg",
       "igdb",
@@ -951,8 +951,8 @@
             "Open World",
             "Adventure"
           ],
-          "peak_ccu": 5716,
-          "owners": 35000000
+          "peak_ccu": 0,
+          "owners": 0
         },
         {
           "title": "Sons of the Forest",
@@ -1048,6 +1048,16 @@
         {
           "title": "Console Archives NINJA GAIDEN III: The Ancient Ship of Doom",
           "date": "2026-04-23",
+          "genres": [],
+          "hype": 99999,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "community",
+          "tier": "aaa"
+        },
+        {
+          "title": "Saros",
+          "date": "2026-04-30",
           "genres": [],
           "hype": 99999,
           "metacritic": 0,
@@ -1164,16 +1174,6 @@
           "rating": 0,
           "source": "community",
           "tier": "aa"
-        },
-        {
-          "title": "NORSE: Oath of Blood [TBC] [TBC]",
-          "date": "2026-04-01",
-          "genres": [],
-          "hype": 5000,
-          "metacritic": 0,
-          "rating": 0,
-          "source": "community",
-          "tier": "aa"
         }
       ],
       "top_performers": [
@@ -1283,16 +1283,6 @@
           "tier": "aa"
         },
         {
-          "title": "Mixtape",
-          "date": "2026-05-07",
-          "genres": [],
-          "hype": 5000,
-          "metacritic": 0,
-          "rating": 0,
-          "source": "community",
-          "tier": "aa"
-        },
-        {
           "title": "Will: Follow The Light",
           "date": "2026-05-07",
           "genres": [],
@@ -1355,6 +1345,16 @@
         {
           "title": "Hydroneer: Journey to Volcalidus",
           "date": "2026-05-08",
+          "genres": [],
+          "hype": 5000,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "community",
+          "tier": "aa"
+        },
+        {
+          "title": "Battlestar Galactica: Scattered Hopes",
+          "date": "2026-05-11",
           "genres": [],
           "hype": 5000,
           "metacritic": 0,
@@ -1537,7 +1537,7 @@
             "Action",
             "RPG"
           ],
-          "hype": 148,
+          "hype": 150,
           "metacritic": 0,
           "rating": 3.4,
           "source": "rawg",
@@ -2016,7 +2016,7 @@
           "genres": [
             "Action"
           ],
-          "hype": 179,
+          "hype": 181,
           "metacritic": 0,
           "rating": 0,
           "source": "rawg",
@@ -2029,7 +2029,7 @@
             "Adventure",
             "Action"
           ],
-          "hype": 146,
+          "hype": 147,
           "metacritic": 0,
           "rating": 0,
           "source": "rawg",
@@ -2063,6 +2063,19 @@
           "metacritic": 0,
           "rating": 0,
           "source": "community",
+          "tier": "indie"
+        },
+        {
+          "title": "The Blood Of Dawnwalker",
+          "date": "2026-09-03",
+          "genres": [
+            "Action",
+            "RPG"
+          ],
+          "hype": 96,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "rawg",
           "tier": "indie"
         }
       ],
@@ -2655,6 +2668,16 @@
           "tier": "aaa"
         },
         {
+          "title": "Saros",
+          "date": "2026-04-30",
+          "genres": [],
+          "hype": 99999,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "community",
+          "tier": "aaa"
+        },
+        {
           "title": "Road Truckers: New Beginning [TBC] [TBC]",
           "date": "2026-04-01",
           "genres": [],
@@ -2763,16 +2786,6 @@
           "rating": 0,
           "source": "community",
           "tier": "aa"
-        },
-        {
-          "title": "NORSE: Oath of Blood [TBC] [TBC]",
-          "date": "2026-04-01",
-          "genres": [],
-          "hype": 5000,
-          "metacritic": 0,
-          "rating": 0,
-          "source": "community",
-          "tier": "aa"
         }
       ],
       "top_performers": []
@@ -2850,16 +2863,6 @@
           "tier": "aa"
         },
         {
-          "title": "Mixtape",
-          "date": "2026-05-07",
-          "genres": [],
-          "hype": 5000,
-          "metacritic": 0,
-          "rating": 0,
-          "source": "community",
-          "tier": "aa"
-        },
-        {
           "title": "Will: Follow The Light",
           "date": "2026-05-07",
           "genres": [],
@@ -2922,6 +2925,16 @@
         {
           "title": "Hydroneer: Journey to Volcalidus",
           "date": "2026-05-08",
+          "genres": [],
+          "hype": 5000,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "community",
+          "tier": "aa"
+        },
+        {
+          "title": "Battlestar Galactica: Scattered Hopes",
+          "date": "2026-05-11",
           "genres": [],
           "hype": 5000,
           "metacritic": 0,
@@ -3071,7 +3084,7 @@
             "Action",
             "RPG"
           ],
-          "hype": 148,
+          "hype": 150,
           "metacritic": 0,
           "rating": 3.4,
           "source": "rawg",
@@ -3452,7 +3465,7 @@
           "genres": [
             "Action"
           ],
-          "hype": 179,
+          "hype": 181,
           "metacritic": 0,
           "rating": 0,
           "source": "rawg",
@@ -3465,7 +3478,7 @@
             "Adventure",
             "Action"
           ],
-          "hype": 146,
+          "hype": 147,
           "metacritic": 0,
           "rating": 0,
           "source": "rawg",
@@ -3499,6 +3512,19 @@
           "metacritic": 0,
           "rating": 0,
           "source": "community",
+          "tier": "indie"
+        },
+        {
+          "title": "The Blood Of Dawnwalker",
+          "date": "2026-09-03",
+          "genres": [
+            "Action",
+            "RPG"
+          ],
+          "hype": 96,
+          "metacritic": 0,
+          "rating": 0,
+          "source": "rawg",
           "tier": "indie"
         }
       ],
