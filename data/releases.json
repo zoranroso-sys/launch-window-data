@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-05-01T05:37:06.676332Z",
+    "generated_at": "2026-05-01T06:13:12.990905Z",
     "upcoming_count": 511,
     "next_update": "2026-05-08",
     "sources": [
@@ -951,8 +951,8 @@
             "Open World",
             "Adventure"
           ],
-          "peak_ccu": 0,
-          "owners": 0
+          "peak_ccu": 5716,
+          "owners": 35000000
         },
         {
           "title": "Sons of the Forest",
