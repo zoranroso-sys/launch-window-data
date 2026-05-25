@@ -4498,22 +4498,12 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260519
-DTEND;VALUE=DATE:20260519
-SUMMARY:🎮 Forza Horizon 6
-DESCRIPTION:Game Release: Forza Horizon 6\\nGenre: Racing\\nPlatforms: PC\, Xbox Series S/X\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Game Release
-UID:20260519-rel-449@zrconsulting.de
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260520
 DTEND;VALUE=DATE:20260520
 SUMMARY:🎮 Thick as Thieves
 DESCRIPTION:Game Release: Thick as Thieves\\nGenre: Game\\nPlatforms: PS5\, Xbox\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260520-rel-450@zrconsulting.de
+UID:20260520-rel-449@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4523,7 +4513,7 @@ DTEND;VALUE=DATE:20260520
 SUMMARY:🎮 Deep Rock Galactic: Rogue Core
 DESCRIPTION:Game Release: Deep Rock Galactic: Rogue Core\\nGenre: Game\\nPlatforms: PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260520-rel-451@zrconsulting.de
+UID:20260520-rel-450@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4533,7 +4523,7 @@ DTEND;VALUE=DATE:20260520
 SUMMARY:🎮 SpaceCraft
 DESCRIPTION:Game Release: SpaceCraft\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260520-rel-452@zrconsulting.de
+UID:20260520-rel-451@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4543,7 +4533,7 @@ DTEND;VALUE=DATE:20260520
 SUMMARY:🎮 Atomic Owl
 DESCRIPTION:Game Release: Atomic Owl\\nGenre: Game\\nPlatforms: PS5\, Xbox One\, Xbox\, Switch\, PS4\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260520-rel-453@zrconsulting.de
+UID:20260520-rel-452@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4552,6 +4542,16 @@ DTSTART;VALUE=DATE:20260520
 DTEND;VALUE=DATE:20260520
 SUMMARY:🎮 Savara
 DESCRIPTION:Game Release: Savara\\nGenre: Game\\nPlatforms: Xbox\, PS5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Game Release
+UID:20260520-rel-453@zrconsulting.de
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260520
+DTEND;VALUE=DATE:20260520
+SUMMARY:🎮 Phonopolis
+DESCRIPTION:Game Release: Phonopolis\\nGenre: Game\\nPlatforms: PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
 UID:20260520-rel-454@zrconsulting.de
 STATUS:CONFIRMED
@@ -4568,22 +4568,12 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260520
-DTEND;VALUE=DATE:20260520
-SUMMARY:🎮 Phonopolis
-DESCRIPTION:Game Release: Phonopolis\\nGenre: Adventure\\nPlatforms: PC\, macOS\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Game Release
-UID:20260520-rel-456@zrconsulting.de
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260521
 DTEND;VALUE=DATE:20260521
 SUMMARY:🎮 Warhammer 40\,000: Mechanicus 2
 DESCRIPTION:Game Release: Warhammer 40\,000: Mechanicus 2\\nGenre: Game\\nPlatforms: Xbox\, PS5\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260521-rel-457@zrconsulting.de
+UID:20260521-rel-456@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4593,7 +4583,7 @@ DTEND;VALUE=DATE:20260521
 SUMMARY:🎮 Psyvariar 3
 DESCRIPTION:Game Release: Psyvariar 3\\nGenre: Game\\nPlatforms: Xbox\, PC\, Switch\, PS5\, Switch 2\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260521-rel-458@zrconsulting.de
+UID:20260521-rel-457@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4603,7 +4593,7 @@ DTEND;VALUE=DATE:20260521
 SUMMARY:🎮 FZ: Formation Z
 DESCRIPTION:Game Release: FZ: Formation Z\\nGenre: Game\\nPlatforms: Xbox\, PC\, Switch 2\, PS5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260521-rel-459@zrconsulting.de
+UID:20260521-rel-458@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4613,7 +4603,7 @@ DTEND;VALUE=DATE:20260521
 SUMMARY:🎮 Warhammer 40\,000: Speed Freeks
 DESCRIPTION:Game Release: Warhammer 40\,000: Speed Freeks\\nGenre: Game\\nPlatforms: PS5\, Xbox\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260521-rel-460@zrconsulting.de
+UID:20260521-rel-459@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4623,7 +4613,7 @@ DTEND;VALUE=DATE:20260521
 SUMMARY:🎮 Myst
 DESCRIPTION:Game Release: Myst\\nGenre: Game\\nPlatforms: VR\, PS5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260521-rel-461@zrconsulting.de
+UID:20260521-rel-460@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4633,7 +4623,7 @@ DTEND;VALUE=DATE:20260521
 SUMMARY:🎮 Table Flip Simulator
 DESCRIPTION:Game Release: Table Flip Simulator\\nGenre: Game\\nPlatforms: Xbox\, PS5\, PC\, Switch\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260521-rel-462@zrconsulting.de
+UID:20260521-rel-461@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4643,7 +4633,7 @@ DTEND;VALUE=DATE:20260521
 SUMMARY:🎮 Yoshi and the Mysterious Book
 DESCRIPTION:Game Release: Yoshi and the Mysterious Book\\nGenre: Game\\nPlatforms: Switch 2\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260521-rel-463@zrconsulting.de
+UID:20260521-rel-462@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4653,7 +4643,7 @@ DTEND;VALUE=DATE:20260521
 SUMMARY:🎮 COPA CITY
 DESCRIPTION:Game Release: COPA CITY\\nGenre: Game\\nPlatforms: PC\, Xbox\, PS5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260521-rel-464@zrconsulting.de
+UID:20260521-rel-463@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4663,7 +4653,7 @@ DTEND;VALUE=DATE:20260521
 SUMMARY:🎮 Gallipoli
 DESCRIPTION:Game Release: Gallipoli\\nGenre: Game\\nPlatforms: Xbox\, PS5\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260521-rel-465@zrconsulting.de
+UID:20260521-rel-464@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4672,6 +4662,16 @@ DTSTART;VALUE=DATE:20260521
 DTEND;VALUE=DATE:20260521
 SUMMARY:🎮 Coffee Talk Tokyo
 DESCRIPTION:Game Release: Coffee Talk Tokyo\\nGenre: Game\\nPlatforms: Xbox\, Switch 2\, PC\, PS5\, Switch\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Game Release
+UID:20260521-rel-465@zrconsulting.de
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260521
+DTEND;VALUE=DATE:20260521
+SUMMARY:🎮 Zero Parades: For Dead Spies
+DESCRIPTION:Game Release: Zero Parades: For Dead Spies\\nGenre: Game\\nPlatforms: PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
 UID:20260521-rel-466@zrconsulting.de
 STATUS:CONFIRMED
@@ -4690,10 +4690,20 @@ END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260521
 DTEND;VALUE=DATE:20260521
+SUMMARY:🎮 Luna Abyss
+DESCRIPTION:Game Release: Luna Abyss\\nGenre: Game\\nPlatforms: Xbox\, PC\, PS5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Game Release
+UID:20260521-rel-468@zrconsulting.de
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260521
+DTEND;VALUE=DATE:20260521
 SUMMARY:🎮 King of Tokyo
 DESCRIPTION:Game Release: King of Tokyo\\nGenre: Game\\nPlatforms: PC\, PS5\, Switch\, Xbox\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260521-rel-468@zrconsulting.de
+UID:20260521-rel-469@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4703,7 +4713,7 @@ DTEND;VALUE=DATE:20260521
 SUMMARY:🎮 Ex Sanguis
 DESCRIPTION:Game Release: Ex Sanguis\\nGenre: Game\\nPlatforms: PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260521-rel-469@zrconsulting.de
+UID:20260521-rel-470@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4713,7 +4723,7 @@ DTEND;VALUE=DATE:20260521
 SUMMARY:🎮 Gravelord
 DESCRIPTION:Game Release: Gravelord\\nGenre: Game\\nPlatforms: PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260521-rel-470@zrconsulting.de
+UID:20260521-rel-471@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4723,7 +4733,7 @@ DTEND;VALUE=DATE:20260521
 SUMMARY:🎮 Burden Street Station
 DESCRIPTION:Game Release: Burden Street Station\\nGenre: Game\\nPlatforms: PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260521-rel-471@zrconsulting.de
+UID:20260521-rel-472@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4733,7 +4743,7 @@ DTEND;VALUE=DATE:20260521
 SUMMARY:🎮 Q Collection
 DESCRIPTION:Game Release: Q Collection\\nGenre: Game\\nPlatforms: Switch\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260521-rel-472@zrconsulting.de
+UID:20260521-rel-473@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4743,7 +4753,7 @@ DTEND;VALUE=DATE:20260521
 SUMMARY:🎮 Hillshade Farm
 DESCRIPTION:Game Release: Hillshade Farm\\nGenre: Game\\nPlatforms: PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260521-rel-473@zrconsulting.de
+UID:20260521-rel-474@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4753,27 +4763,17 @@ DTEND;VALUE=DATE:20260521
 SUMMARY:🎮 Total War: WARHAMMER 3 - Bhashiva
 DESCRIPTION:Game Release: Total War: WARHAMMER 3 - Bhashiva\\nGenre: Game\\nPlatforms: PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260521-rel-474@zrconsulting.de
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260521
-DTEND;VALUE=DATE:20260521
-SUMMARY:🎮 Luna Abyss
-DESCRIPTION:Game Release: Luna Abyss\\nGenre: Adventure\, Action\\nPlatforms: PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Game Release
 UID:20260521-rel-475@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260521
-DTEND;VALUE=DATE:20260521
-SUMMARY:🎮 Zero Parades: For Dead Spies
-DESCRIPTION:Game Release: Zero Parades: For Dead Spies\\nGenre: Adventure\\nPlatforms: PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+DTSTART;VALUE=DATE:20260522
+DTEND;VALUE=DATE:20260522
+SUMMARY:🎮 LEGO Batman: Legacy of the Dark Knight
+DESCRIPTION:Game Release: LEGO Batman: Legacy of the Dark Knight\\nGenre: Game\\nPlatforms: PS5\, PC\, Switch 2\, Xbox\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260521-rel-476@zrconsulting.de
+UID:20260522-rel-476@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4808,22 +4808,12 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260522
-DTEND;VALUE=DATE:20260522
-SUMMARY:🎮 Lego Batman: Legacy of the Dark Knight
-DESCRIPTION:Game Release: Lego Batman: Legacy of the Dark Knight\\nGenre: Adventure\, Action\\nPlatforms: PC\, PlayStation 5\, Xbox Series S/X\, Nintendo Switch\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Game Release
-UID:20260522-rel-480@zrconsulting.de
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260525
 DTEND;VALUE=DATE:20260525
 SUMMARY:🎮 Paralives
 DESCRIPTION:Game Release: Paralives\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260525-rel-481@zrconsulting.de
+UID:20260525-rel-480@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4833,7 +4823,7 @@ DTEND;VALUE=DATE:20260525
 SUMMARY:🎮 World of Magic: Rise of Magic
 DESCRIPTION:Game Release: World of Magic: Rise of Magic\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260525-rel-482@zrconsulting.de
+UID:20260525-rel-481@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4843,7 +4833,7 @@ DTEND;VALUE=DATE:20260525
 SUMMARY:🎮 Enter the Chronosphere
 DESCRIPTION:Game Release: Enter the Chronosphere\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260525-rel-483@zrconsulting.de
+UID:20260525-rel-482@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4853,7 +4843,7 @@ DTEND;VALUE=DATE:20260526
 SUMMARY:🎮 Realm of Ink
 DESCRIPTION:Game Release: Realm of Ink\\nGenre: Game\\nPlatforms: PC\, Xbox\, PS5\, Switch\, PS4\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260526-rel-484@zrconsulting.de
+UID:20260526-rel-483@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4863,7 +4853,7 @@ DTEND;VALUE=DATE:20260526
 SUMMARY:🎮 LumenTale: Memories of Trey
 DESCRIPTION:Game Release: LumenTale: Memories of Trey\\nGenre: Game\\nPlatforms: PC\, Switch\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260526-rel-485@zrconsulting.de
+UID:20260526-rel-484@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4873,7 +4863,7 @@ DTEND;VALUE=DATE:20260526
 SUMMARY:🎮 Yerba Buena
 DESCRIPTION:Game Release: Yerba Buena\\nGenre: Game\\nPlatforms: PC\, Xbox\, PS5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260526-rel-486@zrconsulting.de
+UID:20260526-rel-485@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4883,7 +4873,7 @@ DTEND;VALUE=DATE:20260526
 SUMMARY:🎮 Stonemachia
 DESCRIPTION:Game Release: Stonemachia\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260526-rel-487@zrconsulting.de
+UID:20260526-rel-486@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4893,7 +4883,7 @@ DTEND;VALUE=DATE:20260526
 SUMMARY:🎮 Romestead
 DESCRIPTION:Game Release: Romestead\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260526-rel-488@zrconsulting.de
+UID:20260526-rel-487@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4903,7 +4893,7 @@ DTEND;VALUE=DATE:20260526
 SUMMARY:🎮 Life Below
 DESCRIPTION:Game Release: Life Below\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260526-rel-489@zrconsulting.de
+UID:20260526-rel-488@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4913,7 +4903,7 @@ DTEND;VALUE=DATE:20260526
 SUMMARY:🎮 Birushana: Winds of Fate
 DESCRIPTION:Game Release: Birushana: Winds of Fate\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260526-rel-490@zrconsulting.de
+UID:20260526-rel-489@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4923,7 +4913,7 @@ DTEND;VALUE=DATE:20260526
 SUMMARY:🎮 Town to City
 DESCRIPTION:Game Release: Town to City\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260526-rel-491@zrconsulting.de
+UID:20260526-rel-490@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4933,7 +4923,7 @@ DTEND;VALUE=DATE:20260527
 SUMMARY:🎮 Echo Generation 2
 DESCRIPTION:Game Release: Echo Generation 2\\nGenre: Game\\nPlatforms: PC\, Xbox\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260527-rel-492@zrconsulting.de
+UID:20260527-rel-491@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4943,7 +4933,7 @@ DTEND;VALUE=DATE:20260527
 SUMMARY:🎮 Tekken 8 - Kunimitsu
 DESCRIPTION:Game Release: Tekken 8 - Kunimitsu\\nGenre: Game\\nPlatforms: PC\, PS5\, Xbox\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260527-rel-493@zrconsulting.de
+UID:20260527-rel-492@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4953,7 +4943,7 @@ DTEND;VALUE=DATE:20260527
 SUMMARY:🎮 007 First Light
 DESCRIPTION:Game Release: 007 First Light\\nGenre: Action\\nPlatforms: PC\, PlayStation 5\, Xbox Series S/X\, Nintendo Switch\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260527-rel-494@zrconsulting.de
+UID:20260527-rel-493@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4963,7 +4953,7 @@ DTEND;VALUE=DATE:20260527
 SUMMARY:🎮 Starminer
 DESCRIPTION:Game Release: Starminer\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260527-rel-495@zrconsulting.de
+UID:20260527-rel-494@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4973,7 +4963,7 @@ DTEND;VALUE=DATE:20260527
 SUMMARY:🎮 Utawarerumono: Past and Present Rediscovered
 DESCRIPTION:Game Release: Utawarerumono: Past and Present Rediscovered\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260527-rel-496@zrconsulting.de
+UID:20260527-rel-495@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4983,7 +4973,7 @@ DTEND;VALUE=DATE:20260527
 SUMMARY:🎮 Sydless
 DESCRIPTION:Game Release: Sydless\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260527-rel-497@zrconsulting.de
+UID:20260527-rel-496@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -4993,7 +4983,7 @@ DTEND;VALUE=DATE:20260528
 SUMMARY:🎮 Street Fighter 6 - Ingrid
 DESCRIPTION:Game Release: Street Fighter 6 - Ingrid\\nGenre: Game\\nPlatforms: PC\, Xbox One\, PS5\, Xbox\, Switch 2\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260528-rel-498@zrconsulting.de
+UID:20260528-rel-497@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5003,7 +4993,7 @@ DTEND;VALUE=DATE:20260528
 SUMMARY:🎮 Crashout Crew
 DESCRIPTION:Game Release: Crashout Crew\\nGenre: Game\\nPlatforms: PC\, Xbox\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260528-rel-499@zrconsulting.de
+UID:20260528-rel-498@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5013,7 +5003,7 @@ DTEND;VALUE=DATE:20260528
 SUMMARY:🎮 Nickelodeon Extreme Tennis: Next!
 DESCRIPTION:Game Release: Nickelodeon Extreme Tennis: Next!\\nGenre: Game\\nPlatforms: Xbox\, PC\, PS5\, Switch\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260528-rel-500@zrconsulting.de
+UID:20260528-rel-499@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5023,7 +5013,7 @@ DTEND;VALUE=DATE:20260528
 SUMMARY:🎮 Story of Seasons: Grand Bazaar
 DESCRIPTION:Game Release: Story of Seasons: Grand Bazaar\\nGenre: Game\\nPlatforms: Xbox\, PS5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260528-rel-501@zrconsulting.de
+UID:20260528-rel-500@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5033,7 +5023,7 @@ DTEND;VALUE=DATE:20260528
 SUMMARY:🎮 Necrophosis: Full Consciousness
 DESCRIPTION:Game Release: Necrophosis: Full Consciousness\\nGenre: Game\\nPlatforms: PS5\, Xbox\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260528-rel-502@zrconsulting.de
+UID:20260528-rel-501@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5043,7 +5033,7 @@ DTEND;VALUE=DATE:20260528
 SUMMARY:🎮 Blueberry
 DESCRIPTION:Game Release: Blueberry\\nGenre: Game\\nPlatforms: PC\, Xbox\, PS5\, Switch\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260528-rel-503@zrconsulting.de
+UID:20260528-rel-502@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5053,7 +5043,7 @@ DTEND;VALUE=DATE:20260528
 SUMMARY:🎮 Bluey's Quest for the Gold Pen
 DESCRIPTION:Game Release: Bluey's Quest for the Gold Pen\\nGenre: Game\\nPlatforms: Switch\, Switch 2\, PS5\, PS4\, Xbox\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260528-rel-504@zrconsulting.de
+UID:20260528-rel-503@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5063,7 +5053,7 @@ DTEND;VALUE=DATE:20260528
 SUMMARY:🎮 Schrodinger's Call
 DESCRIPTION:Game Release: Schrodinger's Call\\nGenre: Game\\nPlatforms: Switch\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260528-rel-505@zrconsulting.de
+UID:20260528-rel-504@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5073,7 +5063,7 @@ DTEND;VALUE=DATE:20260528
 SUMMARY:🎮 Dark Scrolls
 DESCRIPTION:Game Release: Dark Scrolls\\nGenre: Game\\nPlatforms: Switch\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260528-rel-506@zrconsulting.de
+UID:20260528-rel-505@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5083,7 +5073,7 @@ DTEND;VALUE=DATE:20260528
 SUMMARY:🎮 Majogami
 DESCRIPTION:Game Release: Majogami\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260528-rel-507@zrconsulting.de
+UID:20260528-rel-506@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5093,7 +5083,7 @@ DTEND;VALUE=DATE:20260528
 SUMMARY:🎮 Stray
 DESCRIPTION:Game Release: Stray\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260528-rel-508@zrconsulting.de
+UID:20260528-rel-507@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5103,7 +5093,7 @@ DTEND;VALUE=DATE:20260528
 SUMMARY:🎮 Kioku: Last Summer
 DESCRIPTION:Game Release: Kioku: Last Summer\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260528-rel-509@zrconsulting.de
+UID:20260528-rel-508@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5113,7 +5103,7 @@ DTEND;VALUE=DATE:20260528
 SUMMARY:🎮 Moonsigil Atlas
 DESCRIPTION:Game Release: Moonsigil Atlas\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260528-rel-510@zrconsulting.de
+UID:20260528-rel-509@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5123,7 +5113,7 @@ DTEND;VALUE=DATE:20260528
 SUMMARY:🎮 Heroes of Magic and Steel
 DESCRIPTION:Game Release: Heroes of Magic and Steel\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260528-rel-511@zrconsulting.de
+UID:20260528-rel-510@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5133,7 +5123,7 @@ DTEND;VALUE=DATE:20260528
 SUMMARY:🎮 Lollipop Chainsaw RePOP
 DESCRIPTION:Game Release: Lollipop Chainsaw RePOP\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260528-rel-512@zrconsulting.de
+UID:20260528-rel-511@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5143,7 +5133,7 @@ DTEND;VALUE=DATE:20260528
 SUMMARY:🎮 Wandering Sword
 DESCRIPTION:Game Release: Wandering Sword\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260528-rel-513@zrconsulting.de
+UID:20260528-rel-512@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5152,6 +5142,16 @@ DTSTART;VALUE=DATE:20260528
 DTEND;VALUE=DATE:20260528
 SUMMARY:🎮 Belts of Iron
 DESCRIPTION:Game Release: Belts of Iron\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Game Release
+UID:20260528-rel-513@zrconsulting.de
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260528
+DTEND;VALUE=DATE:20260528
+SUMMARY:🎮 Mina the Hollower
+DESCRIPTION:Game Release: Mina the Hollower\\nGenre: Adventure\, RPG\\nPlatforms: PC\, macOS\, Linux\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
 UID:20260528-rel-514@zrconsulting.de
 STATUS:CONFIRMED
@@ -5208,22 +5208,12 @@ STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260529
-DTEND;VALUE=DATE:20260529
-SUMMARY:🎮 Mina the Hollower
-DESCRIPTION:Game Release: Mina the Hollower\\nGenre: Adventure\, RPG\\nPlatforms: PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
-CATEGORIES:Game Release
-UID:20260529-rel-520@zrconsulting.de
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260601
 DTEND;VALUE=DATE:20260601
 SUMMARY:🎮 Gold Cartridge [TBC] [TBC]
 DESCRIPTION:Game Release: Gold Cartridge [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260601-rel-521@zrconsulting.de
+UID:20260601-rel-520@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5233,7 +5223,7 @@ DTEND;VALUE=DATE:20260601
 SUMMARY:🎮 / Red Cartridge [TBC] [TBC]
 DESCRIPTION:Game Release: / Red Cartridge [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260601-rel-522@zrconsulting.de
+UID:20260601-rel-521@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5243,7 +5233,7 @@ DTEND;VALUE=DATE:20260601
 SUMMARY:🎮 NBA THE RUN [TBC] [TBC]
 DESCRIPTION:Game Release: NBA THE RUN [TBC] [TBC]\\nGenre: Game\\nPlatforms: PS5\, PC\, Xbox\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260601-rel-523@zrconsulting.de
+UID:20260601-rel-522@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5253,7 +5243,7 @@ DTEND;VALUE=DATE:20260601
 SUMMARY:🎮 Vapor World: Over the Mind [TBC] [TBC]
 DESCRIPTION:Game Release: Vapor World: Over the Mind [TBC] [TBC]\\nGenre: Game\\nPlatforms: Xbox\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260601-rel-524@zrconsulting.de
+UID:20260601-rel-523@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5263,7 +5253,7 @@ DTEND;VALUE=DATE:20260601
 SUMMARY:🎮 Fatal Fury: City of the Wolves - Mystery Character 2 [TBC] [TBC]
 DESCRIPTION:Game Release: Fatal Fury: City of the Wolves - Mystery Character 2 [TBC] [TBC]\\nGenre: Game\\nPlatforms: Xbox\, PS5\, PS4\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260601-rel-525@zrconsulting.de
+UID:20260601-rel-524@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5273,7 +5263,7 @@ DTEND;VALUE=DATE:20260601
 SUMMARY:🎮 Frog Sqwad [TBC] [TBC]
 DESCRIPTION:Game Release: Frog Sqwad [TBC] [TBC]\\nGenre: Game\\nPlatforms: PC\, Xbox\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260601-rel-526@zrconsulting.de
+UID:20260601-rel-525@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5283,7 +5273,7 @@ DTEND;VALUE=DATE:20260601
 SUMMARY:🎮 Hazard Pay [TBC] [TBC]
 DESCRIPTION:Game Release: Hazard Pay [TBC] [TBC]\\nGenre: Game\\nPlatforms: PS5\, Switch\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260601-rel-527@zrconsulting.de
+UID:20260601-rel-526@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5293,7 +5283,7 @@ DTEND;VALUE=DATE:20260601
 SUMMARY:🎮 Angry Video Game Nerd 8-bit - Limited Edition (NES) [TBC] [TBC]
 DESCRIPTION:Game Release: Angry Video Game Nerd 8-bit - Limited Edition (NES) [TBC] [TBC]\\nGenre: Game\\nPlatforms: Gold Cartridge\, Red Cartridge\, Blue Cartridge\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260601-rel-528@zrconsulting.de
+UID:20260601-rel-527@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5303,7 +5293,7 @@ DTEND;VALUE=DATE:20260601
 SUMMARY:🎮 SnowRunner Season 18 - Patch & Power [TBC] [TBC]
 DESCRIPTION:Game Release: SnowRunner Season 18 - Patch & Power [TBC] [TBC]\\nGenre: Game\\nPlatforms: Xbox One\, PC\, PS4\, Xbox\, PS5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260601-rel-529@zrconsulting.de
+UID:20260601-rel-528@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5313,7 +5303,7 @@ DTEND;VALUE=DATE:20260601
 SUMMARY:🎮 BrokenLore: FOLLOW
 DESCRIPTION:Game Release: BrokenLore: FOLLOW\\nGenre: Game\\nPlatforms: PC\, PS5\, Xbox\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260601-rel-530@zrconsulting.de
+UID:20260601-rel-529@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5323,7 +5313,7 @@ DTEND;VALUE=DATE:20260601
 SUMMARY:🎮 Tattoo Removal Simulator
 DESCRIPTION:Game Release: Tattoo Removal Simulator\\nGenre: Game\\nPlatforms: PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260601-rel-531@zrconsulting.de
+UID:20260601-rel-530@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5333,7 +5323,7 @@ DTEND;VALUE=DATE:20260601
 SUMMARY:🎮 Underchoice
 DESCRIPTION:Game Release: Underchoice\\nGenre: Game\\nPlatforms: PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260601-rel-532@zrconsulting.de
+UID:20260601-rel-531@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5343,7 +5333,7 @@ DTEND;VALUE=DATE:20260601
 SUMMARY:🎮 / Blue Cartridge [TBC] [TBC]
 DESCRIPTION:Game Release: / Blue Cartridge [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260601-rel-533@zrconsulting.de
+UID:20260601-rel-532@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5353,7 +5343,7 @@ DTEND;VALUE=DATE:20260601
 SUMMARY:🎮 FIRE the First Dreamer [TBC] [TBC]
 DESCRIPTION:Game Release: FIRE the First Dreamer [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260601-rel-534@zrconsulting.de
+UID:20260601-rel-533@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5363,7 +5353,7 @@ DTEND;VALUE=DATE:20260601
 SUMMARY:🎮 Sineus Arena Survivors [TBC] [TBC]
 DESCRIPTION:Game Release: Sineus Arena Survivors [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260601-rel-535@zrconsulting.de
+UID:20260601-rel-534@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5373,7 +5363,7 @@ DTEND;VALUE=DATE:20260601
 SUMMARY:🎮 Angry Video Game Nerd 8-bit [TBC] [TBC]
 DESCRIPTION:Game Release: Angry Video Game Nerd 8-bit [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260601-rel-536@zrconsulting.de
+UID:20260601-rel-535@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5383,7 +5373,7 @@ DTEND;VALUE=DATE:20260601
 SUMMARY:🎮 Phasmophobia Cursed Hollow Easter Holiday Event 2026 [TBC] [TBC]
 DESCRIPTION:Game Release: Phasmophobia Cursed Hollow Easter Holiday Event 2026 [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260601-rel-537@zrconsulting.de
+UID:20260601-rel-536@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5393,7 +5383,7 @@ DTEND;VALUE=DATE:20260601
 SUMMARY:🎮 Sea of Thieves - Season 19 [TBC] [TBC]
 DESCRIPTION:Game Release: Sea of Thieves - Season 19 [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260601-rel-538@zrconsulting.de
+UID:20260601-rel-537@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5403,7 +5393,7 @@ DTEND;VALUE=DATE:20260603
 SUMMARY:🎮 Final Fantasy VII Rebirth
 DESCRIPTION:Game Release: Final Fantasy VII Rebirth\\nGenre: Game\\nPlatforms: Xbox\, Switch 2\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260603-rel-539@zrconsulting.de
+UID:20260603-rel-538@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5413,7 +5403,7 @@ DTEND;VALUE=DATE:20260603
 SUMMARY:🎮 Blood West: Scavengers
 DESCRIPTION:Game Release: Blood West: Scavengers\\nGenre: Game\\nPlatforms: Xbox\, PS5\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260603-rel-540@zrconsulting.de
+UID:20260603-rel-539@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5423,7 +5413,7 @@ DTEND;VALUE=DATE:20260603
 SUMMARY:🎮 Crossout | Tales: Rust and Dust (Event)
 DESCRIPTION:Game Release: Crossout | Tales: Rust and Dust (Event)\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260603-rel-541@zrconsulting.de
+UID:20260603-rel-540@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5433,7 +5423,7 @@ DTEND;VALUE=DATE:20260603
 SUMMARY:🎮 Crossout \\| Tales: Rust and Dust (Event)
 DESCRIPTION:Game Release: Crossout \\| Tales: Rust and Dust (Event)\\nGenre: Game\\nPlatforms: End Date\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260603-rel-542@zrconsulting.de
+UID:20260603-rel-541@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5443,7 +5433,7 @@ DTEND;VALUE=DATE:20260603
 SUMMARY:🎮 eFootball Kick-Off!
 DESCRIPTION:Game Release: eFootball Kick-Off!\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260603-rel-543@zrconsulting.de
+UID:20260603-rel-542@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5453,7 +5443,7 @@ DTEND;VALUE=DATE:20260604
 SUMMARY:🎮 Tour de France 2026
 DESCRIPTION:Game Release: Tour de France 2026\\nGenre: Game\\nPlatforms: PC\, Xbox\, PS5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260604-rel-544@zrconsulting.de
+UID:20260604-rel-543@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5463,7 +5453,7 @@ DTEND;VALUE=DATE:20260604
 SUMMARY:🎮 The 7th Guest Remake
 DESCRIPTION:Game Release: The 7th Guest Remake\\nGenre: Game\\nPlatforms: Xbox\, PC\, PS5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260604-rel-545@zrconsulting.de
+UID:20260604-rel-544@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5473,7 +5463,7 @@ DTEND;VALUE=DATE:20260604
 SUMMARY:🎮 River City Saga: Journey to the West
 DESCRIPTION:Game Release: River City Saga: Journey to the West\\nGenre: Game\\nPlatforms: PC\, PS5\, Switch\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260604-rel-546@zrconsulting.de
+UID:20260604-rel-545@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5483,7 +5473,7 @@ DTEND;VALUE=DATE:20260604
 SUMMARY:🎮 Police Simulator: Patrol Officers
 DESCRIPTION:Game Release: Police Simulator: Patrol Officers\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260604-rel-547@zrconsulting.de
+UID:20260604-rel-546@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5493,7 +5483,7 @@ DTEND;VALUE=DATE:20260604
 SUMMARY:🎮 House Flipper Remastered Collection
 DESCRIPTION:Game Release: House Flipper Remastered Collection\\nGenre: Game\\nPlatforms: PC\, Xbox\, PS5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260604-rel-548@zrconsulting.de
+UID:20260604-rel-547@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5503,7 +5493,7 @@ DTEND;VALUE=DATE:20260604
 SUMMARY:🎮 CALX
 DESCRIPTION:Game Release: CALX\\nGenre: Game\\nPlatforms: PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260604-rel-549@zrconsulting.de
+UID:20260604-rel-548@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5513,7 +5503,7 @@ DTEND;VALUE=DATE:20260604
 SUMMARY:🎮 Swan Song
 DESCRIPTION:Game Release: Swan Song\\nGenre: Game\\nPlatforms: PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260604-rel-550@zrconsulting.de
+UID:20260604-rel-549@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5523,7 +5513,7 @@ DTEND;VALUE=DATE:20260605
 SUMMARY:🎮 Hollowbody
 DESCRIPTION:Game Release: Hollowbody\\nGenre: Game\\nPlatforms: Xbox\, PS5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260605-rel-551@zrconsulting.de
+UID:20260605-rel-550@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5533,7 +5523,7 @@ DTEND;VALUE=DATE:20260605
 SUMMARY:🎮 Gothic 1 Remake
 DESCRIPTION:Game Release: Gothic 1 Remake\\nGenre: Action\, RPG\\nPlatforms: PC\, PlayStation 5\, Xbox One\, PlayStation 4\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260605-rel-552@zrconsulting.de
+UID:20260605-rel-551@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5543,7 +5533,7 @@ DTEND;VALUE=DATE:20260606
 SUMMARY:🎮 / Steam
 DESCRIPTION:Game Release: / Steam\\nGenre: Game\\nPlatforms: Xbox\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260606-rel-553@zrconsulting.de
+UID:20260606-rel-552@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5553,7 +5543,7 @@ DTEND;VALUE=DATE:20260606
 SUMMARY:🎮 Summer Game Fest 2026
 DESCRIPTION:Game Release: Summer Game Fest 2026\\nGenre: Game\\nPlatforms: Twitch\, YouTube\, Steam\, Tiktok\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260606-rel-554@zrconsulting.de
+UID:20260606-rel-553@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5563,7 +5553,7 @@ DTEND;VALUE=DATE:20260607
 SUMMARY:🎮 / Facebook
 DESCRIPTION:Game Release: / Facebook\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260607-rel-555@zrconsulting.de
+UID:20260607-rel-554@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5573,7 +5563,7 @@ DTEND;VALUE=DATE:20260607
 SUMMARY:🎮 Xbox Games Showcase 2026
 DESCRIPTION:Game Release: Xbox Games Showcase 2026\\nGenre: Game\\nPlatforms: Twitch\, YouTube\, Facebook\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260607-rel-556@zrconsulting.de
+UID:20260607-rel-555@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5583,7 +5573,7 @@ DTEND;VALUE=DATE:20260608
 SUMMARY:🎮 Solarpunk
 DESCRIPTION:Game Release: Solarpunk\\nGenre: Game\\nPlatforms: PS5\, PC\, Xbox\, Switch 2\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260608-rel-557@zrconsulting.de
+UID:20260608-rel-556@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5593,7 +5583,7 @@ DTEND;VALUE=DATE:20260608
 SUMMARY:🎮 Arms of God
 DESCRIPTION:Game Release: Arms of God\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260608-rel-558@zrconsulting.de
+UID:20260608-rel-557@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5603,7 +5593,7 @@ DTEND;VALUE=DATE:20260608
 SUMMARY:🎮 Cursemark
 DESCRIPTION:Game Release: Cursemark\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260608-rel-559@zrconsulting.de
+UID:20260608-rel-558@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5613,7 +5603,7 @@ DTEND;VALUE=DATE:20260609
 SUMMARY:🎮 Destiny 2 - Shadow & Order
 DESCRIPTION:Game Release: Destiny 2 - Shadow & Order\\nGenre: Game\\nPlatforms: Xbox One\, Xbox\, PS5\, PS4\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260609-rel-560@zrconsulting.de
+UID:20260609-rel-559@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5623,7 +5613,7 @@ DTEND;VALUE=DATE:20260609
 SUMMARY:🎮 PIX Football Manager
 DESCRIPTION:Game Release: PIX Football Manager\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260609-rel-561@zrconsulting.de
+UID:20260609-rel-560@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5633,7 +5623,7 @@ DTEND;VALUE=DATE:20260609
 SUMMARY:🎮 Voidling Bound
 DESCRIPTION:Game Release: Voidling Bound\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260609-rel-562@zrconsulting.de
+UID:20260609-rel-561@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5643,7 +5633,7 @@ DTEND;VALUE=DATE:20260610
 SUMMARY:🎮 Witchspire
 DESCRIPTION:Game Release: Witchspire\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260610-rel-563@zrconsulting.de
+UID:20260610-rel-562@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5653,7 +5643,7 @@ DTEND;VALUE=DATE:20260611
 SUMMARY:🎮 Monopoly: Star Wars Heroes vs. Villains
 DESCRIPTION:Game Release: Monopoly: Star Wars Heroes vs. Villains\\nGenre: Game\\nPlatforms: Xbox\, Switch 2\, PC\, Switch\, PS5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260611-rel-564@zrconsulting.de
+UID:20260611-rel-563@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5663,7 +5653,7 @@ DTEND;VALUE=DATE:20260611
 SUMMARY:🎮 Beastro
 DESCRIPTION:Game Release: Beastro\\nGenre: Game\\nPlatforms: PC\, PS5\, Xbox\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260611-rel-565@zrconsulting.de
+UID:20260611-rel-564@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5673,7 +5663,7 @@ DTEND;VALUE=DATE:20260611
 SUMMARY:🎮 Galactic Civilizations IV: Federations & Empires
 DESCRIPTION:Game Release: Galactic Civilizations IV: Federations & Empires\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260611-rel-566@zrconsulting.de
+UID:20260611-rel-565@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5683,7 +5673,7 @@ DTEND;VALUE=DATE:20260611
 SUMMARY:🎮 Lost Castle 2
 DESCRIPTION:Game Release: Lost Castle 2\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260611-rel-567@zrconsulting.de
+UID:20260611-rel-566@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5693,7 +5683,7 @@ DTEND;VALUE=DATE:20260611
 SUMMARY:🎮 Dark Auction: Hitler's Estate
 DESCRIPTION:Game Release: Dark Auction: Hitler's Estate\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260611-rel-568@zrconsulting.de
+UID:20260611-rel-567@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5703,7 +5693,7 @@ DTEND;VALUE=DATE:20260611
 SUMMARY:🎮 to a T
 DESCRIPTION:Game Release: to a T\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260611-rel-569@zrconsulting.de
+UID:20260611-rel-568@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5713,7 +5703,7 @@ DTEND;VALUE=DATE:20260616
 SUMMARY:🎮 Barbie Horse Ride & Rescue
 DESCRIPTION:Game Release: Barbie Horse Ride & Rescue\\nGenre: Game\\nPlatforms: Android\, iOS\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260616-rel-570@zrconsulting.de
+UID:20260616-rel-569@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5723,7 +5713,7 @@ DTEND;VALUE=DATE:20260617
 SUMMARY:🎮 Drug Dealer Simulator 2
 DESCRIPTION:Game Release: Drug Dealer Simulator 2\\nGenre: Game\\nPlatforms: Xbox\, PS5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260617-rel-571@zrconsulting.de
+UID:20260617-rel-570@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5733,7 +5723,7 @@ DTEND;VALUE=DATE:20260617
 SUMMARY:🎮 Dialoop: -Roguelite Puzzle-
 DESCRIPTION:Game Release: Dialoop: -Roguelite Puzzle-\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260617-rel-572@zrconsulting.de
+UID:20260617-rel-571@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5743,7 +5733,7 @@ DTEND;VALUE=DATE:20260617
 SUMMARY:🎮 Denshattack!
 DESCRIPTION:Game Release: Denshattack!\\nGenre: Game\\nPlatforms: PC\, Switch 2\, PS5\, Xbox\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260617-rel-573@zrconsulting.de
+UID:20260617-rel-572@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5753,7 +5743,7 @@ DTEND;VALUE=DATE:20260618
 SUMMARY:🎮 Dave the Diver - In the Jungle
 DESCRIPTION:Game Release: Dave the Diver - In the Jungle\\nGenre: Game\\nPlatforms: PS5\, PC\, Switch\, Xbox\, PS4\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260618-rel-574@zrconsulting.de
+UID:20260618-rel-573@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5763,7 +5753,7 @@ DTEND;VALUE=DATE:20260618
 SUMMARY:🎮 R-Type Tactics I • II Cosmos
 DESCRIPTION:Game Release: R-Type Tactics I • II Cosmos\\nGenre: Game\\nPlatforms: PS4\, Xbox\, Switch 2\, Switch\, PS5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260618-rel-575@zrconsulting.de
+UID:20260618-rel-574@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5773,7 +5763,7 @@ DTEND;VALUE=DATE:20260618
 SUMMARY:🎮 #DRIVE Rally
 DESCRIPTION:Game Release: #DRIVE Rally\\nGenre: Game\\nPlatforms: Switch\, PS5\, Xbox\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260618-rel-576@zrconsulting.de
+UID:20260618-rel-575@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5783,7 +5773,7 @@ DTEND;VALUE=DATE:20260618
 SUMMARY:🎮 and Roger
 DESCRIPTION:Game Release: and Roger\\nGenre: Game\\nPlatforms: Switch 2\, Android\, iOS\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260618-rel-577@zrconsulting.de
+UID:20260618-rel-576@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5793,7 +5783,7 @@ DTEND;VALUE=DATE:20260618
 SUMMARY:🎮 The Adventures of Elliot: The Millennium Tales
 DESCRIPTION:Game Release: The Adventures of Elliot: The Millennium Tales\\nGenre: Adventure\, RPG\\nPlatforms: PC\, PlayStation 5\, Xbox Series S/X\, Nintendo Switch\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260618-rel-578@zrconsulting.de
+UID:20260618-rel-577@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5803,7 +5793,7 @@ DTEND;VALUE=DATE:20260619
 SUMMARY:🎮 EA Sports UFC 6
 DESCRIPTION:Game Release: EA Sports UFC 6\\nGenre: Game\\nPlatforms: Xbox\, PS5\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260619-rel-579@zrconsulting.de
+UID:20260619-rel-578@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5813,7 +5803,7 @@ DTEND;VALUE=DATE:20260623
 SUMMARY:🎮 Frostpunk 2 - Breach of Trust
 DESCRIPTION:Game Release: Frostpunk 2 - Breach of Trust\\nGenre: Game\\nPlatforms: PC\, Xbox\, PS5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260623-rel-580@zrconsulting.de
+UID:20260623-rel-579@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5823,7 +5813,7 @@ DTEND;VALUE=DATE:20260623
 SUMMARY:🎮 Destroy All Humans! (2020)
 DESCRIPTION:Game Release: Destroy All Humans! (2020)\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260623-rel-581@zrconsulting.de
+UID:20260623-rel-580@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5833,7 +5823,7 @@ DTEND;VALUE=DATE:20260624
 SUMMARY:🎮 Pawsome Resort
 DESCRIPTION:Game Release: Pawsome Resort\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260624-rel-582@zrconsulting.de
+UID:20260624-rel-581@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5843,7 +5833,7 @@ DTEND;VALUE=DATE:20260625
 SUMMARY:🎮 Dead or Alive 6 Last Round
 DESCRIPTION:Game Release: Dead or Alive 6 Last Round\\nGenre: Game\\nPlatforms: Xbox\, PC\, PS5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260625-rel-583@zrconsulting.de
+UID:20260625-rel-582@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5853,7 +5843,7 @@ DTEND;VALUE=DATE:20260625
 SUMMARY:🎮 Star Fox
 DESCRIPTION:Game Release: Star Fox\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260625-rel-584@zrconsulting.de
+UID:20260625-rel-583@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5863,7 +5853,7 @@ DTEND;VALUE=DATE:20260625
 SUMMARY:🎮 SAEKO: Giantess Dating Sim
 DESCRIPTION:Game Release: SAEKO: Giantess Dating Sim\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260625-rel-585@zrconsulting.de
+UID:20260625-rel-584@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5873,7 +5863,7 @@ DTEND;VALUE=DATE:20260628
 SUMMARY:🎮 EVO USA 2026
 DESCRIPTION:Game Release: EVO USA 2026\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260628-rel-586@zrconsulting.de
+UID:20260628-rel-585@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5883,7 +5873,7 @@ DTEND;VALUE=DATE:20260630
 SUMMARY:🎮 Super Meat Boy 3D
 DESCRIPTION:Game Release: Super Meat Boy 3D\\nGenre: Game\\nPlatforms: Switch 2 (Physical)\, PlayStation 5 (Physical)\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260630-rel-587@zrconsulting.de
+UID:20260630-rel-586@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5893,7 +5883,7 @@ DTEND;VALUE=DATE:20260630
 SUMMARY:🎮 Nocturne
 DESCRIPTION:Game Release: Nocturne\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260630-rel-588@zrconsulting.de
+UID:20260630-rel-587@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5903,7 +5893,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 PowerWash Simulator 2 - Star Wars Pack [TBC] [TBC]
 DESCRIPTION:Game Release: PowerWash Simulator 2 - Star Wars Pack [TBC] [TBC]\\nGenre: Game\\nPlatforms: PC\, PS5\, Switch 2\, Xbox\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-589@zrconsulting.de
+UID:20260701-rel-588@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5913,7 +5903,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Little Witch in the Woods [TBC] [TBC]
 DESCRIPTION:Game Release: Little Witch in the Woods [TBC] [TBC]\\nGenre: Game\\nPlatforms: PS4\, PS5\, Switch\, Xbox\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-590@zrconsulting.de
+UID:20260701-rel-589@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5923,7 +5913,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Orbitals [TBC] [TBC]
 DESCRIPTION:Game Release: Orbitals [TBC] [TBC]\\nGenre: Game\\nPlatforms: Switch 2\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-591@zrconsulting.de
+UID:20260701-rel-590@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5933,7 +5923,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 PVKK: Planetenverteidigungskanonenkommandant [TBC] [TBC]
 DESCRIPTION:Game Release: PVKK: Planetenverteidigungskanonenkommandant [TBC] [TBC]\\nGenre: Game\\nPlatforms: PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-592@zrconsulting.de
+UID:20260701-rel-591@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5943,7 +5933,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Deltarune: Chapter 5 [TBC] [TBC]
 DESCRIPTION:Game Release: Deltarune: Chapter 5 [TBC] [TBC]\\nGenre: Game\\nPlatforms: PS5\, Switch\, PS4\, Switch 2\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-593@zrconsulting.de
+UID:20260701-rel-592@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5953,7 +5943,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Forever Skies [TBC] [TBC]
 DESCRIPTION:Game Release: Forever Skies [TBC] [TBC]\\nGenre: Game\\nPlatforms: Xbox\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-594@zrconsulting.de
+UID:20260701-rel-593@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5963,7 +5953,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Endurance Motorsport Series [TBC] [TBC]
 DESCRIPTION:Game Release: Endurance Motorsport Series [TBC] [TBC]\\nGenre: Game\\nPlatforms: PC\, PS5\, Xbox\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-595@zrconsulting.de
+UID:20260701-rel-594@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5973,7 +5963,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Dispatch [TBC] [TBC]
 DESCRIPTION:Game Release: Dispatch [TBC] [TBC]\\nGenre: Game\\nPlatforms: Xbox\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-596@zrconsulting.de
+UID:20260701-rel-595@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5983,7 +5973,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 BLACKWOOD [TBC] [TBC]
 DESCRIPTION:Game Release: BLACKWOOD [TBC] [TBC]\\nGenre: Game\\nPlatforms: PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-597@zrconsulting.de
+UID:20260701-rel-596@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -5993,7 +5983,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 S.T.A.L.K.E.R. 2: Heart of Chornobyl - Cost of Hope [TBC] [TBC]
 DESCRIPTION:Game Release: S.T.A.L.K.E.R. 2: Heart of Chornobyl - Cost of Hope [TBC] [TBC]\\nGenre: Game\\nPlatforms: PS5\, PC\, Xbox\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-598@zrconsulting.de
+UID:20260701-rel-597@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6003,7 +5993,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Danger Mouse [TBC] [TBC]
 DESCRIPTION:Game Release: Danger Mouse [TBC] [TBC]\\nGenre: Game\\nPlatforms: PC\, Switch\, Xbox\, Switch 2\, PS4\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-599@zrconsulting.de
+UID:20260701-rel-598@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6013,7 +6003,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Woodo [TBC] [TBC]
 DESCRIPTION:Game Release: Woodo [TBC] [TBC]\\nGenre: Game\\nPlatforms: Switch\, Xbox\, Switch 2\, PC\, PS5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-600@zrconsulting.de
+UID:20260701-rel-599@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6023,7 +6013,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 The Mermaid Mask [TBC] [TBC]
 DESCRIPTION:Game Release: The Mermaid Mask [TBC] [TBC]\\nGenre: Game\\nPlatforms: PS5\, PS4\, Xbox One\, Switch\, Xbox\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-601@zrconsulting.de
+UID:20260701-rel-600@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6033,7 +6023,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Solo Leveling: ARISE OVERDRIVE [TBC] [TBC]
 DESCRIPTION:Game Release: Solo Leveling: ARISE OVERDRIVE [TBC] [TBC]\\nGenre: Game\\nPlatforms: PS5\, Xbox\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-602@zrconsulting.de
+UID:20260701-rel-601@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6043,7 +6033,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 RuneScape: Dragonwilds [TBC] [TBC]
 DESCRIPTION:Game Release: RuneScape: Dragonwilds [TBC] [TBC]\\nGenre: Game\\nPlatforms: PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-603@zrconsulting.de
+UID:20260701-rel-602@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6053,7 +6043,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Whirlight: No Time To Trip [TBC] [TBC]
 DESCRIPTION:Game Release: Whirlight: No Time To Trip [TBC] [TBC]\\nGenre: Game\\nPlatforms: PS5\, Xbox\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-604@zrconsulting.de
+UID:20260701-rel-603@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6063,7 +6053,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 The Relic: First Guardian [TBC] [TBC]
 DESCRIPTION:Game Release: The Relic: First Guardian [TBC] [TBC]\\nGenre: Game\\nPlatforms: PC\, PS5\, Xbox\, Switch 2\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-605@zrconsulting.de
+UID:20260701-rel-604@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6073,7 +6063,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 The Sinking City 2 [TBC] [TBC]
 DESCRIPTION:Game Release: The Sinking City 2 [TBC] [TBC]\\nGenre: Game\\nPlatforms: PC\, PS5\, Xbox\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-606@zrconsulting.de
+UID:20260701-rel-605@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6083,7 +6073,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Outward 2 [TBC] [TBC]
 DESCRIPTION:Game Release: Outward 2 [TBC] [TBC]\\nGenre: Game\\nPlatforms: PC\, Xbox\, PS5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-607@zrconsulting.de
+UID:20260701-rel-606@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6093,7 +6083,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 He-Man and the Masters of the Universe: Dragon Pearl of Destruction [TBC] [TBC]
 DESCRIPTION:Game Release: He-Man and the Masters of the Universe: Dragon Pearl of Destruction [TBC] [TBC]\\nGenre: Game\\nPlatforms: PC\, PS4\, PS5\, Xbox\, Xbox One\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-608@zrconsulting.de
+UID:20260701-rel-607@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6103,7 +6093,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Mistfall Hunter [TBC] [TBC]
 DESCRIPTION:Game Release: Mistfall Hunter [TBC] [TBC]\\nGenre: Game\\nPlatforms: Xbox\, PC\, PS5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-609@zrconsulting.de
+UID:20260701-rel-608@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6113,7 +6103,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 SpeedRunners 2: King of Speed [TBC] [TBC]
 DESCRIPTION:Game Release: SpeedRunners 2: King of Speed [TBC] [TBC]\\nGenre: Game\\nPlatforms: PS5\, Switch\, Xbox\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-610@zrconsulting.de
+UID:20260701-rel-609@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6123,7 +6113,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Aliens: Fireteam Elite 2 [TBC] [TBC]
 DESCRIPTION:Game Release: Aliens: Fireteam Elite 2 [TBC] [TBC]\\nGenre: Game\\nPlatforms: PS5\, PC\, Xbox\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-611@zrconsulting.de
+UID:20260701-rel-610@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6133,7 +6123,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Ari Buktu and the Anytime Elevator [TBC] [TBC]
 DESCRIPTION:Game Release: Ari Buktu and the Anytime Elevator [TBC] [TBC]\\nGenre: Game\\nPlatforms: Xbox One\, Xbox\, PS5\, Switch\, PS4\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-612@zrconsulting.de
+UID:20260701-rel-611@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6143,7 +6133,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Bus Simulator 27 [TBC] [TBC]
 DESCRIPTION:Game Release: Bus Simulator 27 [TBC] [TBC]\\nGenre: Game\\nPlatforms: Xbox\, PC\, PS5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-613@zrconsulting.de
+UID:20260701-rel-612@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6153,7 +6143,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 LIFTED [TBC] [TBC]
 DESCRIPTION:Game Release: LIFTED [TBC] [TBC]\\nGenre: Game\\nPlatforms: PC\, Switch\, Xbox\, PS5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-614@zrconsulting.de
+UID:20260701-rel-613@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6163,7 +6153,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Cat Me If You Can [TBC] [TBC]
 DESCRIPTION:Game Release: Cat Me If You Can [TBC] [TBC]\\nGenre: Game\\nPlatforms: Switch\, PC\, Xbox\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-615@zrconsulting.de
+UID:20260701-rel-614@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6173,7 +6163,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Super Battle Golf [TBC] [TBC]
 DESCRIPTION:Game Release: Super Battle Golf [TBC] [TBC]\\nGenre: Game\\nPlatforms: PS5\, Switch 2\, Xbox\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-616@zrconsulting.de
+UID:20260701-rel-615@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6183,7 +6173,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Dragon Ball: Sparking! Zero - Super Limit Breaking NEO [TBC] [TBC]
 DESCRIPTION:Game Release: Dragon Ball: Sparking! Zero - Super Limit Breaking NEO [TBC] [TBC]\\nGenre: Game\\nPlatforms: Switch\, PS5\, Switch 2\, Xbox\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-617@zrconsulting.de
+UID:20260701-rel-616@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6193,7 +6183,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Kalanoro [TBC] [TBC]
 DESCRIPTION:Game Release: Kalanoro [TBC] [TBC]\\nGenre: Game\\nPlatforms: Switch\, PC\, Xbox\, PS5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-618@zrconsulting.de
+UID:20260701-rel-617@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6203,7 +6193,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Hyperwired [TBC] [TBC]
 DESCRIPTION:Game Release: Hyperwired [TBC] [TBC]\\nGenre: Game\\nPlatforms: Xbox One\, Xbox\, PS4\, Switch\, PS5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-619@zrconsulting.de
+UID:20260701-rel-618@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6213,7 +6203,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Abyssus [TBC] [TBC]
 DESCRIPTION:Game Release: Abyssus [TBC] [TBC]\\nGenre: Game\\nPlatforms: Xbox\, PS5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-620@zrconsulting.de
+UID:20260701-rel-619@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6223,7 +6213,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 No More Room in Hell 2 [TBC] [TBC]
 DESCRIPTION:Game Release: No More Room in Hell 2 [TBC] [TBC]\\nGenre: Game\\nPlatforms: PS5\, PC\, Xbox\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-621@zrconsulting.de
+UID:20260701-rel-620@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6233,7 +6223,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Dragon Ball Xenoverse 2 - Future Saga Chapter 4 [TBC] [TBC]
 DESCRIPTION:Game Release: Dragon Ball Xenoverse 2 - Future Saga Chapter 4 [TBC] [TBC]\\nGenre: Game\\nPlatforms: Xbox\, PS5\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-622@zrconsulting.de
+UID:20260701-rel-621@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6243,7 +6233,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 FANTASY LIFE i: The Girl Who Steals Time [TBC] [TBC]
 DESCRIPTION:Game Release: FANTASY LIFE i: The Girl Who Steals Time [TBC] [TBC]\\nGenre: Game\\nPlatforms: iOS\, Android\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-623@zrconsulting.de
+UID:20260701-rel-622@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6253,7 +6243,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Fuga: Melodies of Steel 3 [TBC] [TBC]
 DESCRIPTION:Game Release: Fuga: Melodies of Steel 3 [TBC] [TBC]\\nGenre: Game\\nPlatforms: Android\, iOS\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-624@zrconsulting.de
+UID:20260701-rel-623@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6263,7 +6253,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Myth of Valderit [TBC] [TBC]
 DESCRIPTION:Game Release: Myth of Valderit [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-625@zrconsulting.de
+UID:20260701-rel-624@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6273,7 +6263,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 HellSlave II: Judgment of the Archon [TBC] [TBC]
 DESCRIPTION:Game Release: HellSlave II: Judgment of the Archon [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-626@zrconsulting.de
+UID:20260701-rel-625@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6283,7 +6273,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Deadline Savior [TBC] [TBC]
 DESCRIPTION:Game Release: Deadline Savior [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-627@zrconsulting.de
+UID:20260701-rel-626@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6293,7 +6283,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Ligmanauts [TBC] [TBC]
 DESCRIPTION:Game Release: Ligmanauts [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-628@zrconsulting.de
+UID:20260701-rel-627@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6303,7 +6293,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 No Case Should Remain Unsolved [TBC] [TBC]
 DESCRIPTION:Game Release: No Case Should Remain Unsolved [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-629@zrconsulting.de
+UID:20260701-rel-628@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6313,7 +6303,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Crown of Hispania [TBC] [TBC]
 DESCRIPTION:Game Release: Crown of Hispania [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-630@zrconsulting.de
+UID:20260701-rel-629@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6323,7 +6313,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Another Eden: The Cat Beyond Time and Space [TBC] [TBC]
 DESCRIPTION:Game Release: Another Eden: The Cat Beyond Time and Space [TBC] [TBC]\\nGenre: Game\\nPlatforms: Switch\, Switch 2\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-631@zrconsulting.de
+UID:20260701-rel-630@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6333,7 +6323,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Heave Ho 2 [TBC] [TBC]
 DESCRIPTION:Game Release: Heave Ho 2 [TBC] [TBC]\\nGenre: Game\\nPlatforms: Switch 2\, PC\, Switch\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-632@zrconsulting.de
+UID:20260701-rel-631@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6343,7 +6333,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Breathedge 2 [TBC] [TBC]
 DESCRIPTION:Game Release: Breathedge 2 [TBC] [TBC]\\nGenre: Game\\nPlatforms: PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-633@zrconsulting.de
+UID:20260701-rel-632@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6353,7 +6343,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 TOEM 2 [TBC] [TBC]
 DESCRIPTION:Game Release: TOEM 2 [TBC] [TBC]\\nGenre: Game\\nPlatforms: PC\, PS5\, Xbox\, Switch\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-634@zrconsulting.de
+UID:20260701-rel-633@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6363,7 +6353,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Kyoto Xanadu [TBC] [TBC]
 DESCRIPTION:Game Release: Kyoto Xanadu [TBC] [TBC]\\nGenre: Game\\nPlatforms: Switch 2\, PS5\, PC\, Switch\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-635@zrconsulting.de
+UID:20260701-rel-634@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6373,7 +6363,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Wildaria [TBC] [TBC]
 DESCRIPTION:Game Release: Wildaria [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-636@zrconsulting.de
+UID:20260701-rel-635@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6383,7 +6373,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 DragonSword: Awakening [TBC] [TBC]
 DESCRIPTION:Game Release: DragonSword: Awakening [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-637@zrconsulting.de
+UID:20260701-rel-636@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6393,7 +6383,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Wuthering Waves [TBC] [TBC]
 DESCRIPTION:Game Release: Wuthering Waves [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-638@zrconsulting.de
+UID:20260701-rel-637@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6403,7 +6393,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 EverQuest Legends [TBC] [TBC]
 DESCRIPTION:Game Release: EverQuest Legends [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-639@zrconsulting.de
+UID:20260701-rel-638@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6413,7 +6403,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Agefield High: Rock the School [TBC] [TBC]
 DESCRIPTION:Game Release: Agefield High: Rock the School [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-640@zrconsulting.de
+UID:20260701-rel-639@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6423,7 +6413,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Wanderburg [TBC] [TBC]
 DESCRIPTION:Game Release: Wanderburg [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-641@zrconsulting.de
+UID:20260701-rel-640@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6433,7 +6423,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Elation for the Wonder Box 6000 [TBC] [TBC]
 DESCRIPTION:Game Release: Elation for the Wonder Box 6000 [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-642@zrconsulting.de
+UID:20260701-rel-641@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6443,7 +6433,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Onikura [TBC] [TBC]
 DESCRIPTION:Game Release: Onikura [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-643@zrconsulting.de
+UID:20260701-rel-642@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6453,7 +6443,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Ascenders: Beyond the Peak [TBC] [TBC]
 DESCRIPTION:Game Release: Ascenders: Beyond the Peak [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-644@zrconsulting.de
+UID:20260701-rel-643@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6463,7 +6453,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 My Arms Are Longer Now [TBC] [TBC]
 DESCRIPTION:Game Release: My Arms Are Longer Now [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-645@zrconsulting.de
+UID:20260701-rel-644@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6473,7 +6463,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Port of Jumanah [TBC] [TBC]
 DESCRIPTION:Game Release: Port of Jumanah [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-646@zrconsulting.de
+UID:20260701-rel-645@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6483,7 +6473,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Sagas of Lumin [TBC] [TBC]
 DESCRIPTION:Game Release: Sagas of Lumin [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-647@zrconsulting.de
+UID:20260701-rel-646@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6493,7 +6483,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Maré [TBC] [TBC]
 DESCRIPTION:Game Release: Maré [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-648@zrconsulting.de
+UID:20260701-rel-647@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6503,7 +6493,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 World of Warcraft: Midnight - Patch 12.1.7 [TBC] [TBC]
 DESCRIPTION:Game Release: World of Warcraft: Midnight - Patch 12.1.7 [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-649@zrconsulting.de
+UID:20260701-rel-648@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6513,7 +6503,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Aspiel: Edge Of Chaos [TBC] [TBC]
 DESCRIPTION:Game Release: Aspiel: Edge Of Chaos [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-650@zrconsulting.de
+UID:20260701-rel-649@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6523,7 +6513,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Alpha Nomos [TBC] [TBC]
 DESCRIPTION:Game Release: Alpha Nomos [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-651@zrconsulting.de
+UID:20260701-rel-650@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6533,7 +6523,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Prelude Dark Pain [TBC] [TBC]
 DESCRIPTION:Game Release: Prelude Dark Pain [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-652@zrconsulting.de
+UID:20260701-rel-651@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6543,7 +6533,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 World of Warcraft: Midnight - Patch 12.1.5 [TBC] [TBC]
 DESCRIPTION:Game Release: World of Warcraft: Midnight - Patch 12.1.5 [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-653@zrconsulting.de
+UID:20260701-rel-652@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6553,7 +6543,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Tyr [TBC] [TBC]
 DESCRIPTION:Game Release: Tyr [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-654@zrconsulting.de
+UID:20260701-rel-653@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6563,7 +6553,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Scourge of the Reptiles [TBC] [TBC]
 DESCRIPTION:Game Release: Scourge of the Reptiles [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-655@zrconsulting.de
+UID:20260701-rel-654@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6573,7 +6563,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Idlemancer [TBC] [TBC]
 DESCRIPTION:Game Release: Idlemancer [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-656@zrconsulting.de
+UID:20260701-rel-655@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6583,7 +6573,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 World of Warcraft Classic: Burning Crusade Classic | Phase 4 - Fury of the Sunwell [TBC] [TBC]
 DESCRIPTION:Game Release: World of Warcraft Classic: Burning Crusade Classic | Phase 4 - Fury of the Sunwell [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-657@zrconsulting.de
+UID:20260701-rel-656@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6593,7 +6583,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Swarmdustry [TBC] [TBC]
 DESCRIPTION:Game Release: Swarmdustry [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-658@zrconsulting.de
+UID:20260701-rel-657@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6603,7 +6593,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 World of Warcraft Classic: Burning Crusade Classic | Phase 3.5 - The Gods of Zul'aman [TBC] [TBC]
 DESCRIPTION:Game Release: World of Warcraft Classic: Burning Crusade Classic | Phase 3.5 - The Gods of Zul'aman [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-659@zrconsulting.de
+UID:20260701-rel-658@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6613,7 +6603,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 OVER REQUIEMZ [TBC] [TBC]
 DESCRIPTION:Game Release: OVER REQUIEMZ [TBC] [TBC]\\nGenre: Game\\nPlatforms: Switch\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-660@zrconsulting.de
+UID:20260701-rel-659@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6623,7 +6613,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 .45 PARABELLUM BLOODHOUND [TBC] [TBC]
 DESCRIPTION:Game Release: .45 PARABELLUM BLOODHOUND [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-661@zrconsulting.de
+UID:20260701-rel-660@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6633,7 +6623,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Oil Rig Simulator [TBC] [TBC]
 DESCRIPTION:Game Release: Oil Rig Simulator [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-662@zrconsulting.de
+UID:20260701-rel-661@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6643,7 +6633,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Dark Island: Faded Memories [TBC] [TBC]
 DESCRIPTION:Game Release: Dark Island: Faded Memories [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-663@zrconsulting.de
+UID:20260701-rel-662@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6653,7 +6643,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 Ember & Blade [TBC] [TBC]
 DESCRIPTION:Game Release: Ember & Blade [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-664@zrconsulting.de
+UID:20260701-rel-663@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6663,7 +6653,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 World of Warcraft Classic: Burning Crusade Classic \\| Phase 4 - Fury of the Sunwell [TBC] [TBC]
 DESCRIPTION:Game Release: World of Warcraft Classic: Burning Crusade Classic \\| Phase 4 - Fury of the Sunwell [TBC] [TBC]\\nGenre: Game\\nPlatforms: PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-665@zrconsulting.de
+UID:20260701-rel-664@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6673,7 +6663,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 World of Warcraft Classic: Burning Crusade Classic \\| Phase 3.5 - The Gods of Zul'aman [TBC] [TBC]
 DESCRIPTION:Game Release: World of Warcraft Classic: Burning Crusade Classic \\| Phase 3.5 - The Gods of Zul'aman [TBC] [TBC]\\nGenre: Game\\nPlatforms: PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-666@zrconsulting.de
+UID:20260701-rel-665@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6683,7 +6673,7 @@ DTEND;VALUE=DATE:20260701
 SUMMARY:🎮 High on Life 2
 DESCRIPTION:Game Release: High on Life 2\\nGenre: Game\\nPlatforms: Switch 2\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260701-rel-667@zrconsulting.de
+UID:20260701-rel-666@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6693,7 +6683,7 @@ DTEND;VALUE=DATE:20260702
 SUMMARY:🎮 Avatar Legends: The Fighting Game
 DESCRIPTION:Game Release: Avatar Legends: The Fighting Game\\nGenre: Game\\nPlatforms: PS4\, Xbox\, Switch 2\, Xbox One\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260702-rel-668@zrconsulting.de
+UID:20260702-rel-667@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6703,7 +6693,7 @@ DTEND;VALUE=DATE:20260702
 SUMMARY:🎮 Rhythm Heaven Groove
 DESCRIPTION:Game Release: Rhythm Heaven Groove\\nGenre: Game\\nPlatforms: Switch\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260702-rel-669@zrconsulting.de
+UID:20260702-rel-668@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6713,7 +6703,7 @@ DTEND;VALUE=DATE:20260707
 SUMMARY:🎮 Moonlight Peaks
 DESCRIPTION:Game Release: Moonlight Peaks\\nGenre: Game\\nPlatforms: Switch\, Switch 2\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260707-rel-670@zrconsulting.de
+UID:20260707-rel-669@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6723,7 +6713,7 @@ DTEND;VALUE=DATE:20260707
 SUMMARY:🎮 The Caribou Trail
 DESCRIPTION:Game Release: The Caribou Trail\\nGenre: Game\\nPlatforms: PS5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260707-rel-671@zrconsulting.de
+UID:20260707-rel-670@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6733,7 +6723,7 @@ DTEND;VALUE=DATE:20260709
 SUMMARY:🎮 Assassin's Creed Black Flag Resynced
 DESCRIPTION:Game Release: Assassin's Creed Black Flag Resynced\\nGenre: Game\\nPlatforms: Xbox\, PS5\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260709-rel-672@zrconsulting.de
+UID:20260709-rel-671@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6743,7 +6733,7 @@ DTEND;VALUE=DATE:20260709
 SUMMARY:🎮 Forward to the Sky
 DESCRIPTION:Game Release: Forward to the Sky\\nGenre: Game\\nPlatforms: PS4\, PS5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260709-rel-673@zrconsulting.de
+UID:20260709-rel-672@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6753,7 +6743,7 @@ DTEND;VALUE=DATE:20260709
 SUMMARY:🎮 Backyard Baseball
 DESCRIPTION:Game Release: Backyard Baseball\\nGenre: Game\\nPlatforms: PC\, Xbox\, Switch\, PS5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260709-rel-674@zrconsulting.de
+UID:20260709-rel-673@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6763,7 +6753,7 @@ DTEND;VALUE=DATE:20260709
 SUMMARY:🎮 Gunvolt Chronicles: Luminous Avenger iX 1+2 Dual Collection
 DESCRIPTION:Game Release: Gunvolt Chronicles: Luminous Avenger iX 1+2 Dual Collection\\nGenre: Game\\nPlatforms: Switch\, Switch 2\, PS5\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260709-rel-675@zrconsulting.de
+UID:20260709-rel-674@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6773,7 +6763,7 @@ DTEND;VALUE=DATE:20260709
 SUMMARY:🎮 Echoes of Aincrad
 DESCRIPTION:Game Release: Echoes of Aincrad\\nGenre: Game\\nPlatforms: Xbox\, PS5\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260709-rel-676@zrconsulting.de
+UID:20260709-rel-675@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6783,7 +6773,7 @@ DTEND;VALUE=DATE:20260709
 SUMMARY:🎮 Granblue Fantasy: Relink - Endless Ragnarok
 DESCRIPTION:Game Release: Granblue Fantasy: Relink - Endless Ragnarok\\nGenre: Game\\nPlatforms: PC\, Switch 2\, PS5\, PS4\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260709-rel-677@zrconsulting.de
+UID:20260709-rel-676@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6793,7 +6783,7 @@ DTEND;VALUE=DATE:20260709
 SUMMARY:🎮 Granblue Fantasy: Relink
 DESCRIPTION:Game Release: Granblue Fantasy: Relink\\nGenre: Game\\nPlatforms: Switch 2\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260709-rel-678@zrconsulting.de
+UID:20260709-rel-677@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6803,7 +6793,7 @@ DTEND;VALUE=DATE:20260709
 SUMMARY:🎮 Assassin's Creed Back Flag Resynced
 DESCRIPTION:Game Release: Assassin's Creed Back Flag Resynced\\nGenre: Adventure\, Action\\nPlatforms: PC\, PlayStation 5\, Xbox Series S/X\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260709-rel-679@zrconsulting.de
+UID:20260709-rel-678@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6813,7 +6803,7 @@ DTEND;VALUE=DATE:20260710
 SUMMARY:🎮 Digimon Story: Time Stranger
 DESCRIPTION:Game Release: Digimon Story: Time Stranger\\nGenre: Game\\nPlatforms: Switch\, Switch 2\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260710-rel-680@zrconsulting.de
+UID:20260710-rel-679@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6823,7 +6813,7 @@ DTEND;VALUE=DATE:20260713
 SUMMARY:🎮 Ascend to ZERO
 DESCRIPTION:Game Release: Ascend to ZERO\\nGenre: Game\\nPlatforms: Xbox\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260713-rel-681@zrconsulting.de
+UID:20260713-rel-680@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6833,7 +6823,7 @@ DTEND;VALUE=DATE:20260714
 SUMMARY:🎮 D-topia
 DESCRIPTION:Game Release: D-topia\\nGenre: Game\\nPlatforms: PC\, PS5\, Xbox\, Switch\, Switch 2\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260714-rel-682@zrconsulting.de
+UID:20260714-rel-681@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6843,7 +6833,7 @@ DTEND;VALUE=DATE:20260715
 SUMMARY:🎮 The Mound: Omen of Cthulhu
 DESCRIPTION:Game Release: The Mound: Omen of Cthulhu\\nGenre: Game\\nPlatforms: PC\, Xbox\, PS5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260715-rel-683@zrconsulting.de
+UID:20260715-rel-682@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6853,7 +6843,7 @@ DTEND;VALUE=DATE:20260716
 SUMMARY:🎮 70s-style Robot Anime Geppy-X
 DESCRIPTION:Game Release: 70s-style Robot Anime Geppy-X\\nGenre: Game\\nPlatforms: PS4\, Xbox\, Switch\, PS5\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260716-rel-684@zrconsulting.de
+UID:20260716-rel-683@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6863,7 +6853,7 @@ DTEND;VALUE=DATE:20260716
 SUMMARY:🎮 eBaseball: PRO SPIRIT 2026
 DESCRIPTION:Game Release: eBaseball: PRO SPIRIT 2026\\nGenre: Game\\nPlatforms: PS5\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260716-rel-685@zrconsulting.de
+UID:20260716-rel-684@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6873,7 +6863,7 @@ DTEND;VALUE=DATE:20260716
 SUMMARY:🎮 Ratatan
 DESCRIPTION:Game Release: Ratatan\\nGenre: Game\\nPlatforms: PS4\, Xbox One\, Switch 2\, PS5\, Xbox\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260716-rel-686@zrconsulting.de
+UID:20260716-rel-685@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6883,7 +6873,7 @@ DTEND;VALUE=DATE:20260716
 SUMMARY:🎮 Culdcept BEGINS
 DESCRIPTION:Game Release: Culdcept BEGINS\\nGenre: Game\\nPlatforms: PC\, Switch 2\, Switch\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260716-rel-687@zrconsulting.de
+UID:20260716-rel-686@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6893,7 +6883,7 @@ DTEND;VALUE=DATE:20260723
 SUMMARY:🎮 Helix: Descent N Ascent
 DESCRIPTION:Game Release: Helix: Descent N Ascent\\nGenre: Game\\nPlatforms: Switch\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260723-rel-688@zrconsulting.de
+UID:20260723-rel-687@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6903,7 +6893,7 @@ DTEND;VALUE=DATE:20260723
 SUMMARY:🎮 Splatoon Raiders
 DESCRIPTION:Game Release: Splatoon Raiders\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260723-rel-689@zrconsulting.de
+UID:20260723-rel-688@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6913,7 +6903,7 @@ DTEND;VALUE=DATE:20260723
 SUMMARY:🎮 Disgaea Mayhem
 DESCRIPTION:Game Release: Disgaea Mayhem\\nGenre: Game\\nPlatforms: PS5\, Switch\, PC\, Switch 2\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260723-rel-690@zrconsulting.de
+UID:20260723-rel-689@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6923,7 +6913,7 @@ DTEND;VALUE=DATE:20260723
 SUMMARY:🎮 Yog-Sothoth’s Yard
 DESCRIPTION:Game Release: Yog-Sothoth’s Yard\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260723-rel-691@zrconsulting.de
+UID:20260723-rel-690@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6933,7 +6923,7 @@ DTEND;VALUE=DATE:20260727
 SUMMARY:🎮 Mahou Arms
 DESCRIPTION:Game Release: Mahou Arms\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260727-rel-692@zrconsulting.de
+UID:20260727-rel-691@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6943,7 +6933,7 @@ DTEND;VALUE=DATE:20260729
 SUMMARY:🎮 BloodRayne: Definitive Collection
 DESCRIPTION:Game Release: BloodRayne: Definitive Collection\\nGenre: Game\\nPlatforms: Switch\, PS5\, Switch (Physical)\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260729-rel-693@zrconsulting.de
+UID:20260729-rel-692@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6953,7 +6943,7 @@ DTEND;VALUE=DATE:20260730
 SUMMARY:🎮 Blue Reflection Quartet
 DESCRIPTION:Game Release: Blue Reflection Quartet\\nGenre: Game\\nPlatforms: PC\, Switch 2\, Switch\, PS5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260730-rel-694@zrconsulting.de
+UID:20260730-rel-693@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6963,7 +6953,7 @@ DTEND;VALUE=DATE:20260730
 SUMMARY:🎮 Truxton Extreme
 DESCRIPTION:Game Release: Truxton Extreme\\nGenre: Game\\nPlatforms: PC\, Xbox\, PS5\, Switch 2\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260730-rel-695@zrconsulting.de
+UID:20260730-rel-694@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6973,7 +6963,7 @@ DTEND;VALUE=DATE:20260731
 SUMMARY:🎮 PAW Patrol: Dino World
 DESCRIPTION:Game Release: PAW Patrol: Dino World\\nGenre: Game\\nPlatforms: PS4\, Xbox\, PS5\, Switch\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260731-rel-696@zrconsulting.de
+UID:20260731-rel-695@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6983,7 +6973,7 @@ DTEND;VALUE=DATE:20260801
 SUMMARY:🎮 Final Fantasy XIV: A Realm Reborn [TBC] [TBC]
 DESCRIPTION:Game Release: Final Fantasy XIV: A Realm Reborn [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260801-rel-697@zrconsulting.de
+UID:20260801-rel-696@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -6993,7 +6983,7 @@ DTEND;VALUE=DATE:20260801
 SUMMARY:🎮 Control: Resonant [TBC]
 DESCRIPTION:Game Release: Control: Resonant [TBC]\\nGenre: Action\, Shooter\, Supernatural\\nPlatforms: PS5\, Xbox\, PC\\n\\nRemedy's sequel to Control. Supernatural action-shooter with reality-bending mechanics.\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260801-rel-698@zrconsulting.de
+UID:20260801-rel-697@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -7003,7 +6993,7 @@ DTEND;VALUE=DATE:20260801
 SUMMARY:🎮 Sovereign Tower [TBC] [TBC]
 DESCRIPTION:Game Release: Sovereign Tower [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260801-rel-699@zrconsulting.de
+UID:20260801-rel-698@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -7013,7 +7003,7 @@ DTEND;VALUE=DATE:20260803
 SUMMARY:🎮 Anomaly President
 DESCRIPTION:Game Release: Anomaly President\\nGenre: Game\\nPlatforms: PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260803-rel-700@zrconsulting.de
+UID:20260803-rel-699@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -7023,7 +7013,7 @@ DTEND;VALUE=DATE:20260804
 SUMMARY:🎮 Beast of Reincarnation
 DESCRIPTION:Game Release: Beast of Reincarnation\\nGenre: Action\, RPG\\nPlatforms: PC\, PlayStation 5\, Xbox Series S/X\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260804-rel-701@zrconsulting.de
+UID:20260804-rel-700@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -7033,7 +7023,7 @@ DTEND;VALUE=DATE:20260806
 SUMMARY:🎮 Marvel Tokon: Fighting Souls
 DESCRIPTION:Game Release: Marvel Tokon: Fighting Souls\\nGenre: Game\\nPlatforms: PC\, PS5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260806-rel-702@zrconsulting.de
+UID:20260806-rel-701@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -7043,7 +7033,7 @@ DTEND;VALUE=DATE:20260806
 SUMMARY:🎮 Route16R
 DESCRIPTION:Game Release: Route16R\\nGenre: Game\\nPlatforms: Switch\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260806-rel-703@zrconsulting.de
+UID:20260806-rel-702@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -7053,7 +7043,7 @@ DTEND;VALUE=DATE:20260814
 SUMMARY:🎮 Grave Seasons
 DESCRIPTION:Game Release: Grave Seasons\\nGenre: Game\\nPlatforms: Switch 2\, PC\, PS5\, Switch\, Xbox\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260814-rel-704@zrconsulting.de
+UID:20260814-rel-703@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -7063,7 +7053,7 @@ DTEND;VALUE=DATE:20260816
 SUMMARY:🎮 CEO 2026
 DESCRIPTION:Game Release: CEO 2026\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260816-rel-705@zrconsulting.de
+UID:20260816-rel-704@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -7073,7 +7063,7 @@ DTEND;VALUE=DATE:20260820
 SUMMARY:🎮 Steins\;Gate Re:Boot
 DESCRIPTION:Game Release: Steins\;Gate Re:Boot\\nGenre: Game\\nPlatforms: Xbox\, PS4\, PC\, PS5\, Switch\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260820-rel-706@zrconsulting.de
+UID:20260820-rel-705@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -7083,7 +7073,7 @@ DTEND;VALUE=DATE:20260826
 SUMMARY:🎮 Brigandine: Abyss
 DESCRIPTION:Game Release: Brigandine: Abyss\\nGenre: Game\\nPlatforms: PS5\, PC\, Xbox\, Switch 2\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260826-rel-707@zrconsulting.de
+UID:20260826-rel-706@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -7093,7 +7083,7 @@ DTEND;VALUE=DATE:20260827
 SUMMARY:🎮 Metal Gear Solid: Master Collection Vol. 2
 DESCRIPTION:Game Release: Metal Gear Solid: Master Collection Vol. 2\\nGenre: Game\\nPlatforms: PS5\, Switch 2\, PC\, Xbox\, Switch\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260827-rel-708@zrconsulting.de
+UID:20260827-rel-707@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -7103,7 +7093,7 @@ DTEND;VALUE=DATE:20260831
 SUMMARY:🎮 Lords of the Fallen 2
 DESCRIPTION:Game Release: Lords of the Fallen 2\\nGenre: Action\, RPG\\nPlatforms: PC\, PlayStation 5\, Xbox Series S/X\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260831-rel-709@zrconsulting.de
+UID:20260831-rel-708@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -7113,7 +7103,7 @@ DTEND;VALUE=DATE:20260901
 SUMMARY:🎮 Metal Gear Solid Collection Vol. 2 [TBC]
 DESCRIPTION:Game Release: Metal Gear Solid Collection Vol. 2 [TBC]\\nGenre: Action\, Stealth\, Remaster\\nPlatforms: PS5\, Xbox\, PC\\n\\nRemastered collection of MGS2\, MGS3\, and Peace Walker. Konami's legacy revival.\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260901-rel-710@zrconsulting.de
+UID:20260901-rel-709@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -7123,7 +7113,7 @@ DTEND;VALUE=DATE:20260901
 SUMMARY:🎮 Rogue Reigns [TBC] [TBC]
 DESCRIPTION:Game Release: Rogue Reigns [TBC] [TBC]\\nGenre: Game\\nPlatforms: PS5\, Xbox\, Switch 2\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260901-rel-711@zrconsulting.de
+UID:20260901-rel-710@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -7133,7 +7123,7 @@ DTEND;VALUE=DATE:20260901
 SUMMARY:🎮 Samson: A Tyndalston Story [TBC] [TBC]
 DESCRIPTION:Game Release: Samson: A Tyndalston Story [TBC] [TBC]\\nGenre: Game\\nPlatforms: Xbox\, PS5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260901-rel-712@zrconsulting.de
+UID:20260901-rel-711@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -7143,7 +7133,7 @@ DTEND;VALUE=DATE:20260901
 SUMMARY:🎮 Aion 2 [TBC] [TBC]
 DESCRIPTION:Game Release: Aion 2 [TBC] [TBC]\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260901-rel-713@zrconsulting.de
+UID:20260901-rel-712@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -7153,7 +7143,7 @@ DTEND;VALUE=DATE:20260903
 SUMMARY:🎮 The Blood Of Dawnwalker
 DESCRIPTION:Game Release: The Blood Of Dawnwalker\\nGenre: Action\, RPG\\nPlatforms: PC\, PlayStation 5\, Xbox Series S/X\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260903-rel-714@zrconsulting.de
+UID:20260903-rel-713@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -7163,7 +7153,7 @@ DTEND;VALUE=DATE:20260908
 SUMMARY:🎮 Culdcept the First Saturn Tribute
 DESCRIPTION:Game Release: Culdcept the First Saturn Tribute\\nGenre: Game\\nPlatforms: PS5\, Xbox\, Switch\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260908-rel-715@zrconsulting.de
+UID:20260908-rel-714@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -7173,7 +7163,7 @@ DTEND;VALUE=DATE:20260908
 SUMMARY:🎮 Halloween
 DESCRIPTION:Game Release: Halloween\\nGenre: Game\\nPlatforms: Xbox\, PS5\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260908-rel-716@zrconsulting.de
+UID:20260908-rel-715@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -7183,7 +7173,7 @@ DTEND;VALUE=DATE:20260909
 SUMMARY:🎮 Phantom Blade Zero
 DESCRIPTION:Game Release: Phantom Blade Zero\\nGenre: Adventure\, Action\\nPlatforms: PC\, PlayStation 5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260909-rel-717@zrconsulting.de
+UID:20260909-rel-716@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -7193,7 +7183,7 @@ DTEND;VALUE=DATE:20260909
 SUMMARY:🎮 POSTAL: Brain Damaged - These Sunny Daze
 DESCRIPTION:Game Release: POSTAL: Brain Damaged - These Sunny Daze\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260909-rel-718@zrconsulting.de
+UID:20260909-rel-717@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -7203,7 +7193,7 @@ DTEND;VALUE=DATE:20260912
 SUMMARY:🎮 BlizzCon 2026
 DESCRIPTION:Game Release: BlizzCon 2026\\nGenre: Game\\nPlatforms: Twitch\, Youtube\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260912-rel-719@zrconsulting.de
+UID:20260912-rel-718@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -7213,7 +7203,7 @@ DTEND;VALUE=DATE:20260915
 SUMMARY:🎮 Marvel's Wolverine
 DESCRIPTION:Game Release: Marvel's Wolverine\\nGenre: Action\\nPlatforms: PlayStation 5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260915-rel-720@zrconsulting.de
+UID:20260915-rel-719@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -7223,7 +7213,7 @@ DTEND;VALUE=DATE:20260915
 SUMMARY:🎮 Destroy All Humans! 2: Reprobed
 DESCRIPTION:Game Release: Destroy All Humans! 2: Reprobed\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260915-rel-721@zrconsulting.de
+UID:20260915-rel-720@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -7233,7 +7223,7 @@ DTEND;VALUE=DATE:20260917
 SUMMARY:🎮 Trails in the Sky 2nd Chapter
 DESCRIPTION:Game Release: Trails in the Sky 2nd Chapter\\nGenre: Game\\nPlatforms: Switch 2\, PS5\, PC\, Switch\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260917-rel-722@zrconsulting.de
+UID:20260917-rel-721@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -7243,7 +7233,7 @@ DTEND;VALUE=DATE:20260917
 SUMMARY:🎮 Another Eden Begins
 DESCRIPTION:Game Release: Another Eden Begins\\nGenre: Game\\nPlatforms: Switch\, Switch 2\, PC\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260917-rel-723@zrconsulting.de
+UID:20260917-rel-722@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -7253,7 +7243,7 @@ DTEND;VALUE=DATE:20260917
 SUMMARY:🎮 AKIBA LOST
 DESCRIPTION:Game Release: AKIBA LOST\\nGenre: Game\\nPlatforms: Switch\, PC\, PS5\, Switch 2\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260917-rel-724@zrconsulting.de
+UID:20260917-rel-723@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -7263,7 +7253,7 @@ DTEND;VALUE=DATE:20260924
 SUMMARY:🎮 Hell is Us
 DESCRIPTION:Game Release: Hell is Us\\nGenre: Game\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
-UID:20260924-rel-725@zrconsulting.de
+UID:20260924-rel-724@zrconsulting.de
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -7272,6 +7262,16 @@ DTSTART;VALUE=DATE:20261001
 DTEND;VALUE=DATE:20261001
 SUMMARY:🎮 Tomb Raider: Legacy of Atlantis [TBC] [TBC]
 DESCRIPTION:Game Release: Tomb Raider: Legacy of Atlantis [TBC] [TBC]\\nGenre: Game\\nPlatforms: Xbox\, PC\, PS5\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+CATEGORIES:Game Release
+UID:20261001-rel-725@zrconsulting.de
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261001
+SUMMARY:🎮 Forza Horizon 6 [TBC]
+DESCRIPTION:Game Release: Forza Horizon 6 [TBC]\\nGenre: Racing\, Open World\\nPlatforms: Xbox\, PC\\n\\nNext entry in the open-world racing franchise from Playground Games.\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
 UID:20261001-rel-726@zrconsulting.de
 STATUS:CONFIRMED
@@ -7821,7 +7821,7 @@ BEGIN:VEVENT
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261119
 SUMMARY:🎮 Grand Theft Auto VI
-DESCRIPTION:Game Release: Grand Theft Auto VI\\nGenre: Action\, Open World\, Crime\\nPlatforms: PS5\, Xbox\\n\\nRockstar Games' next open-world crime epic set in Leonida. Most anticipated game of the decade. Console exclusive at launch.\\n\\nPowered by ZR Consulting — www.zrconsulting.de
+DESCRIPTION:Game Release: Grand Theft Auto VI\\nGenre: Action\\nPlatforms: PlayStation 5\, Xbox Series S/X\\n\\nPowered by ZR Consulting — www.zrconsulting.de
 CATEGORIES:Game Release
 UID:20261119-rel-781@zrconsulting.de
 STATUS:CONFIRMED
