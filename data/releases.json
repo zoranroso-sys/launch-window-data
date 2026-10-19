@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-10-12T14:25:01.808462Z",
+    "generated_at": "2026-10-19T12:07:03.116129Z",
     "upcoming_count": 12,
     "event_count": 85,
     "total_count": 97,
-    "next_update": "2026-10-19",
+    "next_update": "2026-10-26",
     "sources": [
       "rawg",
       "igdb",
