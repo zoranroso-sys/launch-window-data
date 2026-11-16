@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-11-09T15:09:49.856377Z",
+    "generated_at": "2026-11-16T14:46:38.180010Z",
     "upcoming_count": 12,
     "event_count": 85,
     "total_count": 97,
-    "next_update": "2026-11-16",
+    "next_update": "2026-11-23",
     "sources": [
       "rawg",
       "igdb",
@@ -2240,7 +2240,7 @@
             "Co-op",
             "Crafting"
           ],
-          "peak_ccu": 18028,
+          "peak_ccu": 41369,
           "owners": 75000000
         },
         {
@@ -2286,8 +2286,8 @@
             "Action RPG",
             "Open World"
           ],
-          "peak_ccu": 29529,
-          "owners": 35000000
+          "peak_ccu": 22964,
+          "owners": 15000000
         },
         {
           "title": "Hogwarts Legacy",
@@ -2296,8 +2296,8 @@
             "Open World",
             "Adventure"
           ],
-          "peak_ccu": 5716,
-          "owners": 35000000
+          "peak_ccu": 0,
+          "owners": 0
         },
         {
           "title": "Sons of the Forest",
@@ -2307,7 +2307,7 @@
             "Open World",
             "Co-op"
           ],
-          "peak_ccu": 4450,
+          "peak_ccu": 15154,
           "owners": 15000000
         },
         {
@@ -2318,7 +2318,7 @@
             "Action",
             "Multiplayer"
           ],
-          "peak_ccu": 53399,
+          "peak_ccu": 35903,
           "owners": 35000000
         }
       ]
@@ -2343,8 +2343,8 @@
             "Action",
             "Survival Horror"
           ],
-          "peak_ccu": 0,
-          "owners": 0
+          "peak_ccu": 13375,
+          "owners": 15000000
         },
         {
           "title": "Hi-Fi Rush",
@@ -2399,7 +2399,7 @@
             "Action",
             "Co-op"
           ],
-          "peak_ccu": 4701,
+          "peak_ccu": 12375,
           "owners": 15000000
         }
       ]
@@ -2436,8 +2436,8 @@
             "Multiplayer",
             "Asymmetric"
           ],
-          "peak_ccu": 44886,
-          "owners": 35000000
+          "peak_ccu": 58623,
+          "owners": 15000000
         }
       ]
     },
@@ -2549,8 +2549,8 @@
             "Fantasy",
             "Story Rich"
           ],
-          "peak_ccu": 54771,
-          "owners": 35000000
+          "peak_ccu": 0,
+          "owners": 0
         },
         {
           "title": "Armored Core VI",
@@ -2779,8 +2779,8 @@
             "Strategy",
             "Simulation"
           ],
-          "peak_ccu": 8842,
-          "owners": 15000000
+          "peak_ccu": 12493,
+          "owners": 7500000
         },
         {
           "title": "Assassin's Creed Mirage",
@@ -2883,8 +2883,8 @@
             "Multiplayer",
             "Shooter"
           ],
-          "peak_ccu": 67419,
-          "owners": 75000000
+          "peak_ccu": 0,
+          "owners": 0
         },
         {
           "title": "Lethal Company",
@@ -2894,7 +2894,7 @@
             "Indie",
             "Survival"
           ],
-          "peak_ccu": 6199,
+          "peak_ccu": 5617,
           "owners": 15000000
         },
         {
