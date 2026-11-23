@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-11-16T14:46:38.180010Z",
+    "generated_at": "2026-11-23T17:23:25.771111Z",
     "upcoming_count": 12,
     "event_count": 85,
     "total_count": 97,
-    "next_update": "2026-11-23",
+    "next_update": "2026-11-30",
     "sources": [
       "rawg",
       "igdb",
@@ -2240,7 +2240,7 @@
             "Co-op",
             "Crafting"
           ],
-          "peak_ccu": 41369,
+          "peak_ccu": 40524,
           "owners": 75000000
         },
         {
@@ -2286,8 +2286,8 @@
             "Action RPG",
             "Open World"
           ],
-          "peak_ccu": 22964,
-          "owners": 15000000
+          "peak_ccu": 32387,
+          "owners": 35000000
         },
         {
           "title": "Hogwarts Legacy",
@@ -2296,8 +2296,8 @@
             "Open World",
             "Adventure"
           ],
-          "peak_ccu": 0,
-          "owners": 0
+          "peak_ccu": 13425,
+          "owners": 15000000
         },
         {
           "title": "Sons of the Forest",
@@ -2307,7 +2307,7 @@
             "Open World",
             "Co-op"
           ],
-          "peak_ccu": 15154,
+          "peak_ccu": 13046,
           "owners": 15000000
         },
         {
@@ -2318,7 +2318,7 @@
             "Action",
             "Multiplayer"
           ],
-          "peak_ccu": 35903,
+          "peak_ccu": 34510,
           "owners": 35000000
         }
       ]
@@ -2343,8 +2343,8 @@
             "Action",
             "Survival Horror"
           ],
-          "peak_ccu": 13375,
-          "owners": 15000000
+          "peak_ccu": 0,
+          "owners": 0
         },
         {
           "title": "Hi-Fi Rush",
@@ -2399,7 +2399,7 @@
             "Action",
             "Co-op"
           ],
-          "peak_ccu": 12375,
+          "peak_ccu": 11247,
           "owners": 15000000
         }
       ]
@@ -2436,7 +2436,7 @@
             "Multiplayer",
             "Asymmetric"
           ],
-          "peak_ccu": 58623,
+          "peak_ccu": 56196,
           "owners": 15000000
         }
       ]
@@ -2549,8 +2549,8 @@
             "Fantasy",
             "Story Rich"
           ],
-          "peak_ccu": 0,
-          "owners": 0
+          "peak_ccu": 51580,
+          "owners": 35000000
         },
         {
           "title": "Armored Core VI",
@@ -2779,7 +2779,7 @@
             "Strategy",
             "Simulation"
           ],
-          "peak_ccu": 12493,
+          "peak_ccu": 11470,
           "owners": 7500000
         },
         {
@@ -2894,8 +2894,8 @@
             "Indie",
             "Survival"
           ],
-          "peak_ccu": 5617,
-          "owners": 15000000
+          "peak_ccu": 0,
+          "owners": 0
         },
         {
           "title": "Like a Dragon: Ishin!",
